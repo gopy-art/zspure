@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Copyright &copy; 2010-2016 Hewlett Packard Enterprise Development LP. -->
+<html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<title>HPE OfficeConnect Switch 1820 24G PoE+ (185W) J9983A</title>
+<link rel="shortcut icon" href="/htdocs/login/favicon.ico?">
+<link type="text/css" media="screen" rel="stylesheet" href="/htdocs/static/bt1536272555/css/jquery-ui-1.8.16.custom.css">
+<link type="text/css" media="screen" rel="stylesheet" href="/htdocs/login/login.css">
+<base target="_top">
+</head>
+
+
+<body>
+
+<!-- Preload necessary Javascript files before page to prevent display artifacts -->
+<script type="text/javascript" src="/htdocs/static/bt1536272555/js/ba-debug.js"></script>
+<script type="text/javascript" src="/htdocs/static/bt1536272555/jquery/jquery_1_7_1/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/htdocs/static/bt1536272555/jquery/jquery_ui_1_8_16/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/htdocs/static/bt1536272555/jquery/plugins/jquery-plugins-combo.js"></script>
+
+<div id="login_header" >
+  <table>
+    <tbody>
+
+      <tr>
+        <td id="login_logo">
+          <a href="http://www.hpe.com/" target="_blank">
+            <img alt="Hewlet Packard Development Company, L.P." src="/htdocs/login/login_logo.png" border="0" height="75px">
+          </a>
+        </td>
+        <td id="login_header_device" width="100%">SW-01-24-EF&nbsp;
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div id="login_container" >
+  <div id="login_form_container" class="ui-widget-content">
+      <table id="login_credentials" align="center">
+        <tbody>
+
+          <tr>
+          <td id="login_device">
+             <table align="center">
+             <tbody>
+               <tr> <td>HPE OfficeConnect Switch</td> </tr>
+               <tr> <td>1820 24G PoE+ (185W)</td> </tr>
+               <tr> <td>J9983A</td> </tr>
+             </tbody>
+             </table>
+          </td>
+          </tr> 
+          <tr>
+            <td align="left" class="td_with_border">
+              <label for="username" style="margin-left:20px; font-size: 0.8em; font-weight:normal; color:#bbbbbb;">Username</label><br/>
+              <input class="ui-widget input_without_border" type="text" name="username" size="18" maxlength="64" value="" tabindex="1">
+            </td>
+          </tr>
+          <tr>
+            <td align="left" class="td_with_border">
+              <label for="password" style="margin-left:20px; font-size: 0.8em; font-weight:normal; color:#bbbbbb;">Password</label><br/>
+              <input class="ui-widget input_without_border" type="password" name="password" size="18" maxlength="64" value="" tabindex="2">
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <button id="login_button">Log In</button>
+            </td>
+          </tr>
+
+          <tr>
+           <td style="text-align:center;margin-top:20px;">
+            <a style="background-color: white;" href="http://www.hpe.com/networking/support" target="_blank">Support</a>
+           </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+  </div>
+
+  <div id="login_copyright">
+    <p>
+      Copyright &copy; 2010-2016 Hewlett Packard Enterprise Development LP.    </p>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  if (window.self != window.top) {
+    window.top.location.replace(window.location.href);
+  }
+
+  var idleTimer = new $.timer(loginTimedOut, 60000, false);
+
+  function showPopup(title, contents, okClickedFunc) {
+    var dialogHtml = '<div id="dialog" title="' + title + '">' +
+                     '<table width="100%" height="100%" valign="center"><tr>' +
+                     '<td id="dialogContents" align="left">' + contents + '</td>' +
+                     '</tr></table>' +
+                     '</div>';
+
+    var $dialog = $(dialogHtml).appendTo('body');
+
+    idleTimer.stop();
+
+    function defaultDismissFunc() {
+      // this will refer to dialog element, cleanup DOM with remove()
+      $(this).remove();
+      idleTimer.reset();
+    }
+
+    var doneFunc = defaultDismissFunc;
+
+    if ( okClickedFunc !== undefined ) {
+      doneFunc = okClickedFunc;
+    }
+
+    $dialog.dialog({
+      draggable: false,
+      close: doneFunc,
+      buttons: {
+        "OK": doneFunc
+      },
+      modal: true,
+      resizable: false,
+      minWidth: 450
+    });
+  }
+
+  function dialogReloadPage() {
+    // Cleanup DOM of popup and reload at hostname root
+    $(this).remove();
+    //window.location.reload(true);
+    //window.open(window.location.hostname, '_self');
+    window.location.href = "/";
+  }
+
+  /**
+   * Event handler called in case of an error performing a jQuery Ajax method.
+   *
+   * @param event {Object} jQuery event object
+   * @param jqXHR {Map} jQuery XmlHttpRequest status object that holds various information
+   * about the XmlHttpRequest (Ajax request)
+   * @param settings {Map} Map of settings used to create ajax call.
+   * @param thrownError {Object} Error exception object with detailed information about
+   * what caused the error
+   */
+  function loginFailed(event, jqXHR, settings, thrownError) {
+    var message = "Ajax request of \"" + settings.url + "\" failed."
+    debug.info(message, thrownError, jqXHR);
+
+    // Any failure is a login failure.  The returned JSON will contain the error
+    // text.
+    eval("var response = " + jqXHR.responseText);
+    showPopup("Log In Failed", response.error);
+  };
+
+  function loginClick() {
+    idleTimer.stop();
+
+    var usernameVal = $('input[name$="username"]').val();
+    var passwordVal = $('input[name$="password"]').val();
+
+    var credentials = {
+      username: usernameVal,
+      password: passwordVal
+    };
+
+    $.post("/htdocs/login/login.lua", credentials, loginResult, 'json');
+  }
+
+  function loginResult(result) {
+    // If we got here then we were successfully logged in and the session
+    // cookie was established
+    window.open(result.redirect, '_self');
+  }
+
+  function loginTimedOut() {
+    idleTimer.stop();
+    showPopup("Inactivity Time Out", "The log in page has been inactive for too long.  Click OK to log in again.", dialogReloadPage);
+  }
+
+
+  $(document).ready( function() {
+    // Register global ajax error handler
+    $(document).ajaxError(loginFailed);
+
+    var $loginButton = $('#login_button');
+    $loginButton.button();
+    $loginButton.click(loginClick);
+
+    function keyUp(event) {
+      idleTimer.reset();
+      if(event.keyCode == 13){
+        $loginButton.click();
+      }
+    }
+
+    $("td > input").focus(function(e){
+      $(this).parent().addClass('td_with_highlight_border');
+    }).blur(function(e){
+      $(this).parent().removeClass('td_with_highlight_border');
+    });
+
+    $('input[name$="username"]').keyup(keyUp).focus();
+    $('input[name$="password"]').keyup(keyUp);
+
+
+    // If we still have a session cookie then we were timed-out.
+    var sid = $.cookie("SID");
+
+    if ( (sid !== null) && (sid !== "") ) {
+      $.cookie("SID", "", { path: '/'} );
+      showPopup("Automatic Inactivity Log Out", "You have been automatically logged-out because of inactivity.  Click OK to log in again.", dialogReloadPage);
+    } else {
+      idleTimer.play();
+    }
+
+  });
+
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,7 @@
+zspure*
+config.yml
+TODO*
+*.json
+*.png
+*.jpg
+!zspure.png

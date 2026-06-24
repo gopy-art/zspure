@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ip.buffer webserver</title>
+    <link rel="stylesheet" type="text/css" href="3.22.345.ipb.css">
+    <script>
+        boxname = "Scannex-10-20-62"
+        serial = "00-02-ae-10-20-62"
+        nchannels = 1
+        nserials = 1
+        nfiles = 1
+        rr = ""
+        wlck = 0
+        luaerr = ""
+    </script>
+    <script type="text/javascript" src="3.22.345.ipb.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+</head>
+
+<body>
+    <script>w('<div id="head">')
+        w('<div id="http"><span class="txs"><a href="https://98.153.41.38:80/status.shtm">Warning! Click for secure connection</a></span></div>')
+        topmenu(); w('<div id="hh1"></div></div><div id="content">');
+
+    </script>
+    <script type="text/javascript" src="3.22.345.status.js"></script>
+    <script>
+        livestat = 1
+        waiting = 0
+        function statcb(id, txt, err) {
+            shdv("offline", (err != 200))
+            statreshow();
+            waiting = 0;
+        }
+        function updatestat() { waiting = 1; shdvg('status', 1, 1, statcb); }
+        function setlivestat(l) {
+            if (l) {
+                livestat = 1
+                gid("ls1").checked = true
+            } else {
+                livestat = 0
+                gid("ls0").checked = true
+            }
+            updatestat()
+        }
+        function dotimeout() {
+            if (livestat && !waiting) {
+                updatestat()
+            }
+            setTimeout("dotimeout()", 5000);
+        }
+        h1("Status")
+        divse("status")
+        divs("offline")
+        w("<b>! OFFLINE !</b>")
+        dive()
+    </script>
+    <form>
+        <input type="radio" id="ls0" name="2" onClick="setlivestat(0)">stop
+        <input type="radio" id="ls1" name="2" onClick="setlivestat(1)">auto-refresh
+    </form>
+    <script>
+
+        updatestat()
+        setlivestat(livestat)
+        dotimeout()
+
+        w('</div>')
+    </script><noscript>
+        <h2>Requires Javascript!</h2>
+    </noscript>
+    <div id='foot'>
+        <table width=100% border='0' cellpadding='8px'>
+            <tr>
+                <td><span id='logo'><a href='http://www.ipbuffer.com'><img alt='scannex' src='scannex.png'
+                                border='0'></a></span></td>
+                <td><span id='ver'>Version IPBSSL3.22.345 2025-08-05</span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
