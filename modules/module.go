@@ -5,9 +5,6 @@ import (
 	"os"
 	"strings"
 	"text/tabwriter"
-	"zspure/modules/bacnet"
-	"zspure/modules/codesys"
-	"zspure/modules/enip"
 	"zspure/modules/ftp"
 	"zspure/modules/http"
 	"zspure/modules/modbus"
@@ -16,29 +13,22 @@ import (
 	"zspure/modules/mssql"
 	"zspure/modules/mysql"
 	"zspure/modules/ntp"
-	"zspure/modules/pcworx"
 	"zspure/modules/pptp"
 	"zspure/modules/redis"
 	"zspure/modules/ssh"
 	"zspure/modules/tls"
-	"zspure/modules/wago"
 )
 
 var (
 	ModuleList []string = []string{
 		"http",
-		"bacnet",
-		"enip",
 		"mssql",
 		"ntp",
 		"pptp",
 		"ssh",
-		"wago",
-		"codesys",
 		"mongodb",
 		"mysql",
 		"redis",
-		"pcworx",
 		"tls",
 		"modbus",
 		"ftp",
@@ -49,10 +39,6 @@ func NewModule(protocol string) ([]model.ModuleMethods, error) {
 	switch protocol {
 	case "http":
 		return http.NewHTTP(), nil
-	case "bacnet":
-		return bacnet.NewBACNET(), nil
-	case "enip":
-		return enip.NewENIP(), nil
 	case "mssql":
 		return mssql.NewMSSQL(), nil
 	case "modbus":
@@ -63,18 +49,12 @@ func NewModule(protocol string) ([]model.ModuleMethods, error) {
 		return pptp.NewENIP(), nil
 	case "ssh":
 		return ssh.NewSSH(), nil
-	case "wago":
-		return wago.NewWAGO(), nil
-	case "codesys":
-		return codesys.NewCODESYS(), nil
 	case "mongodb":
 		return mongodb.NewMONGODB(), nil
 	case "mysql":
 		return mysql.NewMYSQL(), nil
 	case "redis":
 		return redis.NewRedis(), nil
-	case "pcworx":
-		return pcworx.NewPCWORX(), nil
 	case "tls":
 		return tls.NewTLS(), nil
 	case "ftp":
