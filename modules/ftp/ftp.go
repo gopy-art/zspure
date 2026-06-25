@@ -10,6 +10,7 @@ import (
 	ncftpd "zspure/modules/ftp/NcFTPd"
 	netapp "zspure/modules/ftp/NetApp"
 	netgear "zspure/modules/ftp/Netgear"
+	nucleus "zspure/modules/ftp/Nucleus"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -43,6 +44,7 @@ func NewFTP() []model.ModuleMethods {
 		&ncftpd.NcFTPd{},
 		&netapp.NetApp{},
 		&netgear.NetGearReadyNAS{},
+		&nucleus.Nucleus{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
