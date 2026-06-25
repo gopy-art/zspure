@@ -8,6 +8,7 @@ import (
 	mikrotik "zspure/modules/ftp/MikroTik"
 	nationalinstruments "zspure/modules/ftp/NationalInstruments"
 	ncftpd "zspure/modules/ftp/NcFTPd"
+	netapp "zspure/modules/ftp/NetApp"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -39,6 +40,7 @@ func NewFTP() []model.ModuleMethods {
 		&mikrotik.Mikrotik{},
 		&nationalinstruments.NationalInstruments{},
 		&ncftpd.NcFTPd{},
+		&netapp.NetApp{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
