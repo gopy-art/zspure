@@ -3,6 +3,7 @@ package ftp
 import (
 	lexmark "zspure/modules/ftp/Lexmark"
 	linksys "zspure/modules/ftp/Linksys"
+	lutron "zspure/modules/ftp/Lutron"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -29,6 +30,7 @@ func NewFTP() []model.ModuleMethods {
 	return []model.ModuleMethods{
 		&lexmark.Lexmark{},
 		&linksys.Linksys{},
+		&lutron.Lutron{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
