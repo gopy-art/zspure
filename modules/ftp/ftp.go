@@ -19,6 +19,7 @@ import (
 	ricoh "zspure/modules/ftp/Ricoh"
 	seagate "zspure/modules/ftp/Seagate"
 	servuftpd "zspure/modules/ftp/ServuFtpd"
+	sharp "zspure/modules/ftp/Sharp"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -61,6 +62,7 @@ func NewFTP() []model.ModuleMethods {
 		&ricoh.Ricoh{},
 		&seagate.Seagate{},
 		&servuftpd.ServuFtpd{},
+		&sharp.Sharp{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
