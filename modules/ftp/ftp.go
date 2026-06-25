@@ -16,6 +16,7 @@ import (
 	proftpd "zspure/modules/ftp/ProFTPD"
 	pureftpd "zspure/modules/ftp/PureFTPd"
 	qnapturbo "zspure/modules/ftp/QnapTurbo"
+	ricoh "zspure/modules/ftp/Ricoh"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -55,6 +56,7 @@ func NewFTP() []model.ModuleMethods {
 		&proftpd.ProFtpd{},
 		&pureftpd.PureFTPD{},
 		&qnapturbo.QnapTurboNas{},
+		&ricoh.Ricoh{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
