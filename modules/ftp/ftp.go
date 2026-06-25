@@ -14,6 +14,7 @@ import (
 	opto22 "zspure/modules/ftp/Opto22"
 	overland "zspure/modules/ftp/Overland"
 	proftpd "zspure/modules/ftp/ProFTPD"
+	pureftpd "zspure/modules/ftp/PureFTPd"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -51,6 +52,7 @@ func NewFTP() []model.ModuleMethods {
 		&opto22.Opto22{},
 		&overland.OverlandStorage{},
 		&proftpd.ProFtpd{},
+		&pureftpd.PureFTPD{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
