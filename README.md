@@ -225,6 +225,25 @@ Example :
 | 17 | Network Storage | ZXFS File System |
 | 18 | Router | ZyXel Router FTP |
 | 19 | Modem | Vodafone |
+| 20 | Printer | Lexmark |
+| 21 | Router | Linksys |
+| 22 | Industrial | Lutron |
+| 23 | Camera | Maygion |
+| 24 | Router | Mikrotik |
+| 25 | Industrial | National Instruments |
+| 26 | Service | NcFTPd |
+| 27 | Network Storage | NetApp |
+| 28 | Network Storage | Netgear ReadyNAS |
+| 29 | Service | Nucleus |
+| 30 | Industrial | Opto22 |
+| 31 | Network Storage | Overland |
+| 32 | Service | ProFtpd |
+| 33 | Service | Pure-FTPd |
+| 34 | Network Storage | Qnap Turbo Station |
+| 35 | Printer | Ricoh |
+| 36 | Network Storage | Seagate |
+| 37 | Service | Serv-U |
+| 38 | Printer | Sharp |
 
 **MSSQL**
 | No | Category | Device/Service Name |
