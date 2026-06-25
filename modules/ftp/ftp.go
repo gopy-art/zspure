@@ -18,6 +18,7 @@ import (
 	qnapturbo "zspure/modules/ftp/QnapTurbo"
 	ricoh "zspure/modules/ftp/Ricoh"
 	seagate "zspure/modules/ftp/Seagate"
+	servuftpd "zspure/modules/ftp/ServuFtpd"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -59,6 +60,7 @@ func NewFTP() []model.ModuleMethods {
 		&qnapturbo.QnapTurboNas{},
 		&ricoh.Ricoh{},
 		&seagate.Seagate{},
+		&servuftpd.ServuFtpd{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
