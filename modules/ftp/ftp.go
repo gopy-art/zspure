@@ -7,6 +7,7 @@ import (
 	maygion "zspure/modules/ftp/Maygion"
 	mikrotik "zspure/modules/ftp/MikroTik"
 	nationalinstruments "zspure/modules/ftp/NationalInstruments"
+	ncftpd "zspure/modules/ftp/NcFTPd"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -37,6 +38,7 @@ func NewFTP() []model.ModuleMethods {
 		&maygion.Maygion{},
 		&mikrotik.Mikrotik{},
 		&nationalinstruments.NationalInstruments{},
+		&ncftpd.NcFTPd{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
