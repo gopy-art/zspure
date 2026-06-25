@@ -15,6 +15,7 @@ import (
 	overland "zspure/modules/ftp/Overland"
 	proftpd "zspure/modules/ftp/ProFTPD"
 	pureftpd "zspure/modules/ftp/PureFTPd"
+	qnapturbo "zspure/modules/ftp/QnapTurbo"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -53,6 +54,7 @@ func NewFTP() []model.ModuleMethods {
 		&overland.OverlandStorage{},
 		&proftpd.ProFtpd{},
 		&pureftpd.PureFTPD{},
+		&qnapturbo.QnapTurboNas{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
