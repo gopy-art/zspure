@@ -35,7 +35,14 @@ func (o *ProFtpd) Patterns() []map[string]interface{} {
 }
 
 func (o *ProFtpd) Filters(banner map[string]interface{}) bool {
-	if banner["banner"] != nil && banner["banner"].(string) != "" && strings.Contains(strings.ToLower(banner["banner"].(string)), strings.ToLower("220 ProFTPD")) {
+	if banner["banner"] == nil || banner["banner"].(string) == "" {
+		return false
+	}
+	if strings.Contains(strings.ToLower(banner["banner"].(string)), strings.ToLower("(NETGEAR ReadyNAS)")) ||
+		strings.Contains(strings.ToLower(banner["banner"].(string)), strings.ToLower("(Snap Appliance FTP Server)")) {
+		return false
+	}
+	if strings.Contains(strings.ToLower(banner["banner"].(string)), strings.ToLower("220 ProFTPD")) {
 		return true
 	}
 	return false
@@ -50,10 +57,10 @@ func (o *ProFtpd) DeviceScan(banner map[string]interface{}) bool {
 	}
 
 	vendor := regexp.MustCompile(`\(([^)]+)\)`)
-    vendor_matches := vendor.FindStringSubmatch(banner["banner"].(string))
-    if len(matches) > 1 {
-        o.ExtraInformation.SetExtraInfo("vendor", vendor_matches[1])
-    }
+	vendor_matches := vendor.FindStringSubmatch(banner["banner"].(string))
+	if len(matches) > 1 {
+		o.ExtraInformation.SetExtraInfo("vendor", vendor_matches[1])
+	}
 	return false
 }
 
