@@ -20,6 +20,7 @@ import (
 	seagate "zspure/modules/ftp/Seagate"
 	servuftpd "zspure/modules/ftp/ServuFtpd"
 	sharp "zspure/modules/ftp/Sharp"
+	softathome "zspure/modules/ftp/SoftAtHome"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -63,6 +64,7 @@ func NewFTP() []model.ModuleMethods {
 		&seagate.Seagate{},
 		&servuftpd.ServuFtpd{},
 		&sharp.Sharp{},
+		&softathome.SoftAtHome{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
