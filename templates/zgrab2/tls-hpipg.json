@@ -1,0 +1,170 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "Kq3q2rMu1tr5YtPdgQDDohYcXK0SYCwh4fRFTN0CIYU=",
+                        "session_id": "VQOlvQnyi/T9mKcJqLhoPVljls6cRLqFc7hwlZKQYrA=",
+                        "cipher_suite": {
+                            "hex": "0x009C",
+                            "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+                            "value": 156
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDeDCCAmCgAwIBAgIEdis3VDANBgkqhkiG9w0BAQsFADBnMREwDwYDVQQDDAhIUDA1RTA3NDESMBAGA1UEBwwJVmFuY291dmVyMRMwEQYDVQQIDApXYXNoaW5ndG9uMQswCQYDVQQGEwJVUzELMAkGA1UECgwCSFAxDzANBgNVBAsMBkhQLUlQRzAeFw0xOTAyMDQwMDAwMDBaFw0yOTAyMDEwMDAwMDBaMGcxETAPBgNVBAMMCEhQMDVFMDc0MRIwEAYDVQQHDAlWYW5jb3V2ZXIxEzARBgNVBAgMCldhc2hpbmd0b24xCzAJBgNVBAYTAlVTMQswCQYDVQQKDAJIUDEPMA0GA1UECwwGSFAtSVBHMIIBIDANBgkqhkiG9w0BAQEFAAOCAQ0AMIIBCAKCAQEAuuuFtWpyjajJJAXRdLk9adYRq22d5LQjxPciKtsnJEV9K13nIm3sWW2GgQmZiV6FO+D6LYBVfG7qga6FFaRBnLaiIWPghDmKTtX9khEmJyfOemenTJyx2iH4hZzgvhSQX8kmA9TvLon+x0m/Q6GL8wjl+8GB4+XlaGRERbBT3Kkcvb1n25uxiTAHADhlGfBAysko61vqfPqL0OLaoHHa953TLaULDP9LEXfsdwuUdeUOJ8hU0QvJvppyga67J+GaDidzcLShjuNaSOflJixYGR1WjBpmEmtkXU+c9PDyzCMzKIHzthjIaubsf+Ty7Vx3RA5logpcd/orWLZWFB/SnQIBA6MuMCwwCwYDVR0PBAQDAgTwMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOCAQEAi9A0jLPs5D4exIP8Uqn6mSkJlIfXMHKIS5ZsGqZZa/bBY+81C+yJ7GkR35/wCrnAxFRxV/uqOHoCyFRmqFoTaAl93V5x8mZGRlJ9GCVhNnLJ3q8gYm6toRGxWyMXrA41FBxFHlJtJH2ypBsR0xP88dXxKqcf2myGRAB3rwqlmAjvrTgCst9RrlmYlpcTRwWU9Xj6XyVmh50GJCyHLxsOtgq59hbkwN6g5rS9pVhB5g0Ls3TYCvhpSOykQafHkB7daah3j9LFLJiglmbHhLu7LdUvOjDeK4m/doPoZ5QlS69V29M3BMDu02mKsfRUy9i9VDHsiQOEIOwUoRfjEe2zEA==",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "1982543700",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "HP05E074"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Vancouver"
+                                    ],
+                                    "province": [
+                                        "Washington"
+                                    ],
+                                    "organization": [
+                                        "HP"
+                                    ],
+                                    "organizational_unit": [
+                                        "HP-IPG"
+                                    ]
+                                },
+                                "issuer_dn": "CN=HP05E074, L=Vancouver, ST=Washington, C=US, O=HP, OU=HP-IPG",
+                                "validity": {
+                                    "start": "2019-02-04T00:00:00Z",
+                                    "end": "2029-02-01T00:00:00Z",
+                                    "length": 315360000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "HP05E074"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Vancouver"
+                                    ],
+                                    "province": [
+                                        "Washington"
+                                    ],
+                                    "organization": [
+                                        "HP"
+                                    ],
+                                    "organizational_unit": [
+                                        "HP-IPG"
+                                    ]
+                                },
+                                "subject_dn": "CN=HP05E074, L=Vancouver, ST=Washington, C=US, O=HP, OU=HP-IPG",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 3,
+                                        "modulus": "uuuFtWpyjajJJAXRdLk9adYRq22d5LQjxPciKtsnJEV9K13nIm3sWW2GgQmZiV6FO+D6LYBVfG7qga6FFaRBnLaiIWPghDmKTtX9khEmJyfOemenTJyx2iH4hZzgvhSQX8kmA9TvLon+x0m/Q6GL8wjl+8GB4+XlaGRERbBT3Kkcvb1n25uxiTAHADhlGfBAysko61vqfPqL0OLaoHHa953TLaULDP9LEXfsdwuUdeUOJ8hU0QvJvppyga67J+GaDidzcLShjuNaSOflJixYGR1WjBpmEmtkXU+c9PDyzCMzKIHzthjIaubsf+Ty7Vx3RA5logpcd/orWLZWFB/SnQ==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "cf65566e3a644e512d0b7755d512cb17cf7c1fcb9c741c0844e66c874d8728c0"
+                                },
+                                "extensions": {
+                                    "key_usage": {
+                                        "digital_signature": true,
+                                        "content_commitment": true,
+                                        "key_encipherment": true,
+                                        "data_encipherment": true,
+                                        "value": 15
+                                    },
+                                    "extended_key_usage": {
+                                        "server_auth": true,
+                                        "client_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "i9A0jLPs5D4exIP8Uqn6mSkJlIfXMHKIS5ZsGqZZa/bBY+81C+yJ7GkR35/wCrnAxFRxV/uqOHoCyFRmqFoTaAl93V5x8mZGRlJ9GCVhNnLJ3q8gYm6toRGxWyMXrA41FBxFHlJtJH2ypBsR0xP88dXxKqcf2myGRAB3rwqlmAjvrTgCst9RrlmYlpcTRwWU9Xj6XyVmh50GJCyHLxsOtgq59hbkwN6g5rS9pVhB5g0Ls3TYCvhpSOykQafHkB7daah3j9LFLJiglmbHhLu7LdUvOjDeK4m/doPoZ5QlS69V29M3BMDu02mKsfRUy9i9VDHsiQOEIOwUoRfjEe2zEA==",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "f356f327575b35a7fe043510feb1b102",
+                                "fingerprint_sha1": "96bc4f39522efb94f13b4143de795d62b2358830",
+                                "fingerprint_sha256": "57ded4ffda2bee06233b97be7d5f92bb72e7955e72c14f1a59ad295b54ecf311",
+                                "tbs_noct_fingerprint": "5537079e250f31151834904777b518628a5673ea813d1af408839a91a3f6493c",
+                                "spki_subject_fingerprint": "3378b5a1f20a556148a28318708780451b67e049efa14acca4ae61373dc101dc",
+                                "tbs_fingerprint": "5537079e250f31151834904777b518628a5673ea813d1af408839a91a3f6493c",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 256,
+                            "encrypted_pre_master_secret": "mbYu+njYs8a49D8hW2MaBeGH1IlDGvNZVpxMWnRDOuTedvuEBsu3pxvHylXNdloEM8qnLFI9SvpDhG9aEVDM+2HELNKcul4/FO0oCYcdSfFFKaua4k/ui1joq5ung8HpcmXQKdddbuxdqgHOIcOtbdmxe9KJLI1aTdueHf6rWGJ22wh9oa0+f5/9UiJpJ2Bs9VcGH4z96r4r7wopI8q7aMFdanwVAh6Tne6xLVIjOKJowYJAUCrzpxAlVogkTWtmbDFqeXIEYE7g6UA7N2P05CoeJyXQCLnmQ4pbQ62RJngXfgvTULrxhHmIEYx2t19o8EPbJAZUrDWKTnc35hDUNw=="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "AEaveW1kGHyEGY40"
+                    },
+                    "server_finished": {
+                        "verify_data": "EUD0QlTJics+auNy"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "tNyG9VRUP5KAxwPFFz7T6A2GsdyFSmYhtmhoJeiVRBMwWl3nFtyKR60ByrMhmS69",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwP9rbhpfCLwYabjN79Y1YM+5vMuH9YQ07ZNiGdn08qXPzw6NP7Iq11Xlnb7LS9l",
+                            "length": 48
+                        }
+                    }
+                },
+                "ja3s": "ccd5709d4a9027ec272e98b9924c36f7",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T12:05:25Z"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 76,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAAHAAVQRVdFVQEGRlBXRUJEAgRWMi4xAwx3d3cucGV3ZXUuZGUEDEZQLVdlYlNlcnZlcgUGMDUwNjIzBglGUC1NQi1UQ1A=",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 7,
+                    "objects": {
+                        "model_name": "050623",
+                        "product_code": "FPWEBD",
+                        "product_name": "FP-WebServer",
+                        "revision": "V2.1",
+                        "user_application_name": "FP-MB-TCP",
+                        "vendor": "PEWEU",
+                        "vendor_url": "www.peweu.de"
+                    }
+                },
+                "raw": "WkcAAABMACsOAQEAAAcABVBFV0VVAQZGUFdFQkQCBFYyLjEDDHd3dy5wZXdldS5kZQQMRlAtV2ViU2VydmVyBQYwNTA2MjMGCUZQLU1CLVRDUA=="
+            },
+            "timestamp": "2026-06-16T13:02:28Z"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220-Advguild FTP\r\n    WarFTPd 1.82.00-RC13 (Sep 12 2009) Ready\r\n    (C)opyright 1996 - 2009 by Jarle (jgaa) Aase - all rights reserved.\r\n220 Please enter your user name.\r\n"
+            },
+            "timestamp": "2026-06-15T16:04:41Z"
+        }
+    }
+}

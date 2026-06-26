@@ -1,0 +1,83 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "301 Moved Permanently",
+                    "status_code": 301,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "cache_control": [
+                            "no-cache"
+                        ],
+                        "content_length": [
+                            "0"
+                        ],
+                        "content_type": [
+                            "text/plain"
+                        ],
+                        "date": [
+                            "Tue, 16 Jun 2026 12:45:40 GMT"
+                        ],
+                        "location": [
+                            "https://52.98.253.178/"
+                        ],
+                        "pragma": [
+                            "no-cache"
+                        ],
+                        "server": [
+                            "Microsoft-HTTPAPI/2.0"
+                        ],
+                        "unknown": [
+                            {
+                                "key": "request_id",
+                                "value": [
+                                    "d904e328-b2b2-c4e2-ec9e-d9829280fbd9"
+                                ]
+                            },
+                            {
+                                "key": "x_nanoproxy",
+                                "value": [
+                                    "1"
+                                ]
+                            },
+                            {
+                                "key": "x_feserver",
+                                "value": [
+                                    "FR4P281CA0433"
+                                ]
+                            }
+                        ]
+                    },
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T12:45:40Z"
+        }
+    }
+}

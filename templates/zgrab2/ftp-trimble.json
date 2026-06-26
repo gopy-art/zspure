@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 Trimble FTP server (Trimble) ready.\r\n"
+            },
+            "timestamp": "2026-06-15T15:53:45Z"
+        }
+    }
+}

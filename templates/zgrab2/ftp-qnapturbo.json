@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 43,
+            "result": {
+                "banner": "220 NASFTPD Turbo station 1.3.5a Server (ProFTPD)\r\n"
+            },
+            "timestamp": "2026-06-24T18:05:14Z"
+        }
+    }
+}

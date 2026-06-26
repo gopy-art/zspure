@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 902,
+            "result": {
+                "banner": "220 Welcome to the HomeWorks Processor\r\n"
+            },
+            "timestamp": "2026-06-24T17:36:35Z"
+        }
+    }
+}

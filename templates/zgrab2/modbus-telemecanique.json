@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 40,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAADAA1URUxFTUVDQU5JUVVFAQlTUjMgTkVUMDECBFYxLjg=",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "SR3 NET01",
+                        "revision": "V1.8",
+                        "vendor": "TELEMECANIQUE"
+                    }
+                },
+                "raw": "WkcAAAAoACsOAQEAAAMADVRFTEVNRUNBTklRVUUBCVNSMyBORVQwMQIEVjEuOA=="
+            },
+            "timestamp": "2026-06-16T14:27:50Z"
+        }
+    }
+}

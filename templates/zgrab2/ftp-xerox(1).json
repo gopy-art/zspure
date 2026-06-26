@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 12580,
+            "result": {
+                "banner": "220 FUJI XEROX DocuPrint PL5D85REI7U5NI5Z0OCZI26EEB6\r\n"
+            },
+            "timestamp": "2026-06-15T17:40:36Z"
+        }
+    }
+}

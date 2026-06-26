@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 51,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAADABNSb2Nrd2VsbCBBdXRvbWF0aW9uAQsxNzY2LUwzMkJXQQIHVjIxLjAwMw==",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "1766-L32BWA",
+                        "revision": "V21.003",
+                        "vendor": "Rockwell Automation"
+                    }
+                },
+                "raw": "WkcAAAAzACsOAQEAAAMAE1JvY2t3ZWxsIEF1dG9tYXRpb24BCzE3NjYtTDMyQldBAgdWMjEuMDAz"
+            },
+            "timestamp": "2026-06-16T14:05:24Z"
+        }
+    }
+}

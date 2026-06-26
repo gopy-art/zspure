@@ -1,0 +1,160 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.0",
+                            "value": 769
+                        },
+                        "random": "ajE3iRLfACQl2hsrQiv74/BQd2dELArW+4CRm6Ekcys=",
+                        "session_id": "",
+                        "cipher_suite": {
+                            "hex": "0x0035",
+                            "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+                            "value": 53
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIICnzCCAgigAwIBAgIBATANBgkqhkiG9w0BAQQFADCBgzEXMBUGA1UEAxMOU0hBUlAgTVgtMzExNU4xDjAMBgNVBAcTBUFiZW5vMQ4wDAYDVQQIEwVPc2FrYTELMAkGA1UEBhMCSlAxGjAYBgNVBAoTEVNoYXJwIENvcnBvcmF0aW9uMR8wHQYDVQQLExZEb2N1bWVudCBTeXN0ZW1zIEdyb3VwMB4XDTEwMDEwMTAwMDAwMFoXDTMwMDEwMTAwMDAwMFowgYMxFzAVBgNVBAMTDlNIQVJQIE1YLTMxMTVOMQ4wDAYDVQQHEwVBYmVubzEOMAwGA1UECBMFT3Nha2ExCzAJBgNVBAYTAkpQMRowGAYDVQQKExFTaGFycCBDb3Jwb3JhdGlvbjEfMB0GA1UECxMWRG9jdW1lbnQgU3lzdGVtcyBHcm91cDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyVVX5qhld91W3eCagTdlIIaKis1ObmqjjsQQ8fcBXblW7oWRJz9vpQRqhayW8uDLrpPZeyNe8Ffu3xO5onWWnqIf2W0PBdLLyDKaePM+yd1AuJTXBUm/VmaQwyNfkXfTMFoQGS+tAuhUG2nt/Lsn2OxBdHnIwHG7k0WxrSc3W6UCAwEAAaMhMB8wHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqGSIb3DQEBBAUAA4GBAGD0mdhPVIuWfWJpcc+ZuoUeC5NQ5UX1Gm0zU4UnTROkYj1IoXpw+RwczwOZ+uOACYF/3fYe384RGQpmZE5+TY+0g1xFMfjfMGKHv2mHZUTHp1eVz/49fnzZycSwGIydc6VgF8en+Ui09kUjfAKM5z5YhBg7W1KUoCS9p80WnFG5",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "1",
+                                "signature_algorithm": {
+                                    "name": "MD5-RSA",
+                                    "oid": "1.2.840.113549.1.1.4"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "SHARP MX-3115N"
+                                    ],
+                                    "country": [
+                                        "JP"
+                                    ],
+                                    "locality": [
+                                        "Abeno"
+                                    ],
+                                    "province": [
+                                        "Osaka"
+                                    ],
+                                    "organization": [
+                                        "Sharp Corporation"
+                                    ],
+                                    "organizational_unit": [
+                                        "Document Systems Group"
+                                    ]
+                                },
+                                "issuer_dn": "CN=SHARP MX-3115N, L=Abeno, ST=Osaka, C=JP, O=Sharp Corporation, OU=Document Systems Group",
+                                "validity": {
+                                    "start": "2010-01-01T00:00:00Z",
+                                    "end": "2030-01-01T00:00:00Z",
+                                    "length": 631152000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "SHARP MX-3115N"
+                                    ],
+                                    "country": [
+                                        "JP"
+                                    ],
+                                    "locality": [
+                                        "Abeno"
+                                    ],
+                                    "province": [
+                                        "Osaka"
+                                    ],
+                                    "organization": [
+                                        "Sharp Corporation"
+                                    ],
+                                    "organizational_unit": [
+                                        "Document Systems Group"
+                                    ]
+                                },
+                                "subject_dn": "CN=SHARP MX-3115N, L=Abeno, ST=Osaka, C=JP, O=Sharp Corporation, OU=Document Systems Group",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "yVVX5qhld91W3eCagTdlIIaKis1ObmqjjsQQ8fcBXblW7oWRJz9vpQRqhayW8uDLrpPZeyNe8Ffu3xO5onWWnqIf2W0PBdLLyDKaePM+yd1AuJTXBUm/VmaQwyNfkXfTMFoQGS+tAuhUG2nt/Lsn2OxBdHnIwHG7k0WxrSc3W6U=",
+                                        "length": 1024
+                                    },
+                                    "fingerprint_sha256": "3d097cade99373f693494c35767d7447cc169d659453af372c4db36baed87580"
+                                },
+                                "extensions": {
+                                    "extended_key_usage": {
+                                        "server_auth": true,
+                                        "client_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "MD5-RSA",
+                                        "oid": "1.2.840.113549.1.1.4"
+                                    },
+                                    "value": "YPSZ2E9Ui5Z9Ymlxz5m6hR4Lk1DlRfUabTNThSdNE6RiPUihenD5HBzPA5n644AJgX/d9h7fzhEZCmZkTn5Nj7SDXEUx+N8wYoe/aYdlRMenV5XP/j1+fNnJxLAYjJ1zpWAXx6f5SLT2RSN8AoznPliEGDtbUpSgJL2nzRacUbk=",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "98ef22e738252bcd30ea1555ab66acb8",
+                                "fingerprint_sha1": "1285090c979f527841f3184edf8b2913fb5ea4a6",
+                                "fingerprint_sha256": "11c672a7f192d71eba16726fb5ed11fa0c19bdfaa04e4635150a3a28c75c4ce9",
+                                "tbs_noct_fingerprint": "e99db3231fb2ab755398b1dcb70a01a980e3b29b91704c23c79ffe2c1376b901",
+                                "spki_subject_fingerprint": "7aeb9c97d1d9c85d2655abca3087c84c3e5ad096e19abf5f336e9f5bd911309b",
+                                "tbs_fingerprint": "e99db3231fb2ab755398b1dcb70a01a980e3b29b91704c23c79ffe2c1376b901",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 128,
+                            "encrypted_pre_master_secret": "xwo3PvedqTm5Bd4SoPFYZvVHbt1iTmd3CXV2S+7N2nuLcbXTAkYnFa93GOIUMowSqW/Nj/wsA4xA0tE/CQrigzC4puJWOSJ2Fc/GzNVSdV9tTmK7WQHjK0CWYnmKHVzrHqVsO5UYp7B5cqFtkP0mTjnCp2/L4lfz1HBQ+TfRdgs="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "ZCNnPXotQ/Yr6t7q"
+                    },
+                    "server_finished": {
+                        "verify_data": "WgzGgaR9fTqcpeeO"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "LpomUax7g6T2Xzd2Ju/rvT2nPCEW3tNgimS8inpqeXHXuB3nWg6ax9W4RoO8tgZo",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwNgR7VCIW28EInLri4fJ6d83P31v0Dybq5jPTVh0T3mBZI94Y2GFOneqHXauIVi",
+                            "length": 48
+                        }
+                    }
+                },
+                "ja3s": "ab1e32eeaf70ee94c0af00f08d126891",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T14:04:01Z"
+        }
+    }
+}

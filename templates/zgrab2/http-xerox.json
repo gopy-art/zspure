@@ -1,0 +1,54 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "cache_control": [
+                            "max-age=0, no-store, no-cache"
+                        ],
+                        "content_length": [
+                            "2599"
+                        ],
+                        "content_type": [
+                            "text/html; charset=utf-8"
+                        ]
+                    },
+                    "body": "\u003chtml\u003e\n\u003chead\u003e\n\t\u003cmeta charset=\"utf-8\"\u003e\t\n\t\u003cstyle type=\"text/css\"\u003e\n\t\u003c!-- \n\t\t@import url(/css/content.css);\n\t--\u003e\n\t\u003c/style\u003e\n\n\t\u003cscript src=\"/js/cookieCode.dhtml\" type=\"text/javascript\" language=\"Javascript\"\u003e\u003c/script\u003e\n\t\u003cscript src=\"/js/treeCode.dhtml\" type=\"text/javascript\" language=\"Javascript\"\u003e\u003c/script\u003e\n\n\u003ctitle\u003e\nXerox\u0026nbsp;Phaser 4622\n-\nStatus\n\u003c/title\u003e\n\n\u003cscript language=\"JavaScript\" type=\"text/javascript\"\u003e\n\u003c!-- \n\n// frame defines\nvar HEADER_FRAME\t\t\t\t\t= 0;\nvar TREE_FRAME\t\t\t\t\t\t= 1;\nvar BRANDING_FRAME\t\t\t\t= 2;\nvar CONTENT_FRAME\t\t\t\t\t= 3;\n\n// defines for top frame\nvar MAIN_TAB\t\t\t\t\t\t= \"Status\";\n\n// cookie defines\nvar DEFAULT_HIERARCHY\t\t\t\t= \"\";\nvar DEFAULT_SELECTION\t\t\t\t= 1;\nvar HIERARCHY_COOKIE_NAME\t\t= \"statusHierarchy\";\nvar SELECTED_COOKIE_NAME\t\t\t= \"statusSelected\";\n\n// setting up the tree\nvar gTheTree\t\t\t\t\t\t= new TreeConstructor( \"Status\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSELECTED_COOKIE_NAME,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHIERARCHY_COOKIE_NAME,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDEFAULT_SELECTION,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDEFAULT_HIERARCHY );\n\n// add the nodes to the tree\n\t//AddNode( gTheTree, HEAD_NODE, \"\u0026nbsp;Phaser 4622\");\n\tAddNode( gTheTree, ROOT_NODE, \"General\", \"/status/general.dhtml\");\n\tAddNode( gTheTree, ROOT_NODE, \"Alerts\", \"/status/statusAlerts.dhtml\");\n\tAddNode( gTheTree, ROOT_NODE, \"Trays\", \"/status/trays.dhtml\" );\n\tAddNode( gTheTree, ROOT_NODE, \"Consumables\", \"/status/consumables.dhtml\" );\n\tAddNode( gTheTree, ROOT_NODE, \"SMart eSolutions \", \"/status/smartesolutions.dhtml\" );\n\nfunction LinkHitAndGotoPage( inMainTabPage, inUrlToHighlight )\n{\n\t// set the URL to highlight, even if we set blank (i.e. no page to highlight)\n\tSetCookie( INDEX_PAGE_LINK_COOKIE, inUrlToHighlight );\n\n\t// go to the main tab page that was passed in\n\tdocument.location\t\t\t\t\t= inMainTabPage;\n\n\treturn;\n}\n\n// set the tree in a previously set state (i.e. based on cookies)\nRestoreHierarchyStructure( gTheTree );\nRestoreSelectedNode( gTheTree );\n\n// --\u003e\n\u003c/script\u003e\n\u003c/head\u003e\n\n\u003cframeset rows=\"105, *\" border=\"0\" frameborder=\"0\" framespacing=\"0\"\u003e\n\t\u003cframe src=\"/tabsFrame.dhtml\" scrolling=\"no\" noresize name=\"Header Frame: Contains main navigation tabs and help button.\"\u003e\n\t\u003cframeset cols=\"260, *\" border=\"0\" frameborder=\"0\" framespacing=\"0\"\u003e\n\t\t\u003cframeset rows=\"*, 130\" border=\"0\" frameborder=\"0\" framespacing=\"0\"\u003e\n\t\t\t\u003cframe src=\"/displayTree.dhtml\" scrolling=\"auto\" noresize name=\"Content Frame: Contains navigation tree.\"\u003e\n\t\t\t\u003cframe src=\"/branding.dhtml\" scrolling=\"no\" noresize name=\"Footer Frame: Contains branding.\"\u003e\n\t\t\u003c/frameset\u003e\n\t\t\u003cframe src=\"\" scrolling=\"auto\" noresize name=\"Body Frame: Contains feature information and settings.\"\u003e\n\t\u003c/frameset\u003e\n\u003c/frameset\u003e\n\u003c/html\u003e\n",
+                    "body_sha256": "2c67bd80c973ef15d1b0b6431efd001b11ff38879152412198b044f230b97f2e",
+                    "content_length": 2599,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-21T09:55:04Z"
+        }
+    }
+}

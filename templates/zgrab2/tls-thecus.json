@@ -1,0 +1,277 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "MdWN1XXRICcHRr+bGBh81cWFoVMXcUdzJ7Gsns7fYmg=",
+                        "session_id": "3pBFHaPzwOpg+kKvTms+rfewNN5SyuEQwOTyT9MyXtg=",
+                        "cipher_suite": {
+                            "hex": "0x0035",
+                            "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+                            "value": 53
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIE6DCCA9CgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBpTELMAkGA1UEBhMCVFcxDzANBgNVBAgTBlRhaXBlaTEPMA0GA1UEBxMGVGFpcGVpMSAwHgYDVQQKExdUaGVjdXMgVGVjaG5vbG9neSBDb3JwLjERMA8GA1UECxQIZHVtbXlfY2ExHDAaBgNVBAMUE2R1bW15X2NhLnRoZWN1cy5jb20xITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAdGhlY3VzLmNvbTAeFw0xNDEwMDEwNzEwMzdaFw0yNDA5MjgwNzEwMzdaMIGhMQswCQYDVQQGEwJUVzEPMA0GA1UECBMGVGFpcGVpMQ8wDQYDVQQHEwZUYWlwZWkxIDAeBgNVBAoTF1RoZWN1cyBUZWNobm9sb2d5IENvcnAuMQ8wDQYDVQQLEwZOMTYwMDAxGjAYBgNVBAMTEU4xNjAwMC50aGVjdXMuY29tMSEwHwYJKoZIhvcNAQkBFhJzdXBwb3J0QHRoZWN1cy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDex8E+UFCBzSl6GlW5DBbvS9U5Gm3J8xBH6+JFBJdNqbJR3HhVLDplJizA+Sa8W+uXU9CCjGZ3axyiyoF6yHmKfm3AHy6IoRGt3zo84+1maeJgPIsRV+ulS8E9Vp/GeMTfbrRgII8Icw0YKY5xqEiMJ+800JujqGIrx9F9FKRlZaFq6Sjb+JDsrPxU08+xYo6fTndSHxKV2RZgqqzGKhm/rFdd5iAn7v5Op8E2Ww9ltiDTo8bLbGlgmeT1bySL4KlS6gbw6A7eSYE7TBPKm72zWOY6ouQJHmyoGUE5yssKwkJRVlqaFI0oe7bjSxJlJ/+AatlJ4dL76zvpszsPApEzAgMBAAGjggEjMIIBHzAJBgNVHRMEAjAAMCwGCWCGSAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUOHGtjk5zwS3fbvgpFTF8ZSN8eK4wgcQGA1UdIwSBvDCBuaGBq6SBqDCBpTELMAkGA1UEBhMCVFcxDzANBgNVBAgTBlRhaXBlaTEPMA0GA1UEBxMGVGFpcGVpMSAwHgYDVQQKExdUaGVjdXMgVGVjaG5vbG9neSBDb3JwLjERMA8GA1UECxQIZHVtbXlfY2ExHDAaBgNVBAMUE2R1bW15X2NhLnRoZWN1cy5jb20xITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAdGhlY3VzLmNvbYIJAKdNj+2Ka8BRMA0GCSqGSIb3DQEBCwUAA4IBAQCJ9AqhTBpOyyRVm1JGl9kUyCX9HfnYq38oVaIEUH2Z5QNpEiXjRIigctR3WUMLtg8he9gWWr88Hxy75xzixAhOCdjAnXsL9V/HECcASFNfP64K/H3m6G/wy1x6I5qVxKM8dMDN304ZZ4+fVUtFJy0+WLwRqAKP7MaZ3FWBps0QHX92CRywjFOwTfZEdrRvwMwzZ3974/DaJCPeVLL5/uQMb3kS/K43yamEstEU49/u33yF3UZuBUtqLUCZIvTdTXvpx5z7tJj3HrnhMoRDz0u/Gyzzjnre3Mw9zcFO4d+2YSHZGSrnztPIwaieGIFhW7CAOvYQyc0YM84oJdErwFkE",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "1",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "dummy_ca.thecus.com"
+                                    ],
+                                    "country": [
+                                        "TW"
+                                    ],
+                                    "locality": [
+                                        "Taipei"
+                                    ],
+                                    "province": [
+                                        "Taipei"
+                                    ],
+                                    "organization": [
+                                        "Thecus Technology Corp."
+                                    ],
+                                    "organizational_unit": [
+                                        "dummy_ca"
+                                    ],
+                                    "email_address": [
+                                        "support@thecus.com"
+                                    ]
+                                },
+                                "issuer_dn": "C=TW, ST=Taipei, L=Taipei, O=Thecus Technology Corp., OU=dummy_ca, CN=dummy_ca.thecus.com, emailAddress=support@thecus.com",
+                                "validity": {
+                                    "start": "2014-10-01T07:10:37Z",
+                                    "end": "2024-09-28T07:10:37Z",
+                                    "length": 315360000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "N16000.thecus.com"
+                                    ],
+                                    "country": [
+                                        "TW"
+                                    ],
+                                    "locality": [
+                                        "Taipei"
+                                    ],
+                                    "province": [
+                                        "Taipei"
+                                    ],
+                                    "organization": [
+                                        "Thecus Technology Corp."
+                                    ],
+                                    "organizational_unit": [
+                                        "N16000"
+                                    ],
+                                    "email_address": [
+                                        "support@thecus.com"
+                                    ]
+                                },
+                                "subject_dn": "C=TW, ST=Taipei, L=Taipei, O=Thecus Technology Corp., OU=N16000, CN=N16000.thecus.com, emailAddress=support@thecus.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "3sfBPlBQgc0pehpVuQwW70vVORptyfMQR+viRQSXTamyUdx4VSw6ZSYswPkmvFvrl1PQgoxmd2scosqBesh5in5twB8uiKERrd86POPtZmniYDyLEVfrpUvBPVafxnjE3260YCCPCHMNGCmOcahIjCfvNNCbo6hiK8fRfRSkZWWhauko2/iQ7Kz8VNPPsWKOn053Uh8SldkWYKqsxioZv6xXXeYgJ+7+TqfBNlsPZbYg06PGy2xpYJnk9W8ki+CpUuoG8OgO3kmBO0wTypu9s1jmOqLkCR5sqBlBOcrLCsJCUVZamhSNKHu240sSZSf/gGrZSeHS++s76bM7DwKRMw==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "049201422e1eb7586da0b6fdf3fb01b521bc20f6af6e711c1c4bf4d2c145588e"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "subject_key_id": "3871ad8e4e73c12ddf6ef82915317c65237c78ae"
+                                },
+                                "unknown_extensions": [
+                                    {
+                                        "id": "2.16.840.1.113730.1.13",
+                                        "critical": false,
+                                        "value": "Fh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZQ=="
+                                    }
+                                ],
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "ifQKoUwaTsskVZtSRpfZFMgl/R352Kt/KFWiBFB9meUDaRIl40SIoHLUd1lDC7YPIXvYFlq/PB8cu+cc4sQITgnYwJ17C/VfxxAnAEhTXz+uCvx95uhv8MtceiOalcSjPHTAzd9OGWePn1VLRSctPli8EagCj+zGmdxVgabNEB1/dgkcsIxTsE32RHa0b8DMM2d/e+Pw2iQj3lSy+f7kDG95EvyuN8mphLLRFOPf7t98hd1GbgVLai1AmSL03U176cec+7SY9x654TKEQ89Lvxss84563tzMPc3BTuHftmEh2Rkq587TyMGonhiBYVuwgDr2EMnNGDPOKCXRK8BZBA==",
+                                    "valid": true,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "f79f494c988919a2d578505c30f0ed3c",
+                                "fingerprint_sha1": "cfbf194ea031c04b9c141e46f06320a4447721b1",
+                                "fingerprint_sha256": "aaee836bd777d53248f449d7cc67e785e56cbaae3454ac1f59a98a1d4697940e",
+                                "tbs_noct_fingerprint": "1e8802b829a9868798139eefca77af86a93bd52cb43ba3c5470ec24e2ee21a34",
+                                "spki_subject_fingerprint": "d5354553eb6cc078db62f05fb981eb12faf695c695e45e227804dfc1ae7f39ea",
+                                "tbs_fingerprint": "1e8802b829a9868798139eefca77af86a93bd52cb43ba3c5470ec24e2ee21a34",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "N16000.thecus.com"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "chain": [
+                            {
+                                "raw": "MIIDyDCCArACCQCnTY/timvAUTANBgkqhkiG9w0BAQUFADCBpTELMAkGA1UEBhMCVFcxDzANBgNVBAgTBlRhaXBlaTEPMA0GA1UEBxMGVGFpcGVpMSAwHgYDVQQKExdUaGVjdXMgVGVjaG5vbG9neSBDb3JwLjERMA8GA1UECxQIZHVtbXlfY2ExHDAaBgNVBAMUE2R1bW15X2NhLnRoZWN1cy5jb20xITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAdGhlY3VzLmNvbTAeFw0xNDEwMDEwNzEwMzdaFw0yNDA5MjgwNzEwMzdaMIGlMQswCQYDVQQGEwJUVzEPMA0GA1UECBMGVGFpcGVpMQ8wDQYDVQQHEwZUYWlwZWkxIDAeBgNVBAoTF1RoZWN1cyBUZWNobm9sb2d5IENvcnAuMREwDwYDVQQLFAhkdW1teV9jYTEcMBoGA1UEAxQTZHVtbXlfY2EudGhlY3VzLmNvbTEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEB0aGVjdXMuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEirj5asUBgyjokN29XT8DUvVRSG2aS9xA/JMU3Xqc9Y6IgDKWj+luA+gxDmksT5rz5jaTAOaPE3FxgxisKZrOk7/Kncr/nPuCIYxQkYV7ckpXU6tdK6Y+pvgi5jrfgS+NAY2c0pDU5lkOleDv2pMosvQoNN4MO+OI37IB39qYUd0YpJ9tdqxyr8azQNyW8iifxaSXdd1e5A500rfJU/Hlya8aSFNF2e599+iZBgdSyIhTFQP0TzBCOP3YKCQCCy/0/Q15o2gOUfxTpaYwOLA5SlGQQL864pqgFXTsG1mQ2PaPsf2jtgSmmsd1U/NM7c7/m5W2yWw3v3z73smP092wIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQAZVGwyIst6UHpZDf2OBjpzT74dJSHVQN+H7gG8SgDt0Z5FYm+npfelTwl8MImlfOatYv+sfWLJ/db1SGhUQ8LKXIMRT1z3sB/BYa0pl3L18CsyJKIv8qsdJGQPbiqEE7yaE5e/nsx5p3dE1fxBFFCfgQWbJgLQ6DrI0fxMue0fZoUtlxWTTFN1/aY34Hw6SDY42A1mVuddhn3A2oMgCyqyZ1WuyBpvsXZnM4ViOCQeY3TQSpjFgYz49iIUMTs4WKFSLMxPOuTCe7drVJbGHIm8hor/xsqFa4SwEzaX5VBLYYPxp8buXWmjGINik5SNlx1AUBRjHVlOhoynYV4H/I3N",
+                                "parsed": {
+                                    "version": 1,
+                                    "serial_number": "12055450027933024337",
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "issuer": {
+                                        "common_name": [
+                                            "dummy_ca.thecus.com"
+                                        ],
+                                        "country": [
+                                            "TW"
+                                        ],
+                                        "locality": [
+                                            "Taipei"
+                                        ],
+                                        "province": [
+                                            "Taipei"
+                                        ],
+                                        "organization": [
+                                            "Thecus Technology Corp."
+                                        ],
+                                        "organizational_unit": [
+                                            "dummy_ca"
+                                        ],
+                                        "email_address": [
+                                            "support@thecus.com"
+                                        ]
+                                    },
+                                    "issuer_dn": "C=TW, ST=Taipei, L=Taipei, O=Thecus Technology Corp., OU=dummy_ca, CN=dummy_ca.thecus.com, emailAddress=support@thecus.com",
+                                    "validity": {
+                                        "start": "2014-10-01T07:10:37Z",
+                                        "end": "2024-09-28T07:10:37Z",
+                                        "length": 315360000
+                                    },
+                                    "subject": {
+                                        "common_name": [
+                                            "dummy_ca.thecus.com"
+                                        ],
+                                        "country": [
+                                            "TW"
+                                        ],
+                                        "locality": [
+                                            "Taipei"
+                                        ],
+                                        "province": [
+                                            "Taipei"
+                                        ],
+                                        "organization": [
+                                            "Thecus Technology Corp."
+                                        ],
+                                        "organizational_unit": [
+                                            "dummy_ca"
+                                        ],
+                                        "email_address": [
+                                            "support@thecus.com"
+                                        ]
+                                    },
+                                    "subject_dn": "C=TW, ST=Taipei, L=Taipei, O=Thecus Technology Corp., OU=dummy_ca, CN=dummy_ca.thecus.com, emailAddress=support@thecus.com",
+                                    "subject_key_info": {
+                                        "key_algorithm": {
+                                            "name": "RSA"
+                                        },
+                                        "rsa_public_key": {
+                                            "exponent": 65537,
+                                            "modulus": "zEirj5asUBgyjokN29XT8DUvVRSG2aS9xA/JMU3Xqc9Y6IgDKWj+luA+gxDmksT5rz5jaTAOaPE3FxgxisKZrOk7/Kncr/nPuCIYxQkYV7ckpXU6tdK6Y+pvgi5jrfgS+NAY2c0pDU5lkOleDv2pMosvQoNN4MO+OI37IB39qYUd0YpJ9tdqxyr8azQNyW8iifxaSXdd1e5A500rfJU/Hlya8aSFNF2e599+iZBgdSyIhTFQP0TzBCOP3YKCQCCy/0/Q15o2gOUfxTpaYwOLA5SlGQQL864pqgFXTsG1mQ2PaPsf2jtgSmmsd1U/NM7c7/m5W2yWw3v3z73smP092w==",
+                                            "length": 2048
+                                        },
+                                        "fingerprint_sha256": "44d3fc5ab2a2620c7b0d33d774b087f553b4f3418eebb756f57dfd68d433cdda"
+                                    },
+                                    "extensions": {},
+                                    "signature": {
+                                        "signature_algorithm": {
+                                            "name": "SHA1-RSA",
+                                            "oid": "1.2.840.113549.1.1.5"
+                                        },
+                                        "value": "GVRsMiLLelB6WQ39jgY6c0++HSUh1UDfh+4BvEoA7dGeRWJvp6X3pU8JfDCJpXzmrWL/rH1iyf3W9UhoVEPCylyDEU9c97AfwWGtKZdy9fArMiSiL/KrHSRkD24qhBO8mhOXv57Mead3RNX8QRRQn4EFmyYC0Og6yNH8TLntH2aFLZcVk0xTdf2mN+B8Okg2ONgNZlbnXYZ9wNqDIAsqsmdVrsgab7F2ZzOFYjgkHmN00EqYxYGM+PYiFDE7OFihUizMTzrkwnu3a1SWxhyJvIaK/8bKhWuEsBM2l+VQS2GD8afG7l1poxiDYpOUjZcdQFAUYx1ZToaMp2FeB/yNzQ==",
+                                        "valid": true,
+                                        "self_signed": true
+                                    },
+                                    "fingerprint_md5": "c9d41ceb95ae9cd695f119280f3b7301",
+                                    "fingerprint_sha1": "c6600c7054644fe3e0b0820cf3b92eb73eef9501",
+                                    "fingerprint_sha256": "45e05ccf65f897e16adf314db16d9e440c4fd58e6dce525802329a0985023298",
+                                    "tbs_noct_fingerprint": "a54c52d041972a41821945680e6f60369a7562fe8ae514e0d3d77ab3b9a68ba1",
+                                    "spki_subject_fingerprint": "20052dafc95fda9d1edddfe52f8c9b48d6a8903a83caaab82bb49a25a079f1ae",
+                                    "tbs_fingerprint": "b9d31d9972f67ba0c130d96f874e61ce2a547f6a0ce86a88fcadbe0e48aecf83",
+                                    "validation_level": "unknown",
+                                    "names": [
+                                        "dummy_ca.thecus.com"
+                                    ],
+                                    "redacted": false
+                                }
+                            }
+                        ],
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is not authorized to sign other certificates"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 256,
+                            "encrypted_pre_master_secret": "FBzVPeNxuCyZGcEjvat6w9tuQRrlimBcth4i1Zd5+86u4A3C0Ni6BHVZzc/J0/oJZ67K9Ql0nRcLIqhQVk/tk+IO/tCUYejqg/ap7lkCuy8hJu/m5oHbeqxCECU2Rjc9KGgyxi6yCEzQ2NQq8aiCrMtAxkWC3SeciUz9zi7hGSF3kSe4WRV765X4z7MYt39c4QihRGlxdNsp1fGCROwekZYxWgUsnNYG1FIIm11BqmqGl985JafE+WiN34uTy3u2erndFf7EVg6hSkuCifAhM+emEHbbnJtl8UE5EihXMbyoV+11b5y6DHg/74MRuAI9nJcM6EcA+yjKsvEb1jpB+w=="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "DVvRu1Xb/Tnk2JCs"
+                    },
+                    "server_finished": {
+                        "verify_data": "AtBEl1PdAVO+nZse"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "/ZepcYBeeayzCTD0xrPKobDKDCl7/baAlWV1r+GxTGsn7N4l/8vAHh4uCD01bZ/R",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwMR0+0zsr+B1+8LA3Q/1l2e2ieXsLGgAV9nExNxuqMUFN76O12SEvR2COMLFII2",
+                            "length": 48
+                        }
+                    }
+                },
+                "ja3s": "7b6819ed58e8d8415604b7dfcef92d55",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T14:32:13Z"
+        }
+    }
+}

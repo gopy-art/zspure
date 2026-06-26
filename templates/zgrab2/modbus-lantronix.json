@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 35,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAADAAlMYW50cm9uaXgBAkU3Ago3LjYuMC4wUjEw",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "E7",
+                        "revision": "7.6.0.0R10",
+                        "vendor": "Lantronix"
+                    }
+                },
+                "raw": "WkcAAAAjACsOAQEAAAMACUxhbnRyb25peAECRTcCCjcuNi4wLjBSMTA="
+            },
+            "timestamp": "2026-06-16T12:27:12Z"
+        }
+    }
+}

@@ -1,0 +1,274 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "jGXXWIA/vZ+x1SYT9958hXOJrpMh+XaobCOAcJK210Q=",
+                        "session_id": "S1XEiw4xn8+DptW7HGtpKfxRmi778qSed2VvlIhlp8o=",
+                        "cipher_suite": {
+                            "hex": "0x1302",
+                            "name": "TLS_AES_256_GCM_SHA384",
+                            "value": 4866
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x001D",
+                            "name": "x25519",
+                            "value": 29
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIFGTCCBAGgAwIBAgIJAPrCLh3uhXmNMA0GCSqGSIb3DQEBCwUAMIGqMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjERMA8GA1UEBxMIQmVsbGV2dWUxHDAaBgNVBAoTE09TTkVYVVMgQ29ycG9yYXRpb24xGzAZBgNVBAsTElN1cHBvcnQgRW5naW5lcmluZzEUMBIGA1UEAxMLb3NuZXh1cy5jb20xIjAgBgkqhkiG9w0BCQEWE3N1cHBvcnRAb3NuZXh1cy5jb20wHhcNMTcwOTE5MTY0NzAzWhcNMjcwOTE3MTY0NzAzWjCBqjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xETAPBgNVBAcTCEJlbGxldnVlMRwwGgYDVQQKExNPU05FWFVTIENvcnBvcmF0aW9uMRswGQYDVQQLExJTdXBwb3J0IEVuZ2luZXJpbmcxFDASBgNVBAMTC29zbmV4dXMuY29tMSIwIAYJKoZIhvcNAQkBFhNzdXBwb3J0QG9zbmV4dXMuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtaY1IKjIitF7B2lTkkE09YB32NggqtncRz15Ld1QcDld8ceJecUvwyXgzTHtdyXE7AmRuwANXwor2OsPhyWEWtaSD+Rtjy8JTT5dKtg9l5GZtm3DdEf1CtNWtk6X4JBflyM38QmoenUBv2BPyvTYSURdrkz1XjO7JALj4PA0Wqz/K7/dlEKj/+l/yZQjBEesOn6aXZlPQEjvBZuwgb5D6MEnOoHSfLQCnjwcgIojFLyKe3YzqiC9wxalGiyNudyEMeC8dN+5N4E4G9Jyyo+tCdXWVKxOiroNwfLXdUVS/FV6M+DYcHoua2/hYcnNawEo6qgoMj9Pyr78SfAhpcH1AwIDAQABo4IBPjCCATowCQYDVR0TBAIwADAsBglghkgBhvhCAQ0EHxYdT3BlblNTTCBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwHQYDVR0OBBYEFIzL0zuOZ0dhj8S8IaFn7Ov427p0MIHfBgNVHSMEgdcwgdSAFA4Zz6gC5CiEdBHMTuPxBIGmwadZoYGwpIGtMIGqMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjERMA8GA1UEBxMIQmVsbGV2dWUxHDAaBgNVBAoTE09TTkVYVVMgQ29ycG9yYXRpb24xGzAZBgNVBAsTElN1cHBvcnQgRW5naW5lcmluZzEUMBIGA1UEAxMLb3NuZXh1cy5jb20xIjAgBgkqhkiG9w0BCQEWE3N1cHBvcnRAb3NuZXh1cy5jb22CCQDH02Q6QaUWPDANBgkqhkiG9w0BAQsFAAOCAQEAZhihpsgfUzOhTOVhJgvmkX1OMgSbHUo0bo0ykgLDbaAEjqQWn5PQYEePBR30pPl844rCYe474rVouZap1ALV/fBauEvpPbUvo/sIdCWrTG4Idx8YhM/H9eFe0qTDzdgdkfVkGXAN5G5qKw1Rf0MZ0sLVe+f4/JPHB66sW5mS04BDuu6kTmMfH7oDYT4BEQbyVUzqK+Ni1589xGfWQcwRo4l5RALVIdDa1sxHFjh7B+vUym7uwonY5uIYikGsHUJaredDH3aOuV+nrU10YCaZtVCd8WSy7c17HGoNBpDtLxT5ySzkWmV2CryxdYgrd1Atztrv96Ssk0jVz4SJoshuTA==",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "18069055361054505357",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "osnexus.com"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Bellevue"
+                                    ],
+                                    "province": [
+                                        "Washington"
+                                    ],
+                                    "organization": [
+                                        "OSNEXUS Corporation"
+                                    ],
+                                    "organizational_unit": [
+                                        "Support Enginering"
+                                    ],
+                                    "email_address": [
+                                        "support@osnexus.com"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=Washington, L=Bellevue, O=OSNEXUS Corporation, OU=Support Enginering, CN=osnexus.com, emailAddress=support@osnexus.com",
+                                "validity": {
+                                    "start": "2017-09-19T16:47:03Z",
+                                    "end": "2027-09-17T16:47:03Z",
+                                    "length": 315360000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "osnexus.com"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Bellevue"
+                                    ],
+                                    "province": [
+                                        "Washington"
+                                    ],
+                                    "organization": [
+                                        "OSNEXUS Corporation"
+                                    ],
+                                    "organizational_unit": [
+                                        "Support Enginering"
+                                    ],
+                                    "email_address": [
+                                        "support@osnexus.com"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=Washington, L=Bellevue, O=OSNEXUS Corporation, OU=Support Enginering, CN=osnexus.com, emailAddress=support@osnexus.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "taY1IKjIitF7B2lTkkE09YB32NggqtncRz15Ld1QcDld8ceJecUvwyXgzTHtdyXE7AmRuwANXwor2OsPhyWEWtaSD+Rtjy8JTT5dKtg9l5GZtm3DdEf1CtNWtk6X4JBflyM38QmoenUBv2BPyvTYSURdrkz1XjO7JALj4PA0Wqz/K7/dlEKj/+l/yZQjBEesOn6aXZlPQEjvBZuwgb5D6MEnOoHSfLQCnjwcgIojFLyKe3YzqiC9wxalGiyNudyEMeC8dN+5N4E4G9Jyyo+tCdXWVKxOiroNwfLXdUVS/FV6M+DYcHoua2/hYcnNawEo6qgoMj9Pyr78SfAhpcH1Aw==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "9f03eb026d447aec7774a18a3e00c4f71680ff932d3e36df55ccb99c5add5455"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "authority_key_id": "0e19cfa802e428847411cc4ee3f10481a6c1a759",
+                                    "subject_key_id": "8ccbd33b8e6747618fc4bc21a167ecebf8dbba74"
+                                },
+                                "unknown_extensions": [
+                                    {
+                                        "id": "2.16.840.1.113730.1.13",
+                                        "critical": false,
+                                        "value": "Fh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZQ=="
+                                    }
+                                ],
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "ZhihpsgfUzOhTOVhJgvmkX1OMgSbHUo0bo0ykgLDbaAEjqQWn5PQYEePBR30pPl844rCYe474rVouZap1ALV/fBauEvpPbUvo/sIdCWrTG4Idx8YhM/H9eFe0qTDzdgdkfVkGXAN5G5qKw1Rf0MZ0sLVe+f4/JPHB66sW5mS04BDuu6kTmMfH7oDYT4BEQbyVUzqK+Ni1589xGfWQcwRo4l5RALVIdDa1sxHFjh7B+vUym7uwonY5uIYikGsHUJaredDH3aOuV+nrU10YCaZtVCd8WSy7c17HGoNBpDtLxT5ySzkWmV2CryxdYgrd1Atztrv96Ssk0jVz4SJoshuTA==",
+                                    "valid": true,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "661a4567bc92079cb066456f233a7073",
+                                "fingerprint_sha1": "bbf6431f712042934dd011190617e04227f42642",
+                                "fingerprint_sha256": "55c5f8917f1ece34dc08ca47560566b981a42b5d38d3429074fb7bbb266509cf",
+                                "tbs_noct_fingerprint": "3760d9251a34a2851d6acc4c41d63777dc6fdd759c23916edad61cfb0fc1cb0f",
+                                "spki_subject_fingerprint": "12e489283fed8e4c0e5ae131a410c15625c3d239bf106a366b64819fe56b8f24",
+                                "tbs_fingerprint": "3760d9251a34a2851d6acc4c41d63777dc6fdd759c23916edad61cfb0fc1cb0f",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "osnexus.com"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "chain": [
+                            {
+                                "raw": "MIIE7jCCA9agAwIBAgIJAMfTZDpBpRY8MA0GCSqGSIb3DQEBCwUAMIGqMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjERMA8GA1UEBxMIQmVsbGV2dWUxHDAaBgNVBAoTE09TTkVYVVMgQ29ycG9yYXRpb24xGzAZBgNVBAsTElN1cHBvcnQgRW5naW5lcmluZzEUMBIGA1UEAxMLb3NuZXh1cy5jb20xIjAgBgkqhkiG9w0BCQEWE3N1cHBvcnRAb3NuZXh1cy5jb20wHhcNMTcwOTE5MTY0NjU3WhcNMjcwOTE3MTY0NjU3WjCBqjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xETAPBgNVBAcTCEJlbGxldnVlMRwwGgYDVQQKExNPU05FWFVTIENvcnBvcmF0aW9uMRswGQYDVQQLExJTdXBwb3J0IEVuZ2luZXJpbmcxFDASBgNVBAMTC29zbmV4dXMuY29tMSIwIAYJKoZIhvcNAQkBFhNzdXBwb3J0QG9zbmV4dXMuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyOnKE/si5lyXHlz0US/cOLI19eg3Qus+pHiuXAfZ7h+LQ2u6dK5TLLh4xyX8dOZMATNRr40ybwocOwiaZ3LjASaVLOFC0ddAfUeRj7tr8UzOmmvusv3CbhFTxJN6NRkigHDj0Krcowko8YHOTWli+98AgdhY8ZTe7GmWwB/rDduzWE2/8oUQ1jtjr+uE/w9H8rkCtBsGpA8PpKtpY9g7hLVsGNXqQRyicYlepuKyNBZlvrJtmdKLXAruAsjUNla4NVAiOPlmRDlt69ArxXjmArLN98qqB+v2EgJjLjNBlD7Psu3h0TqyYTAEiqcjNOMS6iODP4uCPnIJHYmLtLGiwQIDAQABo4IBEzCCAQ8wHQYDVR0OBBYEFA4Zz6gC5CiEdBHMTuPxBIGmwadZMIHfBgNVHSMEgdcwgdSAFA4Zz6gC5CiEdBHMTuPxBIGmwadZoYGwpIGtMIGqMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjERMA8GA1UEBxMIQmVsbGV2dWUxHDAaBgNVBAoTE09TTkVYVVMgQ29ycG9yYXRpb24xGzAZBgNVBAsTElN1cHBvcnQgRW5naW5lcmluZzEUMBIGA1UEAxMLb3NuZXh1cy5jb20xIjAgBgkqhkiG9w0BCQEWE3N1cHBvcnRAb3NuZXh1cy5jb22CCQDH02Q6QaUWPDAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQB1kHrETAdI6uJ1dWJHLXn3zJujSbmyq0fESefON7Qu1AO51xMeBMzfUY9MqwLsbDSknz/enA6zwCESY6PpGhkOfAwmuteNCrY+2PHOaUVaplPba8dNo+BsbS+P13O2vZCozLzH2TNvcTcMVgreILYzcNp1WzGAjpMORE+729ulVriTVBo81HcRmSDyWAYseClkE1zzkVHwnYMBTMAYW+sDnM4tgj1mq3ES21/6gQIrpn65yctvbs9k9+AJXOiOlaP58lSHOJH/Io9h93zkBNMxRxYaCBBVAxRhtjs1xaWuJVhzUi9q+AVVm9SQ8AXDIgEL09WtXrEAyZgqPNuTSpSr",
+                                "parsed": {
+                                    "version": 3,
+                                    "serial_number": "14398962635005826620",
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "issuer": {
+                                        "common_name": [
+                                            "osnexus.com"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Bellevue"
+                                        ],
+                                        "province": [
+                                            "Washington"
+                                        ],
+                                        "organization": [
+                                            "OSNEXUS Corporation"
+                                        ],
+                                        "organizational_unit": [
+                                            "Support Enginering"
+                                        ],
+                                        "email_address": [
+                                            "support@osnexus.com"
+                                        ]
+                                    },
+                                    "issuer_dn": "C=US, ST=Washington, L=Bellevue, O=OSNEXUS Corporation, OU=Support Enginering, CN=osnexus.com, emailAddress=support@osnexus.com",
+                                    "validity": {
+                                        "start": "2017-09-19T16:46:57Z",
+                                        "end": "2027-09-17T16:46:57Z",
+                                        "length": 315360000
+                                    },
+                                    "subject": {
+                                        "common_name": [
+                                            "osnexus.com"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Bellevue"
+                                        ],
+                                        "province": [
+                                            "Washington"
+                                        ],
+                                        "organization": [
+                                            "OSNEXUS Corporation"
+                                        ],
+                                        "organizational_unit": [
+                                            "Support Enginering"
+                                        ],
+                                        "email_address": [
+                                            "support@osnexus.com"
+                                        ]
+                                    },
+                                    "subject_dn": "C=US, ST=Washington, L=Bellevue, O=OSNEXUS Corporation, OU=Support Enginering, CN=osnexus.com, emailAddress=support@osnexus.com",
+                                    "subject_key_info": {
+                                        "key_algorithm": {
+                                            "name": "RSA"
+                                        },
+                                        "rsa_public_key": {
+                                            "exponent": 65537,
+                                            "modulus": "yOnKE/si5lyXHlz0US/cOLI19eg3Qus+pHiuXAfZ7h+LQ2u6dK5TLLh4xyX8dOZMATNRr40ybwocOwiaZ3LjASaVLOFC0ddAfUeRj7tr8UzOmmvusv3CbhFTxJN6NRkigHDj0Krcowko8YHOTWli+98AgdhY8ZTe7GmWwB/rDduzWE2/8oUQ1jtjr+uE/w9H8rkCtBsGpA8PpKtpY9g7hLVsGNXqQRyicYlepuKyNBZlvrJtmdKLXAruAsjUNla4NVAiOPlmRDlt69ArxXjmArLN98qqB+v2EgJjLjNBlD7Psu3h0TqyYTAEiqcjNOMS6iODP4uCPnIJHYmLtLGiwQ==",
+                                            "length": 2048
+                                        },
+                                        "fingerprint_sha256": "19a2f432c126fcae76cf63e54c1b3a3c6ed4a2bfbcb8c21c8534febe2c6c5d7c"
+                                    },
+                                    "extensions": {
+                                        "basic_constraints": {
+                                            "is_ca": true
+                                        },
+                                        "authority_key_id": "0e19cfa802e428847411cc4ee3f10481a6c1a759",
+                                        "subject_key_id": "0e19cfa802e428847411cc4ee3f10481a6c1a759"
+                                    },
+                                    "signature": {
+                                        "signature_algorithm": {
+                                            "name": "SHA256-RSA",
+                                            "oid": "1.2.840.113549.1.1.11"
+                                        },
+                                        "value": "dZB6xEwHSOridXViRy1598ybo0m5sqtHxEnnzje0LtQDudcTHgTM31GPTKsC7Gw0pJ8/3pwOs8AhEmOj6RoZDnwMJrrXjQq2PtjxzmlFWqZT22vHTaPgbG0vj9dztr2QqMy8x9kzb3E3DFYK3iC2M3DadVsxgI6TDkRPu9vbpVa4k1QaPNR3EZkg8lgGLHgpZBNc85FR8J2DAUzAGFvrA5zOLYI9ZqtxEttf+oECK6Z+ucnLb27PZPfgCVzojpWj+fJUhziR/yKPYfd85ATTMUcWGggQVQMUYbY7NcWlriVYc1IvavgFVZvUkPAFwyIBC9PVrV6xAMmYKjzbk0qUqw==",
+                                        "valid": true,
+                                        "self_signed": true
+                                    },
+                                    "fingerprint_md5": "86f954f89039bab3526c4c6b34d8b230",
+                                    "fingerprint_sha1": "aa81f3a81af7c3e38e0af34dc3d9e9ad6919a697",
+                                    "fingerprint_sha256": "32f552e02e56fd7b441e3f0019d84b1ad978c1b57f11543f1b956ccc59d9bd76",
+                                    "tbs_noct_fingerprint": "ca5d0728edd333f44c158825b38c216a8d19571e829cbec927b1724bdd1fe686",
+                                    "spki_subject_fingerprint": "934b5eb233aa3db2fa8fd95c190095c15d74a0b9b8940544a1d9315ff768b4f7",
+                                    "tbs_fingerprint": "ca5d0728edd333f44c158825b38c216a8d19571e829cbec927b1724bdd1fe686",
+                                    "validation_level": "unknown",
+                                    "names": [
+                                        "osnexus.com"
+                                    ],
+                                    "redacted": false
+                                }
+                            }
+                        ],
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    }
+                },
+                "ja3s": "15af977ce25de452b96affa2addb1036",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T12:58:03Z"
+        }
+    }
+}

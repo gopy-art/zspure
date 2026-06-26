@@ -1,0 +1,241 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 9444,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "kxeXyMhcVGcpHmbifzUZHJVfocO1xn+/XIzj7AJGj+A=",
+                        "session_id": "v3tcpCWqaQ17dyMe+LuKd8iZ4JFg8dP4+gG0S2iEJB4=",
+                        "cipher_suite": {
+                            "hex": "0xC02F",
+                            "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+                            "value": 49199
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281,
+                            11
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "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",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "178147115689057793593582260727569847587",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Western Digital Technologies Certification Authority"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Irvine"
+                                    ],
+                                    "province": [
+                                        "CA"
+                                    ],
+                                    "organization": [
+                                        "Western Digital Technologies"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=CA, L=Irvine, O=Western Digital Technologies, CN=Western Digital Technologies Certification Authority",
+                                "validity": {
+                                    "start": "2017-08-30T00:00:00Z",
+                                    "end": "2019-08-30T23:59:59Z",
+                                    "length": 63158399
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "device1061485-729dca45.wd2go.com"
+                                    ],
+                                    "organizational_unit": [
+                                        "Domain Control Validated",
+                                        "Hosted by Western Digital Corporation",
+                                        "COMODO SSL Unified Communications"
+                                    ]
+                                },
+                                "subject_dn": "OU=Domain Control Validated, OU=Hosted by Western Digital Corporation, OU=COMODO SSL Unified Communications, CN=device1061485-729dca45.wd2go.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "yxsMSZj1fDupAPl7G4dRshe4nelvNj9Z6SqH0flGE2inAfBRxRK8wVqaOE9WfYeE6sMv9tLe93xmnaZewBm7oa4LIsFWOdqWg/Q8x/LVm44e/L0Pr0ddNVgiiiMONGqPoZsQCqGA9TSZOQv0ZClBfkGpCnXZ/4EZaGB9lG8Cl5ZMMq4JDgclLQyNmjZ6jukVqEXUxrG/eGlNDyXVZf2/SS6Rg1T7Z6Vyjy6jpLwHBNdF8d2+ddNviE2Fz0g0Qg87KHxf6fWSdJ9zd6gtTjjSiZFQipd7dvvSVY8Z4/ooLn8moYNSxfvybpVHsGe9QfHAg7LrzNaLoTAgyRd1Za/Rpw==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "afc40f475d3e09e5dca56e5e991a2f97a5d984ef20a22be4ba60323697a58cb8"
+                                },
+                                "extensions": {
+                                    "key_usage": {
+                                        "digital_signature": true,
+                                        "key_encipherment": true,
+                                        "value": 5
+                                    },
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "subject_alt_name": {
+                                        "dns_names": [
+                                            "device1061485-729dca45.wd2go.com",
+                                            "device1061485-729dca45-local.wd2go.com"
+                                        ]
+                                    },
+                                    "crl_distribution_points": [
+                                        "http://crl.comodoca.com/WesternDigitalTechnologiesCertificationAuthority.crl"
+                                    ],
+                                    "authority_key_id": "59101a9df7d83734fdadd50bac68ae02f7a0bd83",
+                                    "subject_key_id": "6d05949f616c1ec296706ebb473b533bccb53efb",
+                                    "extended_key_usage": {
+                                        "server_auth": true,
+                                        "client_auth": true
+                                    },
+                                    "certificate_policies": [
+                                        {
+                                            "id": "1.3.6.1.4.1.6449.1.2.2.51",
+                                            "cps": [
+                                                "https://secure.comodo.com/CPS"
+                                            ]
+                                        },
+                                        {
+                                            "id": "2.23.140.1.2.1"
+                                        }
+                                    ],
+                                    "authority_info_access": {
+                                        "ocsp_urls": [
+                                            "http://ocsp.comodoca.com"
+                                        ],
+                                        "issuer_urls": [
+                                            "http://crt.comodoca.com/WesternDigitalTechnologiesCertificationAuthority.crt"
+                                        ]
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "MulOyWbjDJm/KmFVnkShjOnpRgxvCh7blDnIc4oivbDJHuNuMzNqBwqJ1WVjax03F0iieLrr0Alz0tvcBlDTHhza8v9rQFQYyB8+G2smUW+eoczdyRjYZp3iLVie3vZrmhooDBhyKPuARZnk4aLciaUVBFQ7N/mwxLp2c6z226Ov675eoCSzRsVpJeHLn6RKsz0y9hFTJLBoemdbL9+8LksXOHS+9MPy9FF7yns7uoUVZGMvxf0Q34Do3H4E8Lpp3M2lt3BQ70mZhURspqgaHKjLcr6mUv6yXi6bokQu55EEaB5BJ7Xrkd9gAAM3xNwK8Wrshbp2yU4WnZIiNeirMQ==",
+                                    "valid": false,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "2b9ed9b6c49c019f1d43b12bca769a13",
+                                "fingerprint_sha1": "6931688737c768439efbe2f241c87d415e632cb3",
+                                "fingerprint_sha256": "430bc3b6fbbf6e4ac2d0af7af676e36c268564c237b2f28de7eafaef34a44441",
+                                "tbs_noct_fingerprint": "59f53822041a94519195eec65c68c8a1a231df6c66bbaeb29773aa5675de6925",
+                                "spki_subject_fingerprint": "dac3fb504d33e4838eb36b9ddc3b6fce1f9d21a72072a6a2e9fcd0a6fe714edc",
+                                "tbs_fingerprint": "59f53822041a94519195eec65c68c8a1a231df6c66bbaeb29773aa5675de6925",
+                                "validation_level": "DV",
+                                "names": [
+                                    "device1061485-729dca45-local.wd2go.com",
+                                    "device1061485-729dca45.wd2go.com"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate signed by unknown authority"
+                        }
+                    },
+                    "server_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "secp256r1",
+                                "id": 23
+                            },
+                            "server_public": {
+                                "x": {
+                                    "value": "sYqIkmylANTfl4I6p2qsv8Ajgp0ZlrGk/REukPBrqHs=",
+                                    "length": 256
+                                },
+                                "y": {
+                                    "value": "/WUE46iVUnvptUfoh/ORPeuAZ1kZz+ygU8GxY6Hbo7A=",
+                                    "length": 256
+                                }
+                            }
+                        },
+                        "digest": "IxZjmJ5rB5M+eFM5Jh9AVk8xGfHrl+h5djeumHqnmZ4=",
+                        "signature": {
+                            "raw": "jfdCy7NpxCutFYc5s25t/7+j7UROcHgMT+dy2lKRYLkKC2El/cxugTes8nCRmNFHnmO0Y4M48TLm7v3fHpY2O1AjInhDztb/uaRw3qYYZu0d4/3BuwnnRHsVWH3KLHyMuUoRgehsbozZzDwaJzZebWCWikiLivwdEWOYHRYDYSmw7MuZ/Ygn8q1TjyAkauK2sjmWxLm0AuL9/WDgRTu6evL6rj+qLRfiXFvDzdKzLn5jo1n/LRIEllLaHFxSzCxRCVeV8vhHtAs4rja804U+2aXdOydeAaSw2C36QxYlueOF0j2HeUzIWUbwSIz2OIXnCfDPe781DeJOVds8Qhv07g==",
+                            "type": "rsa",
+                            "valid": true,
+                            "signature_and_hash_type": {
+                                "signature_algorithm": "pkcs1v15",
+                                "hash_algorithm": "sha384"
+                            },
+                            "tls_version": {
+                                "name": "TLSv1.2",
+                                "value": 771
+                            }
+                        }
+                    },
+                    "client_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "secp256r1",
+                                "id": 23
+                            },
+                            "client_public": {
+                                "x": {
+                                    "value": "4vxUg6oMkhutes5P1SZoBsT0pD8pxGlwXSQGHjmPRiU=",
+                                    "length": 256
+                                },
+                                "y": {
+                                    "value": "W6gcJ54WSp4g52UdidTV1cPfivXylNFuKRcmC41jc5k=",
+                                    "length": 256
+                                }
+                            },
+                            "client_private": {
+                                "value": "4t5a3osCvu8/TAmKPoJFj1TWiBkPQqDLup/4B6wMmBM=",
+                                "length": 32
+                            }
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "83l9Ff97zuBk0v2D"
+                    },
+                    "server_finished": {
+                        "verify_data": "tOHVaZALjYvI4JDG"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "CdtfklxWLHclJ5eAhYEWfTPoYNSIIib05M0Q6KKanFnpvts/5CbkSvrMnTz5TCGj",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "4tbeaqmtqX9HeSiDp/0fUI629GLDZQgumtcSS+pboKI=",
+                            "length": 32
+                        }
+                    }
+                },
+                "ja3s": "303951d4c50efb2e991652225a6f02b1",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T15:20:05Z"
+        }
+    }
+}

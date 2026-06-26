@@ -1,0 +1,234 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "oFCu8uPApHwQ2ey3GikBLqX7x2D+TYFx8rUP7XC5lW0=",
+                        "session_id": "",
+                        "cipher_suite": {
+                            "hex": "0xC030",
+                            "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+                            "value": 49200
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281,
+                            11
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIEeTCCA2GgAwIBAgIJAJ3z4b92OM8/MA0GCSqGSIb3DQEBCwUAMGoxEDAOBgNVBAoMB0xleG1hcmsxDDAKBgNVBAsMA0lTUzESMBAGA1UEBwwJTGV4aW5ndG9uMQswCQYDVQQIDAJLWTELMAkGA1UEBhMCVVMxGjAYBgNVBAMMEUxleG1hcmsuZnJpdHouYm94MB4XDTI1MDYxNzA4NDMxOVoXDTM1MDYxNjA4NDMxOVowajEQMA4GA1UECgwHTGV4bWFyazEMMAoGA1UECwwDSVNTMRIwEAYDVQQHDAlMZXhpbmd0b24xCzAJBgNVBAgMAktZMQswCQYDVQQGEwJVUzEaMBgGA1UEAwwRTGV4bWFyay5mcml0ei5ib3gwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDf5coiBZvbdrQxJiqezocFspzmTQw1olS+OiiFyPBzIfptNmkB8Vxa/LTTKIeIY4xj6kejaOd74DdL00/35Clc2tqCFUVC/tzJXF0m/KApyeWKATyAfS8ab1uZFDA/Wy5RitfUnTv0wx6C3quIeyuxR9S4/4OTz6vjeZ4LRBEY12VJzjjTtzsXnmOvXbtbpCqSrYJJksXUYq/k1meWh5AZ0GKNwaEWqGrkRNZB6v/983M/bIECgTHUUctKjciy9/cEH+/wJlw0xXev4C2Nf795AV4pvZM1/3wpG97qREQHLEjtwp7Gd8krZCfSvkP78qXnm+IlHqTRh+o3br4Fg0NlAgMBAAGjggEgMIIBHDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBT+3SkQBVJz73QdraiK7wv+nT7bHzCBnAYDVR0jBIGUMIGRgBT+3SkQBVJz73QdraiK7wv+nT7bH6FupGwwajEQMA4GA1UECgwHTGV4bWFyazEMMAoGA1UECwwDSVNTMRIwEAYDVQQHDAlMZXhpbmd0b24xCzAJBgNVBAgMAktZMQswCQYDVQQGEwJVUzEaMBgGA1UEAwwRTGV4bWFyay5mcml0ei5ib3iCCQCd8+G/djjPPzALBgNVHQ8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMCIGA1UdEQQbMBmHBMCosk+CEUxleG1hcmsuZnJpdHouYm94MA0GCSqGSIb3DQEBCwUAA4IBAQDRLutka6wyA+LXycbLRiWaSD2pWSpEJPyuQJSz1HpPqtVqr3W+lW1H4fUKZhtsAihoaHJyXyT5F97mTyAQjixkeXHJHTq0PZCtYR23nHfKgjymm8xgPG2DHUQfexd/am+9Sueoh7tgtMmNVH+VAzjcL09Hbd8mnS9KkQQH/Rx9+oK2NhDZO+3XDI3z71WV3o/7gL9Sa88Jgx5SOz352eX+CLUG1rTWZpAYflKEV0n15Au+A70fQ9qyS7vUABDycL0MKK3KO1+ImPU9laNRYrug3VcxbGAFsMGXNRqEroNgyhWTJnf7obPGUJ4y/K1AwiWE7oPLPt4sgpVs7gDJwvXG",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "11381688895733813055",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Lexmark.fritz.box"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Lexington"
+                                    ],
+                                    "province": [
+                                        "KY"
+                                    ],
+                                    "organization": [
+                                        "Lexmark"
+                                    ],
+                                    "organizational_unit": [
+                                        "ISS"
+                                    ]
+                                },
+                                "issuer_dn": "O=Lexmark, OU=ISS, L=Lexington, ST=KY, C=US, CN=Lexmark.fritz.box",
+                                "validity": {
+                                    "start": "2025-06-17T08:43:19Z",
+                                    "end": "2035-06-16T08:43:19Z",
+                                    "length": 315446400
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "Lexmark.fritz.box"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Lexington"
+                                    ],
+                                    "province": [
+                                        "KY"
+                                    ],
+                                    "organization": [
+                                        "Lexmark"
+                                    ],
+                                    "organizational_unit": [
+                                        "ISS"
+                                    ]
+                                },
+                                "subject_dn": "O=Lexmark, OU=ISS, L=Lexington, ST=KY, C=US, CN=Lexmark.fritz.box",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "3+XKIgWb23a0MSYqns6HBbKc5k0MNaJUvjoohcjwcyH6bTZpAfFcWvy00yiHiGOMY+pHo2jne+A3S9NP9+QpXNraghVFQv7cyVxdJvygKcnligE8gH0vGm9bmRQwP1suUYrX1J079MMegt6riHsrsUfUuP+Dk8+r43meC0QRGNdlSc4407c7F55jr127W6Qqkq2CSZLF1GKv5NZnloeQGdBijcGhFqhq5ETWQer//fNzP2yBAoEx1FHLSo3Isvf3BB/v8CZcNMV3r+AtjX+/eQFeKb2TNf98KRve6kREByxI7cKexnfJK2Qn0r5D+/Kl55viJR6k0YfqN26+BYNDZQ==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "3b00d5f7c6bfaa47006218497aeadd782be8643e85bb50eb37561d632da92e12"
+                                },
+                                "extensions": {
+                                    "key_usage": {
+                                        "digital_signature": true,
+                                        "key_encipherment": true,
+                                        "value": 5
+                                    },
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "subject_alt_name": {
+                                        "dns_names": [
+                                            "Lexmark.fritz.box"
+                                        ],
+                                        "ip_addresses": [
+                                            "192.168.178.79"
+                                        ]
+                                    },
+                                    "authority_key_id": "fedd2910055273ef741dada88aef0bfe9d3edb1f",
+                                    "subject_key_id": "fedd2910055273ef741dada88aef0bfe9d3edb1f",
+                                    "extended_key_usage": {
+                                        "server_auth": true,
+                                        "client_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "0S7rZGusMgPi18nGy0Ylmkg9qVkqRCT8rkCUs9R6T6rVaq91vpVtR+H1CmYbbAIoaGhycl8k+Rfe5k8gEI4sZHlxyR06tD2QrWEdt5x3yoI8ppvMYDxtgx1EH3sXf2pvvUrnqIe7YLTJjVR/lQM43C9PR23fJp0vSpEEB/0cffqCtjYQ2Tvt1wyN8+9Vld6P+4C/UmvPCYMeUjs9+dnl/gi1Bta01maQGH5ShFdJ9eQLvgO9H0Pasku71AAQ8nC9DCityjtfiJj1PZWjUWK7oN1XMWxgBbDBlzUahK6DYMoVkyZ3+6GzxlCeMvytQMIlhO6Dyz7eLIKVbO4AycL1xg==",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "528d51a247c06c9c616d1fa9f6d99b85",
+                                "fingerprint_sha1": "c979ca977fff152a2e141dd9f4845fdf05f26cfa",
+                                "fingerprint_sha256": "8a8ba6b6ba7435fd882b71570b9d6666eb427f35786cdd526da366839b8dbba9",
+                                "tbs_noct_fingerprint": "f8dfd54dd0e59676221083ec02e1b4296a55948f5497872192dfa6d4acdd757d",
+                                "spki_subject_fingerprint": "de71e776294de50d6e3343f7d3eb6cdbd67ec5ece22ca1deed3e25f29122a32f",
+                                "tbs_fingerprint": "f8dfd54dd0e59676221083ec02e1b4296a55948f5497872192dfa6d4acdd757d",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "192.168.178.79",
+                                    "Lexmark.fritz.box"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "server_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "secp521r1",
+                                "id": 25
+                            },
+                            "server_public": {
+                                "x": {
+                                    "value": "CHzw34cKCr3OcwDwMUomzTNmDhmCf7inFoeK9TuOj4umsdz6z5jtaoC+xjvY2AEyIlEF5vpr6ZgjJDHhzAt50aM=",
+                                    "length": 520
+                                },
+                                "y": {
+                                    "value": "ATpjxABB7tH2hBfn99SItSjJM1Q40/j1HLMGD9IqruYBANldIgkfAhEQr8aeJ4BZM7iS3ZvBouYmtY8NX1oUkq3X",
+                                    "length": 528
+                                }
+                            }
+                        },
+                        "digest": "1kPTM3sBmz9Vre5kmZVpp6ZY5iu+Mr7EcYcbLuTqcekKkndzZxtx7oONg5dsNZ1XZ1NGdiWw3ynBHmjqcGolHQ==",
+                        "signature": {
+                            "raw": "T4bhPwlGSzXk1btvaNCzIEG83/oBHztQnjeiTweqwrT2+OgI0hv7JqP52r+Ie4XdMnTOsnHtg7deDq/I5p5vVNmr32rIinvU3dn67/9S6MwxGdXHl5fpjN0/LlQb0vII+0PO2a7fFz39iWFcXEwL5eVBEdK4wPehW3XPmSMBWxx+vOot6EwljB84KDWjvQkksGt1nQ7EuE5VBgKrmd/9eauXQy3pfgBIMH8QaDdlfdMDCAauEr7rBBrfT4yYyeC2w6r1iBkWC5TZsVwyte9CIyXEeT5K5u9G0Cow0b9OmmSaTS9ubCjSfad355vUkJDsE148Ix2Rz1KX4T2WIWAk2A==",
+                            "type": "rsa",
+                            "valid": true,
+                            "signature_and_hash_type": {
+                                "signature_algorithm": "pkcs1v15",
+                                "hash_algorithm": "unknown.7"
+                            },
+                            "tls_version": {
+                                "name": "TLSv1.2",
+                                "value": 771
+                            }
+                        }
+                    },
+                    "client_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "secp521r1",
+                                "id": 25
+                            },
+                            "client_public": {
+                                "x": {
+                                    "value": "AbNepLMBIyOn6ZU8FzVVtCNcBUE7LW62nNAkKZ5ZnjnyKRt1S1EI8Qy/6XUifkD8nqik+l3PlngJ3cQF6ep82wAR",
+                                    "length": 528
+                                },
+                                "y": {
+                                    "value": "AQ2Vo6MpIhIzOrTGXHvh7P2gYLhn/dwRHOIi+ZQLlskq4LRsY7t1YTawT/jSQaTYvpNfd79BjEKFjlOS/u6BNQyZ",
+                                    "length": 528
+                                }
+                            },
+                            "client_private": {
+                                "value": "ABfJbaiud61slLhJsbkbBBe5cYriPW7iTtHyIIvGwznLFoJEUAmrF5FSuvNHdq3nnyIk1Qqs3Z5OcjiDzVd8RnaD",
+                                "length": 66
+                            }
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "MFDe4WOjGKgg/BEo"
+                    },
+                    "server_finished": {
+                        "verify_data": "UKgES+utIwDlL8TQ"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "e4l6c+o1+5Oa8Pk5wQXP7FLtnh3S6GEVOasXfUliMTs+qO9PIn53hQ+9w846yp7K",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "ADnkfi69arhbo9NCyZTMjcv2cZwC6OByofoVYn/Z50ih3FYKyVl3An7JlxdSB+q/OGbj2PNipoQzmR3xn5bwW3qP",
+                            "length": 66
+                        }
+                    }
+                },
+                "ja3s": "0debd3853f330c574b05e0b6d882dc27",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T12:31:50Z"
+        }
+    }
+}

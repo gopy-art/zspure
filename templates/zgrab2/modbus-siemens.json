@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 47,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAADAApTaWVtZW5zIEFHARM2RVM3IDIxNC0xQUc0MC0wWEIwAgRWNC40",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "6ES7 214-1AG40-0XB0",
+                        "revision": "V4.4",
+                        "vendor": "Siemens AG"
+                    }
+                },
+                "raw": "WkcAAAAvACsOAQEAAAMAClNpZW1lbnMgQUcBEzZFUzcgMjE0LTFBRzQwLTBYQjACBFY0LjQ="
+            },
+            "timestamp": "2026-06-21T12:14:44Z"
+        }
+    }
+}

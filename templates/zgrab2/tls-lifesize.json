@@ -1,0 +1,275 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.0",
+                            "value": 769
+                        },
+                        "random": "ajbgtB9sLKDIvntxau5ljNZ+yL5VW+X7BECIbbxn8Oc=",
+                        "session_id": "HFSlYccqzO3eL8SU+bj77+uaHD3XhekJ5aIOmeBxNNQ=",
+                        "cipher_suite": {
+                            "hex": "0x002F",
+                            "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+                            "value": 47
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDuTCCAyKgAwIBAgIBAjANBgkqhkiG9w0BAQQFADCBjzELMAkGA1UEBhMCVVMxDjAMBgNVBAgTBVRleGFzMQ8wDQYDVQQHEwZBdXN0aW4xETAPBgNVBAoTCExpZmVTaXplMREwDwYDVQQLEwhMaWZlU2l6ZTERMA8GA1UEAxMITGlmZVNpemUxJjAkBgkqhkiG9w0BCQEWF3Bvc3RtYXN0ZXJAbGlmZXNpemUuY29tMB4XDTExMDYwNzE0MTQ1MFoXDTIxMDYwNDE0MTQ1MFowgY0xCzAJBgNVBAYTAlVTMQ4wDAYDVQQIEwVUZXhhczERMA8GA1UEChMITGlmZVNpemUxETAPBgNVBAsTCExpZmVTaXplMSAwHgYDVQQDExdMaWZlU2l6ZSBUcmFuc2l0IFNlcnZlcjEmMCQGCSqGSIb3DQEJARYXcG9zdG1hc3RlckBsaWZlc2l6ZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOhGFsAy2QLYFmlIwavgP3+ml8R2Umm502YChomUeLNuu8it4m9b4OdAn2WdBDyfKddN3tD57e3w8I4aEkgC6LcODteOSqf6HEhOLJqc2h4+2JOuL/v3WwYrtAysx4x5xWtXATUchm8zaCcWjyun4MpN03GNmYM8dTXBcVu8NUa9AgMBAAGjggEjMIIBHzAJBgNVHRMEAjAAMCwGCWCGSAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUWUvvDNvG66957prDsdr7bhrbJgQwgcQGA1UdIwSBvDCBuYAU6n9dPRpOiZq/PEtWJXFpJT7KJSOhgZWkgZIwgY8xCzAJBgNVBAYTAlVTMQ4wDAYDVQQIEwVUZXhhczEPMA0GA1UEBxMGQXVzdGluMREwDwYDVQQKEwhMaWZlU2l6ZTERMA8GA1UECxMITGlmZVNpemUxETAPBgNVBAMTCExpZmVTaXplMSYwJAYJKoZIhvcNAQkBFhdwb3N0bWFzdGVyQGxpZmVzaXplLmNvbYIJAKwN7MJ4OKMBMA0GCSqGSIb3DQEBBAUAA4GBAMfUQYvdPOqlBh853jjbXtTlC/ANm9TabT1AFABY8DdCunR32pjPXNb3n4B9Q+o2xogrF6bmCQxft2pQgE4aBDvx3E/jiK4l6bqo92OYDdpwMLj1wlntTdOdx6DYZJAqde4gADROK94QtXbeTCcU+txrKjpjZ1CB3P/gWzEFSXTz",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "2",
+                                "signature_algorithm": {
+                                    "name": "MD5-RSA",
+                                    "oid": "1.2.840.113549.1.1.4"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "LifeSize"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Austin"
+                                    ],
+                                    "province": [
+                                        "Texas"
+                                    ],
+                                    "organization": [
+                                        "LifeSize"
+                                    ],
+                                    "organizational_unit": [
+                                        "LifeSize"
+                                    ],
+                                    "email_address": [
+                                        "postmaster@lifesize.com"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=Texas, L=Austin, O=LifeSize, OU=LifeSize, CN=LifeSize, emailAddress=postmaster@lifesize.com",
+                                "validity": {
+                                    "start": "2011-06-07T14:14:50Z",
+                                    "end": "2021-06-04T14:14:50Z",
+                                    "length": 315360000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "LifeSize Transit Server"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "province": [
+                                        "Texas"
+                                    ],
+                                    "organization": [
+                                        "LifeSize"
+                                    ],
+                                    "organizational_unit": [
+                                        "LifeSize"
+                                    ],
+                                    "email_address": [
+                                        "postmaster@lifesize.com"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=Texas, O=LifeSize, OU=LifeSize, CN=LifeSize Transit Server, emailAddress=postmaster@lifesize.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "6EYWwDLZAtgWaUjBq+A/f6aXxHZSabnTZgKGiZR4s267yK3ib1vg50CfZZ0EPJ8p103e0Pnt7fDwjhoSSALotw4O145Kp/ocSE4smpzaHj7Yk64v+/dbBiu0DKzHjHnFa1cBNRyGbzNoJxaPK6fgyk3TcY2Zgzx1NcFxW7w1Rr0=",
+                                        "length": 1024
+                                    },
+                                    "fingerprint_sha256": "8ea87d897b6b2af5a862ca938790d3e64383afb3620b733f9aa1bfa1d97346dc"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "authority_key_id": "ea7f5d3d1a4e899abf3c4b56257169253eca2523",
+                                    "subject_key_id": "594bef0cdbc6ebaf79ee9ac3b1dafb6e1adb2604"
+                                },
+                                "unknown_extensions": [
+                                    {
+                                        "id": "2.16.840.1.113730.1.13",
+                                        "critical": false,
+                                        "value": "Fh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZQ=="
+                                    }
+                                ],
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "MD5-RSA",
+                                        "oid": "1.2.840.113549.1.1.4"
+                                    },
+                                    "value": "x9RBi9086qUGHzneONte1OUL8A2b1NptPUAUAFjwN0K6dHfamM9c1vefgH1D6jbGiCsXpuYJDF+3alCAThoEO/HcT+OIriXpuqj3Y5gN2nAwuPXCWe1N053HoNhkkCp17iAANE4r3hC1dt5MJxT63GsqOmNnUIHc/+BbMQVJdPM=",
+                                    "valid": true,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "1f43b737914439eeedfcacc962209377",
+                                "fingerprint_sha1": "9e2d3a60641a34f870c77473d8b1613f513bf85d",
+                                "fingerprint_sha256": "82e6c5f276251cfcdf65e43c0d6102d48e9e6063268609fe4871a00fccf9185e",
+                                "tbs_noct_fingerprint": "4f331cc0b4ab7eb8b7c533c64d485f16d419ec2ffde43bf0e837b0e24cb6394b",
+                                "spki_subject_fingerprint": "dea4eea8cdbde5f4d3f9cb8c4dd7798af12be4e7e0ca45c6cd60ff2458c197b5",
+                                "tbs_fingerprint": "4f331cc0b4ab7eb8b7c533c64d485f16d419ec2ffde43bf0e837b0e24cb6394b",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "chain": [
+                            {
+                                "raw": "MIIDljCCAv+gAwIBAgIJAKwN7MJ4OKMBMA0GCSqGSIb3DQEBBQUAMIGPMQswCQYDVQQGEwJVUzEOMAwGA1UECBMFVGV4YXMxDzANBgNVBAcTBkF1c3RpbjERMA8GA1UEChMITGlmZVNpemUxETAPBgNVBAsTCExpZmVTaXplMREwDwYDVQQDEwhMaWZlU2l6ZTEmMCQGCSqGSIb3DQEJARYXcG9zdG1hc3RlckBsaWZlc2l6ZS5jb20wHhcNMTEwNjA3MTQxMzU3WhcNMzgxMDIzMTQxMzU3WjCBjzELMAkGA1UEBhMCVVMxDjAMBgNVBAgTBVRleGFzMQ8wDQYDVQQHEwZBdXN0aW4xETAPBgNVBAoTCExpZmVTaXplMREwDwYDVQQLEwhMaWZlU2l6ZTERMA8GA1UEAxMITGlmZVNpemUxJjAkBgkqhkiG9w0BCQEWF3Bvc3RtYXN0ZXJAbGlmZXNpemUuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDP+GK9LfZ4zT1oMA/CWNBW4EXC0BBqQEaDl+1X0mtB8RCvyKbLThNSCaMBcdPdhEK6FYa9Mzqp72BYB8yu3nzMBiPLGai3H0llqRCBTgLNumXJhlcsWRgVFuMFqlIxZ/csemk8Juzpk3gtyNfjQRavw1vVK6Yeg0iSgzxfil3LywIDAQABo4H3MIH0MB0GA1UdDgQWBBTqf109Gk6Jmr88S1YlcWklPsolIzCBxAYDVR0jBIG8MIG5gBTqf109Gk6Jmr88S1YlcWklPsolI6GBlaSBkjCBjzELMAkGA1UEBhMCVVMxDjAMBgNVBAgTBVRleGFzMQ8wDQYDVQQHEwZBdXN0aW4xETAPBgNVBAoTCExpZmVTaXplMREwDwYDVQQLEwhMaWZlU2l6ZTERMA8GA1UEAxMITGlmZVNpemUxJjAkBgkqhkiG9w0BCQEWF3Bvc3RtYXN0ZXJAbGlmZXNpemUuY29tggkArA3swng4owEwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQAGeCUwEJEcAbVJaN7nKmgoS3J4HXAmr90JUAthr2Ji585zAWLRaxXOs+nWNCfl8a2vUVpezEfZfy9R2horZU1HiYvgx+AJ+VgDjH+CC2mIuDD0jFZrUE14O7q6pNN5CtT0rIDUmeZWk7mCgsyQBjW6l5AsPd85+WwfW+45cnfojA==",
+                                "parsed": {
+                                    "version": 3,
+                                    "serial_number": "12397825669205631745",
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "issuer": {
+                                        "common_name": [
+                                            "LifeSize"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Austin"
+                                        ],
+                                        "province": [
+                                            "Texas"
+                                        ],
+                                        "organization": [
+                                            "LifeSize"
+                                        ],
+                                        "organizational_unit": [
+                                            "LifeSize"
+                                        ],
+                                        "email_address": [
+                                            "postmaster@lifesize.com"
+                                        ]
+                                    },
+                                    "issuer_dn": "C=US, ST=Texas, L=Austin, O=LifeSize, OU=LifeSize, CN=LifeSize, emailAddress=postmaster@lifesize.com",
+                                    "validity": {
+                                        "start": "2011-06-07T14:13:57Z",
+                                        "end": "2038-10-23T14:13:57Z",
+                                        "length": 864000000
+                                    },
+                                    "subject": {
+                                        "common_name": [
+                                            "LifeSize"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Austin"
+                                        ],
+                                        "province": [
+                                            "Texas"
+                                        ],
+                                        "organization": [
+                                            "LifeSize"
+                                        ],
+                                        "organizational_unit": [
+                                            "LifeSize"
+                                        ],
+                                        "email_address": [
+                                            "postmaster@lifesize.com"
+                                        ]
+                                    },
+                                    "subject_dn": "C=US, ST=Texas, L=Austin, O=LifeSize, OU=LifeSize, CN=LifeSize, emailAddress=postmaster@lifesize.com",
+                                    "subject_key_info": {
+                                        "key_algorithm": {
+                                            "name": "RSA"
+                                        },
+                                        "rsa_public_key": {
+                                            "exponent": 65537,
+                                            "modulus": "z/hivS32eM09aDAPwljQVuBFwtAQakBGg5ftV9JrQfEQr8imy04TUgmjAXHT3YRCuhWGvTM6qe9gWAfMrt58zAYjyxmotx9JZakQgU4CzbplyYZXLFkYFRbjBapSMWf3LHppPCbs6ZN4LcjX40EWr8Nb1SumHoNIkoM8X4pdy8s=",
+                                            "length": 1024
+                                        },
+                                        "fingerprint_sha256": "507073059410b9507c526f3cf8ad126ef0f075d0d6eda617bf7782f0aeb493b9"
+                                    },
+                                    "extensions": {
+                                        "basic_constraints": {
+                                            "is_ca": true
+                                        },
+                                        "authority_key_id": "ea7f5d3d1a4e899abf3c4b56257169253eca2523",
+                                        "subject_key_id": "ea7f5d3d1a4e899abf3c4b56257169253eca2523"
+                                    },
+                                    "signature": {
+                                        "signature_algorithm": {
+                                            "name": "SHA1-RSA",
+                                            "oid": "1.2.840.113549.1.1.5"
+                                        },
+                                        "value": "BnglMBCRHAG1SWje5ypoKEtyeB1wJq/dCVALYa9iYufOcwFi0WsVzrPp1jQn5fGtr1FaXsxH2X8vUdoaK2VNR4mL4MfgCflYA4x/ggtpiLgw9IxWa1BNeDu6uqTTeQrU9KyA1JnmVpO5goLMkAY1upeQLD3fOflsH1vuOXJ36Iw=",
+                                        "valid": true,
+                                        "self_signed": true
+                                    },
+                                    "fingerprint_md5": "0d67dd0bbd1273b72e8efef91f804060",
+                                    "fingerprint_sha1": "a70064c617635c7dd746fb675f4ddeb5bccfb7e5",
+                                    "fingerprint_sha256": "c293d2783f80ba0e333d7bdd7b319dad5be4b023304644503cb596cf54eb5d2a",
+                                    "tbs_noct_fingerprint": "cb056ba6ef2ebd4d18fb9fe1e3f28e74f6ec8ba2f32e6904eb65fa27452c6deb",
+                                    "spki_subject_fingerprint": "4b9eb02a9aa606d9de413002198b751227869efb92c2411794229edf8fc9b6ee",
+                                    "tbs_fingerprint": "cb056ba6ef2ebd4d18fb9fe1e3f28e74f6ec8ba2f32e6904eb65fa27452c6deb",
+                                    "validation_level": "unknown",
+                                    "redacted": false
+                                }
+                            }
+                        ],
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 128,
+                            "encrypted_pre_master_secret": "D//06mD2NJJFdey2/tZ6AQxdmC5bkH68CAC543XLtSEvZ1JGl5ta2YFLhB122AkyLnN6q84K2gQazAWU3vfjba0kO/1gatiu5GSPz2SvPiFedX046IzP+VqFXgRw8rfDFJCyMyi3WsXv4OJX+5a/DBKQNaCoB2vW7CRVQuI3KUU="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "49v4kFUz3jMJMwY3"
+                    },
+                    "server_finished": {
+                        "verify_data": "Mm8TReYbqnCyVNPS"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "1r8vl5Tuvh8GVVWVhCQ2BYUWkakulTBK6WihI5cdQQ3EhOEmmWSbWWUVmjRmjfvt",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwP9ol8XHRxsa6EgSLi+mkTKOYdrj17jr1rh6SRYqgZ9q8nEiVALHK6K9OcKc0rE",
+                            "length": 48
+                        }
+                    }
+                },
+                "ja3s": "4192c0a946c5bd9b544b4656d9f624a4",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-20T18:48:18Z"
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "LyqkB7mJ6DuxfS93Yq49MmRMn1+D+faa2sEP8wlM9IQ=",
+                        "session_id": "pQkG3jM817/6N4gqFXQm6jjNLlq1Ecbcclj2hZNMe6c=",
+                        "cipher_suite": {
+                            "hex": "0x009C",
+                            "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+                            "value": 156
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDUzCCAjugAwIBAgIEllj0CDANBgkqhkiG9w0BAQsFADBaMR4wHAYDVQQDDBVIUCBKZXRkaXJlY3QgRTUwNDUwRkIxEDAOBgNVBAoMB0hQIEluYy4xFTATBgNVBAsMDDZDM0JFNTA0NTBGQjEPMA0GA1UECwwGSjgwMjhFMB4XDTIwMDcyNTAwMDAwMFoXDTI1MDcyNTAwMDAwMFowWjEeMBwGA1UEAwwVSFAgSmV0ZGlyZWN0IEU1MDQ1MEZCMRAwDgYDVQQKDAdIUCBJbmMuMRUwEwYDVQQLDAw2QzNCRTUwNDUwRkIxDzANBgNVBAsMBko4MDI4RTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPp50L03ZwgtN14gDn+8u/N8n7kd9dhWs1Ae4yBmM42JrTVBVoo1r5SNlZ3m6+cj7mrIi5m7UoCNl4cX4lCP91brDzhmopBxU9Xyprw0dionoLtGfqoD025bb06zVkoKkrIaNlV/M+I/zCklYDqvnLZeCkgjGkjFc2LqUEYlZhhgdANV4Qdpu5maRev0h0xfj1qzTbiTF/G5uOyzzDbh/uKjegEM5rxAiEv6K9MWlnt4t+LPIuknRpnmA1FpdOWkv4st3GRAlraUeZNnql9fgNhmuVZ9uUeiwjVHfG8P+2AfkMiCRT2EC+MxZTKJPx+r3LOMBDW58ByjSxfAboseNGsCAwEAAaMhMB8wHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqGSIb3DQEBCwUAA4IBAQDIhh89I9yw8q+spcFYCcBIlClNg16XhLtn4rbVPBVpoAajlRciqcNcIIGcCMwIaB8YS7YEEHFRGWWSWvLov0NrJbuJGQ64T/+7XHDApvN/Ylv1y6NHT0WWEF9VpgcMn3Wf5UQQYOyK8YWdaXM9Aa8DiVWzkBS4y+GQNV7mzscsf5sxkaZU4WSK0UH8V2PzN0NGgn/GqCI5PLsU2IicBpdt2gkAbEyxcR/xdk6TACI2rahGuBI/r4PAtJ5xLIRY5EPKanaDUsHbTXOxJRCEhdKmEAq9iNi2oM1QgLGkACl6IJe7srObAAFnCO+EURtSrMRjNXgZTEPwQXpLFrbPXCaY",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "-1772555256",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "HP Jetdirect E50450FB"
+                                    ],
+                                    "organization": [
+                                        "HP Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "6C3BE50450FB",
+                                        "J8028E"
+                                    ]
+                                },
+                                "issuer_dn": "CN=HP Jetdirect E50450FB, O=HP Inc., OU=6C3BE50450FB, OU=J8028E",
+                                "validity": {
+                                    "start": "2020-07-25T00:00:00Z",
+                                    "end": "2025-07-25T00:00:00Z",
+                                    "length": 157766400
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "HP Jetdirect E50450FB"
+                                    ],
+                                    "organization": [
+                                        "HP Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "6C3BE50450FB",
+                                        "J8028E"
+                                    ]
+                                },
+                                "subject_dn": "CN=HP Jetdirect E50450FB, O=HP Inc., OU=6C3BE50450FB, OU=J8028E",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "+nnQvTdnCC03XiAOf7y783yfuR312FazUB7jIGYzjYmtNUFWijWvlI2Vnebr5yPuasiLmbtSgI2XhxfiUI/3VusPOGaikHFT1fKmvDR2Kiegu0Z+qgPTbltvTrNWSgqSsho2VX8z4j/MKSVgOq+ctl4KSCMaSMVzYupQRiVmGGB0A1XhB2m7mZpF6/SHTF+PWrNNuJMX8bm47LPMNuH+4qN6AQzmvECIS/or0xaWe3i34s8i6SdGmeYDUWl05aS/iy3cZECWtpR5k2eqX1+A2Ga5Vn25R6LCNUd8bw/7YB+QyIJFPYQL4zFlMok/H6vcs4wENbnwHKNLF8Buix40aw==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "f701151f468f705f89953b4787c720cd52825ef9241227806b26fbbd13ad16eb"
+                                },
+                                "extensions": {
+                                    "extended_key_usage": {
+                                        "server_auth": true,
+                                        "client_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "yIYfPSPcsPKvrKXBWAnASJQpTYNel4S7Z+K21TwVaaAGo5UXIqnDXCCBnAjMCGgfGEu2BBBxURllklry6L9DayW7iRkOuE//u1xwwKbzf2Jb9cujR09FlhBfVaYHDJ91n+VEEGDsivGFnWlzPQGvA4lVs5AUuMvhkDVe5s7HLH+bMZGmVOFkitFB/Fdj8zdDRoJ/xqgiOTy7FNiInAaXbdoJAGxMsXEf8XZOkwAiNq2oRrgSP6+DwLSecSyEWORDymp2g1LB201zsSUQhIXSphAKvYjYtqDNUICxpAApeiCXu7KzmwABZwjvhFEbUqzEYzV4GUxD8EF6Sxa2z1wmmA==",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "c5d3f03e9e5d94b6f5c1923bdcc3113d",
+                                "fingerprint_sha1": "40ec6ebe8fca74cd1c4e62b54ae61a7ec667a894",
+                                "fingerprint_sha256": "1451c6aed3b8139e8f64752879c937177be18a61b956aafe7e7a214788e268bd",
+                                "tbs_noct_fingerprint": "9dfe19b032e5fe7fc6135192c96fe69bca29959ade05d239a0ae1d8cb3561e61",
+                                "spki_subject_fingerprint": "1607e54c592749124e80bb38ebc81ccc9f36c90c7669b3a86e1c28e89560e809",
+                                "tbs_fingerprint": "9dfe19b032e5fe7fc6135192c96fe69bca29959ade05d239a0ae1d8cb3561e61",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 256,
+                            "encrypted_pre_master_secret": "Tayrp9lzdKuX0YlLu8/j9CpBm/PYecRDolbi/PSIeqZgO601meA/QqGJFiPbsAKYD055Sx6MASt7IQVR7UC4BzI/cexdQM6jWZIzi71UofZZ0aUxbNenqxiiXhSCnS0giE0QT13qy0mkJjRLZCqZK4GkyRG4dgaoVYNe/bUry46Wh4a7TIqYhJmSNiJ5wcSyJaK3hD3yVYpTWY62bx/lY+CZDvapiDei25UmDnUzSfxe0ZvhANnzUlpKOHY9hUMr4P1tBHslEtjedJuhzu1BmFouSl4b8tUOfw4MXRmT7InQb748JKxGL7L0cQu/Yz4me08X0FS6CH2HaUFu8WYY3w=="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "5aRuVfFMv51/56QX"
+                    },
+                    "server_finished": {
+                        "verify_data": "w3XQP40wJ5Pjt7On"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "qkNZlb1hd8GEhGgfsVxj0IjjPXIXYxTV5LwHGLEEGX8XsHG5UdOiuRHgIvXDV25D",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwNfDj29L0c955uu1hLXkcOo2TYuMwJkX2qafVKjgPp7SJChuCIMagcBMHLiWC0i",
+                            "length": 48
+                        }
+                    }
+                },
+                "ja3s": "ccd5709d4a9027ec272e98b9924c36f7",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T12:15:33Z"
+        }
+    }
+}

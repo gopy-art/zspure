@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 49,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgECAAADABhTb2xhcmUgRGF0ZW5zeXN0ZW1lIEdtYkgBBnh4eHh4eAIFVjEuMDA=",
+                "mei_response": {
+                    "conformity_level": 2,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "xxxxxx",
+                        "revision": "V1.00",
+                        "vendor": "Solare Datensysteme GmbH"
+                    }
+                },
+                "raw": "WkcAAAAxACsOAQIAAAMAGFNvbGFyZSBEYXRlbnN5c3RlbWUgR21iSAEGeHh4eHh4AgVWMS4wMA=="
+            },
+            "timestamp": "2026-06-16T14:13:22Z"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 38,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAADAAABCk9DTSBQcm8gQ0YCDlY1LjMwIDE1LzA2LzE1",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "OCM Pro CF",
+                        "revision": "V5.30 15/06/15",
+                        "vendor": ""
+                    }
+                },
+                "raw": "WkcAAAAmACsOAQEAAAMAAAEKT0NNIFBybyBDRgIOVjUuMzAgMTUvMDYvMTU="
+            },
+            "timestamp": "2026-06-16T12:55:42Z"
+        }
+    }
+}

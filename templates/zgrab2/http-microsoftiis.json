@@ -1,0 +1,60 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 35,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_length": [
+                            "17"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Tue, 16 Jun 2026 12:49:46 GMT"
+                        ],
+                        "last_modified": [
+                            "Mon, 17 Jul 2017 05:03:59 GMT"
+                        ],
+                        "server": [
+                            "Microsoft-IIS/8.5"
+                        ]
+                    },
+                    "body": "Ollama is running",
+                    "body_sha256": "afea168799b6bcdb259676a41b211bc7cef67ff4ff09d31e8c9e477449eaa8af",
+                    "content_length": 17,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:35",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:35"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T12:49:46Z"
+        }
+    }
+}

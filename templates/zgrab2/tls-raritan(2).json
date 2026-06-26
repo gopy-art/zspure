@@ -1,0 +1,171 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.0",
+                            "value": 769
+                        },
+                        "random": "ajbhhpM4F3O/+lqe3g4Dlrd5aB4lSWVmz4SCfpSfolg=",
+                        "session_id": "PXlZPsEKkCxyIsxBqvhfd7yMtXC2QGUPyoZolFzBM2s=",
+                        "cipher_suite": {
+                            "hex": "0x0035",
+                            "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+                            "value": 53
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIElzCCA3+gAwIBAgIBAjANBgkqhkiG9w0BAQUFADCBgTELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxETAPBgNVBAcTCFNvbWVyc2V0MR8wHQYDVQQKExZSYXJpdGFuIEFtZXJpY2FzLCBJbmMuMRQwEgYDVQQLEwtFbmdpbmVlcmluZzETMBEGA1UEAxMKUmFyaXRhbiBDQTAeFw0xMzExMjAxOTUxNTZaFw0yNTExMTcxOTUxNTZaMIGCMQswCQYDVQQGEwJVUzETMBEGA1UECBMKTmV3IEplcnNleTERMA8GA1UEBxMIU29tZXJzZXQxHzAdBgNVBAoTFlJhcml0YW4gQW1lcmljYXMsIEluYy4xFDASBgNVBAsTC0VuZ2luZWVyaW5nMRQwEgYDVQQDEwtSYXJpdGFuIEtWTTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANfrfnS7T7HtGuNZ8AI4yX7oFwZx+3+b+TbmG42BC+6pYSo57B5BEq6SjuqcalIGjGsaM/dw04v1fW2w2m4d1KvRhE2yGd1gN5LORaL1yRbCh0RacNHFLsOyDgVI/fEEBZhmlF/qeL+kIpxqMme6IEvIcnyKczlhecJYwU61+6HMfb+euVCyDgmmH4y2tCEiAwDHfQjJm0xIE7QFhsVvmEudmxvmmJyRRB0pZhueyfeSTDfkDELhuE1oh8EBhKlNp/yIf1ojQH420etr19SIC5L67915KViZGOxLEykxNnY9Wh8vt3sp4RxnOcvk+s9RKfyLGNTLeof0TLfF9+uyZq8CAwEAAaOCARUwggERMAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBR7CBM3grYdfJhGZwAtSCYXiFOl0TCBtgYDVR0jBIGuMIGrgBQpqs1hi73lOqUh+TvM2gmntU4vX6GBh6SBhDCBgTELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxETAPBgNVBAcTCFNvbWVyc2V0MR8wHQYDVQQKExZSYXJpdGFuIEFtZXJpY2FzLCBJbmMuMRQwEgYDVQQLEwtFbmdpbmVlcmluZzETMBEGA1UEAxMKUmFyaXRhbiBDQYIJAKnius9yo17XMA0GCSqGSIb3DQEBBQUAA4IBAQCKlwqRabgX8WOESk5CqJ4F/SjdFe072iPz9d+OMtetRG7fer86Kdpr+2QO60Kj8I6oW/j3XGNDxhJ9HyOvHuHgs5bRZSull6aJn/KMURjY0Xw5l3C+jEFLKL373RcBTB9tiAEE99kUXPiZd58cpfWGlzc/QBkDIsVhma8+IsqT27zrpA5jP7WT8liwf5DSoT8BdUCFJ2pCeU+P/OwxZMC+BJwEpeYGU1xsw7ZsnbYsYKEl+Pe+4IMjdtSTSb5xzF/78BCZNOy3pYDETqCvIi7NXh0iIf7mrcVfBfeTBf98DCaFhK3yK6hncXHiJQ6RCteVIeO9rPon7ThaEPrXAF5D",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "2",
+                                "signature_algorithm": {
+                                    "name": "SHA1-RSA",
+                                    "oid": "1.2.840.113549.1.1.5"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Raritan CA"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Somerset"
+                                    ],
+                                    "province": [
+                                        "New Jersey"
+                                    ],
+                                    "organization": [
+                                        "Raritan Americas, Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Engineering"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=New Jersey, L=Somerset, O=Raritan Americas\\, Inc., OU=Engineering, CN=Raritan CA",
+                                "validity": {
+                                    "start": "2013-11-20T19:51:56Z",
+                                    "end": "2025-11-17T19:51:56Z",
+                                    "length": 378432000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "Raritan KVM"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Somerset"
+                                    ],
+                                    "province": [
+                                        "New Jersey"
+                                    ],
+                                    "organization": [
+                                        "Raritan Americas, Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Engineering"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=New Jersey, L=Somerset, O=Raritan Americas\\, Inc., OU=Engineering, CN=Raritan KVM",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "1+t+dLtPse0a41nwAjjJfugXBnH7f5v5NuYbjYEL7qlhKjnsHkESrpKO6pxqUgaMaxoz93DTi/V9bbDabh3Uq9GETbIZ3WA3ks5FovXJFsKHRFpw0cUuw7IOBUj98QQFmGaUX+p4v6QinGoyZ7ogS8hyfIpzOWF5wljBTrX7ocx9v565ULIOCaYfjLa0ISIDAMd9CMmbTEgTtAWGxW+YS52bG+aYnJFEHSlmG57J95JMN+QMQuG4TWiHwQGEqU2n/Ih/WiNAfjbR62vX1IgLkvrv3XkpWJkY7EsTKTE2dj1aHy+3eynhHGc5y+T6z1Ep/IsY1Mt6h/RMt8X367Jmrw==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "98d7991bbcbc6525ee8ffd8d57c55f0d027b5d01ae2aa70570b12eff03e38b2f"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "authority_key_id": "29aacd618bbde53aa521f93bccda09a7b54e2f5f",
+                                    "subject_key_id": "7b08133782b61d7c984667002d4826178853a5d1"
+                                },
+                                "unknown_extensions": [
+                                    {
+                                        "id": "2.16.840.1.113730.1.13",
+                                        "critical": false,
+                                        "value": "Fh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZQ=="
+                                    }
+                                ],
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "value": "ipcKkWm4F/FjhEpOQqieBf0o3RXtO9oj8/XfjjLXrURu33q/Oinaa/tkDutCo/COqFv491xjQ8YSfR8jrx7h4LOW0WUrpZemiZ/yjFEY2NF8OZdwvoxBSyi9+90XAUwfbYgBBPfZFFz4mXefHKX1hpc3P0AZAyLFYZmvPiLKk9u866QOYz+1k/JYsH+Q0qE/AXVAhSdqQnlPj/zsMWTAvgScBKXmBlNcbMO2bJ22LGChJfj3vuCDI3bUk0m+ccxf+/AQmTTst6WAxE6gryIuzV4dIiH+5q3FXwX3kwX/fAwmhYSt8iuoZ3Fx4iUOkQrXlSHjvaz6J+04WhD61wBeQw==",
+                                    "valid": false,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "d46d79973a41628be766f68163d56a46",
+                                "fingerprint_sha1": "437a3fa7083cdba085e25377864dbfc149b502a8",
+                                "fingerprint_sha256": "31004e2e73e123353c2bc6632b276050e5fe97bc399760f324271066bf111d2b",
+                                "tbs_noct_fingerprint": "34abea04c57e2f53a6bca576f842492140bf7e5c1e1ae44c6618d7de6b3e2b8c",
+                                "spki_subject_fingerprint": "3733e9cb9958e8835a9e79ef73f7c7f8e26ea4b464aaa6729949c549cdb6ace5",
+                                "tbs_fingerprint": "34abea04c57e2f53a6bca576f842492140bf7e5c1e1ae44c6618d7de6b3e2b8c",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate signed by unknown authority"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 256,
+                            "encrypted_pre_master_secret": "S3OQORPdmxi63DQa8846S/aJudz0WRxYwfpnIlKocJkdPGXev4y2U4CQ6ogwrQPHtQtl4f2X0xLRSp+VvY6Ryofc5CQj6s5B40y/QmT6GilIA0bHS67Ku2rH+a/PLaObHMGtAIUHwE7c82yg+2SJfahhRp72dJ08u1pDumkArjEXOwWqyzwxs+kAcAlVRDfROAbYO5uIQQhj6OIZxm9LBbCu8Gzaibs++LbzufqObm2XszkV5ts0OOLHR/+o7HExFxEkOgrrsQbJXxSf4E4FMBosXuOXg0IvlGTd8jMIi9YobmRh7JQKoNr4BLHA5EK4xE3YS75u9gAL0yDUYl3Evg=="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "2orzdEsNa9YcWrk8"
+                    },
+                    "server_finished": {
+                        "verify_data": "gVgQcVwCMURl8baO"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "Qj+9ZBKTwpC7TYO1deArd1+DWZWCtFr+AYKfPa0scpcYApG8s8dM52ehBwZUasFj",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwPaUrgogLUne5xiIcGOL//5ARYgU4cUTZs1sEhMV3WDOHv50IB2wPreDm8uFzPb",
+                            "length": 48
+                        }
+                    }
+                },
+                "ja3s": "91589ea825a2ee41810c85fab06d2ef6",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-20T18:52:54Z"
+        }
+    }
+}

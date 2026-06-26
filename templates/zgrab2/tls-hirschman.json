@@ -1,0 +1,149 @@
+{
+    "data": {
+        "tls": {
+            "protocol": "tls",
+            "result": {
+                "handshake_log": {
+                    "client_finished": {
+                        "verify_data": "Q/v6HYhE/I0oj66N"
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "encrypted_pre_master_secret": "QAyZ5m9hoezKjOlygJg6GMuw8diN8e+wcFnBZN6ui3XhTK2EW7TckAkZAPoTwHtLCoArI9lWFQkCii4gl46xv4eIzffqW+XnprtjSxet5AIQFOzpxoDQFIOTM7RLbjFa1qnbUfeFHZslx2UK/4fb1PShs56Eh3WwKemT9QNUNuiHEGaVQgpK2slogazs8jnYumw8APqc3Txi42kQRKwLOkl7Lr4q4/NBtu4j6IdEQJ8NwH/JwdWR6hORvt5EcMgcrXGGOOzqMJy4JeyGF67zuibfvNVztWb9OIT4dLGvrbw9hX4M+cKmp+ih2isoayxBXicSy6yKLcgnwyCy4WycZg==",
+                            "length": 256
+                        }
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "length": 48,
+                            "value": "hYkScEM6xEp3/+HGoCFeBpm0vahu+ipe5U5nLFlftEY9p6Og1/qrLPtsObdmKxlh"
+                        },
+                        "pre_master_secret": {
+                            "length": 48,
+                            "value": "AwO6Vsk47+nnm9tRtNyl2m+o6tBh3JwYlL6Yzk6SVOHMXlaqXwztRVPRMVIRG5P2"
+                        }
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "parsed": {
+                                "extensions": {},
+                                "fingerprint_md5": "e720649f4b00595458754a1648c63499",
+                                "fingerprint_sha1": "43c079e047f202c46e9f96943ded43734a641231",
+                                "fingerprint_sha256": "d68746cb020d11d7c8d0a3cc101a07d372b744971e96ea1ec968e707f95293e7",
+                                "issuer": {
+                                    "common_name": [
+                                        "EAGLE-008063E88F39"
+                                    ],
+                                    "country": [
+                                        "DE"
+                                    ],
+                                    "locality": [
+                                        "Neckartenzlingen"
+                                    ],
+                                    "organization": [
+                                        "Hirschmann Automation and Control GmbH"
+                                    ],
+                                    "organizational_unit": [
+                                        "EAGLE"
+                                    ],
+                                    "province": [
+                                        "BW"
+                                    ]
+                                },
+                                "issuer_dn": "C=DE, CN=EAGLE-008063E88F39, L=Neckartenzlingen, ST=BW, O=Hirschmann Automation and Control GmbH, OU=EAGLE",
+                                "redacted": false,
+                                "serial_number": "-1381187847",
+                                "signature": {
+                                    "self_signed": true,
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "valid": true,
+                                    "value": "yYsy2R81WGErQzhLicRItY48ZCIQK+BPrDtv6utfotoW4o8lzZX8/Z9LmBwRr+a3m/5ZDr0U7rAcvBQ2rlR5nEhex3Xhpu5i7AO8ZquKnP72NwZMg3LHY5OKyR4+eZ78pCc4ZXAc94CPXB6m4GcK5pucjd+DhgUwYZk9LOnbCpTJQHdvktd8PD/Bxw9Pgx/cq09oYmL3RS+YLeB7lTHIBxQNq/RrgcAZ0bDvlomqHSV/I6pp3y4N7TU0PgLNheHXPEECdC5BuiFwVHINF+0cGBiFb2/D7deFtJJFr9ubEVfEI1NdC53/T7J18xVLGeHtwN/PaiakcJE3C9h5aKSj8Q=="
+                                },
+                                "signature_algorithm": {
+                                    "name": "SHA1-RSA",
+                                    "oid": "1.2.840.113549.1.1.5"
+                                },
+                                "spki_subject_fingerprint": "59e5314936fb5a6f8ae3a3e62bf85d63e00f02dbfaab08123a4acb87fda486e0",
+                                "subject": {
+                                    "common_name": [
+                                        "EAGLE-008063E88F39"
+                                    ],
+                                    "country": [
+                                        "DE"
+                                    ],
+                                    "locality": [
+                                        "Neckartenzlingen"
+                                    ],
+                                    "organization": [
+                                        "Hirschmann Automation and Control GmbH"
+                                    ],
+                                    "organizational_unit": [
+                                        "EAGLE"
+                                    ],
+                                    "province": [
+                                        "BW"
+                                    ]
+                                },
+                                "subject_dn": "C=DE, CN=EAGLE-008063E88F39, L=Neckartenzlingen, ST=BW, O=Hirschmann Automation and Control GmbH, OU=EAGLE",
+                                "subject_key_info": {
+                                    "fingerprint_sha256": "305b58c7eeb18230e4d00ae597d0b2c6633e0e466b79f0e65df1551afe7010df",
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "length": 2048,
+                                        "modulus": "zjcMGnsQ5NAS/fVffqXWQtMQLb7lohV+oL/qNMNfWlHrh0gz9hE13U6e1EoKj2YazesmWZVl2Hpb/nPRp3Wa/C6pVpVo86Umo2Do0DmDH7B8NruB5nqKcEaozdzeYXI4S7vznjJbVDviF5Ozj3dKO+NYy/YgG5ATg3cTqYZyT26n0S/2luoamvg58POdSrlHHDFW4ZN5txA0RBd8s2u8CLRByc8kdt81AuVSzNWFNuaj+LLXJ0tQzB0ryq3RAtkb5TSQSg4DZ7PZrcJ6ZnR+S6OyWjpDXV98UJdvfsWvmEGG0FOTZQBIAsq/BqXD1VrKDVGmU8l2E6/Hzrgn6JcJJQ=="
+                                    }
+                                },
+                                "tbs_fingerprint": "91c00609e5a78ba7d72062ea33fb322e5fc0b3372cae7d59e5aef50f01972cc5",
+                                "tbs_noct_fingerprint": "947978709a1fe2991a8853c2b4d47e08d2312059e8b9a012607a92a1fa246e01",
+                                "validation_level": "unknown",
+                                "validity": {
+                                    "end": "2016-01-01T00:00:27Z",
+                                    "length": 94608000,
+                                    "start": "2013-01-01T00:00:27Z"
+                                },
+                                "version": 3
+                            }
+                        },
+                        "validation": {
+                            "browser_error": "x509: certificate is self-signed and not a trusted root",
+                            "browser_trusted": false
+                        }
+                    },
+                    "server_finished": {
+                        "verify_data": "T4Vqi6RgvG4GPjPr"
+                    },
+                    "server_hello": {
+                        "cipher_suite": {
+                            "hex": "0x002F",
+                            "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+                            "value": 47
+                        },
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ],
+                        "heartbeat": false,
+                        "ocsp_stapling": false,
+                        "random": "ajomT1nXXHpJp3ePGnGWQi09nI9DNyy6TD+yNkCwcqc=",
+                        "secure_renegotiation": false,
+                        "session_id": "d0QaDVw1QybzYZKA6GzjxMTgpSAei2MSnNqWY/GELsc=",
+                        "ticket": false,
+                        "version": {
+                            "name": "TLSv1.0",
+                            "value": 769
+                        }
+                    }
+                }
+            },
+            "status": "success",
+            "timestamp": "2026-06-23T02:23:22-04:00"
+        }
+    },
+    "ip": "127.0.0.1"
+}

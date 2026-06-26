@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 WFTPD 3.4 service (by Texas Imperial Software) ready for new user\r\n"
+            },
+            "timestamp": "2026-06-15T16:09:47Z"
+        }
+    }
+}

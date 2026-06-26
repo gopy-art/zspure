@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 9001,
+            "result": {
+                "banner": "220 ProFTPD 1.2.9 Server (Snap Appliance FTP Server) [SNAP2252876.spec.local]\r\n"
+            },
+            "timestamp": "2026-06-24T17:56:32Z"
+        }
+    }
+}

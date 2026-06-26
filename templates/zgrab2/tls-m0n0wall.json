@@ -1,0 +1,116 @@
+{
+    "data": {
+        "tls": {
+            "protocol": "tls",
+            "result": {
+                "handshake_log": {
+                    "client_finished": {
+                        "verify_data": "5NVKLdAakWYjVmW6"
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "encrypted_pre_master_secret": "YM3xAHoeG62OHtPYrcFxYcksfGT5ffv9wf5cv5qJnx4c35TnlFTQjkYpwOeV8TirOIJbbCnGoXEnsN+TIMNT3pAYUNgTcbNXEqZV3G+MLvc7KkD3vWFPounB2I7x/WCymY16H8RDGwEYZDZUE27SxvGWK38pLbdbDycFFVNCGeY=",
+                            "length": 128
+                        }
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "length": 48,
+                            "value": "8YFa+3hUElitBU+M46BDvMuPhDb7iqObcQT1rwmMDMYqL7jVEOjI9kujtJMP+wRG"
+                        },
+                        "pre_master_secret": {
+                            "length": 48,
+                            "value": "AwOEXDAP3GGpgyHwKmCl1dAV3qPHR6oIisK3SpMLpgYSWRYreoNUKPT9UUOxkiFI"
+                        }
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "parsed": {
+                                "extensions": {},
+                                "fingerprint_md5": "71a248ed3d0ff9b84118fd99cff4d291",
+                                "fingerprint_sha1": "85bbdf6fc9d61d80bfba9a9b34bb5b8721ec74ae",
+                                "fingerprint_sha256": "1c8afe471cd86f238bf5869811c200139d96337a034e51ea5deb4224ee92994a",
+                                "issuer": {
+                                    "organization": [
+                                        "m0n0wall"
+                                    ]
+                                },
+                                "issuer_dn": "O=m0n0wall",
+                                "redacted": false,
+                                "serial_number": "0",
+                                "signature": {
+                                    "self_signed": true,
+                                    "signature_algorithm": {
+                                        "name": "MD5-RSA",
+                                        "oid": "1.2.840.113549.1.1.4"
+                                    },
+                                    "valid": true,
+                                    "value": "VH3rZzhHm1VxOfQ5ByzNihbpYL6KeL21BCHmS7mNgMCIL7TRq1rAkRUucveXABylIpMhaVOQPbS2XeXPluvWoWBiTL5F3STBLaeT2NFuTFJfF3oolWc1EIqt7bxrDcQ3Nl8JK6s9CxdQ+nl6v423AxPWDuz8kOYpMLjDWsavn9w="
+                                },
+                                "signature_algorithm": {
+                                    "name": "MD5-RSA",
+                                    "oid": "1.2.840.113549.1.1.4"
+                                },
+                                "spki_subject_fingerprint": "adf8894bb059c31f9fddbd77721c2e0705c3e925bd0d21b209685f35545836a5",
+                                "subject": {
+                                    "organization": [
+                                        "m0n0wall"
+                                    ]
+                                },
+                                "subject_dn": "O=m0n0wall",
+                                "subject_key_info": {
+                                    "fingerprint_sha256": "1d2cce6b6f4558854562154287c9e8912a891d81766a52bb483da0ff2d065518",
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "length": 1024,
+                                        "modulus": "wEobM4Rc/qPJbDFkxoE8bEzD0fr+Pqi+Y1w8mPezC0xhSu2qkDraSEHPk3E3OI5JYDlZR6Ee6AV67IvGK2wnfvNyz0JkKEjwtFaoX1N7mH9zc8YivK/e2jwrJloME9qUOk3BEk5urBe5y6azn/8xTwuIxNn745G88laJT8sAbns="
+                                    }
+                                },
+                                "tbs_fingerprint": "48711f0b843ff19b1b4d1a117654cb853ba9bc4c33cb93556316295a8c40598e",
+                                "tbs_noct_fingerprint": "ffc9208a60de548ca18b272eea2b80098c4edc0e6ec1cacdbf0b1bea2b8f8029",
+                                "validation_level": "unknown",
+                                "validity": {
+                                    "end": "2007-05-10T12:24:44Z",
+                                    "length": 63072000,
+                                    "start": "2005-05-10T12:24:44Z"
+                                },
+                                "version": 1
+                            }
+                        },
+                        "validation": {
+                            "browser_error": "x509: certificate is self-signed and not a trusted root",
+                            "browser_trusted": false
+                        }
+                    },
+                    "server_finished": {
+                        "verify_data": "XAMAnBmBGGFZY3uq"
+                    },
+                    "server_hello": {
+                        "cipher_suite": {
+                            "hex": "0x002F",
+                            "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+                            "value": 47
+                        },
+                        "extended_master_secret": false,
+                        "heartbeat": false,
+                        "ocsp_stapling": false,
+                        "random": "ajotb6kyKPZabkC9nbjyvOAJ2qiDcL+oRt8eubU0atY=",
+                        "secure_renegotiation": false,
+                        "session_id": "/T+ZPRFtosjgKmCbcSsLMuP6+MDTeT0Nnxxn4BLgdvE=",
+                        "ticket": false,
+                        "version": {
+                            "name": "TLSv1.0",
+                            "value": 769
+                        }
+                    }
+                }
+            },
+            "status": "success",
+            "timestamp": "2026-06-23T02:53:34-04:00"
+        }
+    },
+    "ip": "127.0.0.1"
+}

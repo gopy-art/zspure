@@ -1,0 +1,50 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.0",
+                    "protocol_major": 1,
+                    "headers": {
+                        "connection": [
+                            "close"
+                        ],
+                        "content_type": [
+                            "text/html; charset=iso-8859-1"
+                        ]
+                    },
+                    "body": "\u003c!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"\u003e\r\n\u003chtml\u003e\u003chead\u003e\r\n\u003cmeta name=Copyright content=\"Copyright (c) 2005 HP Networks, Inc. All Rights Reserved.\"\u003e\r\n\u003cmeta http-equiv=Content-Type content=\"text/html; charset=iso-8859-1\"\u003e\r\n\u003cmeta http-equiv=\"Pragma\" content=\"no-cache\"\u003e\r\n\u003ctitle\u003eHP Networks Web Interface\u003c/title\u003e\r\n\u003cscript src=\"/mainjs.js\" language=javascript type=\"text/javascript\"\u003e\u003c/script\u003e\r\n\u003cscript language=\"javascript\" type=\"text/javascript\"\u003e\r\n//\u003c!--\r\ncheckFrame();\t// Ensure we are not within a frame\r\nimplementLoginFrames('login.html');\r\ndocument.write('\u003cnoframes\u003e');\r\n//--\u003e\r\n\u003c/script\u003e\r\n\u003c/head\u003e\r\n\r\n\u003cbody BGCOLOR=\"#DAE3EB\"\u003e\r\n\u003ccenter\u003e\r\n\u003cfont color=\"#008BD1\" face=\"Arial, Helvetica, sans-serif\"\u003e\u003cB\u003ePlease ensure that your browser supports Frames and Javascript, and that they are both enabled.\u003c/b\u003e\u003c/font\u003e\r\n\u003c/center\u003e\r\n\u003cscript language=\"javascript\" type=\"text/javascript\"\u003e\r\n//\u003c!--\r\ndocument.write('\u003c\\/noframes\u003e');\r\n//--\u003e\r\n\u003c/script\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\r\n",
+                    "body_sha256": "eae924789454a2874999e24fdb07f9fc6e3e4138dc8e6ba885d97c1d801759c0",
+                    "content_length": -1,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-15T18:19:46Z"
+        }
+    }
+}

@@ -1,0 +1,160 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 4848,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "UMFFZIxA+t9LER9Bk7tXrWaDe61xbwv0/9jCwa83q/4=",
+                        "session_id": "ijLCe1V9xLaGct4ASTZZDQiz12lp8+r48ng1GUylLzk=",
+                        "cipher_suite": {
+                            "hex": "0x1302",
+                            "name": "TLS_AES_256_GCM_SHA384",
+                            "value": 4866
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x001D",
+                            "name": "x25519",
+                            "value": 29
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDrTCCApWgAwIBAgIEIeOttTANBgkqhkiG9w0BAQsFADCBgDELMAkGA1UEBhMCVVMxEjAQBgNVBAoMCWlYc3lzdGVtczESMBAGA1UEAwwJbG9jYWxob3N0MSEwHwYJKoZIhvcNAQkBFhJpbmZvQGl4c3lzdGVtcy5jb20xEjAQBgNVBAgMCVRlbm5lc3NlZTESMBAGA1UEBwwJTWFyeXZpbGxlMB4XDTI0MTEyMjAwNDQ0MVoXDTI1MTIyNDAwNDQ0MVowgYAxCzAJBgNVBAYTAlVTMRIwEAYDVQQKDAlpWHN5c3RlbXMxEjAQBgNVBAMMCWxvY2FsaG9zdDEhMB8GCSqGSIb3DQEJARYSaW5mb0BpeHN5c3RlbXMuY29tMRIwEAYDVQQIDAlUZW5uZXNzZWUxEjAQBgNVBAcMCU1hcnl2aWxsZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMwG4EtY2+Ot3/KJRH5LULmoxsrsC6488zpKOsSeaxcu5rVGTFKZupOmP5KE5RxgugDhEg/6fQueUec+K5vyG3i70vqiIsvRMMN57Ml8oB3ilU+56XTpnJtdublgo4Vb5u/YTF1USzlB+zvxnf1yH/iVRQI3Sl+qV16BaukDZh9HT5YN1u9dCJw+0ha8y7pKPVbua3pPt61pD+GoSLSGMV4tNJy+df8NoRmsdXQng0mf/oN6nRJE4Db6zbWpEAddCEvB6f+U+HhGNUwWytefPXN2D4xce1gx2a+nngq/DHokkU5EgipPSBOyQ21/lpKgaeX6SB01h4VNT9nOxprolu0CAwEAAaMtMCswFAYDVR0RBA0wC4IJbG9jYWxob3N0MBMGA1UdJQQMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEBCwUAA4IBAQAgW8Zp3/8ZoeqWyB3E40y0hP9kjKbsGXINOLC2Le93hnAn4h1akSx4iLfE02f+sfDUCfbXEEDZDzNgoH5BZhbeSvLLZpR59m22w2zNkbNm1T6hWEfWxTxDcwdtMQPfW45YbNUlSQH+invoM/bgwLLOdeQObzAeagOoVmQZWiEUBFT0X1CtbB0oPxMhjQCHGPVaUmemFhxB1n5jQ0mFSSGujOy8EV0GZPn3MxCK5K7NRh+jIHTQHEpVdZv7k2HA/rVe6eq+fRu8PpAzhDqxVKb+H4ZcaEbS5MLIaMPwked1zmU7UjNl5LwxDPwolj79mbXADTs0wdp99eNOF/y5CUQV",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "568569269",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "localhost"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Maryville"
+                                    ],
+                                    "province": [
+                                        "Tennessee"
+                                    ],
+                                    "organization": [
+                                        "iXsystems"
+                                    ],
+                                    "email_address": [
+                                        "info@ixsystems.com"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, O=iXsystems, CN=localhost, emailAddress=info@ixsystems.com, ST=Tennessee, L=Maryville",
+                                "validity": {
+                                    "start": "2024-11-22T00:44:41Z",
+                                    "end": "2025-12-24T00:44:41Z",
+                                    "length": 34300800
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "localhost"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Maryville"
+                                    ],
+                                    "province": [
+                                        "Tennessee"
+                                    ],
+                                    "organization": [
+                                        "iXsystems"
+                                    ],
+                                    "email_address": [
+                                        "info@ixsystems.com"
+                                    ]
+                                },
+                                "subject_dn": "C=US, O=iXsystems, CN=localhost, emailAddress=info@ixsystems.com, ST=Tennessee, L=Maryville",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "zAbgS1jb463f8olEfktQuajGyuwLrjzzOko6xJ5rFy7mtUZMUpm6k6Y/koTlHGC6AOESD/p9C55R5z4rm/IbeLvS+qIiy9Eww3nsyXygHeKVT7npdOmcm125uWCjhVvm79hMXVRLOUH7O/Gd/XIf+JVFAjdKX6pXXoFq6QNmH0dPlg3W710InD7SFrzLuko9Vu5rek+3rWkP4ahItIYxXi00nL51/w2hGax1dCeDSZ/+g3qdEkTgNvrNtakQB10IS8Hp/5T4eEY1TBbK1589c3YPjFx7WDHZr6eeCr8MeiSRTkSCKk9IE7JDbX+WkqBp5fpIHTWHhU1P2c7GmuiW7Q==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "a390aa69968e4c46798d88d0bc33e38a8071a85a2f34bdcc7d0d01952ac6f90f"
+                                },
+                                "extensions": {
+                                    "subject_alt_name": {
+                                        "dns_names": [
+                                            "localhost"
+                                        ]
+                                    },
+                                    "extended_key_usage": {
+                                        "server_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "IFvGad//GaHqlsgdxONMtIT/ZIym7BlyDTiwti3vd4ZwJ+IdWpEseIi3xNNn/rHw1An21xBA2Q8zYKB+QWYW3kryy2aUefZttsNszZGzZtU+oVhH1sU8Q3MHbTED31uOWGzVJUkB/op76DP24MCyznXkDm8wHmoDqFZkGVohFARU9F9QrWwdKD8TIY0Ahxj1WlJnphYcQdZ+Y0NJhUkhrozsvBFdBmT59zMQiuSuzUYfoyB00BxKVXWb+5NhwP61Xunqvn0bvD6QM4Q6sVSm/h+GXGhG0uTCyGjD8JHndc5lO1IzZeS8MQz8KJY+/Zm1wA07NMHaffXjThf8uQlEFQ==",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "442fe121c1d89afaa9f82e3417595271",
+                                "fingerprint_sha1": "2c8dfce4352e8390de327e58336b2f583be5b13e",
+                                "fingerprint_sha256": "b56aeed79392bc43a3e24eccf44c11b2a9fb928afdf9568dadb7ba3244cc65b6",
+                                "tbs_noct_fingerprint": "de65cac84c2f4b909cbc6a933b04409bcf15732b8e09dde38504b9a03a049d94",
+                                "spki_subject_fingerprint": "3a6b82efb9fe7bf0ac61b965c85995c2f122602ce2c6d8fe227e802a8f16f6f4",
+                                "tbs_fingerprint": "de65cac84c2f4b909cbc6a933b04409bcf15732b8e09dde38504b9a03a049d94",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "localhost"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    }
+                },
+                "ja3s": "15af977ce25de452b96affa2addb1036",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T12:11:42Z"
+        }
+    }
+}

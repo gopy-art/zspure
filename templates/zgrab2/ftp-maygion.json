@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 IPCamera FtpServer(www.maygion.com),used for IPCam Repair and upgrade,do NOT change firmware unless you know what you are doing!\r\n"
+            },
+            "timestamp": "2026-06-24T17:38:41Z"
+        }
+    }
+}

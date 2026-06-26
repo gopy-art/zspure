@@ -1,0 +1,83 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "accept_ranges": [
+                            "bytes"
+                        ],
+                        "connection": [
+                            "Keep-Alive"
+                        ],
+                        "content_length": [
+                            "163"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Tue, 16 Jun 2026 12:38:39 GMT"
+                        ],
+                        "last_modified": [
+                            "Tue, 13 Jan 2026 17:15:01 GMT"
+                        ],
+                        "server": [
+                            "LiteSpeed"
+                        ],
+                        "strict_transport_security": [
+                            "max-age=63072000; includeSubDomains"
+                        ],
+                        "unknown": [
+                            {
+                                "key": "keep_alive",
+                                "value": [
+                                    "timeout=5, max=100"
+                                ]
+                            }
+                        ],
+                        "x_content_type_options": [
+                            "nosniff"
+                        ],
+                        "x_frame_options": [
+                            "SAMEORIGIN"
+                        ]
+                    },
+                    "body": "\u003chtml\u003e\u003chead\u003e\u003cMETA HTTP-EQUIV=\"Cache-control\" CONTENT=\"no-cache\"\u003e\u003cMETA HTTP-EQUIV=\"refresh\" CONTENT=\"0;URL=/cgi-sys/defaultwebpage.cgi\"\u003e\u003c/head\u003e\u003cbody\u003e\u003c/body\u003e\u003c/html\u003e\n",
+                    "body_sha256": "9278d16ed2fdcd5dc651615b0b8adc6b55fb667a9d106a9891b861d4561d9a24",
+                    "content_length": 163,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T12:38:39Z"
+        }
+    }
+}

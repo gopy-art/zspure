@@ -1,0 +1,257 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "zyGtdOWaYRG+HYwCHmW4kcKiERZ6u4xeB54J4sioM5w=",
+                        "session_id": "JebN6FOvb35mTZcj/FTQBdQT9+NDrVKQSS6Rl0w0et0=",
+                        "cipher_suite": {
+                            "hex": "0x1303",
+                            "name": "TLS_CHACHA20_POLY1305_SHA256",
+                            "value": 4867
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x0017",
+                            "name": "secp256r1",
+                            "value": 23
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDyTCCArGgAwIBAgIDHm2eMA0GCSqGSIb3DQEBCwUAMIGgMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTESMBAGA1UEBxMJU3Vubnl2YWxlMREwDwYDVQQKEwhGb3J0aW5ldDEeMBwGA1UECxMVQ2VydGlmaWNhdGUgQXV0aG9yaXR5MRAwDgYDVQQDEwdzdXBwb3J0MSMwIQYJKoZIhvcNAQkBFhRzdXBwb3J0QGZvcnRpbmV0LmNvbTAeFw0xOTAyMjcwNzI3MDdaFw0zODAxMTkwMzE0MDdaMIGdMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTESMBAGA1UEBxMJU3Vubnl2YWxlMREwDwYDVQQKEwhGb3J0aW5ldDESMBAGA1UECxMJRm9ydGlHYXRlMRkwFwYDVQQDExBGR1Q4MUVUSzE5MDAwODk3MSMwIQYJKoZIhvcNAQkBFhRzdXBwb3J0QGZvcnRpbmV0LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOopyYeW2s4KuvjoaotXrV4uCgZkuXLld/N0dpFjN1lDa/q8G/zTL7Eskq0ZxsL0klt7jESo0W/FreOpexw17LtHsbI9AweAMG4+ThSevZgbmE9v4oVkgFPWzoOgCh/V7DHUOo39t1p08rF2JIWAK2vBuRodePHHuqNIuMRSo+ShXOT3Hji8AQD1IFWyLHhR7/ozsi7WNLc9xAJcXsz4+oZ6AAo0hq+A8x/N4ZwWdXzhYt77vVtXLN/5vAjL+AGsDzOTxyp1nwTQktQrwGxoTovVaTeDXdk5Tj20lzOotC4rkK6lGaMfE1+HeG2xD5nmRfz5Ke/IJcxtbui9PE146OMCAwEAAaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAQEAtjIe4CRgDbB6teccMJ6HeU+PxuhTcc2LIsQIbGWxYn/7pQK4fDk1gl1ABMgaUdPv0Iu2hInTspDLyyhOSaYsB7HZlTfbyNCut1GZrjLg/KPJq7SZKwYFzIyvkqfc10YDpNK+c8A7qiR7P8GsejnJyehCnbtgUIVmqI/OCnSX4esGQQg8Pa0hl3VODBBPBk17Mw04y8Xg5LOEkR5RdeR3uav28NqLgMupFS4PZFVTUYa9B+7L9S9OUtc8wyicaBMbIhWDGE0ZGmbNt6/vScnfZh/pzM57MjYDn7ygXkvtMRcMNzTLssVgIsP3Eg0ufjsVwWWXmNz5LCtVj5249Hmf+A==",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "1994142",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "support"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Sunnyvale"
+                                    ],
+                                    "province": [
+                                        "California"
+                                    ],
+                                    "organization": [
+                                        "Fortinet"
+                                    ],
+                                    "organizational_unit": [
+                                        "Certificate Authority"
+                                    ],
+                                    "email_address": [
+                                        "support@fortinet.com"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=Certificate Authority, CN=support, emailAddress=support@fortinet.com",
+                                "validity": {
+                                    "start": "2019-02-27T07:27:07Z",
+                                    "end": "2038-01-19T03:14:07Z",
+                                    "length": 596231220
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "FGT81ETK19000897"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Sunnyvale"
+                                    ],
+                                    "province": [
+                                        "California"
+                                    ],
+                                    "organization": [
+                                        "Fortinet"
+                                    ],
+                                    "organizational_unit": [
+                                        "FortiGate"
+                                    ],
+                                    "email_address": [
+                                        "support@fortinet.com"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=FortiGate, CN=FGT81ETK19000897, emailAddress=support@fortinet.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "6inJh5bazgq6+Ohqi1etXi4KBmS5cuV383R2kWM3WUNr+rwb/NMvsSySrRnGwvSSW3uMRKjRb8Wt46l7HDXsu0exsj0DB4Awbj5OFJ69mBuYT2/ihWSAU9bOg6AKH9XsMdQ6jf23WnTysXYkhYAra8G5Gh148ce6o0i4xFKj5KFc5PceOLwBAPUgVbIseFHv+jOyLtY0tz3EAlxezPj6hnoACjSGr4DzH83hnBZ1fOFi3vu9W1cs3/m8CMv4AawPM5PHKnWfBNCS1CvAbGhOi9VpN4Nd2TlOPbSXM6i0LiuQrqUZox8TX4d4bbEPmeZF/Pkp78glzG1u6L08TXjo4w==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "4a103bc1c3da5010d4da72b1773b2bcd05c4950fa00711c1a8a6d5ee4a29b7ff"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "tjIe4CRgDbB6teccMJ6HeU+PxuhTcc2LIsQIbGWxYn/7pQK4fDk1gl1ABMgaUdPv0Iu2hInTspDLyyhOSaYsB7HZlTfbyNCut1GZrjLg/KPJq7SZKwYFzIyvkqfc10YDpNK+c8A7qiR7P8GsejnJyehCnbtgUIVmqI/OCnSX4esGQQg8Pa0hl3VODBBPBk17Mw04y8Xg5LOEkR5RdeR3uav28NqLgMupFS4PZFVTUYa9B+7L9S9OUtc8wyicaBMbIhWDGE0ZGmbNt6/vScnfZh/pzM57MjYDn7ygXkvtMRcMNzTLssVgIsP3Eg0ufjsVwWWXmNz5LCtVj5249Hmf+A==",
+                                    "valid": true,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "ca6b7f26388cd865261d5d9fa63377a6",
+                                "fingerprint_sha1": "99d7c7c6785be79e3e709440f8ece76c1a49bb74",
+                                "fingerprint_sha256": "6e3dac501ce1b4f54e007c6209bd49b1c45986d09f4de4d548d7bb6db6574ceb",
+                                "tbs_noct_fingerprint": "2d1e4947556d94bc1651e918af69812fddb0e30d9affa72e9ea726c52e22bc14",
+                                "spki_subject_fingerprint": "94ab057ee351272ef979f1e7f25b36bd9671a5744e12171dca9221f830cf0e98",
+                                "tbs_fingerprint": "2d1e4947556d94bc1651e918af69812fddb0e30d9affa72e9ea726c52e22bc14",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "chain": [
+                            {
+                                "raw": "MIID1TCCAr2gAwIBAgIJANr2NrRD1KWLMA0GCSqGSIb3DQEBCwUAMIGgMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTESMBAGA1UEBxMJU3Vubnl2YWxlMREwDwYDVQQKEwhGb3J0aW5ldDEeMBwGA1UECxMVQ2VydGlmaWNhdGUgQXV0aG9yaXR5MRAwDgYDVQQDEwdzdXBwb3J0MSMwIQYJKoZIhvcNAQkBFhRzdXBwb3J0QGZvcnRpbmV0LmNvbTAeFw0xNTA3MTYyMjM0MzlaFw0zODAxMTkyMjM0MzlaMIGgMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTESMBAGA1UEBxMJU3Vubnl2YWxlMREwDwYDVQQKEwhGb3J0aW5ldDEeMBwGA1UECxMVQ2VydGlmaWNhdGUgQXV0aG9yaXR5MRAwDgYDVQQDEwdzdXBwb3J0MSMwIQYJKoZIhvcNAQkBFhRzdXBwb3J0QGZvcnRpbmV0LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANQ7UXPQNRISyMNOWUFI0TvBsKbVD4MhKYt4v+vDRJ3GZoKa7gQfoJ+r4M14xWzTNN26NrJtUutYSUmDmX/m5rbo24JjtGdx1FzKL6+3cDKHUDV8wZCI0DQZLamhgbNJ7fv0VergsuJXxp8urzFJA25pbqxH9X6u1lOs4NqCM6CTHvVp+IqmZGucVmFQTMh9fiE0L20IFY0K5wc/C3XP1Pa0CzXLu6smjtr0prwXisGSiTkxg0+HTSO24tv0q5ABPgfzOWKpX9b6gaMt17r3hSi5GhKElbCDGLtMbdKcldboxNBQZ5nxPRNFS26Lde5duB8joc6Rwdgv9dsxSS17HWMCAwEAAaMQMA4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAhxf7jexnSrTNshppXpiMmlK5C9HxuQQZQT/dq0FkmN/7cp6rtgl36WUfBU95ia0q9GJnaxbSWpXO4jq4wT5vlGCIEaiajJLJx1BFRu7dMUZnkmoyIvKT893YUGlAZeGME/WXVBaAHsj4wIhYIOMvUm7VB3wUK9SjZtn0qGEz+OjxmWjnJ2+ck67pZbRLl8gOuRB6OkFIiNp8slO08g4lXIYquHIltC7RCadNQPz3qfYvW4npIW4904JH4CUAtzvbRdDs4MCvszKuPOICvm6pnqin1AIqJ+4cMwPrVVyBN5NsIhohAUjSELtlWJR1qQ7HT5Q9tVLCr/qOnEHEkoy4hw==",
+                                "parsed": {
+                                    "version": 3,
+                                    "serial_number": "15777858492399134091",
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "issuer": {
+                                        "common_name": [
+                                            "support"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Sunnyvale"
+                                        ],
+                                        "province": [
+                                            "California"
+                                        ],
+                                        "organization": [
+                                            "Fortinet"
+                                        ],
+                                        "organizational_unit": [
+                                            "Certificate Authority"
+                                        ],
+                                        "email_address": [
+                                            "support@fortinet.com"
+                                        ]
+                                    },
+                                    "issuer_dn": "C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=Certificate Authority, CN=support, emailAddress=support@fortinet.com",
+                                    "validity": {
+                                        "start": "2015-07-16T22:34:39Z",
+                                        "end": "2038-01-19T22:34:39Z",
+                                        "length": 710467200
+                                    },
+                                    "subject": {
+                                        "common_name": [
+                                            "support"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Sunnyvale"
+                                        ],
+                                        "province": [
+                                            "California"
+                                        ],
+                                        "organization": [
+                                            "Fortinet"
+                                        ],
+                                        "organizational_unit": [
+                                            "Certificate Authority"
+                                        ],
+                                        "email_address": [
+                                            "support@fortinet.com"
+                                        ]
+                                    },
+                                    "subject_dn": "C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=Certificate Authority, CN=support, emailAddress=support@fortinet.com",
+                                    "subject_key_info": {
+                                        "key_algorithm": {
+                                            "name": "RSA"
+                                        },
+                                        "rsa_public_key": {
+                                            "exponent": 65537,
+                                            "modulus": "1DtRc9A1EhLIw05ZQUjRO8GwptUPgyEpi3i/68NEncZmgpruBB+gn6vgzXjFbNM03bo2sm1S61hJSYOZf+bmtujbgmO0Z3HUXMovr7dwModQNXzBkIjQNBktqaGBs0nt+/RV6uCy4lfGny6vMUkDbmlurEf1fq7WU6zg2oIzoJMe9Wn4iqZka5xWYVBMyH1+ITQvbQgVjQrnBz8Ldc/U9rQLNcu7qyaO2vSmvBeKwZKJOTGDT4dNI7bi2/SrkAE+B/M5Yqlf1vqBoy3XuveFKLkaEoSVsIMYu0xt0pyV1ujE0FBnmfE9E0VLbot17l24HyOhzpHB2C/12zFJLXsdYw==",
+                                            "length": 2048
+                                        },
+                                        "fingerprint_sha256": "2a7ebd1822a0f4e65790c03c4e603e7d66b7a37e100cc2a3b9950a3b07d77842"
+                                    },
+                                    "extensions": {
+                                        "basic_constraints": {
+                                            "is_ca": true
+                                        }
+                                    },
+                                    "signature": {
+                                        "signature_algorithm": {
+                                            "name": "SHA256-RSA",
+                                            "oid": "1.2.840.113549.1.1.11"
+                                        },
+                                        "value": "hxf7jexnSrTNshppXpiMmlK5C9HxuQQZQT/dq0FkmN/7cp6rtgl36WUfBU95ia0q9GJnaxbSWpXO4jq4wT5vlGCIEaiajJLJx1BFRu7dMUZnkmoyIvKT893YUGlAZeGME/WXVBaAHsj4wIhYIOMvUm7VB3wUK9SjZtn0qGEz+OjxmWjnJ2+ck67pZbRLl8gOuRB6OkFIiNp8slO08g4lXIYquHIltC7RCadNQPz3qfYvW4npIW4904JH4CUAtzvbRdDs4MCvszKuPOICvm6pnqin1AIqJ+4cMwPrVVyBN5NsIhohAUjSELtlWJR1qQ7HT5Q9tVLCr/qOnEHEkoy4hw==",
+                                        "valid": true,
+                                        "self_signed": true
+                                    },
+                                    "fingerprint_md5": "85a97cfc85d62d8b9f180a8b502904a9",
+                                    "fingerprint_sha1": "16b7611982622cb83c14d706377a150e7d553a99",
+                                    "fingerprint_sha256": "32ad1e5bc4c7c2735661b928205e9dd153b4b3d125fbce6f525b3c8e8119d0c0",
+                                    "tbs_noct_fingerprint": "5702b6918ef882d88ed5f83baf8545f8f8f0e9eddf55899e2021316105acde02",
+                                    "spki_subject_fingerprint": "992cbd5e446d2792446a02c3acacd3e891cc00b1c2e3b6910eb05d25e9018072",
+                                    "tbs_fingerprint": "5702b6918ef882d88ed5f83baf8545f8f8f0e9eddf55899e2021316105acde02",
+                                    "validation_level": "unknown",
+                                    "redacted": false
+                                }
+                            }
+                        ],
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    }
+                },
+                "ja3s": "475c9302dc42b2751db9edcac3b74891",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-08T14:53:15Z"
+        }
+    }
+}

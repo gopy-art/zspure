@@ -1,0 +1,47 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.0",
+                    "protocol_major": 1,
+                    "headers": {
+                        "date": [
+                            "Tue, 7 Apr 2065 19:9:40 GMTContent-Type: text/html"
+                        ]
+                    },
+                    "body": "\u003c!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"\u003e\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eIT Temperature Monitor: Thermo\u003c/title\u003e\u003cmeta http-equiv=\"REFRESH\" content=\"60;url=index.html\"\u003e\u003c/head\u003e\u003cbody bgcolor=\"#C0C0C0\" text=\"#000000\" vlink=\"#800080\" link=\"#0000FF\"\u003e\u003ctable border=2 cellpadding=2\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=center\u003e\u003ctable cellpadding=2 cellspacing=0 border=1\u003e\u003cTR\u003e\u003cTD\u003eModel:\u003c/TD\u003e\u003cTD width=10 rowspan=3\u003e\u003cBR\u003e\u003c/TD\u003e\u003cTD\u003eE4\u003c/TD\u003e\u003cTD width=20 rowspan=3\u003e\u003cBR\u003e\u003c/TD\u003e\u003cTD\u003eFirmware Version:\u003c/TD\u003e\u003cTD width=10 rowspan=3\u003e\u003cBR\u003e\u003c/TD\u003e\u003cTD\u003e5.3\u003c/TD\u003e\u003c/TR\u003e\u003ctr\u003e\u003cTD\u003eManufacturer:\u003c/TD\u003e\u003cTD\u003eSensatronics\u003c/TD\u003e\u003cTD\u003eRelease Date:\u003c/TD\u003e\u003cTD\u003eSeptember 30, 2005\u003c/TD\u003e\u003c/TR\u003e\u003cTR\u003e\u003cTD\u003eWebsite:\u003c/TD\u003e\u003cTD\u003e\u003ca href=\"http://www.sensatronics.com/\"\u003ehttp://www.sensatronics.com/\u003c/a\u003e\u003c/TD\u003e\u003cTD\u003eSerial Number:\u003c/TD\u003e\u003cTD\u003eEA0G0K0T135\u003c/TD\u003e\u003c/TR\u003e\u003c/table\u003e\u003cTR\u003e\u003cTD align=center\u003eUnit name: Thermo\u003c/TD\u003e\u003c/TR\u003e\u003ctr\u003e\u003ctd align=center\u003e\u003ctable border=0\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003c/td\u003e\u003ctd\u003e\u003ctable border=2\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003eTemperature1\u003c/td\u003e\u003ctd\u003eProbe 2\u003c/td\u003e\u003ctd\u003eProbe 3\u003c/td\u003e\u003ctd\u003eProbe 4\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e15.3 \u0026deg;C\u003c/td\u003e\u003ctd\u003e11.0 \u0026deg;C\u003c/td\u003e\u003ctd\u003e17.5 \u0026deg;C\u003c/td\u003e\u003ctd\u003e18.5 \u0026deg;C\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/td\u003e\u003ctd\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003c/td\u003e\u003ctr\u003e\u003ctd\u003e\u003c/td\u003e\u003ctd align=center\u003e\u003cb\u003eSensatronics\u003c/b\u003e\u003cbr\u003eEnvironmental Sensing\u003cbr\u003e\u003cbr\u003eModel E4\u003cbr\u003e\u003cbr\u003eIT Temperature Monitor\u003c/td\u003e\u003ctd\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/td\u003e\u003c/table\u003e\u003c/body\u003e\u003c/html\u003e",
+                    "body_sha256": "0422bd50e0000f60da7a41a73e1bd228c16d2f9d82d2e9f65317e4ca9d2295e2",
+                    "content_length": -1,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T14:00:56Z"
+        }
+    }
+}

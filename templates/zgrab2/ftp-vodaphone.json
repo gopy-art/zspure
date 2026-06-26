@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 DSL-EasyBox 803 FTP Server v30.05.236 ready\r\n"
+            },
+            "timestamp": "2026-06-15T15:56:34Z"
+        }
+    }
+}

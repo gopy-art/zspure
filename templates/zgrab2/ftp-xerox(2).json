@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 636,
+            "result": {
+                "banner": "220 Xerox Phaser wMN0pcOTV2Zni5OEM9\r\n"
+            },
+            "timestamp": "2026-06-15T17:41:47Z"
+        }
+    }
+}

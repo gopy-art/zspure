@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 RICOH IM C4510 FTP server (22.61.1) ready.\r\n"
+            },
+            "timestamp": "2026-06-24T18:07:37Z"
+        }
+    }
+}

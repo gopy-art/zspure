@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 58,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgEBAAADABhXQUdPIEtvbnRha3R0ZWNobmlrIEdtYkgBBzc1MC04ODECDVYwMS4wNi4xMygwOCk=",
+                "mei_response": {
+                    "conformity_level": 1,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "750-881",
+                        "revision": "V01.06.13(08)",
+                        "vendor": "WAGO Kontakttechnik GmbH"
+                    }
+                },
+                "raw": "WkcAAAA6ACsOAQEAAAMAGFdBR08gS29udGFrdHRlY2huaWsgR21iSAEHNzUwLTg4MQINVjAxLjA2LjEzKDA4KQ=="
+            },
+            "timestamp": "2026-06-21T12:11:24Z"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220-ZXFS Ftp Server v1.0, Service ready for new user.\r\n 1 user online, your ip is 20.61.126.210:58384\r\n220 this server supports SIZE, resume broken downloads\r\n"
+            },
+            "timestamp": "2026-06-15T17:47:07Z"
+        }
+    }
+}

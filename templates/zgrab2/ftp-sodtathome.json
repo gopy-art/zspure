@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220---------- Welcome to SoftAtHome FTP Server  [privsep]  ---------\r\n220-You are user number 1 of 32 allowed.\r\n220-Local time is now 20:15. Server port: 21.\r\n220-This is a private system - No anonymous login\r\n220-IPv6 connections are also welcome on this server.\r\n220 You will be disconnected after 10 minutes of inactivity.\r\n"
+            },
+            "timestamp": "2026-06-24T18:15:59Z"
+        }
+    }
+}

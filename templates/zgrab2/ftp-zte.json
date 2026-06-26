@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 OX253P FTP version 1.0 ready at Mon Jun 22 05:03:11 2015\r\n"
+            },
+            "timestamp": "2026-06-15T17:47:07Z"
+        }
+    }
+}

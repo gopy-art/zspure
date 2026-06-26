@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 192.168.1.73 FTP server (tnftpd 20100324+GSSAPI) ready.\r\n"
+            },
+            "timestamp": "2026-06-15T15:52:25Z"
+        }
+    }
+}

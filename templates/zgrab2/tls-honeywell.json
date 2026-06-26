@@ -1,0 +1,124 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 4033,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "7Kg4TIysRu9JK3/Ld8T8Hkjv45ubxdmxkVb1AYbTBRA=",
+                        "session_id": "GEFRmWLGjIMy5Hx4WWC0lGakVOMZxKK/yZI/wP+F9c8=",
+                        "cipher_suite": {
+                            "hex": "0x1303",
+                            "name": "TLS_CHACHA20_POLY1305_SHA256",
+                            "value": 4867
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x001D",
+                            "name": "x25519",
+                            "value": 29
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDFTCCAf2gAwIBAgIUdezkiTJ3BDKSdTZEp/mSi2ugIrMwDQYJKoZIhvcNAQELBQAwSzEiMCAGA1UEAwwZSG9uZXl3ZWxsIFBLSSBDZXJ0aWZpY2F0ZTElMCMGA1UECgwcSG9uZXl3ZWxsIEludGVybmF0aW9uYWwgSW5jLjAeFw0xODA2MjcxNzIyNDFaFw0yODA2MjQxNzIyNDFaMD4xGTAXBgNVBAMMEEZsb3dDb250cm9sLThTVDIxITAfBgNVBAoMGEF1dG9tYXRpb24gU29sdXRpb25zIENvLjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAO2Ds9NTAt6NHBM4mWumMAEBijPUcftvqjpQbAyBGHxE+xCUJQqH30yyiyN0Wnfp4an8MI2kMK0Sv7f/pea+TGOop20JFznTL+qRcUlVjIDNpVEuvF0FCFI+wm8g20UrYcVQ7nPe5LvvXnkOAD+1/EJhdog+bIJLrd02b8zRfp3DY3Lbm8M5ng3DICziooNI6G573qX2WmRS9OmisFGlT5jNmTpGKO9i/t88yfvnSvTHXHczinUOEvHT0w0/QCH4Lx0AIy31CCvPxaBSYirPekWuq7fl4ammqKY3DIBKrO17ePWyZ1z2eycNTc5fhGG82jNJmeNvaVrc+EPVMFtn4V0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAI6kWqWaFQs/RQrj+n/H3U9QVBuiWRVjGepsP5o4ceYBQvxcybC+gt1XaLMJgo+o1gceZFL5a8IGTGLPCCHCKrQGPBo+NKppOHPDhziGPZItBt9GMDzEcL/eyMkMEZSdN+pc9wglX4bEGdvfVZ2TfU7rMUsJbiRO5JwzHX++wSc0MOcoF4/l9nYEF7kyh1b+bGZOmBcRJ++iZxuoX4gw+A/uVuufEvyLg/4jAQsIPbnpgD3Z0OEa4QFgD0Tx7v+nuimXKR/5MovTSeYDBU75mfXOOHcUMqmV1HoYT8mnVjhatEcjHBnUUiuapq+2U8gXtOF9xI8shzgC8G5WoJiFl1A==",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "673234804340198529153269678428084420506533503667",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Honeywell PKI Certificate"
+                                    ],
+                                    "organization": [
+                                        "Honeywell International Inc."
+                                    ]
+                                },
+                                "issuer_dn": "CN=Honeywell PKI Certificate, O=Honeywell International Inc.",
+                                "validity": {
+                                    "start": "2018-06-27T17:22:41Z",
+                                    "end": "2028-06-24T17:22:41Z",
+                                    "length": 315360000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "FlowControl-8ST2"
+                                    ],
+                                    "organization": [
+                                        "Automation Solutions Co."
+                                    ]
+                                },
+                                "subject_dn": "CN=FlowControl-8ST2, O=Automation Solutions Co.",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "7YOz01MC3o0cEziZa6YwAQGKM9Rx+2+qOlBsDIEYfET7EJQlCoffTLKLI3Rad+nhqfwwjaQwrRK/t/+l5r5MY6inbQkXOdMv6pFxSVWMgM2lUS68XQUIUj7CbyDbRSthxVDuc97ku+9eeQ4AP7X8QmF2iD5sgkut3TZvzNF+ncNjctubwzmeDcMgLOKig0jobnvepfZaZFL06aKwUaVPmM2ZOkYo72L+3zzJ++dK9MdcdzOKdQ4S8dPTDT9AIfgvHQAjLfUIK8/FoFJiKs96Ra6rt+XhqaaopjcMgEqs7Xt49bJnXPZ7Jw1Nzl+EYbzaM0mZ429pWtz4Q9UwW2fhXQ==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "e028d922c7185befa4be54afcccfc4ce45b337f0ca1c85a363a3950381d8f3e8"
+                                },
+                                "extensions": {},
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "I6kWqWaFQs/RQrj+n/H3U9QVBuiWRVjGepsP5o4ceYBQvxcybC+gt1XaLMJgo+o1gceZFL5a8IGTGLPCCHCKrQGPBo+NKppOHPDhziGPZItBt9GMDzEcL/eyMkMEZSdN+pc9wglX4bEGdvfVZ2TfU7rMUsJbiRO5JwzHX++wSc0MOcoF4/l9nYEF7kyh1b+bGZOmBcRJ++iZxuoX4gw+A/uVuufEvyLg/4jAQsIPbnpgD3Z0OEa4QFgD0Tx7v+nuimXKR/5MovTSeYDBU75mfXOOHcUMqmV1HoYT8mnVjhatEcjHBnUUiuapq+2U8gXtOF9xI8shzgC8G5WoJiFl1A==",
+                                    "valid": false,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "cdf63670918cc54a9d9b5765c3b6225b",
+                                "fingerprint_sha1": "47a4268db308e22eec2341c128862f9df39f01d9",
+                                "fingerprint_sha256": "e47b76f02ced3b9166b9eb9c95a384d553be366b9a2aa704ac7c639aa30d65b2",
+                                "tbs_noct_fingerprint": "8f3b9a1c5d991f9e54609979e8c15e434ced5a3197a790779b006b3d53604b55",
+                                "spki_subject_fingerprint": "7efb2a9d2337e5063a809965d121bcacce9d25c9218caf40d82aac96cf34c6fa",
+                                "tbs_fingerprint": "1b448b57fccc477a3a4baf96d5319bce022ba40cfbd1866b5ec0bdef70d8c897",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate signed by unknown authority"
+                        }
+                    }
+                },
+                "ja3s": "475c9302dc42b2751db9edcac3b74891",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-15T18:15:03Z"
+        }
+    }
+}

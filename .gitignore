@@ -5,3 +5,7 @@ TODO*
 *.png
 *.jpg
 !zspure.png
+!http-*.json
+!ftp-*.json
+!modbus-*.json
+!tls-*.json

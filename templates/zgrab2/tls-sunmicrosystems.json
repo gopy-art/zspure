@@ -1,0 +1,177 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "s/n+ysYJY0AYodWaRHc+gIu6pcy3k+RJeD6kw3mVG+k=",
+                        "session_id": "qlafMM0iKi0A8mIq5GvthHtoNsXTW0uYfNQSGGaC0nw=",
+                        "cipher_suite": {
+                            "hex": "0x1302",
+                            "name": "TLS_AES_256_GCM_SHA384",
+                            "value": 4866
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x001D",
+                            "name": "x25519",
+                            "value": 29
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "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",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "25",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Sun Microsystems Root CA G3"
+                                    ],
+                                    "country": [
+                                        "DE"
+                                    ],
+                                    "locality": [
+                                        "Berlin"
+                                    ],
+                                    "province": [
+                                        "Berlin"
+                                    ],
+                                    "organization": [
+                                        "Sun Microsystems Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Development"
+                                    ],
+                                    "email_address": [
+                                        "cert@os2warp.org"
+                                    ]
+                                },
+                                "issuer_dn": "C=DE, ST=Berlin, L=Berlin, O=Sun Microsystems Inc., OU=Development, CN=Sun Microsystems Root CA G3, emailAddress=cert@os2warp.org",
+                                "validity": {
+                                    "start": "2019-06-06T19:42:41Z",
+                                    "end": "2029-06-03T19:42:41Z",
+                                    "length": 315360000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "mail.erfuelltesleben.de"
+                                    ],
+                                    "country": [
+                                        "DE"
+                                    ],
+                                    "locality": [
+                                        "Berlin"
+                                    ],
+                                    "province": [
+                                        "Berlin"
+                                    ],
+                                    "organizational_unit": [
+                                        "IT"
+                                    ],
+                                    "email_address": [
+                                        "bitburg@erfuelltesleben.de"
+                                    ]
+                                },
+                                "subject_dn": "C=DE, ST=Berlin, L=Berlin, OU=IT, CN=mail.erfuelltesleben.de, emailAddress=bitburg@erfuelltesleben.de",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "r7T8cwTBML7P1tnGOJUH4yIQyb5f0YnBhlmn5cu+Yqy0LLhDUvz1Mv8U5SpG2wyeLkn2sw1mzAl3BBtb+HSXGo6+ewhpdm0LiRTMfbGW8o7RvwUfw60y2AmNe2mKNHqln7aYLIXABmCNUU2mUolXLpFAD9kn4K1zSGt1MoD5m2ynAgNdmyosEFl8ZrpT3Gc6II8p//stWoCfkVbO+K88Jtb2+rvoT431YU4LEVu2UQ+j0gAy5Z2Q1cNQZidtkIzV1q9g9Q+Lv04UllDM2z65v/Ab1m2BIfPXH1KicG/FIAhOo+F5v23gHOjUbkrqXUwMDHLtCckeDR+YJRbGUihXCtrtOWSkR5BIu4fcW9KR7Y/7H8D4QCFHmWRaaqyKF1dAPWuEX4JrlVxvcuFzjkUsACt90ictIgb/Qkm5e6zEo5Hpy9va7SMefHMxEywp38JHZCt3zJ4SM29sDrtI+L7ELIPMnnckd778xdWYk+cFBidvcYK/cOxLjvqP54QpL/fFHT9shC9MGUm+IZFxrPXZIyTwX2+c6ctfPgqD/ASm+nap7cxmp/aDNVHhROhu77wYWbtiQGDqOIWoXgWA6In8O9mxZQOrmXC+fZY4tyS2ZTAZpNAc5kKYpC0Fr4neoItHNLS/y3W33G9LK5lSZrJ+tgD0aVs49iNc2CSHCEmdMGc=",
+                                        "length": 4096
+                                    },
+                                    "fingerprint_sha256": "90c2f659400b2bad3f215d8dd6bcec625d82b8f67ad12e520df7424c0e30f212"
+                                },
+                                "extensions": {
+                                    "key_usage": {
+                                        "digital_signature": true,
+                                        "content_commitment": true,
+                                        "key_encipherment": true,
+                                        "value": 7
+                                    },
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "subject_alt_name": {
+                                        "dns_names": [
+                                            "mail.erfuelltesleben.de",
+                                            "rdgw.erfuelltesleben.de",
+                                            "abendsonneex01.abendsonne.local"
+                                        ]
+                                    },
+                                    "extended_key_usage": {
+                                        "server_auth": true,
+                                        "client_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "jQ9gy8jARp5O94viu882nVpqXcx8lGhXYkWISQiWeqEEfW2ehBWsLU5DlUciqoHaOuiF6ZoEnGTPxqjEB07Ampx/AWgzMblo521+Jen2SxdtHtU8QxQ1j/hG0jj8evMUgkGbNb+6P/gvHeRVfQtYTkDLKbKWDYupyK8S3vxfA30yQREsjOQq3s0Vme2acPQegQlrw4mTb/Q50K4F95xYuQJI8KTe00JXADhZ4jw95eemRI9uOxgC+1f97rpfeNUTcx+65u80LBpKwBmDn/kB9ZCfpsNc7JdChn32g/3PogVJmzwroHHH62znkxfKfBaw1LMNi/PZijUiA8P3gIy8TJnLTZn8GZhH+ACmZcFbLEgvWiQXZyeKAs2Cxej2kGmnlpLwCxTWWex/c6m4DepT+LL0VtNPBIvJndmm6KVp5Fh2NoB+z4AI8KQrQr3AE9EbkSPLo0EAyJQy+7JBzskZugPLoHi8iTcHOdK3kQot7wIBnsWozTYYZKFL7pQaHrkvS565CltUNb8zEOgcMpPOW/xofn7ZJJQyutq6r+sjqcXfu0CMpbe9jkjCRFsyjGL/YIF6mv+FoN8Ir2UttSjBD7ZG8+Zf39jGZpusgQxue4cU9uLAFASs9nfdrQv+JShXPQQiBoWxzzvOmCB6UBAc2pyvGqyt+tV+qNzMElCeJQ8=",
+                                    "valid": false,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "8af1cbef87a2e076c121615ef847973f",
+                                "fingerprint_sha1": "97f16a5c26d8dfb1650d482ee4e30085e7f8abc8",
+                                "fingerprint_sha256": "23509d1613451bb7fc68bf25410251bbe38786c3c3a8443ba7823b7a6b4d2004",
+                                "tbs_noct_fingerprint": "40aa8162cbc9ed0231c216f79132db7034335ac58ad456dcec4201f2e2a26a42",
+                                "spki_subject_fingerprint": "63780d59cad2f81328442d7d9fcf1f7efc2f935cbf84fb2f4d04414269384023",
+                                "tbs_fingerprint": "40aa8162cbc9ed0231c216f79132db7034335ac58ad456dcec4201f2e2a26a42",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "abendsonneex01.abendsonne.local",
+                                    "mail.erfuelltesleben.de",
+                                    "rdgw.erfuelltesleben.de"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate signed by unknown authority"
+                        }
+                    }
+                },
+                "ja3s": "15af977ce25de452b96affa2addb1036",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T14:15:54Z"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 Welcome to WD My Cloud\r\n"
+            },
+            "timestamp": "2026-06-15T16:07:08Z"
+        }
+    }
+}

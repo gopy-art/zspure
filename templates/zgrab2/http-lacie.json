@@ -1,0 +1,63 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_language": [
+                            "en"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Tue, 16 Jun 2026 12:24:56 GMT"
+                        ],
+                        "server": [
+                            "lighttpd/1.4.28-devel-7497"
+                        ],
+                        "x_powered_by": [
+                            "PHP/5.3.4"
+                        ]
+                    },
+                    "body": "\u003c!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"\u003e\n\u003chtml\u003e\n\t\u003chead\u003e\n\t\t\u003cmeta name=\"generator\" content=\"HTML Tidy, see www.w3.org\"\u003e\n\t\t\u003cmeta http-equiv=\"content-type\" content= \"text/html; charset=UTF-8\"\u003e\n\t\t\u003cmeta name=\"gwt:property\" content=\"locale=en\"\u003e\n\t\t\u003cmeta http-equiv=\"Pragma\" content=\"no-cache\"\u003e\n\t\t\u003cmeta http-equiv=\"Expires\" content=\"0\"\u003e\n\t\t\u003cmeta http-equiv=\"CACHE-CONTROL\" content=\"NO-CACHE\"\u003e\n\t\t\u003cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=8, IE=9\" /\u003e\n\t\t\u003clink rel=\"icon\" href=\"images/favicon.ico\" type= \"image/x-icon\"\u003e\n\t\t\u003clink rel=\"shortcut icon\" href=\"images/favicon.ico\" type= \"image/x-icon\"\u003e\n\t\t\u003ctitle\u003eLaCie\u0026nbsp;\u0026#124;\u0026nbsp;Dashboard\u003c/title\u003e\n                \u003clink rel=\"stylesheet\" type=\"text/css\" href= \"dashboard.css?1413213493\"\u003e\n                \u003clink rel=\"stylesheet\" type=\"text/css\" href= \"dashboard_specific.css?1413213493\"\u003e\n                \u003clink rel=\"stylesheet\" type=\"text/css\" href= \"dashboard_gwt.css?1413213493\"\u003e\n\n\t\t\u003cscript type=\"text/javascript\" src=\"dashboard.nocache.js?1413213493\"\u003e\n\t\t\u003c/script\u003e\n\t\t\u003cscript type=\"text/javascript\" src=\"javascripts/sha1.js?1413213493\"\u003e\n\t\t\u003c/script\u003e\n\t\t\u003cscript type=\"text/javascript\" src=\"javascripts/base64.js?1413213493\"\u003e\n\t\t\u003c/script\u003e\n\t\u003c/head\u003e\n\t\u003cbody class=\"bodynormaldashboard\"\u003e\n\t\t\u003ciframe src=\"javascript:''\" id=\"__gwt_historyFrame\" tabindex='-1' style=\"position: absolute; width: 0; height: 0; border: 0\"\u003e\n\t\t\u003c/iframe\u003e\n\t\t\u003cdiv id=\"header\" class=\"headerInit\"\u003e\n\t\t\u003c/div\u003e\n\t\t\u003cdiv id=\"content\" class=\"contentnormaldashboard\"\u003e\n\t\t\t\u003cdiv id='LoadDiv'\u003e\t\n\t\t\t\t\u003ctable cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%; height: 100%;\"\u003e\n\t\t\t\t\u003ctbody\u003e\n\t\t\t\t\u003ctr\u003e\n\t\t\t\t\u003ctd align=\"center\" style=\"vertical-align: middle;\"\u003e\t\t\t\t\n\t\t\t\t\t\u003cdiv id='LoadInProgress' style='display:block'\u003e\n\t\t\t\t\t\t\u003cdiv class=\"informationPanelText  informationPanelText-standard\"\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003cimg src=\"images/progressloader.gif\" class=\"gwt-Image\"\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003cdiv id='LoadError_en' class='LoadError' style='display:none'\u003e\n\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_box\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_top\"\u003e\n\t\t\t\t\t\t\t\t\u003cdiv\u003e\n\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_content\"\u003e\n\t\t\t\t\t\t\t\t\u003cp class=\"roundedbox_title\"\u003e\n\t\t\t\t\t\t\t\t\t\u003cimg class=\"roundedbox_title_icon\" src=\"images/warning16.png\" /\u003eError connecting to the network drive\n\t\t\t\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\t\t\t\t\u003cp class=\"roundedbox_text\"\u003e\n\t\t\t\t\t\t\t\t\tPlease follow the following procedure:\n\t\t\t\t\t\t\t\t\t\u003col class=\"roundedbox_text\"\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tCheck that the device is powered\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tCheck that the device is connected to the network\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tClear your browser cache\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tRefresh this page\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\u003c/ol\u003e\n\t\t\t\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_bottom\"\u003e\n\t\t\t\t\t\t\t\t\u003cdiv\u003e\n\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c!-- fin box --\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c!-- LoadError_en --\u003e\n\t\t\t\t\t\u003cdiv id='LoadError_fr' class='LoadError' style='display:none'\u003e\n\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_box\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_top\"\u003e\n\t\t\t\t\t\t\t\t\u003cdiv\u003e\n\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_content\"\u003e\n\t\t\t\t\t\t\t\t\u003cp class=\"roundedbox_title\"\u003e\n\t\t\t\t\t\t\t\t\t\u003cimg class=\"roundedbox_title_icon\" src=\"images/warning16.png\" /\u003eErreur de connection au disque réseau\n\t\t\t\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\t\t\t\t\u003cp class=\"roundedbox_text\"\u003e\n\t\t\t\t\t\t\t\t\tVeuillez suivre la procédure suivante:\n\t\t\t\t\t\t\t\t\t\u003col class=\"roundedbox_text\"\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tVérifier que l'équipement est sous tension\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tVérifier que l'équipement est connecté au réseau\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tEffacer le cache de votre navigateur\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\t\u003cli\u003e\n\t\t\t\t\t\t\t\t\t\t\tRecharger cette page\n\t\t\t\t\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\t\t\t\u003c/ol\u003e\n\t\t\t\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"roundedcornr_bottom\"\u003e\n\t\t\t\t\t\t\t\t\u003cdiv\u003e\n\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c!-- fin box --\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c!-- LoadError_fr --\u003e\n\t\t\t\t\n\t\t\t\t\u003c/td\u003e\n\t\t\t\t\u003c/tr\u003e\n\t\t\t\t\u003c/tbody\u003e\n\t\t\t\t\u003c/table\u003e\n\t\t\t\u003c/div\u003e\t\t\t\n\t\t\u003c/div\u003e\n\t\t\u003cdiv id=\"copyright\" class=\"browser_footer\"\u003e\n\t\t\t\u003cdiv\u003e | \u003c/div\u003e\n\t\t\t\u003ca id=\"id_LaCie\" target=\"_blanck\" href= \"http://www.lacie.com\"\u003e\u0026copy; LaCie 2014\u003c/a\u003e\n\t\t\t\u003c!--Mon, 13 Oct 2014 15:18:13 +0000--\u003e\n\t\t\u003c/div\u003e\n\t\t\u003cscript type=\"text/javascript\"\u003e\n\t\t\tfunction ShowError(){\n\t\t\t    if (navigator.browserLanguage) \n\t\t\t        var language = navigator.browserLanguage;\n\t\t\t    else \n\t\t\t        var language = navigator.language;\n\t\t\t    \n\t\t\t    var id = 'LoadError_en';\n\t\t\t    if (language.indexOf('fr') \u003e -1) \n\t\t\t        id = 'LoadError_fr';\n\t\t\t    else \n\t\t\t        if (language.indexOf('en') \u003e -1) \n\t\t\t            id = 'LoadError_en';\n\t\t\t    \n\t\t\t    var element = document.getElementById(id);\n\t\t\t    if (null != element) {\n\t\t\t        element.style.visibility = 'visible';\n\t\t\t        element.style.display = 'block';\n\t\t\t    }\n\t\t\t}\n\t\t\t\n\t\t\tfunction HideLoading(){\n\t\t\t    var element = document.getElementById('LoadInProgress');\n\t\t\t    if (null != element) {\n\t\t\t        element.style.visibility = 'hidden';\n\t\t\t        element.style.display = 'none';\n\t\t\t    }\n\t\t\t}\n\t\t\t\n\t\t\tif (document.getElementById \u0026\u0026 document.getElementById('LoadDiv') != null) {\n\t\t\t    document.getElementById('LoadDiv').className = setTimeout(\"HideLoading();ShowError();\", 15000);\n\t\t\t    ;\n\t\t\t}\n\t\t\u003c/script\u003e\n\t\u003c/body\u003e\n\u003c/html\u003e\n",
+                    "body_sha256": "d609e66ed6bf073d0b3a3f2ec45b73d1d7dbbed632e2eb2e33dc5706fa266901",
+                    "content_length": -1,
+                    "transfer_encoding": [
+                        "chunked"
+                    ],
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T12:24:56Z"
+        }
+    }
+}

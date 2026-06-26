@@ -1,0 +1,199 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "a0Bf3SxibxaMsIM1wCMGYWTgISzOE5QJTvcCee8vSuQ=",
+                        "session_id": "DiyGjGokJLd3pDs9NB6EFyypCUZTMGuomYChl8HBVd4=",
+                        "cipher_suite": {
+                            "hex": "0xC030",
+                            "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+                            "value": 49200
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281,
+                            11
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIEKDCCAxCgAwIBAgIUKdPLdD1T4aYI0FTt2vMGaqroZTgwDQYJKoZIhvcNAQEFBQAwYzELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExHTAbBgNVBAoMFFN1cGVyIE1pY3JvIENvbXB1dGVyMREwDwYDVQQLDAhTb2Z0d2FyZTENMAsGA1UEAwwESVBNSTAeFw0yNjA0MjIwNTMxNDJaFw0yOTA0MjIwNTMxNDJaMGMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMR0wGwYDVQQKDBRTdXBlciBNaWNybyBDb21wdXRlcjERMA8GA1UECwwIU29mdHdhcmUxDTALBgNVBAMMBElQTUkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDX6vesynt7ZmJztFvDvveZIfaHHkWGzl/dwubKpnYRARslPAidvU43TpTphpneLF9faPs6nQwkiuCEGi6Uz0iVEJFLP6bGNmaodCtwFsFF76w0CSYCNgqD0DW7xIQSvurtUKtA36WsuW0W1aghfMcc+lRbLvTkl19cw/mOhRzfa6cUht9dDwP5sswgY7UwD3Fea80+n2wahNuYA25U7aIMQTCiAzNmJlm0jE+OHyWq1pqf7ylWA80ECyKKd3l17pKgxGKWBUReTFtgzZlncJJ8BJe416rYVL+j7M5yJmsYD63mSpNY4Py2jT3vvhY7+rUABkTkcWxqtJr2TcOx1G85AgMBAAGjgdMwgdAwHQYDVR0OBBYEFLPSvaeLygunbJg7rlGxnE+qCYzWMIGgBgNVHSMEgZgwgZWAFLPSvaeLygunbJg7rlGxnE+qCYzWoWekZTBjMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEdMBsGA1UECgwUU3VwZXIgTWljcm8gQ29tcHV0ZXIxETAPBgNVBAsMCFNvZnR3YXJlMQ0wCwYDVQQDDARJUE1JghQp08t0PVPhpgjQVO3a8wZqquhlODAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQCqrz8o1WxWFgto1pV8qSXudqd5ITDSEFdowIy856mmYtJBE6TnU9Zhv5sh6mkH4OCh6erHvUNTnXvkXeS0dpL7YPX+QB9TAvlL+cQ0SyigHXKAfD1g6a8W6vdXzac9WKg0grmOr05JXahiw9XMsicJbE8tYTLJAJG1N2W219ab2BXT0vs0oJB99XsVAh14Qk5HhRn+IOCFX8pYNJUEV4aid9iX9wnLh/d9LHRS62bQZYf9sBvw4gOAsldmXldhpcIEA69n/xsz29j81W+lZ6fY8O1SqpcrcBrzC6SI0+5ItMQUcSVnJv8U1iF3l6zzW25LES2qhYAtqqfg646Dd3Rf",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "238791802188984537214255757597815644304630637880",
+                                "signature_algorithm": {
+                                    "name": "SHA1-RSA",
+                                    "oid": "1.2.840.113549.1.1.5"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "IPMI"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "province": [
+                                        "California"
+                                    ],
+                                    "organization": [
+                                        "Super Micro Computer"
+                                    ],
+                                    "organizational_unit": [
+                                        "Software"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=California, O=Super Micro Computer, OU=Software, CN=IPMI",
+                                "validity": {
+                                    "start": "2026-04-22T05:31:42Z",
+                                    "end": "2029-04-22T05:31:42Z",
+                                    "length": 94694400
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "IPMI"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "province": [
+                                        "California"
+                                    ],
+                                    "organization": [
+                                        "Super Micro Computer"
+                                    ],
+                                    "organizational_unit": [
+                                        "Software"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=California, O=Super Micro Computer, OU=Software, CN=IPMI",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "1+r3rMp7e2Zic7Rbw773mSH2hx5Fhs5f3cLmyqZ2EQEbJTwInb1ON06U6YaZ3ixfX2j7Op0MJIrghBoulM9IlRCRSz+mxjZmqHQrcBbBRe+sNAkmAjYKg9A1u8SEEr7q7VCrQN+lrLltFtWoIXzHHPpUWy705JdfXMP5joUc32unFIbfXQ8D+bLMIGO1MA9xXmvNPp9sGoTbmANuVO2iDEEwogMzZiZZtIxPjh8lqtaan+8pVgPNBAsiind5de6SoMRilgVEXkxbYM2ZZ3CSfASXuNeq2FS/o+zOciZrGA+t5kqTWOD8to09774WO/q1AAZE5HFsarSa9k3DsdRvOQ==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "8c01e723610c9ef1826a82e1263a9a74258f79de71c1c93f317ddbe9b6e2d8d8"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": true
+                                    },
+                                    "authority_key_id": "b3d2bda78bca0ba76c983bae51b19c4faa098cd6",
+                                    "subject_key_id": "b3d2bda78bca0ba76c983bae51b19c4faa098cd6"
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "value": "qq8/KNVsVhYLaNaVfKkl7naneSEw0hBXaMCMvOeppmLSQROk51PWYb+bIeppB+Dgoenqx71DU5175F3ktHaS+2D1/kAfUwL5S/nENEsooB1ygHw9YOmvFur3V82nPVioNIK5jq9OSV2oYsPVzLInCWxPLWEyyQCRtTdlttfWm9gV09L7NKCQffV7FQIdeEJOR4UZ/iDghV/KWDSVBFeGonfYl/cJy4f3fSx0Uutm0GWH/bAb8OIDgLJXZl5XYaXCBAOvZ/8bM9vY/NVvpWen2PDtUqqXK3Aa8wukiNPuSLTEFHElZyb/FNYhd5es81tuSxEtqoWALaqn4OuOg3d0Xw==",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "622b00c135354c851bba73facf569a58",
+                                "fingerprint_sha1": "e6db9160a728e19ba02b03fee4b455df3f6396e2",
+                                "fingerprint_sha256": "367ce8c597da88127c0a002c4bf0209a948463cd09901ba7c36663a0ee1a2b7f",
+                                "tbs_noct_fingerprint": "9f216a645599d280cf6826f0f9799c1715bd6b75075260806bf45cd8c13bf89c",
+                                "spki_subject_fingerprint": "64610ad862c8ff8851ae751f6b5fff96f66a5743383a8b773e16430fe43f8c27",
+                                "tbs_fingerprint": "9f216a645599d280cf6826f0f9799c1715bd6b75075260806bf45cd8c13bf89c",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "server_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "x25519",
+                                "id": 29
+                            },
+                            "server_public": {
+                                "x": {
+                                    "value": "cgvaOaY03hrnaF4R31qUf27YxPPPv2dWuy7urbRv8Cs=",
+                                    "length": 256
+                                }
+                            }
+                        },
+                        "digest": "P01c00kWKji+w1zcLkomzPEqoEmR+8cenEK+T8CmTg4=",
+                        "signature": {
+                            "raw": "uiw6FNL+Ics5MU19JyckL+JK3UJe9um7D8J2QfznLcRa1rKESe9G1NYYWnj+epFYgNUmybduwer0v6bQ0KBnZZzOGCngKCWKhdjiQBEUVSyHwlua59J697sqnVGtdr4Jb+YD2pkTtCLJE5Xk+qkJ7em9xHJKcUixq8WvwZqXWDHpRgTtUVITapaqltUy+RPwWBx57lqY7BM2O/KF3ij6kSCYuTf+FBZ0oMQ0B9/fftNDMd+jVlCAjH56B5Z7BG72KPjYjVXxMQHChBgLcbDcO7ASaMWpmHRkL1cBNvuQiEoKRLYn2Fr1ntzuB360bjFKBk4RkePTA+TCf1d8jW2Ebw==",
+                            "type": "rsa",
+                            "valid": true,
+                            "signature_and_hash_type": {
+                                "signature_algorithm": "rsapss",
+                                "hash_algorithm": "sha384"
+                            },
+                            "tls_version": {
+                                "name": "TLSv1.2",
+                                "value": 771
+                            }
+                        }
+                    },
+                    "client_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "x25519",
+                                "id": 29
+                            },
+                            "client_public": {
+                                "x": {
+                                    "value": "7vI9eDQFnnfeOV64dKPwCTpG1eY7Cx0BYhA3nm9JEXA=",
+                                    "length": 256
+                                }
+                            },
+                            "client_private": {
+                                "value": "Zr5Uda4EXanzdc1F8E6+miRMy19jeMiAyw5tzfBAFDM=",
+                                "length": 32
+                            }
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "/sOlzYnfLvAXu5qW"
+                    },
+                    "server_finished": {
+                        "verify_data": "kXDHOVXB/yF4lJhk"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "ptB+DmwD0mmtuJaoogQ7YdWoJASo33BepUWcXeV5Q/7lTW4DX49z3XrutHyUHLfN",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "1cFXPfkXO8WCsWTPPkVcDnC5YYI6KBuTXbec/a/hJjE=",
+                            "length": 32
+                        }
+                    }
+                },
+                "ja3s": "0debd3853f330c574b05e0b6d882dc27",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T14:20:31Z"
+        }
+    }
+}

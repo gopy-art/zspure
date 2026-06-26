@@ -1,0 +1,60 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 12999,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_length": [
+                            "2408"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Tue, 16 Jun 2026 12:52:26 GMT"
+                        ],
+                        "last_modified": [
+                            "Tue, 25 May 2021 02:20:39 GMT"
+                        ],
+                        "server": [
+                            "Microsoft WinCE Fidelix v11.50.29"
+                        ]
+                    },
+                    "body": "\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n    \u003chead\u003e\n        \u003cmeta charset=\"utf-8\"\u003e\n        \u003cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"\u003e\n        \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\"\u003e\n        \u003ctitle\u003eFortiSwitch - Login\u003c/title\u003e\n        \u003clink rel=\"stylesheet\" href=\"/static/css/ui.css?v=1577127472\"\u003e\n    \u003c/head\u003e\n    \u003cbody id=\"login\"\u003e\n\n\u003cdiv class=\"container-fluid\"\u003e\n    \u003cdiv class=\"row\"\u003e\n        \u003cdiv class=\"col-md-4 col-md-offset-4\"\u003e\n            \u003cdiv class=\"login panel panel-default\"\u003e\n                \u003ch1 class=\"text-center page-header\"\u003e\n\n                    \u003cimg src=\"/static/images/logo_34.png\"\u003e\n                    \u003cspan\u003eFortiSwitch\u003c/span\u003e\n                \u003c/h1\u003e\n                \u003cdiv class=\"row text-center\"\u003e\n                    \u003cdiv class=\"col-xs-12\"\u003e\n                        \u003ch4\u003ePlease Log In...\u003c/h4\u003e\n                    \u003c/div\u003e\n                    \u003cdiv class=\"col-xs-10 col-xs-offset-1\"\u003e\n\n\n\u003cp id='error_001' hidden\u003e500 Internal Server Error\u003c/p\u003e\n\n\u003cdiv class=\"alert ajax-alert alert-dismissable hide\"\u003e\n    \u003cbutton type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\"\u003e\u0026times;\u003c/button\u003e\n    \u003cp id='ajax_msg'\u003e\u003c/p\u003e\n\u003c/div\u003e\n                    \u003c/div\u003e\n                \u003c/div\u003e\n                \u003cform method=\"post\" class=\"wait\" data-parsley-validate\u003e\n                    \u003cdiv class=\"form-group error-handler\"\u003e\n                        \u003clabel for=\"username\" class=\"control-label\"\u003eUsername\u003c/label\u003e\n                        \u003cinput type=\"text\" class=\"form-control\" id=\"username\" name=\"username\" data-parsley-required\n                               data-parsley-errors-messages-disabled=\"true\" data-parsley-trigger-after-failure=\"keyup\"\n                               data-parsley-validation-threshold=\"0\"\u003e\n                    \u003c/div\u003e\n                    \u003cdiv class=\"form-group\"\u003e\n                        \u003clabel for=\"password\"\u003ePassword\u003c/label\u003e\n                        \u003cinput type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" autocomplete=\"off\"\u003e\n                    \u003c/div\u003e\n                    \u003cbutton type=\"submit\" class=\"btn btn-lg btn-success btn-block\" disabled=\"disabled\"\u003e\n                        Log In\n                    \u003c/button\u003e\n                    \u003cp id='login_processing' hidden\u003eAuthenticating...\u003c/p\u003e\n                \u003c/form\u003e\n            \u003c/div\u003e\n        \u003c/div\u003e\n    \u003c/div\u003e\n\u003c/div\u003e\n\n        \u003cscript src=\"/static/js/bundle.js?v=1577127472\"\u003e\u003c/script\u003e\n    \u003c/body\u003e\n",
+                    "body_sha256": "2f21b474dd20d72d6f13906327a19d247fe89d8ed387236ef4f1b8fff135b7fe",
+                    "content_length": 2408,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:12999",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:12999"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T12:52:26Z"
+        }
+    }
+}

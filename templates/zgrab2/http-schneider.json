@@ -1,0 +1,48 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 8082,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_type": [
+                            "text/html"
+                        ]
+                    },
+                    "body": "\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eSchneider Electric Telecontrol - Industrial Web Control\u003c/title\u003e\u003clink REL=\"STYLESHEET\" HREF=\"css/xflow.css\" TYPE=\"text/css\"/\u003e\u003cscript language=\"javascript\" src=\"script/dico.js\"\u003e\u003c/script\u003e\u003cscript language=\"javascript\" src=\"script/login.js\"\u003e\u003c/script\u003e\u003cscript language=\"javascript\" src=\"script/rsa.js\"\u003e\u003c/script\u003e\t\u003c/head\u003e\u003cbody bgcolor=\"#FFFFFF\"\u003e\u003ccenter\u003e\u003cform name=\"loginform\" action=\"kw\" method=\"POST\"\u003e\u003ctable width=\"90%\"\u003e\u003ctr height=\"19\"\u003e\u003ctd width=\"100\" align=\"right\" class=\"frameTopLeft\"\u003e\u003c/td\u003e\u003ctd valign=\"top\" align=\"right\" class=\"frameTopRight\"\u003e\u003cdiv\u003e\u003cselect id=\"dico\" name=\"language\" class=\"dico\" onchange=\"askCookie('LANGUE',this.options[this.selectedIndex].value)\"\u003e\u003coption value=\"fr\" selected\u003eFran\u0026ccedil;ais\u003c/option\u003e\u003c/select\u003e\u003c/div\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"center\" width=\"100\"\u003e\u003cimg src=\"img/logo.gif\" alt=\"logo\"\u003e\u003c/td\u003e\u003ctd\u003e\u003ctable width=\"100%\" class=\"frameMiddleRight\" cellpadding=\"0\" cellspacing=\"0\"\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable width=\"100%\" class=\"frameMiddleRight\"\u003e\u003ctr\u003e\u003ctd width=\"40%\"\u003e\u003cspan id=\"dico_477\"\u003eSite : \u003c/span\u003e\u003cbig\u003ePTR 2-CLEON\u003c/big\u003e\u003c/td\u003e\u003ctd width=\"20%\"\u003e\u003c/td\u003e\u003ctd width=\"40%\" align=\"right\"\u003e\u003csmall\u003e16/06/26 13:07:55\u003c/small\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable width=\"100%\" class=\"frameMiddleRight\" cellpadding=\"0\" cellspacing=\"0\"\u003e\u003ctr\u003e\u0026nbsp;\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd width=\"25%\" class=\"img_login\"\u003e\u003cimg src=\"img/login.gif\"\u003e\u003c/td\u003e\u003ctd width=\"75%\" valign=\"top\" align=\"left\" class=\"frameTopRight\"\u003e\u003cp\u003e\u003cinput type=\"hidden\" name=\"login\" value=\"home.xml\"/\u003e\u003cbr/\u003e\u003cspan id=\"dico_777\"\u003eNom d'utilisateur\u003c/span\u003e\u003cbr/\u003e\u003cinput type=\"text\" name=\"username\" id=\"usernameID\"/\u003e\u003cbr/\u003e\u003cinput type=\"hidden\" name=\"rsakey1\" value=\"14987\"/\u003e\u003cbr/\u003e\u003cinput type=\"hidden\" name=\"rsakey2\" value=\"32311\"/\u003e\u003cspan id=\"dico_332\"\u003eMot de passe\u003c/span\u003e\u003cbr/\u003e\u003cinput type=\"password\" name=\"pwd\" id=\"pwdID\" value=\"\"/\u003e\u003cinput type=\"submit\" name=\"enter\" id=\"dico_787\" value=\"Log in\" onclick=\"xlogin()\"/\u003e\u003c/p\u003e\u003cp\u003e\u003cinput type=\"checkbox\" name=\"saveuser\" id=\"saveuserID\"\u003e \u003csmall\u003e\u003cspan id=\"dico_838\"\u003ecochez cette case pour que votre navigateur m\u0026eacute;morise votre nom d'utilisateur\u003c/span\u003e\u003c/small\u003e\u003c/p\u003e\u003cbr/\u003e\u003cp\u003e\u003csmall\u003eSchneider Electric\u003c/small\u003e\u003c/p\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd colspan=\"2\"\u003e\u003chr/\u003e\u003ci\u003e\u003csmall\u003eXflow - 2.3.2.0 - Q08 - XA - for iRio board - 2000 variables\u003c/small\u003e\u003c/i\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/form\u003e\u003c/center\u003e\u003cscript language=\"JavaScript\"\u003ewindow.onload = function(){try{main();}catch(e){}window.setTimeout(function(){setfocus()},1000);};\u003c/script\u003e\u003c/body\u003e\u003c/html\u003e\t \t",
+                    "body_sha256": "0d5da1eb3548cbec022cfa91fbc200e050bd9fbb9d6962cdec1a31f81cd3bbb7",
+                    "content_length": -1,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:8082",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:8082"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T13:45:36Z"
+        }
+    }
+}

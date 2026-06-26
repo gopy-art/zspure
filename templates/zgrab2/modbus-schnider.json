@@ -1,0 +1,29 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "modbus": {
+            "status": "success",
+            "protocol": "modbus",
+            "port": 502,
+            "result": {
+                "length": 49,
+                "unit_id": 0,
+                "function_code": 43,
+                "raw_response": "DgGBAAADABJTY2huZWlkZXIgRWxlY3RyaWMBDEJNWCBOT0UgMDEwMAIFVjIuOTA=",
+                "mei_response": {
+                    "conformity_level": 129,
+                    "more_follows": false,
+                    "next_object_id": 0,
+                    "object_count": 3,
+                    "objects": {
+                        "product_code": "BMX NOE 0100",
+                        "revision": "V2.90",
+                        "vendor": "Schneider Electric"
+                    }
+                },
+                "raw": "WkcAAAAxACsOAYEAAAMAElNjaG5laWRlciBFbGVjdHJpYwEMQk1YIE5PRSAwMTAwAgVWMi45MA=="
+            },
+            "timestamp": "2026-06-15T13:51:32Z"
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 80,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "connection": [
+                            "keep-alive"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Tue, 16 Jun 2026 14:12:01 GMT"
+                        ],
+                        "etag": [
+                            "W/\"5d36afa3-43e\""
+                        ],
+                        "last_modified": [
+                            "Tue, 23 Jul 2019 06:56:35 GMT"
+                        ],
+                        "refresh": [
+                            "3600"
+                        ],
+                        "server": [
+                            "nginx/1.16.0"
+                        ]
+                    },
+                    "body": "\u003c!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003ctitle\u003eHDHomeRun Main Menu\u003c/title\u003e\n\u003clink rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\" /\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cdiv class=\"B C\"\u003e\n\u003cdiv class=\"T\"\u003eHDHomeRun EXTEND\u003c/div\u003e\n\u003cdiv class=\"S\"\u003eModel: HDTC-2US\n\u003cbr/\u003eDevice ID: 1055523D\n\u003cbr/\u003eFirmware: 20180327\n\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/lineup.html\"\u003eChannel Lineup\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/tuners.html\"\u003eTuner Status\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/system.html\"\u003eSystem Status\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/transcode.html\"\u003eTranscode Configuration\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/internet.html\"\u003eInternet Configuration\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://www.silicondust.com/ext/hdhomerun/instructions?DeviceID=1059902D\"\u003eInstallation Instructions\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cdiv class=\"B C\" style=\"background: #c0c0c0\"\u003e\n\u003cdiv class=\"T\"\u003eFirmware Upgrade\u003c/div\u003e\n\u003cdiv align=\"center\"\u003eRelease 20190621 is ready to install...\u003c/div\u003e\n\u003cdiv align=\"center\"\u003e\u003cform action=\"/system.html\"\u003e\u003cbutton type=\"submit\" name=\"upgrade\" value=\"install\"\u003eInstall and Reboot\u003c/button\u003e\u003c/form\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n",
+                    "body_sha256": "0a0965ea8959e04ce890a407bc5d8b07f50236a1b6fa8b6a9daf4568ed24af08",
+                    "content_length": -1,
+                    "transfer_encoding": [
+                        "chunked"
+                    ],
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1"
+                    }
+                }
+            },
+            "timestamp": "2026-06-16T14:12:01Z"
+        }
+    }
+}

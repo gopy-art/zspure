@@ -1,0 +1,161 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "NlFDXNUQolRiHClpvmTIzy7zYnNFZjk3oJ15ByiooVw=",
+                        "session_id": "52nlSIg4PMcv08qCIlb4b3Z3q5i1lzS3We6Z3LQbdqs=",
+                        "cipher_suite": {
+                            "hex": "0x1303",
+                            "name": "TLS_CHACHA20_POLY1305_SHA256",
+                            "value": 4867
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x001D",
+                            "name": "x25519",
+                            "value": 29
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIEejCCA2KgAwIBAgIBAzANBgkqhkiG9w0BAQsFADB5MQswCQYDVQQGEwJVUzELMAkGA1UECBMCTkoxETAPBgNVBAcTCFNvbWVyc2V0MR8wHQYDVQQKExZSYXJpdGFuIEFtZXJpY2FzLCBJbmMuMRQwEgYDVQQLEwtFbmdpbmVlcmluZzETMBEGA1UEAxMKUmFyaXRhbiBDQTAeFw0xNTAyMTMyMTM1NTdaFw0zMDAyMDkyMTM1NTdaMHoxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJOSjERMA8GA1UEBxMIU29tZXJzZXQxHzAdBgNVBAoTFlJhcml0YW4gQW1lcmljYXMsIEluYy4xFDASBgNVBAsTC0VuZ2luZWVyaW5nMRQwEgYDVQQDEwtSYXJpdGFuIEtWTTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANgonH8cEHzjAGBM5L/p6iLzFv2wHEA4gkhl7DMgrUyd7DNjzwh+evoW8DPgkDxmDx4rfD5+UdNMbCjfIY7Q/6VE1pH5RxWsOTRXZAU/+6defOQRgSPt2/8WFDKs5TUA4ZroZZy1MSmQZVke79LgtGDGTNd7FXeWTz+Z8MQzVzHBBXPlrTHjo+rTvUEryaeserf5NU+6nE+w0BE0NuOvdSoS0g5AiFyLImH7MOQxWXr43aexzBxCPCJED/Ijn7GKDqdasEAfbwXF+exg4COX8S5s4DLJwE7IDH6cmCO1BcrxLzxtsFsjO5UrV71iFpWp7lVEOH6j71WX38xHyIDEFnsCAwEAAaOCAQowggEGMAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBQRnVWkFZ89lz7EYqBhNPpZJ3q01TCBqwYDVR0jBIGjMIGggBTVs7W54eVqhO9E4SCVzDRTsxQAxqF9pHsweTELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk5KMREwDwYDVQQHEwhTb21lcnNldDEfMB0GA1UEChMWUmFyaXRhbiBBbWVyaWNhcywgSW5jLjEUMBIGA1UECxMLRW5naW5lZXJpbmcxEzARBgNVBAMTClJhcml0YW4gQ0GCCQDahKdlDO1iETANBgkqhkiG9w0BAQsFAAOCAQEAvdIVMF1H/XwN742QY1qUI6XcfUgJsEElELOlIMv4TC0mkH7gqTy9zuq9kGxYxc8Ms9+Sb+sKMsM2rGUCGoOu8IwTsz0V8pjKVHEy/ZcqvEkw9IGsOnSulMQGcsNrEPVdbI0U+hzaXdrdQR0ExVle01d3jbjv1TQ4er6JsEbGxLbLEwa+HAXRzQ0pc9ejFSfLJ0NhAoZfcbFB+0pcCl7s6onMEqJxrpIMWG7K/Tee0QnCrbNaAo75QHXEKGIihDu17wAtJcbKLHB2olLM4OREKi+ZNiJ1RtMiollLA1rXxz2Hg9zewwfdSHYtcK7/YBtxj33Zr/nD9joP9Hz7atFRWA==",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "3",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Raritan CA"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Somerset"
+                                    ],
+                                    "province": [
+                                        "NJ"
+                                    ],
+                                    "organization": [
+                                        "Raritan Americas, Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Engineering"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=NJ, L=Somerset, O=Raritan Americas\\, Inc., OU=Engineering, CN=Raritan CA",
+                                "validity": {
+                                    "start": "2015-02-13T21:35:57Z",
+                                    "end": "2030-02-09T21:35:57Z",
+                                    "length": 473040000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "Raritan KVM"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Somerset"
+                                    ],
+                                    "province": [
+                                        "NJ"
+                                    ],
+                                    "organization": [
+                                        "Raritan Americas, Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Engineering"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=NJ, L=Somerset, O=Raritan Americas\\, Inc., OU=Engineering, CN=Raritan KVM",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "2CicfxwQfOMAYEzkv+nqIvMW/bAcQDiCSGXsMyCtTJ3sM2PPCH56+hbwM+CQPGYPHit8Pn5R00xsKN8hjtD/pUTWkflHFaw5NFdkBT/7p1585BGBI+3b/xYUMqzlNQDhmuhlnLUxKZBlWR7v0uC0YMZM13sVd5ZPP5nwxDNXMcEFc+WtMeOj6tO9QSvJp6x6t/k1T7qcT7DQETQ24691KhLSDkCIXIsiYfsw5DFZevjdp7HMHEI8IkQP8iOfsYoOp1qwQB9vBcX57GDgI5fxLmzgMsnATsgMfpyYI7UFyvEvPG2wWyM7lStXvWIWlanuVUQ4fqPvVZffzEfIgMQWew==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "ca5eb409963ff662270dce862b6f3bfb9ca38c2cc06a7cb751fea007b6364d17"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "authority_key_id": "d5b3b5b9e1e56a84ef44e12095cc3453b31400c6",
+                                    "subject_key_id": "119d55a4159f3d973ec462a06134fa59277ab4d5"
+                                },
+                                "unknown_extensions": [
+                                    {
+                                        "id": "2.16.840.1.113730.1.13",
+                                        "critical": false,
+                                        "value": "Fh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZQ=="
+                                    }
+                                ],
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "vdIVMF1H/XwN742QY1qUI6XcfUgJsEElELOlIMv4TC0mkH7gqTy9zuq9kGxYxc8Ms9+Sb+sKMsM2rGUCGoOu8IwTsz0V8pjKVHEy/ZcqvEkw9IGsOnSulMQGcsNrEPVdbI0U+hzaXdrdQR0ExVle01d3jbjv1TQ4er6JsEbGxLbLEwa+HAXRzQ0pc9ejFSfLJ0NhAoZfcbFB+0pcCl7s6onMEqJxrpIMWG7K/Tee0QnCrbNaAo75QHXEKGIihDu17wAtJcbKLHB2olLM4OREKi+ZNiJ1RtMiollLA1rXxz2Hg9zewwfdSHYtcK7/YBtxj33Zr/nD9joP9Hz7atFRWA==",
+                                    "valid": false,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "994576932cdeb5060981f5df0605b4fe",
+                                "fingerprint_sha1": "39b9c34339aec38760ebfa8d79ea7c9d8485dac2",
+                                "fingerprint_sha256": "f2187de1a198dc980965f60babe2d7d6884344b9b1694ab59dc25bdb369c4cae",
+                                "tbs_noct_fingerprint": "826c4186f607edc39780a460940d13207d8783c3ba98169053da12a51638db03",
+                                "spki_subject_fingerprint": "522d5eff25e7a9709566f455586ba222ca6b6b55903ec85fea7c63610a726ea9",
+                                "tbs_fingerprint": "826c4186f607edc39780a460940d13207d8783c3ba98169053da12a51638db03",
+                                "validation_level": "unknown",
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate signed by unknown authority"
+                        }
+                    }
+                },
+                "ja3s": "475c9302dc42b2751db9edcac3b74891",
+                "handshake_completed_successfully": true
+            },
+            "timestamp": "2026-06-16T13:21:06Z"
+        }
+    }
+}

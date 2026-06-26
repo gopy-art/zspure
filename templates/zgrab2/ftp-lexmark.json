@@ -1,0 +1,14 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 60001,
+            "result": {
+                "banner": "220 ET788C77A6FE46 Lexmark MS431dw FTP Server MSLBD.075.027 ready.\r\n"
+            },
+            "timestamp": "2026-06-24T17:32:42Z"
+        }
+    }
+}
