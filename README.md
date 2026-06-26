@@ -244,6 +244,11 @@ Example :
 | 36 | Network Storage | Seagate |
 | 37 | Service | Serv-U |
 | 38 | Printer | Sharp |
+| 39 | Modem | SoftAtHome |
+| 40 | Camera | Sony |
+| 41 | Router | SpeedPort |
+| 42 | Network Storage | Synology |
+| 43 | Service | Telindus |
 
 **MSSQL**
 | No | Category | Device/Service Name |
