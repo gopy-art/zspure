@@ -21,6 +21,7 @@ import (
 	servuftpd "zspure/modules/ftp/ServuFtpd"
 	sharp "zspure/modules/ftp/Sharp"
 	softathome "zspure/modules/ftp/SoftAtHome"
+	sony "zspure/modules/ftp/Sony"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -65,6 +66,7 @@ func NewFTP() []model.ModuleMethods {
 		&servuftpd.ServuFtpd{},
 		&sharp.Sharp{},
 		&softathome.SoftAtHome{},
+		&sony.SonyNetworkCamera{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
