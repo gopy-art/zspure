@@ -24,6 +24,7 @@ import (
 	sony "zspure/modules/ftp/Sony"
 	speedport "zspure/modules/ftp/SpeedPort"
 	synology "zspure/modules/ftp/Synology"
+	telindus "zspure/modules/ftp/Telindus"
 	tenor "zspure/modules/ftp/Tenor"
 	titan "zspure/modules/ftp/Titan"
 	tnftpd "zspure/modules/ftp/Tnftpd"
@@ -71,6 +72,7 @@ func NewFTP() []model.ModuleMethods {
 		&sony.SonyNetworkCamera{},
 		&speedport.SpeedPort{},
 		&synology.Synology{},
+		&telindus.Telindus{},
 		&tenor.TenorMultipath{},
 		&titan.TitanWindowsSystems{},
 		&tnftpd.TnftpdTcpService{},
