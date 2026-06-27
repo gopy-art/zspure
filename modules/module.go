@@ -46,7 +46,7 @@ func NewModule(protocol string) ([]model.ModuleMethods, error) {
 	case "ntp":
 		return ntp.NewNTP(), nil
 	case "pptp":
-		return pptp.NewENIP(), nil
+		return pptp.NewPPTP(), nil
 	case "ssh":
 		return ssh.NewSSH(), nil
 	case "mongodb":
@@ -59,6 +59,35 @@ func NewModule(protocol string) ([]model.ModuleMethods, error) {
 		return tls.NewTLS(), nil
 	case "ftp":
 		return ftp.NewFTP(), nil
+	default:
+		return nil, fmt.Errorf("protocol not supported")
+	}
+}
+
+func NewScanner(protocol string) (model.Scan, error) {
+	switch protocol {
+	case "http":
+		return http.NewHTTPScanner(), nil
+	case "mssql":
+		return mssql.NewMSSQLScanner(), nil
+	case "modbus":
+		return modbus.NewMODBUSScanner(), nil
+	case "ntp":
+		return ntp.NewNTPScanner(), nil
+	case "pptp":
+		return pptp.NewPPTPScanner(), nil
+	case "ssh":
+		return ssh.NewSSHScanner(), nil
+	case "mongodb":
+		return mongodb.NewMongoDBScanner(), nil
+	case "mysql":
+		return mysql.NewMysqlScanner(), nil
+	case "redis":
+		return redis.NewRedisScanner(), nil
+	case "tls":
+		return tls.NewTLSScanner(), nil
+	case "ftp":
+		return ftp.NewFTPScanner(), nil
 	default:
 		return nil, fmt.Errorf("protocol not supported")
 	}
