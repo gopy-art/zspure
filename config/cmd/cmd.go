@@ -177,7 +177,7 @@ It just detects the protocols that tools support! (for see the protocols use the
 
 	pattern.PersistentFlags().StringVar(&config.TARGETS, "target", "", "set the target ip/cidr. (example : 192.168.10.12/192.168.10.0/24)")
 	pattern.PersistentFlags().IntVar(&config.PORT, "port", 0, "set the port number for bannering.")
-	pattern.PersistentFlags().IntVarP(&config.TIMEOUT, "timeout", "t", 0, "set the timeout for connection. (seconds)")
+	pattern.PersistentFlags().IntVarP(&config.TIMEOUT, "timeout", "t", 3, "set the timeout for connection. (seconds)")
 
 	customHelpTemplate := `{{.Long}}
 

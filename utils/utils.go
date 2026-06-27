@@ -60,9 +60,9 @@ func ValidateFlags() error {
 		if config.PORT == 0 {
 			return fmt.Errorf("--port is undefined")
 		}
-		if err := ValidateIP(config.TARGETS); err != nil {
+		if ip, err := ValidateIP(config.TARGETS); err != nil {
 			return fmt.Errorf("faild to parse targets, error = %v", err)
-		}
+		} else { config.TARGETS = ip }
 		if err := ValidatePort(config.PORT); err != nil {
 			return fmt.Errorf("faild to parse port, error = %v", err)
 		}
@@ -181,26 +181,26 @@ func GatherCVEOnline(url string) ([]model.CVEStructure, error) {
 	return data, nil
 }
 
-func ValidateIP(input string) error {
+func ValidateIP(input string) (string,error) {
     input = strings.TrimSpace(input)
     if input == "" {
-        return fmt.Errorf("IP/CIDR cannot be empty")
+        return "", fmt.Errorf("IP/CIDR cannot be empty")
     }
 
     if strings.Contains(input, "/") {
         _, _, err := net.ParseCIDR(input)
         if err != nil {
-            return fmt.Errorf("invalid CIDR format: %s", input)
+            return "", fmt.Errorf("invalid CIDR format: %s", input)
         }
-        return nil
+        return input, nil
     }
 
     ip := net.ParseIP(input)
     if ip == nil {
-        return fmt.Errorf("invalid IP address: %s", input)
+        return "", fmt.Errorf("invalid IP address: %s", input)
     }
-
-    return nil
+	input += "/32"
+    return input, nil
 }
 
 func ValidatePort(port int) error {

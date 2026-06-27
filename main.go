@@ -1,6 +1,7 @@
 package main
 
 import (
+	"time"
 	"zspure/config"
 	"zspure/config/cmd"
 	"zspure/logic"
@@ -28,6 +29,10 @@ func main() {
 		}
 
 		logic.AppExecute(conf)
+	case "banner":
+		scanner := logic.NewScanLogic()
+		scanner.Init(logic.ScanInput{Targets: config.TARGETS, Port: config.PORT}, time.Duration(config.TIMEOUT) * time.Second)
+		scanner.StartScanner()
 	case "print":
 		if config.PROTOCOL_INFO {
 			modules.PrintModuleProtocols()
@@ -65,6 +70,6 @@ func main() {
 			cmd.ErrorLogger.Fatalf("error in detecting device, error = %v \n", err)
 		}
 	default:
-		cmd.ErrorLogger.Fatalf("The type of execution is invalid")
+		cmd.ErrorLogger.Fatalln("The type of execution is invalid")
 	}
 }
