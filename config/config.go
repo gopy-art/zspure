@@ -9,21 +9,23 @@ import (
 )
 
 var (
-	LOGIC       string = ""
-	APP_VERSION string = "1.2.0"
-	CONFIG_PATH string = ""
-	ORDER       string = "desc"
-	CLEAR       string = ""
-	TAG         string = ""
-	KEY         string = ""
-	INPUTFILE   string = ""
-	URL         string = ""
-	FIND_CVE    bool
-	STDIN_INPUT bool
-	ZGRAB_INPUT bool
-	JSON_OUTPUT bool
-	Vtoggle     bool
-	BatchSize   int
+	LOGIC         string = ""
+	APP_VERSION   string = "1.2.0"
+	CONFIG_PATH   string = ""
+	ORDER         string = "desc"
+	CLEAR         string = ""
+	TAG           string = ""
+	KEY           string = ""
+	INPUTFILE     string = ""
+	URL           string = ""
+	PROTOCOL_INFO bool
+	DEVICE_INFO   bool
+	FIND_CVE      bool
+	STDIN_INPUT   bool
+	ZGRAB_INPUT   bool
+	JSON_OUTPUT   bool
+	Vtoggle       bool
+	BatchSize     int
 )
 
 var Root = &cobra.Command{

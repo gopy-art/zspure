@@ -114,10 +114,20 @@ func PrintModuleDevices() {
 
 	fmt.Println(strings.Repeat("-", 100))
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-	fmt.Fprintln(w , "Category\tDevice/Service Count")
-	for k,v := range categories {
-		fmt.Fprintf(w, "%s\t%d\t\n", k, v )
+	fmt.Fprintln(w, "Category\tDevice/Service Count")
+	for k, v := range categories {
+		fmt.Fprintf(w, "%s\t%d\t\n", k, v)
 	}
-	fmt.Fprintf(w, "TOTAL\t%d\n" , TotalCount)
+	fmt.Fprintf(w, "TOTAL\t%d\n", TotalCount)
 	w.Flush()
+}
+
+func PrintModuleProtocols() {
+	for n, m := range ModuleList {
+		fmt.Printf("%d) %v : ", n+1, m)
+		if protocol, err := NewScanner(m); err == nil {
+			protocol.SetDescription()
+			protocol.PrintInfo()
+		}
+	}
 }

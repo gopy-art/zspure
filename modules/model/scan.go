@@ -6,6 +6,7 @@ import (
 
 type Scan interface {
 	PrintInfo()
+	SetDescription()
 	SetAddress(ip net.IP, port int)
 	SetDetectionPacket(packet []byte)
 	SetBannerPacket(packet []byte)

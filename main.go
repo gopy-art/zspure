@@ -29,7 +29,11 @@ func main() {
 
 		logic.AppExecute(conf)
 	case "print":
-		modules.PrintModuleDevices()
+		if config.PROTOCOL_INFO {
+			modules.PrintModuleProtocols()
+		} else if config.DEVICE_INFO {
+			modules.PrintModuleDevices()
+		}
 	case "file":
 		var strcontent string
 		var bytecontent []byte

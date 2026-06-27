@@ -191,7 +191,7 @@ Create the Print info command with its flags and formats
 */
 func createPrintInfoCommand() *cobra.Command {
 	pattern := &cobra.Command{
-		Use:     "devices",
+		Use:     "info",
 		Short:   "show devices/services in zspure",
 		Long:    `This command will show the name and information about the devices/services written in this tool! `,
 		GroupID: "general",
@@ -199,6 +199,9 @@ func createPrintInfoCommand() *cobra.Command {
 			config.LOGIC = "print"
 		},
 	}
+
+	pattern.PersistentFlags().BoolVar(&config.PROTOCOL_INFO, "protocols", false, "protocols information")
+	pattern.PersistentFlags().BoolVar(&config.DEVICE_INFO, "devices", false, "devices/services information")
 
 	customHelpTemplate := `{{.Long}}
 
