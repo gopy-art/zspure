@@ -5,8 +5,12 @@ import (
 	pptpvpn "zspure/modules/pptp/pptp_vpn"
 )
 
-func NewENIP() []model.ModuleMethods {
+func NewPPTP() []model.ModuleMethods {
 	return []model.ModuleMethods{
 		&pptpvpn.PPTPVPN{},
 	}
+}
+
+func NewPPTPScanner() *PPTPScanning {
+	return new(PPTPScanning)
 }

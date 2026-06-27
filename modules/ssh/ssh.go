@@ -10,3 +10,7 @@ func NewSSH() []model.ModuleMethods {
 		&sshservice.SSHService{},
 	}
 }
+
+func NewSSHScanner() *SSHScanning {
+	return new(SSHScanning)
+}

@@ -10,3 +10,7 @@ func NewMONGODB() []model.ModuleMethods {
 		&database.MongoDatabase{},
 	}
 }
+
+func NewMongoDBScanner() *MongoDBScanning {
+	return new(MongoDBScanning)
+}

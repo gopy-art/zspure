@@ -148,3 +148,7 @@ func NewHTTP() []model.ModuleMethods {
 		&xunbo.XunboPepLink{},
 	}
 }
+
+func NewHTTPScanner() *HttpScanning {
+	return new(HttpScanning)
+}

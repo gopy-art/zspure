@@ -10,3 +10,7 @@ func NewRedis() []model.ModuleMethods {
 		&database.RedisDatabase{},
 	}
 }
+
+func NewRedisScanner() *RedisScanning {
+	return new(RedisScanning)
+}

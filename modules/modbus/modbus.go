@@ -28,3 +28,7 @@ func NewMODBUS() []model.ModuleMethods {
 		&telemecanique.Telemecanique{},
 	}
 }
+
+func NewMODBUSScanner() *ModbusScanning {
+	return new(ModbusScanning)
+}

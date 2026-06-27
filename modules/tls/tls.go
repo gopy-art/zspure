@@ -156,3 +156,7 @@ func NewTLS() []model.ModuleMethods {
 		&m0n0wall.M0n0wallFreeBSD{},
 	}
 }
+
+func NewTLSScanner() *TLSScanning {
+	return new(TLSScanning)
+}

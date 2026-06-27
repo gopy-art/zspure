@@ -10,3 +10,7 @@ func NewNTP() []model.ModuleMethods {
 		&server.NTPServer{},
 	}
 }
+
+func NewNTPScanner() *NtpScanning {
+	return new(NtpScanning)
+}

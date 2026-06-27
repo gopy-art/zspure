@@ -10,3 +10,7 @@ func NewMSSQL() []model.ModuleMethods {
 		&database.MsSQLDatabase{},
 	}
 }
+
+func NewMSSQLScanner() *MssqlScanning {
+	return new(MssqlScanning)
+}

@@ -10,3 +10,7 @@ func NewMYSQL() []model.ModuleMethods {
 		&database.MYSQLDatabase{},
 	}
 }
+
+func NewMysqlScanner() *MysqlScanning {
+	return new(MysqlScanning)
+}

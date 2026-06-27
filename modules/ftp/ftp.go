@@ -47,6 +47,23 @@ import (
 	"zspure/modules/model"
 )
 
+var commands map[string]string = map[string]string{
+	"SYST":         "SYST\r\n",         // System info
+	"FEAT":         "FEAT\r\n",         // Features
+	"STAT":         "STAT\r\n",         // Status
+	"HELP":         "HELP\r\n",         // Help
+	"PWD":          "PWD\r\n",          // Print working directory
+	"TYPE A":       "TYPE A\r\n",       // ASCII mode
+	"TYPE I":       "TYPE I\r\n",       // Binary mode
+	"PASV":         "PASV\r\n",         // Passive mode
+	"EPSV":         "EPSV\r\n",         // Extended passive mode
+	"OPTS UTF8 ON": "OPTS UTF8 ON\r\n", // UTF-8 support
+	"ALLO 1":       "ALLO 1\r\n",       // Allocate space
+	"REST 0":       "REST 0\r\n",       // Restart position
+	"SIZE /":       "SIZE /\r\n",       // File size
+	"MDTM /":       "MDTM /\r\n",       // Modification time
+}
+
 func NewFTP() []model.ModuleMethods {
 	return []model.ModuleMethods{
 		&lexmark.Lexmark{},
@@ -93,4 +110,8 @@ func NewFTP() []model.ModuleMethods {
 		&zyxel.ZyXelRouterFTP{},
 		&vodaphone.Vodaphone{},
 	}
+}
+
+func NewFTPScanner() *FtpScanning {
+	return new(FtpScanning)
 }
