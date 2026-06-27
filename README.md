@@ -3,7 +3,7 @@
 <img src="./zspure.png">
 </div>
 
-**zspure** is a tool for gatheing information from the devices or services on the internet. It supports +250 devices/services fingerprints and +15 protocols to get banner.
+**zspure** is a tool for gathering information from the devices or services on the internet. It supports +250 devices/services fingerprints and +15 protocols to get banner.
 
 # How to run
 For install and run this tool you have to follow this structure :
