@@ -18,6 +18,7 @@ var (
 	KEY           string = ""
 	INPUTFILE     string = ""
 	URL           string = ""
+	TARGETS       string
 	PROTOCOL_INFO bool
 	DEVICE_INFO   bool
 	FIND_CVE      bool
@@ -26,6 +27,8 @@ var (
 	JSON_OUTPUT   bool
 	Vtoggle       bool
 	BatchSize     int
+	PORT          int
+	TIMEOUT       int = 3
 )
 
 var Root = &cobra.Command{

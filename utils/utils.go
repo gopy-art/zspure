@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"net"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -51,6 +52,19 @@ func ValidateFlags() error {
 	case "execute":
 		if config.CONFIG_PATH == "" {
 			return fmt.Errorf("in 'execute' mode, config file path should not be empty")
+		}
+	case "banner":
+		if config.TARGETS == "" {
+			return fmt.Errorf("--target is undefined")
+		}
+		if config.PORT == 0 {
+			return fmt.Errorf("--port is undefined")
+		}
+		if err := ValidateIP(config.TARGETS); err != nil {
+			return fmt.Errorf("faild to parse targets, error = %v", err)
+		}
+		if err := ValidatePort(config.PORT); err != nil {
+			return fmt.Errorf("faild to parse port, error = %v", err)
 		}
 	case "print":
 		break
@@ -165,4 +179,33 @@ func GatherCVEOnline(url string) ([]model.CVEStructure, error) {
 	}
 
 	return data, nil
+}
+
+func ValidateIP(input string) error {
+    input = strings.TrimSpace(input)
+    if input == "" {
+        return fmt.Errorf("IP/CIDR cannot be empty")
+    }
+
+    if strings.Contains(input, "/") {
+        _, _, err := net.ParseCIDR(input)
+        if err != nil {
+            return fmt.Errorf("invalid CIDR format: %s", input)
+        }
+        return nil
+    }
+
+    ip := net.ParseIP(input)
+    if ip == nil {
+        return fmt.Errorf("invalid IP address: %s", input)
+    }
+
+    return nil
+}
+
+func ValidatePort(port int) error {
+    if port < 1 || port > 65535 {
+        return fmt.Errorf("port must be between 1 and 65535 (got %d)", port)
+    }
+	return nil
 }
