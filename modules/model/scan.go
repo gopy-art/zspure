@@ -16,8 +16,15 @@ type Scan interface {
 }
 
 type ScanStructure struct {
-	IP     net.IP `json:"ip,omitempty"`
-	Port   int    `json:"port,omitempty"`
-	Banner string `json:"banner,omitempty"`
-	Sha256 string `json:"sha_256,omitempty"`
+	IP           net.IP            `json:"ip,omitempty"`
+	Data         ScanDataStructure `json:"data,omitempty"`
+	FingerPrints ModuleStructure   `json:"fingerprints,omitempty"`
+}
+
+type ScanDataStructure struct {
+	Status    string `json:"status,omitempty"`
+	Protocol  string `json:"protocol,omitempty"`
+	Port      int    `json:"port,omitempty"`
+	Result    any    `json:"result,omitempty"`
+	Timestamp string `json:"timestamp,omitempty"`
 }
