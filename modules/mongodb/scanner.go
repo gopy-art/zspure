@@ -9,6 +9,7 @@ import (
 type MongoDBScanning struct {
 	IP     net.IP `json:"ip,omitempty"`
 	Port   int    `json:"port,omitempty"`
+	Status string    `json:"status,omitempty"`
 	Banner string `json:"banner,omitempty"`
 	Sha256 string `json:"sha_256,omitempty"`
 
