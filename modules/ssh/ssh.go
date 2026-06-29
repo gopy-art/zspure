@@ -7,6 +7,7 @@ import (
 	dropbear "zspure/modules/ssh/Dropbear"
 	huawei "zspure/modules/ssh/Huawei"
 	lancom "zspure/modules/ssh/Lancom"
+	modsftp "zspure/modules/ssh/Mod_sftp"
 	openssh "zspure/modules/ssh/OpenSSH"
 	rosssh "zspure/modules/ssh/Rosssh"
 	zyxel "zspure/modules/ssh/Zyxel"
@@ -20,6 +21,7 @@ func NewSSH() []model.ModuleMethods {
 		&dropbear.Dropbear{},
 		&huawei.Huawei{},
 		&lancom.Lancom{},
+		&modsftp.Modsftp{},
 		&rosssh.ROSSSH{},
 		&zyxel.Zyxel{},
 	}
