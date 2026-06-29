@@ -9,6 +9,7 @@ import (
 	lancom "zspure/modules/ssh/Lancom"
 	modsftp "zspure/modules/ssh/Mod_sftp"
 	openssh "zspure/modules/ssh/OpenSSH"
+	romsshell "zspure/modules/ssh/RomSShell"
 	rosssh "zspure/modules/ssh/Rosssh"
 	zyxel "zspure/modules/ssh/Zyxel"
 )
@@ -22,6 +23,7 @@ func NewSSH() []model.ModuleMethods {
 		&huawei.Huawei{},
 		&lancom.Lancom{},
 		&modsftp.Modsftp{},
+		&romsshell.RomSShell{},
 		&rosssh.ROSSSH{},
 		&zyxel.Zyxel{},
 	}
