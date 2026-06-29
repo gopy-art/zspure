@@ -268,7 +268,17 @@ Example :
 **SSH**
 | No | Category | Device/Service Name |
 |----|----------|---------------------|
-| 1 | Service | SSH |
+| 1 | Service | OpenSSH |
+| 2 | Router | Cisco |
+| 3 | Network Device | Dopra |
+| 4 | Service | Dropbear |
+| 5 | Network Device | Huawei |
+| 6 | Network Device | Lancom |
+| 7 | Service | Mod_sftp |
+| 8 | Server | MPSSH |
+| 9 | Service | RomSShell |
+| 10 | Router | ROSSSH |
+| 11 | Network Device | Zyxel |
 
 **MONGODB**
 | No | Category | Device/Service Name |
