@@ -9,6 +9,7 @@ import (
 	lancom "zspure/modules/ssh/Lancom"
 	openssh "zspure/modules/ssh/OpenSSH"
 	rosssh "zspure/modules/ssh/Rosssh"
+	zyxel "zspure/modules/ssh/Zyxel"
 )
 
 func NewSSH() []model.ModuleMethods {
@@ -20,6 +21,7 @@ func NewSSH() []model.ModuleMethods {
 		&huawei.Huawei{},
 		&lancom.Lancom{},
 		&rosssh.ROSSSH{},
+		&zyxel.Zyxel{},
 	}
 }
 
