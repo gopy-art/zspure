@@ -5,6 +5,7 @@ import (
 	cisco "zspure/modules/ssh/Cisco"
 	dropbear "zspure/modules/ssh/Dropbear"
 	huawei "zspure/modules/ssh/Huawei"
+	lancom "zspure/modules/ssh/Lancom"
 	openssh "zspure/modules/ssh/OpenSSH"
 	rosssh "zspure/modules/ssh/Rosssh"
 )
@@ -15,6 +16,7 @@ func NewSSH() []model.ModuleMethods {
 		&cisco.Cisco{},
 		&dropbear.Dropbear{},
 		&huawei.Huawei{},
+		&lancom.Lancom{},
 		&rosssh.ROSSSH{},
 	}
 }
