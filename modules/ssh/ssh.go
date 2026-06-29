@@ -2,12 +2,12 @@ package ssh
 
 import (
 	"zspure/modules/model"
-	sshservice "zspure/modules/ssh/ssh_service"
+	openssh "zspure/modules/ssh/OpenSSH"
 )
 
 func NewSSH() []model.ModuleMethods {
 	return []model.ModuleMethods{
-		&sshservice.SSHService{},
+		&openssh.OpenSSH{},
 	}
 }
 
