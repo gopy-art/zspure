@@ -1,0 +1,113 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-mpSSH_0.2.1",
+                    "version": "2.0",
+                    "software": "mpSSH_0.2.1"
+                },
+                "server_key_exchange": {
+                    "cookie": "gq5U0nTEDSWdSgSxH6ZIig==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group-exchange-sha256",
+                        "diffie-hellman-group14-sha1",
+                        "diffie-hellman-group1-sha1"
+                    ],
+                    "host_key_algorithms": [
+                        "ssh-rsa",
+                        "ssh-dss"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes256-ctr",
+                        "AEAD_AES_256_GCM",
+                        "aes256-gcm@openssh.com",
+                        "aes256-cbc",
+                        "aes128-cbc",
+                        "3des-cbc"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes256-ctr",
+                        "AEAD_AES_256_GCM",
+                        "aes256-gcm@openssh.com",
+                        "aes256-cbc",
+                        "aes128-cbc",
+                        "3des-cbc"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha2-256",
+                        "AEAD_AES_256_GCM",
+                        "hmac-sha1"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha2-256",
+                        "AEAD_AES_256_GCM",
+                        "hmac-sha1"
+                    ],
+                    "client_to_server_compression": [
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "54286bc8fce42f196148371b8d87c4ba"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "diffie-hellman-group1-sha1",
+                    "host_key_algorithm": "ssh-rsa",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes256-gcm@openssh.com",
+                        "mac": "",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes256-gcm@openssh.com",
+                        "mac": "",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "dh_params": {
+                        "prime": {
+                            "value": "///////////JD9qiIWjCNMTGYouA3BzRKQJOCIpnzHQCC76mOxObIlFKCHmONATd75UZs806QxswKwpt8l8UN0/hNW1tUcJF5IW1dmJefsb0TELppjftawv/XLb0Brft7jhr+1qJn6WunyQRfEsf5kkoZlHs5lOB//////////8=",
+                            "length": 1024
+                        },
+                        "generator": {
+                            "value": "Ag==",
+                            "length": 8
+                        },
+                        "server_public": {
+                            "value": "M5BHR47cAaoceuYDnC4kRsUecEd/T9ov4SdtOEDwCR5lmHQ50clKJO1nwkVDpRbieB/1ZJvJK76suQroyvtWlhUk8b78tw3RWnFeRl7dBXGqPl30KOEMv8x12WyNQbD3IOc1Ghq2Ijd8CDRV1ZgivOhzaXXPf7cSemhF5Yi5YYw=",
+                            "length": 1024
+                        }
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ssh-rsa",
+                            "value": "DMRXRiBtCPd+9ywSjEFQD6kxfQi9/d9xj1bg2dbtem+NRr0o+RCX84vJNHgd4h5z67Fuxetctsr2aPrhuGlSGcw6Uwei0FtsMlGznk2ky/DP59mbLRxCH/8XDY+b2sdRNXRI+ihGU03nJJ8lELEzsHBaArv+1n5LmWUiMvBak59NuBTGfaXc85u/LU2v2y5uoKOQj83PYGZNUZpgS4ALXEIOARuHIaafEEqkjUcagHYRGlt55XDXP9nX0x0HKdcat7vjtSJmfIg1Y+Q9jJmOCrmcyK5TBrVk5Cwe91OFR3YaI2VMKJTCYk2qpm/ttDafIsseKPYmYEPjBlN5ogUMMw=="
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAEADMRXRiBtCPd+9ywSjEFQD6kxfQi9/d9xj1bg2dbtem+NRr0o+RCX84vJNHgd4h5z67Fuxetctsr2aPrhuGlSGcw6Uwei0FtsMlGznk2ky/DP59mbLRxCH/8XDY+b2sdRNXRI+ihGU03nJJ8lELEzsHBaArv+1n5LmWUiMvBak59NuBTGfaXc85u/LU2v2y5uoKOQj83PYGZNUZpgS4ALXEIOARuHIaafEEqkjUcagHYRGlt55XDXP9nX0x0HKdcat7vjtSJmfIg1Y+Q9jJmOCrmcyK5TBrVk5Cwe91OFR3YaI2VMKJTCYk2qpm/ttDafIsseKPYmYEPjBlN5ogUMMw==",
+                        "h": "hXfIY424W6Qi2nR+X0+vG9PlrVA="
+                    },
+                    "server_host_key": {
+                        "rsa_public_key": {
+                            "exponent": 65537,
+                            "modulus": "t65dpr8JuMbZAdgZonnT8TPlps7Ik6eSH9eTPCKZlroB0aNoQlDft6npoem0xgfwGAm50N3khheHBiTUQB/XqxQYrbKoNPo8bhq7eFsfjbg92oJlCZPnr4qG5xH7LdffRuuWsjiJvBhvQ6xxfK7BDPZ80UGWsgWCUWUmbnJIPFd14qiEu2O1FU9hL9c+d62RVq2q+E4RlPE3xv+fYn7kgP1vonbqDo8b2idGgsp2saeIv9Zpj6mVotCqg27cPjWKivBd8NVGd4xH97t7YRGNeFPMzyerGJ/bibXNmBw+RQbjp8tgXGgc1Aj7Oq1lWg2t7vpNnEkxwmpU7Kxqqm2qEQ==",
+                            "length": 2048
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAADAQABAAABAQC3rl2mvwm4xtkB2BmiedPxM+WmzsiTp5If15M8IpmWugHRo2hCUN+3qemh6bTGB/AYCbnQ3eSGF4cGJNRAH9erFBitsqg0+jxuGrt4Wx+NuD3agmUJk+eviobnEfst199G65ayOIm8GG9DrHF8rsEM9nzRQZayBYJRZSZuckg8V3XiqIS7Y7UVT2Ev1z53rZFWrar4ThGU8TfG/59ifuSA/W+iduoOjxvaJ0aCynaxp4i/1mmPqZWi0KqDbtw+NYqK8F3w1UZ3jEf3u3thEY14U8zPJ6sYn9uJtc2YHD5FBuOny2BcaBzUCPs6rWVaDa3u+k2cSTHCalTsrGqqbaoR",
+                        "algorithm": "ssh-rsa",
+                        "fingerprint_sha256": "33a07305fd768fe478be428c0843f5019a4aeadb5e0c670050ced750312a5738"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:48:48Z"
+        }
+    }
+}

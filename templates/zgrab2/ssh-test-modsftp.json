@@ -1,0 +1,108 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-mod_sftp/0.9.8",
+                    "version": "2.0",
+                    "software": "mod_sftp/0.9.8"
+                },
+                "server_key_exchange": {
+                    "cookie": "Bz7uFkB7FN1K8b14Q8IBqQ==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group-exchange-sha256",
+                        "diffie-hellman-group-exchange-sha1",
+                        "diffie-hellman-group14-sha1",
+                        "diffie-hellman-group1-sha1",
+                        "rsa1024-sha1"
+                    ],
+                    "host_key_algorithms": [
+                        "ssh-rsa"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes256-ctr",
+                        "aes192-ctr",
+                        "aes128-ctr"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes256-ctr",
+                        "aes192-ctr",
+                        "aes128-ctr"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha1"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha1"
+                    ],
+                    "client_to_server_compression": [
+                        "zlib@openssh.com",
+                        "zlib",
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "zlib@openssh.com",
+                        "zlib",
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "9543ddee610cd9280a73203c5c450902"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "diffie-hellman-group1-sha1",
+                    "host_key_algorithm": "ssh-rsa",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha1",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha1",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "dh_params": {
+                        "prime": {
+                            "value": "///////////JD9qiIWjCNMTGYouA3BzRKQJOCIpnzHQCC76mOxObIlFKCHmONATd75UZs806QxswKwpt8l8UN0/hNW1tUcJF5IW1dmJefsb0TELppjftawv/XLb0Brft7jhr+1qJn6WunyQRfEsf5kkoZlHs5lOB//////////8=",
+                            "length": 1024
+                        },
+                        "generator": {
+                            "value": "Ag==",
+                            "length": 8
+                        },
+                        "server_public": {
+                            "value": "L1HFrs+GoyffBIJun0GlMdCWozA98ZlgIufOCsrlWELHLIjbfw4Fz4rXiBFhU1u03VhQph+9S6GrUn5BU234EoovD0bgRd6DlcbmsWe5wjR8l5kOWPDaSVIQVO+GUIioNfK39+vCbetYAXzfZHtO9PYRIGET2U9uJljKOCTPWKk=",
+                            "length": 1024
+                        }
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ssh-rsa",
+                            "value": "i8tnmdpr+00fS5KfbVylJSe7C9IgsjitCrxLEXWokZePO1cMBVBov+zhmtisMZKldAgcNlIPQ5dqK6cFBIEUdmq3SpnBDAKRaPkF1z5LtZCZUGr488Ma1kJUC9urlQFg+tobnaRqQ5zX3MnBSKASIpL2qMN6Kdg7Z5AJM7VRAkpCEOGnqbMTDmWjZgaHqvim2etMeyWSwEMSEazcu21iLiQwiv7iyHaNhm7+WYYXz2aZPpyCWalvX+NwUosOGi3Ff7T/ZRSXm/vHWBNSVuC3lELiPtxzAhgsOOAtJBpXefI+eJ/NP+AeK2w3htPOFwPdm+H04YP7ksmlY+O4faqcbg=="
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAEAi8tnmdpr+00fS5KfbVylJSe7C9IgsjitCrxLEXWokZePO1cMBVBov+zhmtisMZKldAgcNlIPQ5dqK6cFBIEUdmq3SpnBDAKRaPkF1z5LtZCZUGr488Ma1kJUC9urlQFg+tobnaRqQ5zX3MnBSKASIpL2qMN6Kdg7Z5AJM7VRAkpCEOGnqbMTDmWjZgaHqvim2etMeyWSwEMSEazcu21iLiQwiv7iyHaNhm7+WYYXz2aZPpyCWalvX+NwUosOGi3Ff7T/ZRSXm/vHWBNSVuC3lELiPtxzAhgsOOAtJBpXefI+eJ/NP+AeK2w3htPOFwPdm+H04YP7ksmlY+O4faqcbg==",
+                        "h": "DOACk5e+Lb7Ln+kT5Bg1T+JDpiI="
+                    },
+                    "server_host_key": {
+                        "rsa_public_key": {
+                            "exponent": 65537,
+                            "modulus": "xWQbZPrhgcC6bBxXbM5kWHGQhUli50rUqmhFlnastJqkMLAdqZBmsIh8fbcLE3xYavTNOpXY+9DkCvCacqAJVuXUwCo8qeSpPdEjc3DK3enEFhQsDcZxqi1e+Pi9KO77mzb/MePeMLMGN+ThKrd3dtNuwsYaxWJerwE+YZ/phQVyNcucIak2V9rnY0WHkzdqtfOqihoF6yRLbxtXQI8Y/AIzLBu9aHud/7AIdeiEERufelKnn7PJ6hL1RdDpIwcNvA9qhbow1Sr+O4Qd9emO7hQJ9LQR34rr6QelNrWvPbdFoIKshhysfgvgL8wZLG5dwHYeSwQ7pnYlFJ3grm4+cQ==",
+                            "length": 2048
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDFZBtk+uGBwLpsHFdszmRYcZCFSWLnStSqaEWWdqy0mqQwsB2pkGawiHx9twsTfFhq9M06ldj70OQK8JpyoAlW5dTAKjyp5Kk90SNzcMrd6cQWFCwNxnGqLV74+L0o7vubNv8x494wswY35OEqt3d2027CxhrFYl6vAT5hn+mFBXI1y5whqTZX2udjRYeTN2q186qKGgXrJEtvG1dAjxj8AjMsG71oe53/sAh16IQRG596Uqefs8nqEvVF0OkjBw28D2qFujDVKv47hB316Y7uFAn0tBHfiuvpB6U2ta89t0WggqyGHKx+C+AvzBksbl3Adh5LBDumdiUUneCubj5x",
+                        "algorithm": "ssh-rsa",
+                        "fingerprint_sha256": "2d04f1edf04401aea36e6729eb765d447547c819069f83987d2d6ec8f05af8e0"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:40:49Z"
+        }
+    }
+}

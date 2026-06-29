@@ -1,0 +1,135 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-Zyxel SSH server",
+                    "version": "2.0",
+                    "software": "Zyxel",
+                    "comment": "SSH server"
+                },
+                "server_key_exchange": {
+                    "cookie": "XkAiVTtsrHW5hfLNi0m9Rg==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group-exchange-sha1",
+                        "diffie-hellman-group14-sha1",
+                        "diffie-hellman-group1-sha1"
+                    ],
+                    "host_key_algorithms": [
+                        "ssh-rsa"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes128-cbc",
+                        "3des-cbc",
+                        "blowfish-cbc",
+                        "cast128-cbc",
+                        "arcfour128",
+                        "arcfour256",
+                        "arcfour",
+                        "aes192-cbc",
+                        "aes256-cbc",
+                        "rijndael-cbc@lysator.liu.se",
+                        "aes128-ctr",
+                        "aes192-ctr",
+                        "aes256-ctr"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes128-cbc",
+                        "3des-cbc",
+                        "blowfish-cbc",
+                        "cast128-cbc",
+                        "arcfour128",
+                        "arcfour256",
+                        "arcfour",
+                        "aes192-cbc",
+                        "aes256-cbc",
+                        "rijndael-cbc@lysator.liu.se",
+                        "aes128-ctr",
+                        "aes192-ctr",
+                        "aes256-ctr"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-md5",
+                        "hmac-sha1",
+                        "hmac-ripemd160",
+                        "hmac-ripemd160@openssh.com",
+                        "hmac-sha1-96",
+                        "hmac-md5-96"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-md5",
+                        "hmac-sha1",
+                        "hmac-ripemd160",
+                        "hmac-ripemd160@openssh.com",
+                        "hmac-sha1-96",
+                        "hmac-md5-96"
+                    ],
+                    "client_to_server_compression": [
+                        "none",
+                        "zlib@openssh.com"
+                    ],
+                    "server_to_client_compression": [
+                        "none",
+                        "zlib@openssh.com"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "d31b874dd8b4aafeb356e242eb7dc10b"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "diffie-hellman-group1-sha1",
+                    "host_key_algorithm": "ssh-rsa",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha1",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha1",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "dh_params": {
+                        "prime": {
+                            "value": "///////////JD9qiIWjCNMTGYouA3BzRKQJOCIpnzHQCC76mOxObIlFKCHmONATd75UZs806QxswKwpt8l8UN0/hNW1tUcJF5IW1dmJefsb0TELppjftawv/XLb0Brft7jhr+1qJn6WunyQRfEsf5kkoZlHs5lOB//////////8=",
+                            "length": 1024
+                        },
+                        "generator": {
+                            "value": "Ag==",
+                            "length": 8
+                        },
+                        "server_public": {
+                            "value": "11V1mCbcVBcvjzKuYmOkhzDTuSvDnsOEqwfB0jCNuN444RsSfgcFFjILyUekQhgFPmgJ2QlkbrBHYns95IwPbP4flEfMTnEEgpgk0dyQFR+xwiZLpVaIJzHpRp7GnFa17Olaw4KZFfomwgcHm8IWNhN5KQL6s3rK9u8WlG4ZvqA=",
+                            "length": 1024
+                        }
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ssh-rsa",
+                            "value": "LTbpRHBd5WPKC/BXnF1uKNkgdPrhAe495D9b4w5hNsuVHI7aD316t9MYpDCdvflAZJkrPYoWtXpegaTGav/5sQCO6ZAchnlDd9r2+2XI5PaAa6E25gYu501H3JCDk7sU/tV/0nEsCNBrdojC9D7zUhKYAspGCv/1q7WpDtCBbc3LHy+pSouFsKyHMIxyISK/4ARVsAkf9RIBR+BDeG4NfB1WS8JCEejuzGe2bOffxhycCbVMtcrpZdKDALhXRwOZnMwRPL3R8NP1z/tkKytAaftuEq1HdL4BQE5Hu15RrAzCn7bxK6o0KCXusuLwg1zhEdDBgtgo946H3QBCyRci1A=="
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAEALTbpRHBd5WPKC/BXnF1uKNkgdPrhAe495D9b4w5hNsuVHI7aD316t9MYpDCdvflAZJkrPYoWtXpegaTGav/5sQCO6ZAchnlDd9r2+2XI5PaAa6E25gYu501H3JCDk7sU/tV/0nEsCNBrdojC9D7zUhKYAspGCv/1q7WpDtCBbc3LHy+pSouFsKyHMIxyISK/4ARVsAkf9RIBR+BDeG4NfB1WS8JCEejuzGe2bOffxhycCbVMtcrpZdKDALhXRwOZnMwRPL3R8NP1z/tkKytAaftuEq1HdL4BQE5Hu15RrAzCn7bxK6o0KCXusuLwg1zhEdDBgtgo946H3QBCyRci1A==",
+                        "h": "xOL26R1z8yuGb1/l8VYZtbU95RQ="
+                    },
+                    "server_host_key": {
+                        "rsa_public_key": {
+                            "exponent": 65537,
+                            "modulus": "rr2vYEi2AjEe5Ze9G3refnETpDLvA1P17qwQuu4zskZsA2ihIP9uxlWfzlDwS2RKm/59rtA8UzmKid5Dfh9SnAHGy+Z6ry4ge/TkJhCxGhJvxLjdbjeiAbIL+K1Qg6TUtLy+ZmsSwCGlOarveu3qc+ASV70pvrC4WV8VXfblZ7QowcqyAcQnndvgDgWkgSN66yelhiHYxD7bRiskMMMKB0SrItm4HVSosCfBwL/ctqfMP8NGyA0mU9sZk4FgoIzIpzLh4jCS8Veb1+vsZ3w1ACpY6qKp0k+W+PGS9mq80wN6eH3AaTgjZISYSsvwE+E88qe8kkAra4YjRvvWNo6/SQ==",
+                            "length": 2048
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCuva9gSLYCMR7ll70bet5+cROkMu8DU/XurBC67jOyRmwDaKEg/27GVZ/OUPBLZEqb/n2u0DxTOYqJ3kN+H1KcAcbL5nqvLiB79OQmELEaEm/EuN1uN6IBsgv4rVCDpNS0vL5maxLAIaU5qu967epz4BJXvSm+sLhZXxVd9uVntCjByrIBxCed2+AOBaSBI3rrJ6WGIdjEPttGKyQwwwoHRKsi2bgdVKiwJ8HAv9y2p8w/w0bIDSZT2xmTgWCgjMinMuHiMJLxV5vX6+xnfDUAKljqoqnST5b48ZL2arzTA3p4fcBpOCNkhJhKy/AT4Tzyp7ySQCtrhiNG+9Y2jr9J",
+                        "algorithm": "ssh-rsa",
+                        "fingerprint_sha256": "340c6f709b144e6de8bfdac8b16c64afa9d0190cef1058611aa991c60ef2459b"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:39:16Z"
+        }
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-HUAWEI-1.5",
+                    "version": "2.0",
+                    "software": "HUAWEI-1.5"
+                },
+                "server_key_exchange": {
+                    "cookie": "4b6nznD/FUkd8OBJ+4Ys5Q==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group14-sha1"
+                    ],
+                    "host_key_algorithms": [
+                        "ecdsa-sha2-nistp256",
+                        "ssh-rsa"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes256-ctr",
+                        "aes128-ctr"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes256-ctr",
+                        "aes128-ctr"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha2-256"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha2-256"
+                    ],
+                    "client_to_server_compression": [
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "3cdde62c7f1db80ce5d6127d5ac75bce"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "diffie-hellman-group14-sha1",
+                    "host_key_algorithm": "ecdsa-sha2-nistp256",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha2-256",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha2-256",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "dh_params": {
+                        "prime": {
+                            "value": "///////////JD9qiIWjCNMTGYouA3BzRKQJOCIpnzHQCC76mOxObIlFKCHmONATd75UZs806QxswKwpt8l8UN0/hNW1tUcJF5IW1dmJefsb0TELppjftawv/XLb0Brft7jhr+1qJn6WunyQRfEsf5kkoZlHs5Fs9wgB8uKFjvwWY2kg2HFXTmmkWP6j9JM9fg2VdI9yjrZYcYvNWIIVSu57VKQdwlpZtZww1Tkq8mATxdGwIyhghfDKQXkYuNs474553LBgOhgObJ4Oi7Aeij7XFXfBvTFLJ3ivL9pVYFxg5lUl86pVq5RXSJhiY+gUQFXKOWoqsqmj//////////w==",
+                            "length": 2048
+                        },
+                        "generator": {
+                            "value": "Ag==",
+                            "length": 8
+                        },
+                        "server_public": {
+                            "value": "NvSiytugeNK6+DOZLIf2U5T1OhW5aY/P4g8QyK2vITINomuQokJTxxg0g310Hvy3B/g+o1nV0LQPDFr4GwK5iCciL35ILMvy2QlM5YJ97R0/Io4k/WSCgq8CHiu7UC3Ku0h7zrTJnCS2nhq8TAdDQ+soeXkEgUB4MAz3JWRedFa0B1kXFLXFwN1GsrOtiGezDnU5gP891RlrOixUt0o7rB9DyV25+MALFFvKbU7337X0ZzcFM38KhZNVPUTEAOALqgEWxTGRDqTNa/kXW0dpa7oI3aTqNWluphgJqavm4n7ru/WYG+0Qj1j1wQHH2qRdCb1BsXIyjhyWEzWL7OfRIQ==",
+                            "length": 2048
+                        }
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ecdsa-sha2-nistp256",
+                            "value": "AAAAIgAAoRdso2fbOQ4bRtbXXZTyqUI/eo9BX1dZ6Haw/QAJVYIAAAAiAADLB6iw/kYqCPXQUq4kLiVCIjYA4MeDg9PGBBl9c0GewQ=="
+                        },
+                        "raw": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAABMAAAAIgAAoRdso2fbOQ4bRtbXXZTyqUI/eo9BX1dZ6Haw/QAJVYIAAAAiAADLB6iw/kYqCPXQUq4kLiVCIjYA4MeDg9PGBBl9c0GewQ==",
+                        "h": "PTjJqYQJhR/8YjZEpo2fuLUdzno="
+                    },
+                    "server_host_key": {
+                        "ecdsa_public_key": {
+                            "b": "WsY12Ko6k+ez671VdpiGvGUdBrDMU7D2O848PifSYEs=",
+                            "curve": "P-256",
+                            "gx": "axfR8uEsQkf4vOblY6RA8ncDfYEt6zOg9KE5RdiYwpY=",
+                            "gy": "T+NC4v4af5uO5+tKfA+eFivOM1drMV7Oy7ZAaDe/UfU=",
+                            "length": 256,
+                            "n": "/////wAAAAD//////////7zm+q2nF56E87nKwvxjJVE=",
+                            "p": "/////wAAAAEAAAAAAAAAAAAAAAD///////////////8=",
+                            "x": "XphQt3IdhqJyogTywjbCWMew0L9BYOL5v2OJalUW2tg=",
+                            "y": "d5qaqsqllwwEukTYqmRsSAGsS0EtMXMRyw68sM8SyWw="
+                        },
+                        "raw": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF6YULdyHYaicqIE8sI2wljHsNC/QWDi+b9jiWpVFtrYd5qaqsqllwwEukTYqmRsSAGsS0EtMXMRyw68sM8SyWw=",
+                        "algorithm": "ecdsa-sha2-nistp256",
+                        "fingerprint_sha256": "b05c6fe75cb8847f34068e10e9a2c408fc748bf0d7ed6b4bc95ab466268e1ce7"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:34:35Z"
+        }
+    }
+}

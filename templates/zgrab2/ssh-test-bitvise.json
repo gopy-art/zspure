@@ -1,0 +1,129 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-9.32 FlowSsh: Bitvise SSH Server (WinSSHD) 9.32",
+                    "version": "2.0",
+                    "software": "9.32",
+                    "comment": "FlowSsh: Bitvise SSH Server (WinSSHD) 9.32"
+                },
+                "server_key_exchange": {
+                    "cookie": "p1f0EfPAA7uDs+j1I8jHag==",
+                    "kex_algorithms": [
+                        "curve25519-sha256",
+                        "curve25519-sha256@libssh.org",
+                        "ecdh-sha2-1.3.132.0.10",
+                        "ecdh-sha2-nistp256",
+                        "ecdh-sha2-nistp384",
+                        "ecdh-sha2-nistp521",
+                        "diffie-hellman-group-exchange-sha256",
+                        "diffie-hellman-group-exchange-sha1",
+                        "diffie-hellman-group15-sha512",
+                        "diffie-hellman-group14-sha256",
+                        "diffie-hellman-group14-sha1",
+                        "kex-strict-s-v00@openssh.com",
+                        "ext-info-s"
+                    ],
+                    "host_key_algorithms": [
+                        "rsa-sha2-512",
+                        "rsa-sha2-256",
+                        "ssh-rsa",
+                        "ecdsa-sha2-nistp384"
+                    ],
+                    "client_to_server_ciphers": [
+                        "chacha20-poly1305@openssh.com",
+                        "aes256-gcm@openssh.com",
+                        "aes128-gcm@openssh.com",
+                        "aes256-ctr",
+                        "aes192-ctr",
+                        "aes128-ctr"
+                    ],
+                    "server_to_client_ciphers": [
+                        "chacha20-poly1305@openssh.com",
+                        "aes256-gcm@openssh.com",
+                        "aes128-gcm@openssh.com",
+                        "aes256-ctr",
+                        "aes192-ctr",
+                        "aes128-ctr"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha2-256-etm@openssh.com",
+                        "hmac-sha2-512-etm@openssh.com",
+                        "hmac-sha1-etm@openssh.com",
+                        "hmac-sha2-256",
+                        "hmac-sha2-512",
+                        "hmac-sha1"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha2-256-etm@openssh.com",
+                        "hmac-sha2-512-etm@openssh.com",
+                        "hmac-sha1-etm@openssh.com",
+                        "hmac-sha2-256",
+                        "hmac-sha2-512",
+                        "hmac-sha1"
+                    ],
+                    "client_to_server_compression": [
+                        "zlib",
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "zlib",
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "4a7ae39bb80ed89f020a105f1761c9fa"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "curve25519-sha256",
+                    "host_key_algorithm": "ecdsa-sha2-nistp384",
+                    "client_to_server_alg_group": {
+                        "cipher": "chacha20-poly1305@openssh.com",
+                        "mac": "",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "chacha20-poly1305@openssh.com",
+                        "mac": "",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "curve25519_sha256_params": {
+                        "server_public": "5QcgJg16HftJVqCXIV0nwqPQZqhhKlmIANZZl10AyBI="
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ecdsa-sha2-nistp384",
+                            "value": "AAAAMQD/+pZqRG64vLC5rGNlfohTnaB0tBnf1SNhE4YDDw59kD/4h2jEKbi/UG6vcSGgv38AAAAwGjUEgYiXJ83luQsZhc+AnIeLz86zelSi6YQhmxK3dg4xZysJtL+SiMbpnhiCVvoy"
+                        },
+                        "raw": "AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAABpAAAAMQD/+pZqRG64vLC5rGNlfohTnaB0tBnf1SNhE4YDDw59kD/4h2jEKbi/UG6vcSGgv38AAAAwGjUEgYiXJ83luQsZhc+AnIeLz86zelSi6YQhmxK3dg4xZysJtL+SiMbpnhiCVvoy",
+                        "h": "ma0U5wlDffaj/WwcNLI7TgnwBEu0yUo2k8hbw3zL+pQ="
+                    },
+                    "server_host_key": {
+                        "ecdsa_public_key": {
+                            "b": "szEvp+I+5+SYjgVr4/gtGRgdnG7+gUESAxQIj1ATh1rGVjmNii7RnSqFyO3T7Crv",
+                            "curve": "P-384",
+                            "gx": "qofKIr6LBTeOscce8yCtdG4dO2KLp5uYWfdB4IJUKjhVAvJdv1UpbDpUXjhydgq3",
+                            "gy": "NhfeSpYmLG9dnpi/kpLcKfj0Hb0omhR86doxE7XwuMAKYLHOHX6BnXpDHXyQ6g5f",
+                            "length": 384,
+                            "n": "////////////////////////////////x2NNgfQ3Ld9YGg2ySLCneuzsGWrMxSlz",
+                            "p": "//////////////////////////////////////////7/////AAAAAAAAAAD/////",
+                            "x": "DRWlRyjG0TPNkKaIK/La/gMKZbbwpVnEU2lmSf7MBeizTfi0MfFxbQKWwynhPyOa",
+                            "y": "aI8MDD+tgYhIIo3I6KSn1nbCsXfNjHv8yFIYbB/acb7UELCLclSlVxO1OccUs7Ek"
+                        },
+                        "raw": "AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBA0VpUcoxtEzzZCmiCvy2v4DCmW28KVZxFNpZkn+zAXos034tDHxcW0ClsMp4T8jmmiPDAw/rYGISCKNyOikp9Z2wrF3zYx7/MhSGGwf2nG+1BCwi3JUpVcTtTnHFLOxJA==",
+                        "algorithm": "ecdsa-sha2-nistp384",
+                        "fingerprint_sha256": "ccdbe2557b8489e74de6d25faea4d5f300bd674272f6a0a6ea0fc92b35d10a10"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:21:59Z"
+        }
+    }
+}

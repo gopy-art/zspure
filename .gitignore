@@ -9,3 +9,4 @@ TODO*
 !ftp-*.json
 !modbus-*.json
 !tls-*.json
+!ssh-*.json

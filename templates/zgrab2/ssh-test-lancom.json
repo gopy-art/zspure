@@ -1,0 +1,116 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-lancom",
+                    "version": "2.0",
+                    "software": "lancom"
+                },
+                "server_key_exchange": {
+                    "cookie": "9hn1YibzWLS9cLkifntjCA==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group14-sha256",
+                        "diffie-hellman-group16-sha512",
+                        "diffie-hellman-group-exchange-sha256",
+                        "ecdh-sha2-nistp256",
+                        "ecdh-sha2-nistp384",
+                        "ecdh-sha2-nistp521",
+                        "curve25519-sha256@libssh.org",
+                        "curve25519-sha256",
+                        "curve448-sha512",
+                        "sntrup761x25519-sha512@openssh.com",
+                        "ext-info-s",
+                        "kex-strict-s-v00@openssh.com"
+                    ],
+                    "host_key_algorithms": [
+                        "ssh-ed448",
+                        "ssh-ed25519",
+                        "ecdsa-sha2-nistp256",
+                        "rsa-sha2-512",
+                        "rsa-sha2-256"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes256-gcm@openssh.com",
+                        "aes128-gcm@openssh.com",
+                        "chacha20-poly1305@openssh.com",
+                        "aes256-ctr",
+                        "aes192-ctr",
+                        "aes128-ctr"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes256-gcm@openssh.com",
+                        "aes128-gcm@openssh.com",
+                        "chacha20-poly1305@openssh.com",
+                        "aes256-ctr",
+                        "aes192-ctr",
+                        "aes128-ctr"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha2-512",
+                        "hmac-sha2-256",
+                        "hmac-sha2-512-etm@openssh.com",
+                        "hmac-sha2-256-etm@openssh.com"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha2-512",
+                        "hmac-sha2-256",
+                        "hmac-sha2-512-etm@openssh.com",
+                        "hmac-sha2-256-etm@openssh.com"
+                    ],
+                    "client_to_server_compression": [
+                        "none",
+                        "zlib"
+                    ],
+                    "server_to_client_compression": [
+                        "none",
+                        "zlib"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "0ad5eb3cb46a8452ae52ef1d9c9d9560"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "curve25519-sha256",
+                    "host_key_algorithm": "ssh-ed25519",
+                    "client_to_server_alg_group": {
+                        "cipher": "chacha20-poly1305@openssh.com",
+                        "mac": "",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "chacha20-poly1305@openssh.com",
+                        "mac": "",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "curve25519_sha256_params": {
+                        "server_public": "4k2LDGRF5PfCkbapAXdnI0Cz9YuflD2jfUqY5kk5IBU="
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ssh-ed25519",
+                            "value": "n3DhhtdQm1v32rq4Y49uCETPq+NoLC4Ntd4XE6orJVKE6CieWSR6dyEiBB3pkdk6NcvVfSa5LsnboGh+MNULDw=="
+                        },
+                        "raw": "AAAAC3NzaC1lZDI1NTE5AAAAQJ9w4YbXUJtb99q6uGOPbghEz6vjaCwuDbXeFxOqKyVShOgonlkkenchIgQd6ZHZOjXL1X0muS7J26BofjDVCw8=",
+                        "h": "jAg5TMJXFDiXWWwVABeoXnTbuFm/3nDrwWRfCGF8Waw="
+                    },
+                    "server_host_key": {
+                        "ed25519_public_key": {
+                            "public_bytes": "Ta/K77fLSR6RE2TIG2roosh0+s4TR2ruNxzjHm+pFjM="
+                        },
+                        "raw": "AAAAC3NzaC1lZDI1NTE5AAAAIE2vyu+3y0kekRNkyBtq6KLIdPrOE0dq7jcc4x5vqRYz",
+                        "algorithm": "ssh-ed25519",
+                        "fingerprint_sha256": "4f3d0a0531b9dc62926bacebe78cd64ab4bef70537c82f016b01f779d7f92f2c"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:36:23Z"
+        }
+    }
+}

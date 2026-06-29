@@ -1,0 +1,109 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-1.99-DOPRA-1.5",
+                    "version": "1.99",
+                    "software": "DOPRA-1.5"
+                },
+                "server_key_exchange": {
+                    "cookie": "aFJgBf6nDbDqqiXdDRwUCA==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group-exchange-sha1",
+                        "diffie-hellman-group1-sha1"
+                    ],
+                    "host_key_algorithms": [
+                        "ssh-rsa"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes128-cbc",
+                        "blowfish-cbc",
+                        "3des-cbc",
+                        "des-cbc"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes128-cbc",
+                        "blowfish-cbc",
+                        "3des-cbc",
+                        "des-cbc"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha1",
+                        "hmac-sha1-96",
+                        "hmac-md5",
+                        "hmac-md5-96"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha1",
+                        "hmac-sha1-96",
+                        "hmac-md5",
+                        "hmac-md5-96"
+                    ],
+                    "client_to_server_compression": [
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "abbbff5d403f6b0fc14ae25cf1e8d9ab"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "diffie-hellman-group1-sha1",
+                    "host_key_algorithm": "ssh-rsa",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes128-cbc",
+                        "mac": "hmac-sha1",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes128-cbc",
+                        "mac": "hmac-sha1",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "dh_params": {
+                        "prime": {
+                            "value": "///////////JD9qiIWjCNMTGYouA3BzRKQJOCIpnzHQCC76mOxObIlFKCHmONATd75UZs806QxswKwpt8l8UN0/hNW1tUcJF5IW1dmJefsb0TELppjftawv/XLb0Brft7jhr+1qJn6WunyQRfEsf5kkoZlHs5lOB//////////8=",
+                            "length": 1024
+                        },
+                        "generator": {
+                            "value": "Ag==",
+                            "length": 8
+                        },
+                        "server_public": {
+                            "value": "H6uR/hF7eTrGgsEe/R0Vx7gh2OYbPX+UK1OQCqYRiMKF2BbnvH9M9876J73wBc+RcgaQHDd9nr5F/CCpcfWrmjmmC4HWaq4aR/hyuMugcWL6wsG/zLzMxvtM7DfjR7yM9z1Xbh+UnqEVVz2NrqNDYHEDMZTxklxJFKx8JEiBooI=",
+                            "length": 1024
+                        }
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ssh-rsa",
+                            "value": "az6Offe4ckNOFdjE51drKZBUKOEizOeL6j5qd+XE5ZuGU31Hihk0pTCzq89dq3QV60irocmaVKnumq0eLw7kUSaQPB53ir5c2Q5tEnx7FHBowmDCM0ILFsTc5sxakgxqrmuNB75XwI7xSC4QJh/RNRaaDkgghhKfDqr9O9LDabM="
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAACAaz6Offe4ckNOFdjE51drKZBUKOEizOeL6j5qd+XE5ZuGU31Hihk0pTCzq89dq3QV60irocmaVKnumq0eLw7kUSaQPB53ir5c2Q5tEnx7FHBowmDCM0ILFsTc5sxakgxqrmuNB75XwI7xSC4QJh/RNRaaDkgghhKfDqr9O9LDabM=",
+                        "h": "ZxEFlDSKb8pID/Auk8NZFFX7i9M="
+                    },
+                    "server_host_key": {
+                        "rsa_public_key": {
+                            "exponent": 65537,
+                            "modulus": "oFGHbNaKb3dt7HMAzR0zZdFVlp3Y6UIZ2qAzFcuoPiEM17clEeuFhdgmeVHhtTIg2WAhilRAPUE/ejBn3kd36I+TYadPRMmw/RTafU/Fbc8jpsqX66xUb9izgYcqQwMhIeXAhrN6zT/tMn5gxS6mrl1LZo9PGXMNbjG0nOnC5f8=",
+                            "length": 1024
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAADAQABAAAAgQCgUYds1opvd23scwDNHTNl0VWWndjpQhnaoDMVy6g+IQzXtyUR64WF2CZ5UeG1MiDZYCGKVEA9QT96MGfeR3foj5Nhp09EybD9FNp9T8VtzyOmypfrrFRv2LOBhypDAyEh5cCGs3rNP+0yfmDFLqauXUtmj08Zcw1uMbSc6cLl/w==",
+                        "algorithm": "ssh-rsa",
+                        "fingerprint_sha256": "123da9b143df749e34bd868d60dc5d2cd7b2d8d8fe18a7eb614aac21739dc643"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:38:02Z"
+        }
+    }
+}

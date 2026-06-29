@@ -1,0 +1,103 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 29999,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-dropbear_2019.78",
+                    "version": "2.0",
+                    "software": "dropbear_2019.78"
+                },
+                "server_key_exchange": {
+                    "cookie": "HrjFWVHdHi/SSTqR9uHjPA==",
+                    "kex_algorithms": [
+                        "curve25519-sha256",
+                        "curve25519-sha256@libssh.org",
+                        "ecdh-sha2-nistp521",
+                        "ecdh-sha2-nistp384",
+                        "ecdh-sha2-nistp256",
+                        "diffie-hellman-group14-sha256",
+                        "kexguess2@matt.ucc.asn.au"
+                    ],
+                    "host_key_algorithms": [
+                        "ecdsa-sha2-nistp521"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes128-ctr",
+                        "aes256-ctr"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes128-ctr",
+                        "aes256-ctr"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha1",
+                        "hmac-sha2-256"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha1",
+                        "hmac-sha2-256"
+                    ],
+                    "client_to_server_compression": [
+                        "zlib@openssh.com",
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "zlib@openssh.com",
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "ccb2997006d801811d276d63ee01100e"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "curve25519-sha256",
+                    "host_key_algorithm": "ecdsa-sha2-nistp521",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha2-256",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha2-256",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "curve25519_sha256_params": {
+                        "server_public": "9hjwrfMjt6LedbtRkzB7TU8kSIsNtFbomhjz6B8ctD4="
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ecdsa-sha2-nistp521",
+                            "value": "AAAAQTEiYo5rhqYyrh99IYOGhCMPiQWbYHv/HoapSnFpjkWBYLoxpBOCf6hvEsBy/y8XoRF33MdH/iYC5D5emgQb5CX0AAAAQgEK6N4Qp62ycLgG4D2RC/nGtbjTuzHw3zEJotzoGmNuFxK5HzSA5MkMO2zPc7lwJS0a2PT7uF0iFEq2n5fJyEUMIQ=="
+                        },
+                        "raw": "AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAACLAAAAQTEiYo5rhqYyrh99IYOGhCMPiQWbYHv/HoapSnFpjkWBYLoxpBOCf6hvEsBy/y8XoRF33MdH/iYC5D5emgQb5CX0AAAAQgEK6N4Qp62ycLgG4D2RC/nGtbjTuzHw3zEJotzoGmNuFxK5HzSA5MkMO2zPc7lwJS0a2PT7uF0iFEq2n5fJyEUMIQ==",
+                        "h": "PwTk/1I+Dbx9+BmTTx7ZrSgoeiS99Kj5qzQVMQZqbDk="
+                    },
+                    "server_host_key": {
+                        "ecdsa_public_key": {
+                            "b": "UZU+uWGOHJofkpohoLaFQO6i2nJbmbMV87i0iZGO8QnhVhk5Uex+k3sWUsC9O7G/BzVz34g9LDTx70Uf1GtQPwA=",
+                            "curve": "P-521",
+                            "gx": "xoWOBrcEBOnNnj7LZiOVtEKcZIE5BT+1Ifgor2BrTT26oUted+/nWSj+HcEnov+o3jNIs8GFakKb+X5+McLlvWY=",
+                            "gy": "ARg5KWp4mjvABFyKX7QsfRvZmPVESVebRGgXr70XJz5mLJfucple9CZAxVC5AT+tB2E1PHCGonLCQIi+lHaf0WZQ",
+                            "length": 521,
+                            "n": "Af//////////////////////////////////////////+lGGh4O/L5Zrf8wBSPcJpdA7tcm4iZxHrrtvtx6ROGQJ",
+                            "p": "Af//////////////////////////////////////////////////////////////////////////////////////",
+                            "x": "AXegCwG5GAmxZlzpSp/VICfJJeIepZrH833t+BUFW5KE0rENTzDERE/ClKeYKSPTjzJwCSkVrlxQQrNgknse2YDD",
+                            "y": "AUVrTgJIfsyUi0MklrqweXD8eVIa3u+zVByD91vbVkTu4FJsR6PFN55eTJgE8jFxiVL/MMHP8Id5SmzLoynm4Kgi"
+                        },
+                        "raw": "AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAF3oAsBuRgJsWZc6Uqf1SAnySXiHqWax/N97fgVBVuShNKxDU8wxERPwpSnmCkj048ycAkpFa5cUEKzYJJ7HtmAwwFFa04CSH7MlItDJJa6sHlw/HlSGt7vs1Qcg/db21ZE7uBSbEejxTeeXkyYBPIxcYlS/zDBz/CHeUpsy6Mp5uCoIg==",
+                        "algorithm": "ecdsa-sha2-nistp521",
+                        "fingerprint_sha256": "35d91a2ca759b7e2e3928424aeb6c341c1faf56a8ea5e0f7af9ab09de9299e57"
+                    }
+                }
+            },
+            "timestamp": "2026-06-29T08:30:17Z"
+        }
+    }
+}
