@@ -1,7 +1,7 @@
 <?php
-include './scripts/controller.php';
+include __DIR__ . '/scripts/controller.php';
 
-function getUniqueCategories($devices)
+function getUniqueCategories(array $devices)
 {
     $categories = [];
     foreach ($devices as $device) {
@@ -35,7 +35,7 @@ $CATEGORIES = getUniqueCategories($DEVICES);
         <div class="row justify-content-center align-items-start">
             <?php foreach ($CATEGORIES as $key => $value): ?>
                 <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
-                    <a href="#" class="text-decoration-none text-dark fs-4 fw-semibold border border-secondary rounded bg-light d-flex justify-content-center align-items-center"
+                    <a href="modules.php?q=<?php echo $value; ?>" class="text-decoration-none text-dark fs-4 fw-semibold border border-secondary rounded bg-light d-flex justify-content-center align-items-center"
                         style="width: 100%; height: 200px; max-width: 300px;">
                         <p class="mb-0 text-center"><?php echo $value; ?></p>
                     </a>
