@@ -21,19 +21,19 @@ type GenericUpdate struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *GenericUpdate) SetCategory(category ...string) {
-	a.Category = model.Category.Service()
+func (g *GenericUpdate) SetCategory(category ...string) {
+	g.Category = model.Category.Service()
 }
 
-func (a *GenericUpdate) SetDeviceName(device ...string) {
-	a.DeviceName = "GenericUpdate"
+func (g *GenericUpdate) SetDeviceName(device ...string) {
+	g.DeviceName = "GenericUpdate"
 }
 
-func (a *GenericUpdate) Patterns() []map[string]interface{} {
+func (g *GenericUpdate) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *GenericUpdate) Filters(banner map[string]interface{}) bool {
+func (g *GenericUpdate) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,17 +45,17 @@ func (a *GenericUpdate) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *GenericUpdate) DeviceScan(banner map[string]interface{}) bool {
+func (g *GenericUpdate) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *GenericUpdate) CveScan(els *handler.Elastic) {
+func (g *GenericUpdate) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": g.DeviceName,
 		}))
 		if len(result) == 0 {
 			return
@@ -68,7 +68,7 @@ func (a *GenericUpdate) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "genericUpdate")
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v", g.DeviceName), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -83,31 +83,31 @@ func (a *GenericUpdate) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		g.CveList = append(g.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	g.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if g.CveScore > 7 {
+		g.Sensibility = "HIGH"
+	} else if g.CveScore >= 4 && g.CveScore <= 7 {
+		g.Sensibility = "MEDIUM"
+	} else if g.CveScore < 4 {
+		g.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	g.CveList = utils.RemoveDuplicates(g.CveList)
 }
 
-func (a *GenericUpdate) PrintInfo() string { return model.Category.Service() + " | GenericUpdate" }
+func (g *GenericUpdate) PrintInfo() string { return model.Category.Service() + " | GenericUpdate" }
 
-func (a *GenericUpdate) Result() model.ModuleStructure {
+func (g *GenericUpdate) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         g.Category,
+		DeviceName:       g.DeviceName,
+		Version:          g.Version,
+		CveList:          g.CveList,
+		Sensibility:      g.Sensibility,
+		CveScore:         g.CveScore,
+		ExtraInformation: g.ExtraInformation,
 	}
 }

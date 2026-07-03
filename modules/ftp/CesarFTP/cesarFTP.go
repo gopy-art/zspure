@@ -21,19 +21,19 @@ type CesarFTP struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *CesarFTP) SetCategory(category ...string) {
-	a.Category = model.Category.Service()
+func (c *CesarFTP) SetCategory(category ...string) {
+	c.Category = model.Category.Service()
 }
 
-func (a *CesarFTP) SetDeviceName(device ...string) {
-	a.DeviceName = "CesarFTP"
+func (c *CesarFTP) SetDeviceName(device ...string) {
+	c.DeviceName = "CesarFTP"
 }
 
-func (a *CesarFTP) Patterns() []map[string]interface{} {
+func (c *CesarFTP) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *CesarFTP) Filters(banner map[string]interface{}) bool {
+func (c *CesarFTP) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,29 +45,29 @@ func (a *CesarFTP) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *CesarFTP) DeviceScan(banner map[string]interface{}) bool {
+func (c *CesarFTP) DeviceScan(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
 	if val, ok := banner["banner"].(string); ok {
-		a.ExtraInformation.NewExtraInfo()
+		c.ExtraInformation.NewExtraInfo()
 		if strings.Contains(val, "CesarFTP") {
-			a.Version = strings.Split(strings.Split(val, "CesarFTP ")[1], " Server")[0]
-			a.ExtraInformation.SetExtraInfo("os", "Windows")
-			a.ExtraInformation.SetExtraInfo("product", "Cesar FTP")
+			c.Version = strings.Split(strings.Split(val, "CesarFTP ")[1], " Server")[0]
+			c.ExtraInformation.SetExtraInfo("os", "Windows")
+			c.ExtraInformation.SetExtraInfo("product", "Cesar FTP")
 			return true
 		}
 	}
 	return false
 }
 
-func (a *CesarFTP) CveScan(els *handler.Elastic) {
+func (c *CesarFTP) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": c.DeviceName+" "+c.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -80,7 +80,7 @@ func (a *CesarFTP) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "CesarFTP%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", c.DeviceName, c.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -95,31 +95,31 @@ func (a *CesarFTP) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		c.CveList = append(c.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	c.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if c.CveScore > 7 {
+		c.Sensibility = "HIGH"
+	} else if c.CveScore >= 4 && c.CveScore <= 7 {
+		c.Sensibility = "MEDIUM"
+	} else if c.CveScore < 4 {
+		c.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	c.CveList = utils.RemoveDuplicates(c.CveList)
 }
 
-func (a *CesarFTP) PrintInfo() string { return model.Category.Service() + " | CesarFTP" }
+func (c *CesarFTP) PrintInfo() string { return model.Category.Service() + " | CesarFTP" }
 
-func (a *CesarFTP) Result() model.ModuleStructure {
+func (c *CesarFTP) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         c.Category,
+		DeviceName:       c.DeviceName,
+		Version:          c.Version,
+		CveList:          c.CveList,
+		Sensibility:      c.Sensibility,
+		CveScore:         c.CveScore,
+		ExtraInformation: c.ExtraInformation,
 	}
 }

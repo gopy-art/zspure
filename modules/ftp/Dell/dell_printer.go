@@ -22,6 +22,8 @@ type Dell struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
+var modelType string
+
 func (d *Dell) SetCategory(category ...string) {
 	d.Category = model.Category.Printer()
 }
@@ -58,12 +60,14 @@ func (d *Dell) DeviceScan(banner map[string]interface{}) bool {
 				matches := product1Re.FindStringSubmatch(val)
 				if len(matches) > 1 {
 					d.ExtraInformation.SetExtraInfo("product", matches[1])
+					modelType = matches[1]
 				}
 			} else if strings.Contains(val, "Color Laser") {
 				product2Re := regexp.MustCompile(`(?i)^220 Dell (?:Color )?Laser(?: Printer)? (\w+)`)
 				matches := product2Re.FindStringSubmatch(val)
 				if len(matches) > 1 {
 					d.ExtraInformation.SetExtraInfo("product", matches[1])
+					modelType = matches[1]
 				}
 			}
 			return true
@@ -78,7 +82,7 @@ func (d *Dell) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": d.DeviceName,
+			"cve.descriptions.value": d.DeviceName+" "+modelType,
 		}))
 		if len(result) == 0 {
 			return
@@ -91,7 +95,7 @@ func (d *Dell) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "dell%20"+d.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", d.DeviceName, modelType), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")

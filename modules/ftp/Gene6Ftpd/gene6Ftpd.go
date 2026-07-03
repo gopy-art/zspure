@@ -22,19 +22,19 @@ type Gene6Ftpd struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Gene6Ftpd) SetCategory(category ...string) {
-	a.Category = model.Category.Service()
+func (g *Gene6Ftpd) SetCategory(category ...string) {
+	g.Category = model.Category.Service()
 }
 
-func (a *Gene6Ftpd) SetDeviceName(device ...string) {
-	a.DeviceName = "Gene6Ftpd"
+func (g *Gene6Ftpd) SetDeviceName(device ...string) {
+	g.DeviceName = "Gene6Ftpd"
 }
 
-func (a *Gene6Ftpd) Patterns() []map[string]interface{} {
+func (g *Gene6Ftpd) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Gene6Ftpd) Filters(banner map[string]interface{}) bool {
+func (f *Gene6Ftpd) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -46,21 +46,15 @@ func (a *Gene6Ftpd) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Gene6Ftpd) DeviceScan(banner map[string]interface{}) bool {
-	if val, ok := banner["banner"]; ok {
-		bannerStr := fmt.Sprintf("%v", val)
-		if strings.Contains(bannerStr, "Gene6") {
-			a.ExtraInformation.NewExtraInfo()
-			a.ExtraInformation.SetExtraInfo("product", "Gene6 FTP")
+func (g *Gene6Ftpd) DeviceScan(banner map[string]interface{}) bool {
+	if val, ok := banner["banner"].(string); ok {
+		if strings.Contains(val, "Gene6") {
+			g.ExtraInformation.NewExtraInfo()
+			g.ExtraInformation.SetExtraInfo("product", "Gene6 FTP")
 			versionRe := regexp.MustCompile(`(?i)FTP Server v(\d+\.\d+\.\d+) \((.+)\)`)
-			matches := versionRe.FindStringSubmatch(bannerStr)
+			matches := versionRe.FindStringSubmatch(val)
 			if len(matches) > 1 {
-				a.Version = matches[1]
-			}
-			reRersionRe := regexp.MustCompile(`(?i)FTP Server v(\d+\.\d+\.\d+) \((.+)\)`)
-			matches2 := reRersionRe.FindStringSubmatch(bannerStr)
-			if len(matches2) > 1 {
-				a.ExtraInformation.SetExtraInfo("revision", matches2[1])
+				g.Version = matches[1]
 			}
 			return true
 		}
@@ -68,13 +62,13 @@ func (a *Gene6Ftpd) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Gene6Ftpd) CveScan(els *handler.Elastic) {
+func (g *Gene6Ftpd) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": g.DeviceName+" "+g.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -87,7 +81,7 @@ func (a *Gene6Ftpd) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "gene6Ftpd%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", g.DeviceName, g.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -102,31 +96,31 @@ func (a *Gene6Ftpd) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		g.CveList = append(g.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	g.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if g.CveScore > 7 {
+		g.Sensibility = "HIGH"
+	} else if g.CveScore >= 4 && g.CveScore <= 7 {
+		g.Sensibility = "MEDIUM"
+	} else if g.CveScore < 4 {
+		g.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	g.CveList = utils.RemoveDuplicates(g.CveList)
 }
 
-func (a *Gene6Ftpd) PrintInfo() string { return model.Category.Service() + " | Gene6Ftpd" }
+func (g *Gene6Ftpd) PrintInfo() string { return model.Category.Service() + " | Gene6Ftpd" }
 
-func (a *Gene6Ftpd) Result() model.ModuleStructure {
+func (g *Gene6Ftpd) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         g.Category,
+		DeviceName:       g.DeviceName,
+		Version:          g.Version,
+		CveList:          g.CveList,
+		Sensibility:      g.Sensibility,
+		CveScore:         g.CveScore,
+		ExtraInformation: g.ExtraInformation,
 	}
 }

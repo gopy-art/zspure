@@ -22,19 +22,19 @@ type Filezilla struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (d *Filezilla) SetCategory(category ...string) {
-	d.Category = model.Category.Service()
+func (f *Filezilla) SetCategory(category ...string) {
+	f.Category = model.Category.Service()
 }
 
-func (d *Filezilla) SetDeviceName(device ...string) {
-	d.DeviceName = "Filezilla"
+func (f *Filezilla) SetDeviceName(device ...string) {
+	f.DeviceName = "Filezilla"
 }
 
-func (a *Filezilla) Patterns() []map[string]interface{} {
+func (f *Filezilla) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (d *Filezilla) Filters(banner map[string]interface{}) bool {
+func (f *Filezilla) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -46,7 +46,7 @@ func (d *Filezilla) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (d *Filezilla) DeviceScan(banner map[string]interface{}) bool {
+func (f *Filezilla) DeviceScan(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -55,7 +55,7 @@ func (d *Filezilla) DeviceScan(banner map[string]interface{}) bool {
 			versionRe := regexp.MustCompile(`(?i)^220[- ]FileZilla Server(?: version| v)?\s*([\d.]+)`)
 			matches := versionRe.FindStringSubmatch(val)
 			if len(matches) > 1 {
-				d.Version = matches[1]
+				f.Version = matches[1]
 				return true
 			}
 		}
@@ -63,13 +63,13 @@ func (d *Filezilla) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (d *Filezilla) CveScan(els *handler.Elastic) {
+func (f *Filezilla) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": d.DeviceName,
+			"cve.descriptions.value": f.DeviceName+" "+f.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -82,7 +82,7 @@ func (d *Filezilla) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "filezilla%20"+d.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", f.DeviceName, f.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -97,31 +97,31 @@ func (d *Filezilla) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		d.CveList = append(d.CveList, vl.CVEID)
+		f.CveList = append(f.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	d.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if d.CveScore > 7 {
-		d.Sensibility = "HIGH"
-	} else if d.CveScore >= 4 && d.CveScore <= 7 {
-		d.Sensibility = "MEDIUM"
-	} else if d.CveScore < 4 {
-		d.Sensibility = "LOW"
+	f.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if f.CveScore > 7 {
+		f.Sensibility = "HIGH"
+	} else if f.CveScore >= 4 && f.CveScore <= 7 {
+		f.Sensibility = "MEDIUM"
+	} else if f.CveScore < 4 {
+		f.Sensibility = "LOW"
 	}
-	d.CveList = utils.RemoveDuplicates(d.CveList)
+	f.CveList = utils.RemoveDuplicates(f.CveList)
 }
 
-func (d *Filezilla) PrintInfo() string { return model.Category.Service() + " | Filezilla" }
+func (f *Filezilla) PrintInfo() string { return model.Category.Service() + " | Filezilla" }
 
-func (d *Filezilla) Result() model.ModuleStructure {
+func (f *Filezilla) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         d.Category,
-		DeviceName:       d.DeviceName,
-		Version:          d.Version,
-		CveList:          d.CveList,
-		Sensibility:      d.Sensibility,
-		CveScore:         d.CveScore,
-		ExtraInformation: d.ExtraInformation,
+		Category:         f.Category,
+		DeviceName:       f.DeviceName,
+		Version:          f.Version,
+		CveList:          f.CveList,
+		Sensibility:      f.Sensibility,
+		CveScore:         f.CveScore,
+		ExtraInformation: f.ExtraInformation,
 	}
 }

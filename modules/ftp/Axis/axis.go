@@ -49,26 +49,25 @@ func (a *Axis) Filters(banner map[string]interface{}) bool {
 func (a *Axis) DeviceScan(banner map[string]interface{}) bool {
 	if val, ok := banner["banner"]; ok {
 		bannerStr := fmt.Sprintf("%v", val)
+		a.ExtraInformation.NewExtraInfo()
 		if strings.Contains(bannerStr, "AXIS") {
 			if strings.Contains(bannerStr, "Network Camera") {
 				cameraProductRe := regexp.MustCompile(`(?i)^220 AXIS (.+ Camera) \d+\.\d+`)
 				matches := cameraProductRe.FindStringSubmatch(bannerStr)
 				if len(matches) > 1 {
-					a.ExtraInformation.NewExtraInfo()
 					a.ExtraInformation.SetExtraInfo("camera_product", matches[1])
 				}
 			} else if strings.Contains(bannerStr, "Video Encoder") {
 				encodeProductRe := regexp.MustCompile(`(?i)^220 AXIS (.+ Encoder(?: Blade)?) \d+`)
 				matches := encodeProductRe.FindStringSubmatch(bannerStr)
 				if len(matches) > 1 {
-					a.ExtraInformation.NewExtraInfo()
 					a.ExtraInformation.SetExtraInfo("encoder_product", matches[1])
 				}
 			}
 			versionRe := regexp.MustCompile(`(?i)(?:Camera|Encoder Blade|Encoder) (\d+(?:\.\d+)*) \(`)
 			matchesV := versionRe.FindStringSubmatch(bannerStr)
 			if len(matchesV) > 1 {
-				a.Version = (matchesV[1])
+				a.Version = matchesV[1]
 			}
 			return true
 		}
@@ -82,7 +81,7 @@ func (a *Axis) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": a.DeviceName+" "+a.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -95,7 +94,7 @@ func (a *Axis) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "axis%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", a.DeviceName, a.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")

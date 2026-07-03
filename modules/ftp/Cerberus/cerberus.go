@@ -21,19 +21,19 @@ type Cerberus struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Cerberus) SetCategory(category ...string) {
-	a.Category = model.Category.Service()
+func (c *Cerberus) SetCategory(category ...string) {
+	c.Category = model.Category.Service()
 }
 
-func (a *Cerberus) SetDeviceName(device ...string) {
-	a.DeviceName = "Cerberus"
+func (c *Cerberus) SetDeviceName(device ...string) {
+	c.DeviceName = "Cerberus"
 }
 
-func (a *Cerberus) Patterns() []map[string]interface{} {
+func (c *Cerberus) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Cerberus) Filters(banner map[string]interface{}) bool {
+func (c *Cerberus) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,33 +45,33 @@ func (a *Cerberus) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Cerberus) DeviceScan(banner map[string]interface{}) bool {
+func (c *Cerberus) DeviceScan(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
 	if val, ok := banner["banner"].(string); ok {
-		a.ExtraInformation.NewExtraInfo()
+		c.ExtraInformation.NewExtraInfo()
 		if strings.Contains(val, "Personal Edition") {
-			a.Version = "Personal"
-			a.ExtraInformation.SetExtraInfo("os", "Windows")
+			c.Version = "Personal"
+			c.ExtraInformation.SetExtraInfo("os", "Windows")
 			return true
 		}
 		if strings.Contains(val, "Home Edition") {
-			a.Version = "Home"
-			a.ExtraInformation.SetExtraInfo("os", "Windows")
+			c.Version = "Home"
+			c.ExtraInformation.SetExtraInfo("os", "Windows")
 			return true
 		}
 	}
 	return false
 }
 
-func (a *Cerberus) CveScan(els *handler.Elastic) {
+func (c *Cerberus) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": c.DeviceName+" "+c.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -84,7 +84,7 @@ func (a *Cerberus) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "Cerberus%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", c.DeviceName, c.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -99,31 +99,31 @@ func (a *Cerberus) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		c.CveList = append(c.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	c.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if c.CveScore > 7 {
+		c.Sensibility = "HIGH"
+	} else if c.CveScore >= 4 && c.CveScore <= 7 {
+		c.Sensibility = "MEDIUM"
+	} else if c.CveScore < 4 {
+		c.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	c.CveList = utils.RemoveDuplicates(c.CveList)
 }
 
-func (a *Cerberus) PrintInfo() string { return model.Category.Service() + " | Cerberus" }
+func (c *Cerberus) PrintInfo() string { return model.Category.Service() + " | Cerberus" }
 
-func (a *Cerberus) Result() model.ModuleStructure {
+func (c *Cerberus) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         c.Category,
+		DeviceName:       c.DeviceName,
+		Version:          c.Version,
+		CveList:          c.CveList,
+		Sensibility:      c.Sensibility,
+		CveScore:         c.CveScore,
+		ExtraInformation: c.ExtraInformation,
 	}
 }

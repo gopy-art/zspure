@@ -21,19 +21,19 @@ type Belkin struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Belkin) SetCategory(category ...string) {
-	a.Category = model.Category.Network()
+func (b *Belkin) SetCategory(category ...string) {
+	b.Category = model.Category.Network()
 }
 
-func (a *Belkin) SetDeviceName(device ...string) {
-	a.DeviceName = "Belkin"
+func (b *Belkin) SetDeviceName(device ...string) {
+	b.DeviceName = "Belkin"
 }
 
-func (a *Belkin) Patterns() []map[string]interface{} {
+func (b *Belkin) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Belkin) Filters(banner map[string]interface{}) bool {
+func (b *Belkin) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,17 +45,17 @@ func (a *Belkin) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Belkin) DeviceScan(banner map[string]interface{}) bool {
+func (b *Belkin) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Belkin) CveScan(els *handler.Elastic) {
+func (b *Belkin) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": b.DeviceName,
 		}))
 		if len(result) == 0 {
 			return
@@ -68,7 +68,7 @@ func (a *Belkin) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "belkin%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v", b.DeviceName), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -83,31 +83,31 @@ func (a *Belkin) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		b.CveList = append(b.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	b.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if b.CveScore > 7 {
+		b.Sensibility = "HIGH"
+	} else if b.CveScore >= 4 && b.CveScore <= 7 {
+		b.Sensibility = "MEDIUM"
+	} else if b.CveScore < 4 {
+		b.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	b.CveList = utils.RemoveDuplicates(b.CveList)
 }
 
-func (a *Belkin) PrintInfo() string { return model.Category.Network() + " | Belkin" }
+func (b *Belkin) PrintInfo() string { return model.Category.Network() + " | Belkin" }
 
-func (a *Belkin) Result() model.ModuleStructure {
+func (b *Belkin) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         b.Category,
+		DeviceName:       b.DeviceName,
+		Version:          b.Version,
+		CveList:          b.CveList,
+		Sensibility:      b.Sensibility,
+		CveScore:         b.CveScore,
+		ExtraInformation: b.ExtraInformation,
 	}
 }

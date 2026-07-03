@@ -27,7 +27,7 @@ func (a *Apc) SetCategory(category ...string) {
 }
 
 func (a *Apc) SetDeviceName(device ...string) {
-	a.DeviceName = "apc"
+	a.DeviceName = "Apc"
 }
 
 func (a *Apc) Patterns() []map[string]interface{} {
@@ -71,7 +71,7 @@ func (a *Apc) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": a.DeviceName+" "+a.DeviceName,
 		}))
 		if len(result) == 0 {
 			return
@@ -84,7 +84,7 @@ func (a *Apc) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "apc%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", a.DeviceName, a.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")

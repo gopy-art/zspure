@@ -21,19 +21,21 @@ type Hp struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Hp) SetCategory(category ...string) {
-	a.Category = model.Category.Printer()
+var modelType string
+
+func (h *Hp) SetCategory(category ...string) {
+	h.Category = model.Category.Printer()
 }
 
-func (a *Hp) SetDeviceName(device ...string) {
-	a.DeviceName = "Hp"
+func (h *Hp) SetDeviceName(device ...string) {
+	h.DeviceName = "Hp"
 }
 
-func (a *Hp) Patterns() []map[string]interface{} {
+func (h *Hp) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Hp) Filters(banner map[string]interface{}) bool {
+func (h *Hp) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,33 +47,36 @@ func (a *Hp) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Hp) DeviceScan(banner map[string]interface{}) bool {
+func (h *Hp) DeviceScan(banner map[string]interface{}) bool {
 	if val, ok := banner["banner"]; ok {
 		bannerStr := fmt.Sprintf("%v", val)
-		a.ExtraInformation.NewExtraInfo()
+		h.ExtraInformation.NewExtraInfo()
 		if strings.Contains(bannerStr, "HP ARPA FTP Server") {
-			a.ExtraInformation.SetExtraInfo("product", "HP ARPA")
+			h.ExtraInformation.SetExtraInfo("product", "HP ARPA")
+			modelType = "HP ARPA"
 			return true
 		}
 		if strings.Contains(bannerStr, "JD FTP Server Ready") {
-			a.ExtraInformation.SetExtraInfo("product", "Jet Direct")
+			h.ExtraInformation.SetExtraInfo("product", "Jet Direct")
+			modelType = "Jet Direct"
 			return true
 		}
 		if strings.Contains(bannerStr, "The HPRC FTP dropbox system is intended for Hewlett-Packa") {
-			a.ExtraInformation.SetExtraInfo("product", "HP HPRC")
+			h.ExtraInformation.SetExtraInfo("product", "HP HPRC")
+			modelType = "HP HPRC"
 			return true
 		}
 	}
 	return false
 }
 
-func (a *Hp) CveScan(els *handler.Elastic) {
+func (h *Hp) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": modelType,
 		}))
 		if len(result) == 0 {
 			return
@@ -84,7 +89,7 @@ func (a *Hp) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "hp%20"+"printer")
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v", modelType), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -99,31 +104,31 @@ func (a *Hp) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		h.CveList = append(h.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	h.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if h.CveScore > 7 {
+		h.Sensibility = "HIGH"
+	} else if h.CveScore >= 4 && h.CveScore <= 7 {
+		h.Sensibility = "MEDIUM"
+	} else if h.CveScore < 4 {
+		h.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	h.CveList = utils.RemoveDuplicates(h.CveList)
 }
 
-func (a *Hp) PrintInfo() string { return model.Category.Printer() + " | Hp" }
+func (h *Hp) PrintInfo() string { return model.Category.Printer() + " | Hp" }
 
-func (a *Hp) Result() model.ModuleStructure {
+func (h *Hp) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         h.Category,
+		DeviceName:       h.DeviceName,
+		Version:          h.Version,
+		CveList:          h.CveList,
+		Sensibility:      h.Sensibility,
+		CveScore:         h.CveScore,
+		ExtraInformation: h.ExtraInformation,
 	}
 }

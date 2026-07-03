@@ -29,7 +29,7 @@ func (d *Dreambox) SetDeviceName(device ...string) {
 	d.DeviceName = "Dreambox"
 }
 
-func (a *Dreambox) Patterns() []map[string]interface{} {
+func (d *Dreambox) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
@@ -84,7 +84,7 @@ func (d *Dreambox) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "dreambox%20"+d.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v", d.DeviceName), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")

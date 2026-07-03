@@ -21,19 +21,19 @@ type Iis struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Iis) SetCategory(category ...string) {
-	a.Category = model.Category.Service()
+func (i *Iis) SetCategory(category ...string) {
+	i.Category = model.Category.Service()
 }
 
-func (a *Iis) SetDeviceName(device ...string) {
-	a.DeviceName = "Iis"
+func (i *Iis) SetDeviceName(device ...string) {
+	i.DeviceName = "Iis"
 }
 
-func (a *Iis) Patterns() []map[string]interface{} {
+func (i *Iis) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Iis) Filters(banner map[string]interface{}) bool {
+func (i *Iis) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,28 +45,28 @@ func (a *Iis) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Iis) DeviceScan(banner map[string]interface{}) bool {
+func (i *Iis) DeviceScan(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
-	a.ExtraInformation.NewExtraInfo()
+	i.ExtraInformation.NewExtraInfo()
 	if val, ok := banner["banner"].(string); ok {
 		if strings.Contains(val, "Microsoft FTP Service") {
-			a.ExtraInformation.SetExtraInfo("product", "IIS")
-			a.ExtraInformation.SetExtraInfo("os", "Windows")
+			i.ExtraInformation.SetExtraInfo("product", "IIS")
+			i.ExtraInformation.SetExtraInfo("os", "Windows")
 			return true
 		}
 	}
 	return false
 }
 
-func (a *Iis) CveScan(els *handler.Elastic) {
+func (i *Iis) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": i.DeviceName,
 		}))
 		if len(result) == 0 {
 			return
@@ -79,7 +79,7 @@ func (a *Iis) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "Iis")
+		url := fmt.Sprintf(model.CVE.MainResource(), "iis")
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -94,31 +94,31 @@ func (a *Iis) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		i.CveList = append(i.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	i.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if i.CveScore > 7 {
+		i.Sensibility = "HIGH"
+	} else if i.CveScore >= 4 && i.CveScore <= 7 {
+		i.Sensibility = "MEDIUM"
+	} else if i.CveScore < 4 {
+		i.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	i.CveList = utils.RemoveDuplicates(i.CveList)
 }
 
-func (a *Iis) PrintInfo() string { return model.Category.Service() + " | Iis" }
+func (i *Iis) PrintInfo() string { return model.Category.Service() + " | Iis" }
 
-func (a *Iis) Result() model.ModuleStructure {
+func (i *Iis) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         i.Category,
+		DeviceName:       i.DeviceName,
+		Version:          i.Version,
+		CveList:          i.CveList,
+		Sensibility:      i.Sensibility,
+		CveScore:         i.CveScore,
+		ExtraInformation: i.ExtraInformation,
 	}
 }

@@ -22,19 +22,19 @@ type Kebi struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Kebi) SetCategory(category ...string) {
-	a.Category = model.Category.Service()
+func (k *Kebi) SetCategory(category ...string) {
+	k.Category = model.Category.Service()
 }
 
-func (a *Kebi) SetDeviceName(device ...string) {
-	a.DeviceName = "Kebi"
+func (k *Kebi) SetDeviceName(device ...string) {
+	k.DeviceName = "Kebi"
 }
 
-func (a *Kebi) Patterns() []map[string]interface{} {
+func (k *Kebi) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Kebi) Filters(banner map[string]interface{}) bool {
+func (k *Kebi) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -46,30 +46,30 @@ func (a *Kebi) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Kebi) DeviceScan(banner map[string]interface{}) bool {
+func (k *Kebi) DeviceScan(banner map[string]interface{}) bool {
 	if val, ok := banner["banner"]; ok {
-		a.ExtraInformation.NewExtraInfo()
+		k.ExtraInformation.NewExtraInfo()
 		bannerStr := fmt.Sprintf("%v", val)
 		if strings.Contains(bannerStr, "Kebi FTP Server") {
 			versionRe := regexp.MustCompile(`(?i)\(Version (\d+(?:\.\d+)*)\)`)
 			matches := versionRe.FindStringSubmatch(bannerStr)
 			if len(matches) > 1 {
-				a.Version = matches[1]
+				k.Version = matches[1]
 			}
-			a.ExtraInformation.SetExtraInfo("product", "Kebi Ftpd")
+			k.ExtraInformation.SetExtraInfo("product", "Kebi Ftpd")
 			return true
 		}
 	}
 	return false
 }
 
-func (a *Kebi) CveScan(els *handler.Elastic) {
+func (k *Kebi) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": k.DeviceName+" "+k.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -82,7 +82,7 @@ func (a *Kebi) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "kebi%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", k.DeviceName, k.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -97,31 +97,31 @@ func (a *Kebi) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		k.CveList = append(k.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	k.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if k.CveScore > 7 {
+		k.Sensibility = "HIGH"
+	} else if k.CveScore >= 4 && k.CveScore <= 7 {
+		k.Sensibility = "MEDIUM"
+	} else if k.CveScore < 4 {
+		k.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	k.CveList = utils.RemoveDuplicates(k.CveList)
 }
 
-func (a *Kebi) PrintInfo() string { return model.Category.Service() + " | Kebi" }
+func (k *Kebi) PrintInfo() string { return model.Category.Service() + " | Kebi" }
 
-func (a *Kebi) Result() model.ModuleStructure {
+func (k *Kebi) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         k.Category,
+		DeviceName:       k.DeviceName,
+		Version:          k.Version,
+		CveList:          k.CveList,
+		Sensibility:      k.Sensibility,
+		CveScore:         k.CveScore,
+		ExtraInformation: k.ExtraInformation,
 	}
 }

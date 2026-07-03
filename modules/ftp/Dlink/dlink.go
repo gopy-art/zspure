@@ -22,12 +22,14 @@ type Dlink struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
+var modelType string
+
 func (d *Dlink) SetCategory(category ...string) {
 	d.Category = model.Category.Camera()
 }
 
 func (d *Dlink) SetDeviceName(device ...string) {
-	d.DeviceName = "Dlink"
+	d.DeviceName = "D-link"
 }
 
 func (a *Dlink) Patterns() []map[string]interface{} {
@@ -57,12 +59,14 @@ func (d *Dlink) DeviceScan(banner map[string]interface{}) bool {
 			matches := product1Re.FindStringSubmatch(val)
 			if len(matches) > 1 {
 				d.ExtraInformation.SetExtraInfo("product", matches[1])
+				modelType = matches[1]
 				return true
 			}
 			product2Re := regexp.MustCompile(`(?i)^220 (DCS-\d+[+A-Z]?) FTP`)
 			matches2 := product2Re.FindStringSubmatch(val)
 			if len(matches2) > 1 {
 				d.ExtraInformation.SetExtraInfo("product", matches2[1])
+				modelType = matches2[1]
 				return true
 			}
 		}
@@ -76,7 +80,7 @@ func (d *Dlink) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": d.DeviceName,
+			"cve.descriptions.value": d.DeviceName+" "+modelType,
 		}))
 		if len(result) == 0 {
 			return
@@ -89,7 +93,7 @@ func (d *Dlink) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "dlink%20"+d.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", d.DeviceName, modelType), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -119,7 +123,7 @@ func (d *Dlink) CveScan(els *handler.Elastic) {
 	d.CveList = utils.RemoveDuplicates(d.CveList)
 }
 
-func (d *Dlink) PrintInfo() string { return model.Category.Camera() + " | Dlink" }
+func (d *Dlink) PrintInfo() string { return model.Category.Camera() + " | D-link" }
 
 func (d *Dlink) Result() model.ModuleStructure {
 	return model.ModuleStructure{

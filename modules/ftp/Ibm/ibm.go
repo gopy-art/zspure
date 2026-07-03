@@ -21,19 +21,21 @@ type Ibm struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Ibm) SetCategory(category ...string) {
-	a.Category = model.Category.Electric()
+var modelType string
+
+func (i *Ibm) SetCategory(category ...string) {
+	i.Category = model.Category.Electric()
 }
 
-func (a *Ibm) SetDeviceName(device ...string) {
-	a.DeviceName = "Ibm"
+func (i *Ibm) SetDeviceName(device ...string) {
+	i.DeviceName = "Ibm"
 }
 
-func (a *Ibm) Patterns() []map[string]interface{} {
+func (i *Ibm) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Ibm) Filters(banner map[string]interface{}) bool {
+func (i *Ibm) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,27 +47,28 @@ func (a *Ibm) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Ibm) DeviceScan(banner map[string]interface{}) bool {
+func (i *Ibm) DeviceScan(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
-	a.ExtraInformation.NewExtraInfo()
+	i.ExtraInformation.NewExtraInfo()
 	if val, ok := banner["banner"].(string); ok {
 		if strings.Contains(val, "220-QTCP at") && strings.Contains(val, "Connection will close if idle more than") {
-			a.ExtraInformation.SetExtraInfo("product", "Ibm IbmRC")
+			i.ExtraInformation.SetExtraInfo("product", "Ibm IbmRC")
+			modelType = "Ibm IbmRC"
 			return true
 		}
 	}
 	return false
 }
 
-func (a *Ibm) CveScan(els *handler.Elastic) {
+func (i *Ibm) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": modelType,
 		}))
 		if len(result) == 0 {
 			return
@@ -78,7 +81,7 @@ func (a *Ibm) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "ibm")
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v", modelType), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -93,31 +96,31 @@ func (a *Ibm) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		i.CveList = append(i.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	i.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if i.CveScore > 7 {
+		i.Sensibility = "HIGH"
+	} else if i.CveScore >= 4 && i.CveScore <= 7 {
+		i.Sensibility = "MEDIUM"
+	} else if i.CveScore < 4 {
+		i.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	i.CveList = utils.RemoveDuplicates(i.CveList)
 }
 
-func (a *Ibm) PrintInfo() string { return model.Category.Electric() + " | Ibm" }
+func (i *Ibm) PrintInfo() string { return model.Category.Electric() + " | Ibm" }
 
-func (a *Ibm) Result() model.ModuleStructure {
+func (i *Ibm) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         i.Category,
+		DeviceName:       i.DeviceName,
+		Version:          i.Version,
+		CveList:          i.CveList,
+		Sensibility:      i.Sensibility,
+		CveScore:         i.CveScore,
+		ExtraInformation: i.ExtraInformation,
 	}
 }

@@ -21,6 +21,8 @@ type Asus struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
+var modelType string
+
 func (a *Asus) SetCategory(category ...string) {
 	a.Category = model.Category.Router()
 }
@@ -52,7 +54,7 @@ func (a *Asus) DeviceScan(banner map[string]interface{}) bool {
 		if strings.Contains(bannerStr, "220 Welcome to ASUS") {
 			product := strings.Split(strings.Split(bannerStr, "Welcome to ASUS ")[1], " FTP service")[0]
 			a.ExtraInformation.SetExtraInfo("product", product)
-			return true
+			modelType = product
 		}
 	}
 	return false
@@ -64,7 +66,7 @@ func (a *Asus) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": a.DeviceName+" "+modelType,
 		}))
 		if len(result) == 0 {
 			return
@@ -77,7 +79,7 @@ func (a *Asus) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "asus%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", a.DeviceName, modelType), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")

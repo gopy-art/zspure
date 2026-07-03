@@ -21,19 +21,19 @@ type Ecosense struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (d *Ecosense) SetCategory(category ...string) {
-	d.Category = model.Category.Camera()
+func (e *Ecosense) SetCategory(category ...string) {
+	e.Category = model.Category.Camera()
 }
 
-func (d *Ecosense) SetDeviceName(device ...string) {
-	d.DeviceName = "Ecosense"
+func (e *Ecosense) SetDeviceName(device ...string) {
+	e.DeviceName = "Ecosense"
 }
 
-func (a *Ecosense) Patterns() []map[string]interface{} {
+func (e *Ecosense) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (d *Ecosense) Filters(banner map[string]interface{}) bool {
+func (e *Ecosense) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,17 +45,17 @@ func (d *Ecosense) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (d *Ecosense) DeviceScan(banner map[string]interface{}) bool {
+func (e *Ecosense) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (d *Ecosense) CveScan(els *handler.Elastic) {
+func (e *Ecosense) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": d.DeviceName,
+			"cve.descriptions.value": e.DeviceName,
 		}))
 		if len(result) == 0 {
 			return
@@ -68,7 +68,7 @@ func (d *Ecosense) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "Ecosense%20"+d.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v", e.DeviceName), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -83,31 +83,31 @@ func (d *Ecosense) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		d.CveList = append(d.CveList, vl.CVEID)
+		e.CveList = append(e.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	d.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if d.CveScore > 7 {
-		d.Sensibility = "HIGH"
-	} else if d.CveScore >= 4 && d.CveScore <= 7 {
-		d.Sensibility = "MEDIUM"
-	} else if d.CveScore < 4 {
-		d.Sensibility = "LOW"
+	e.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if e.CveScore > 7 {
+		e.Sensibility = "HIGH"
+	} else if e.CveScore >= 4 && e.CveScore <= 7 {
+		e.Sensibility = "MEDIUM"
+	} else if e.CveScore < 4 {
+		e.Sensibility = "LOW"
 	}
-	d.CveList = utils.RemoveDuplicates(d.CveList)
+	e.CveList = utils.RemoveDuplicates(e.CveList)
 }
 
-func (d *Ecosense) PrintInfo() string { return model.Category.Camera() + " | Ecosense" }
+func (e *Ecosense) PrintInfo() string { return model.Category.Camera() + " | Ecosense" }
 
-func (d *Ecosense) Result() model.ModuleStructure {
+func (e *Ecosense) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         d.Category,
-		DeviceName:       d.DeviceName,
-		Version:          d.Version,
-		CveList:          d.CveList,
-		Sensibility:      d.Sensibility,
-		CveScore:         d.CveScore,
-		ExtraInformation: d.ExtraInformation,
+		Category:         e.Category,
+		DeviceName:       e.DeviceName,
+		Version:          e.Version,
+		CveList:          e.CveList,
+		Sensibility:      e.Sensibility,
+		CveScore:         e.CveScore,
+		ExtraInformation: e.ExtraInformation,
 	}
 }

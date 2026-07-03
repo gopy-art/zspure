@@ -21,19 +21,19 @@ type Lacie struct {
 	ExtraInformation model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *Lacie) SetCategory(category ...string) {
-	a.Category = model.Category.NetworkStorage()
+func (l *Lacie) SetCategory(category ...string) {
+	l.Category = model.Category.NetworkStorage()
 }
 
-func (a *Lacie) SetDeviceName(device ...string) {
-	a.DeviceName = "Lacie"
+func (l *Lacie) SetDeviceName(device ...string) {
+	l.DeviceName = "Lacie"
 }
 
-func (a *Lacie) Patterns() []map[string]interface{} {
+func (l *Lacie) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{}
 }
 
-func (a *Lacie) Filters(banner map[string]interface{}) bool {
+func (l *Lacie) Filters(banner map[string]interface{}) bool {
 	if banner["banner"] == nil {
 		return false
 	}
@@ -45,19 +45,19 @@ func (a *Lacie) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Lacie) DeviceScan(banner map[string]interface{}) bool {
+func (l *Lacie) DeviceScan(banner map[string]interface{}) bool {
 	if val, ok := banner["banner"]; ok {
-		a.ExtraInformation.NewExtraInfo()
+		l.ExtraInformation.NewExtraInfo()
 		bannerStr := fmt.Sprintf("%v", val)
 		if strings.Contains(bannerStr, "LaCie") {
 			if strings.Contains(bannerStr, "CloudBox") {
-				a.ExtraInformation.SetExtraInfo("product", "CloudBox")
+				l.ExtraInformation.SetExtraInfo("product", "CloudBox")
 			} else if strings.Contains(bannerStr, "LaCie-5big") {
-				a.ExtraInformation.SetExtraInfo("product", "5Big")
+				l.ExtraInformation.SetExtraInfo("product", "5Big")
 			} else if strings.Contains(bannerStr, "NetworkSpace2") {
-				a.ExtraInformation.SetExtraInfo("product", "Network Space 2")
+				l.ExtraInformation.SetExtraInfo("product", "Network Space 2")
 			} else if strings.Contains(bannerStr, "LaCie-2big") {
-				a.ExtraInformation.SetExtraInfo("product", "2Big")
+				l.ExtraInformation.SetExtraInfo("product", "2Big")
 			}
 			return true
 		}
@@ -65,13 +65,13 @@ func (a *Lacie) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *Lacie) CveScan(els *handler.Elastic) {
+func (l *Lacie) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": a.DeviceName,
+			"cve.descriptions.value": l.DeviceName,
 		}))
 		if len(result) == 0 {
 			return
@@ -99,31 +99,31 @@ func (a *Lacie) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		a.CveList = append(a.CveList, vl.CVEID)
+		l.CveList = append(l.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	a.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if a.CveScore > 7 {
-		a.Sensibility = "HIGH"
-	} else if a.CveScore >= 4 && a.CveScore <= 7 {
-		a.Sensibility = "MEDIUM"
-	} else if a.CveScore < 4 {
-		a.Sensibility = "LOW"
+	l.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if l.CveScore > 7 {
+		l.Sensibility = "HIGH"
+	} else if l.CveScore >= 4 && l.CveScore <= 7 {
+		l.Sensibility = "MEDIUM"
+	} else if l.CveScore < 4 {
+		l.Sensibility = "LOW"
 	}
-	a.CveList = utils.RemoveDuplicates(a.CveList)
+	l.CveList = utils.RemoveDuplicates(l.CveList)
 }
 
-func (a *Lacie) PrintInfo() string { return model.Category.NetworkStorage() + " | Lacie" }
+func (l *Lacie) PrintInfo() string { return model.Category.NetworkStorage() + " | Lacie" }
 
-func (a *Lacie) Result() model.ModuleStructure {
+func (l *Lacie) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         a.Category,
-		DeviceName:       a.DeviceName,
-		Version:          a.Version,
-		CveList:          a.CveList,
-		Sensibility:      a.Sensibility,
-		CveScore:         a.CveScore,
-		ExtraInformation: a.ExtraInformation,
+		Category:         l.Category,
+		DeviceName:       l.DeviceName,
+		Version:          l.Version,
+		CveList:          l.CveList,
+		Sensibility:      l.Sensibility,
+		CveScore:         l.CveScore,
+		ExtraInformation: l.ExtraInformation,
 	}
 }

@@ -68,7 +68,7 @@ func (a *Allworx) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "Allworx%20"+a.Version)
+		url := fmt.Sprintf(model.CVE.MainResource(), a.DeviceName)
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
