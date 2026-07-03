@@ -1,0 +1,1 @@
+{"ip":"95.22.168.191","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 DSL Router FTP Server v00.96.621v4 ready\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"8e6f8b4f7caf6991e8029e463a0c0ffb343fd1db5cef8f36c175528120f6bcb0"},"timestamp":"2026-07-01T08:05:44+02:00"}}}

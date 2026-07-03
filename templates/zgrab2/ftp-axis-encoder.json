@@ -1,0 +1,18 @@
+{
+    "ip": "147.81.203.41",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 AXIS M7001 Video Encoder 5.20.1 (Oct 25 2011) ready.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "3ed2e8a088e97c9e45dc0dba2ec0446ef8cc4b2d9d9d459e0767cb4e560a9999"
+            },
+            "timestamp": "2026-06-30T12:45:01+01:00"
+        }
+    }
+}

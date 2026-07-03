@@ -1,0 +1,18 @@
+{
+    "ip": "71.202.29.103",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Welcome to DCS-6620 FTP Server\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "1c83f9bcead8d2b2f9022262aa711b97cfee3f51061b3cfbac871fd23446ebf9"
+            },
+            "timestamp": "2026-06-30T16:09:26+01:00"
+        }
+    }
+}

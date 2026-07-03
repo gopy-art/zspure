@@ -1,0 +1,18 @@
+{
+    "ip": "95.39.181.230",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 DrayTek FTP version 1.0\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "4cf4883c6f4684f7a1e019cf597dcac80bf0f5aa66de7ad6d87f962f57877534"
+            },
+            "timestamp": "2026-06-30T16:39:05+01:00"
+        }
+    }
+}

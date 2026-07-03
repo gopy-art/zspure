@@ -1,0 +1,18 @@
+{
+    "ip": "184.160.222.55",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 BulletProof FTP Server ready ...\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "be605f04f55f6192262b7206d7cd7a9d1a90c3897b654988cf776b9f97603314"
+            },
+            "timestamp": "2026-06-30T14:08:14+01:00"
+        }
+    }
+}

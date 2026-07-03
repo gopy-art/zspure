@@ -1,0 +1,18 @@
+{
+    "ip": "211.45.50.33",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220-TiMOS-B-6.1.R7 both/hops ALCATEL-LUCENT SAR 7705 \r\n220-Copyright (c) 2000-2015 Alcatel-Lucent.\r\n220-All rights reserved. All use subject to applicable license agreements.\r\n220-Built on Tue Mar 24 15:26:37 EDT 2015 by csabuild in /rel6.1/b1/R7/panos/main\r\n220-\r\n220- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\r\n220-                               - W A R N I N G -\r\n220-         A notice that any unauthorized use of the system is unlawful,\r\n220-            and may be subject to civil and/or criminal penalties.\r\n220-\r %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \r\n220 FTP server ready\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "ee8066312dae3301ed26afacea6566855652a786d3a435b4be813c388f64cfc0"
+            },
+            "timestamp": "2026-06-30T10:00:08+01:00"
+        }
+    }
+}

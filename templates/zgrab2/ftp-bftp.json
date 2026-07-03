@@ -1,0 +1,18 @@
+{
+    "ip": "107.214.108.193",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 bftpd 4.4 at 107.214.108.193 ready.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "2cdbdecf965b1326033b4a3e4f1fe934c8cfda9d4d0d986e2e63dccfa0cb3766"
+            },
+            "timestamp": "2026-06-30T14:03:44+01:00"
+        }
+    }
+}

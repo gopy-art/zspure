@@ -1,0 +1,18 @@
+{
+    "ip": "206.54.177.116",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220-FileZilla Server 0.9.60 beta\r\n220-written by Tim Kosse (tim.kosse@filezilla-project.org)\r\n220 Please visit https://filezilla-project.org/\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "89125bf2b292bba7f3ebd2e7a8d4f88e7d60d7d3ed2450ffbe6356f658236af2"
+            },
+            "timestamp": "2026-06-30T17:32:22+01:00"
+        }
+    }
+}

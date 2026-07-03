@@ -1,0 +1,1 @@
+{"ip":"62.129.30.133","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 HP ARPA FTP Server [A0008S30] (C) Hewlett-Packard Co. 1990\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"6faa7a662c024f10c3492030fa2db01121f75d04872a60d9d1533200a3d6c7c6"},"timestamp":"2026-07-01T09:03:28+02:00"}}}

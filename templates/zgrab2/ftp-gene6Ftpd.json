@@ -1,0 +1,18 @@
+{
+    "ip": "81.162.246.173",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Gene6 FTP Server v3.10.0 (Build 2) ready...\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "efef9f199d6bd3601fe39253dcd45ecf49a69cd3c154fb2176863cd06cf01034"
+            },
+            "timestamp": "2026-06-30T19:27:47+01:00"
+        }
+    }
+}

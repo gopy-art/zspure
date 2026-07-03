@@ -1,0 +1,18 @@
+{
+    "ip": "184.166.229.98",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Welcome to ASUS RT-AC68U FTP service.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "7849cd47b795eaf53d25d9db628e358d8406cf5f8f068c59ff8eaad4d265d017"
+            },
+            "timestamp": "2026-06-30T12:11:02+01:00"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"ip":"98.164.151.146","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 KONICA MINOLTA FTP server ready.\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"a0d3e40b6ba1c912314c8f7b61e728a98a731e8011e4a3027989ed082ce78a08"},"timestamp":"2026-07-01T12:26:46+02:00"}}}

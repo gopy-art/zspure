@@ -1,0 +1,18 @@
+{
+    "ip": "178.75.241.37",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 AP9630 Network Management Card AOS v6.2.1 FTP server ready.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "02fd453c581ba5fc0755dbda32e7ca06575c50e8352d1f37f4824781b17dbde4"
+            },
+            "timestamp": "2026-06-30T09:40:32+01:00"
+        }
+    }
+}

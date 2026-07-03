@@ -1,0 +1,211 @@
+{
+    "ip": "27.75.104.160",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 4014,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "99AEpk3NetTXOEOeL/yBCJgTUbPTg/ktbatDredGflk=",
+                        "session_id": "FoZPcATexsGRQ9MGvtwaW+uv9klX70sXpjByzvziifE=",
+                        "cipher_suite": {
+                            "hex": "0xC014",
+                            "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+                            "value": 49172
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIDyDCCArCgAwIBAgIIAVfIMf8Ry9YwDQYJKoZIhvcNAQELBQAwajELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFzAVBgNVBAoMDkFydWJhIE5ldHdvcmtzMRAwDgYDVQQLDAdJbnN0YW50MRswGQYDVQQDDBJBcnViYTIwNS1DTTA3ODQyNzQwIhgPMjAyNTA3MjAwODA1MTdaGA8yMDM1MDcxOTA4MDUxN1owgYUxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRIwEAYDVQQHDAlTdW5ueXZhbGUxFzAVBgNVBAoMDkFydWJhIE5ldHdvcmtzMRAwDgYDVQQLDAdJbnN0YW50MSIwIAYDVQQDDBlzZXRtZXVwLmFydWJhbmV0d29ya3MuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApFppYATMOR0QX8+eMOOz0U8CMpJpWwhrhjRWq9tYSv8hhq6au6vRbrK4xKsVJxhiyamztPOYUK7BPp+v1a8tvXBp1PXjiDvKLP11Pc/V/pneNVXCGxG42fDL1VV/B6ErZH43vu3MJZ+TNwF/gZ8fSGB8Ienk6hFeuVONHDv9VutUUn2Xw7ogGvcJYe1JE8Co/64X/VfgeHQox+xPuJY6lhINiEm04eh86JEl2x2/Ko3SntyCeDueXbRsKE27XOOvvGLbx7SI8qaNwag4v5WXGTgNVVGpLiQuJXHsXQt4XpdgQo8MAxFmYKPjyCuANQ3lkIGTF0I0AFzMlATRQMmD6wIDAQABo1IwUDAdBgNVHQ4EFgQUJfgNtRaqzwm4pVBSXq9v/AHqD+AwHwYDVR0jBBgwFoAUJfgNtRaqzwm4pVBSXq9v/AHqD+AwDgYDVR0PAQH/BAQDAgGmMA0GCSqGSIb3DQEBCwUAA4IBAQBuMUA31ycKCuzGcjclCWvsWREZ0oGpVRU9fAGJ3zU6rbFKz/qGqcv3MEx/VxQIbupy6rTgrqhzugV2lQHrf0Y6d1MlIM/LeXVwvSkPII8lWVdlhENTQbk5cVQJpl8Vih/za6e8IUIZjGRaH2HOFvboN+yh33zPP89fYqLg7dsAq7zkSqfZxsC+ikWovC1Xv7NNsqIx+ulyubHLF1/e/oTv34Cx4HId6qYup0WC2MXrNM1JNQZjdRtccosrRF/j3XwsRXr8MnJj5et0SuRwACRkYKxsHnmaXyAHA5UQFC3NOog9mlgEizdyfu8bhUuiaSO5No2vMJB9iZes5Z36kRTw",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "96766034070064086",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "Aruba205-CM0784274"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "province": [
+                                        "California"
+                                    ],
+                                    "organization": [
+                                        "Aruba Networks"
+                                    ],
+                                    "organizational_unit": [
+                                        "Instant"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=California, O=Aruba Networks, OU=Instant, CN=Aruba205-CM0784274",
+                                "validity": {
+                                    "start": "2025-07-20T08:05:17Z",
+                                    "end": "2035-07-19T08:05:17Z",
+                                    "length": 315446400
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "setmeup.arubanetworks.com"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Sunnyvale"
+                                    ],
+                                    "province": [
+                                        "California"
+                                    ],
+                                    "organization": [
+                                        "Aruba Networks"
+                                    ],
+                                    "organizational_unit": [
+                                        "Instant"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=California, L=Sunnyvale, O=Aruba Networks, OU=Instant, CN=setmeup.arubanetworks.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "pFppYATMOR0QX8+eMOOz0U8CMpJpWwhrhjRWq9tYSv8hhq6au6vRbrK4xKsVJxhiyamztPOYUK7BPp+v1a8tvXBp1PXjiDvKLP11Pc/V/pneNVXCGxG42fDL1VV/B6ErZH43vu3MJZ+TNwF/gZ8fSGB8Ienk6hFeuVONHDv9VutUUn2Xw7ogGvcJYe1JE8Co/64X/VfgeHQox+xPuJY6lhINiEm04eh86JEl2x2/Ko3SntyCeDueXbRsKE27XOOvvGLbx7SI8qaNwag4v5WXGTgNVVGpLiQuJXHsXQt4XpdgQo8MAxFmYKPjyCuANQ3lkIGTF0I0AFzMlATRQMmD6w==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "24db609e6604d3f810a7972a4131996f1ba6cfaa7f8d8fe9d3b9a6372bb09ed6"
+                                },
+                                "extensions": {
+                                    "key_usage": {
+                                        "digital_signature": true,
+                                        "key_encipherment": true,
+                                        "certificate_sign": true,
+                                        "crl_sign": true,
+                                        "value": 101
+                                    },
+                                    "authority_key_id": "25f80db516aacf09b8a550525eaf6ffc01ea0fe0",
+                                    "subject_key_id": "25f80db516aacf09b8a550525eaf6ffc01ea0fe0"
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "bjFAN9cnCgrsxnI3JQlr7FkRGdKBqVUVPXwBid81Oq2xSs/6hqnL9zBMf1cUCG7qcuq04K6oc7oFdpUB639GOndTJSDPy3l1cL0pDyCPJVlXZYRDU0G5OXFUCaZfFYof82unvCFCGYxkWh9hzhb26Dfsod98zz/PX2Ki4O3bAKu85Eqn2cbAvopFqLwtV7+zTbKiMfrpcrmxyxdf3v6E79+AseByHeqmLqdFgtjF6zTNSTUGY3UbXHKLK0Rf4918LEV6/DJyY+XrdErkcAAkZGCsbB55ml8gBwOVEBQtzTqIPZpYBIs3cn7vG4VLomkjuTaNrzCQfYmXrOWd+pEU8A==",
+                                    "valid": false,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "f948a8995f9efc5e5c8fb63e56279340",
+                                "fingerprint_sha1": "7a281c90a4b2c7d8a8a48b0af09510a0b37a00c8",
+                                "fingerprint_sha256": "f8686a33adf80341363f71af06cd689ce35bcafcaf71cb4cde3882e3c2e81abf",
+                                "tbs_noct_fingerprint": "cff769b993c18f4ea15d43916db823eaff1cb6aea7b1d568099bba4ca4b931e5",
+                                "spki_subject_fingerprint": "f53357c70edec8951aad3d71ee237db3fe69ff9949987fc75d7ba2380209e639",
+                                "tbs_fingerprint": "79c71c57b8740cb966a1e50db05798358c47ec6dabe67f1bbe1fad6666441322",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "setmeup.arubanetworks.com"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate signed by unknown authority"
+                        }
+                    },
+                    "server_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "secp256r1",
+                                "id": 23
+                            },
+                            "server_public": {
+                                "x": {
+                                    "value": "HmPeUT5SJXXqZhcSs3DVVz9F2mKuHoRgXefg0cHvblY=",
+                                    "length": 256
+                                },
+                                "y": {
+                                    "value": "0mdmn986G3B9AQnahHGcO4gRSR+Rm2hEkTo4E5MycgA=",
+                                    "length": 256
+                                }
+                            }
+                        },
+                        "digest": "8HhlcQHKcD/DAvVYV78tMtzpPFRHYRqhaLs4h2DcXjw=",
+                        "signature": {
+                            "raw": "JHX1H+6XbblIpkkUnCDBCssqphU9ef1CsjWzXGe+Lxoi8/ObzHzV8LJi0R+Gx7rVYrLKhINtxnscpfeje37FcryRtxOe/caCKFGyN7sGk6JcSSV44giyYvZ7/wQ+JUF+pDyTyiqZfv55hAHOw+17WGohyY4i1ydRUH3mHN6YFkt7xWsdnWSscNpir2xB3IBCXaFpxSXgSeby0KLN9cx9gKJ7Q44xM7snJ6Rwtcuk9bjC5s9zP9AHFMcuxt+HfSnidz4LQ3yB3daM8zP39ijqv+mayqjeycDL4cO4D+KyXxxBsool+vElUeM2VlUBjJzcvx+uM5qbyWbEdt3S+44FqA==",
+                            "type": "rsa",
+                            "valid": true,
+                            "signature_and_hash_type": {
+                                "signature_algorithm": "pkcs1v15",
+                                "hash_algorithm": "sha384"
+                            },
+                            "tls_version": {
+                                "name": "TLSv1.2",
+                                "value": 771
+                            }
+                        }
+                    },
+                    "client_key_exchange": {
+                        "ecdh_params": {
+                            "curve_id": {
+                                "name": "secp256r1",
+                                "id": 23
+                            },
+                            "client_public": {
+                                "x": {
+                                    "value": "GOoCZXDQc4QQBiiehZlC2nAed5MKVlBxPT9Vu/zPAjY=",
+                                    "length": 256
+                                },
+                                "y": {
+                                    "value": "gF0hLi9iwN9XvffJMzXqBTrk6v2LJ3MJQGLTtxjHzi0=",
+                                    "length": 256
+                                }
+                            },
+                            "client_private": {
+                                "value": "rz3TtGafrCAHKvtL+AKDefBSMvbHGpUdLeyYEI8WeEo=",
+                                "length": 32
+                            }
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "8ZQeSRbCSbNeD8K6"
+                    },
+                    "server_finished": {
+                        "verify_data": "3p1vAEEODY6DwBMK"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "mFC0TAo02FD0GXR7r0aaD3NxPSTEmbB9MEyOBMxucoO0J4VynkXVUUY9qhMvIQWs",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "ViSvkSS75FC8XBJvSoaxzA+HN63EXfvmQMSAgI70lJI=",
+                            "length": 32
+                        }
+                    }
+                }
+            },
+            "timestamp": "2026-06-21T10:01:10+02:00"
+        }
+    }
+}

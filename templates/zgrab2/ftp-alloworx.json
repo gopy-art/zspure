@@ -1,0 +1,18 @@
+{
+    "ip": "98.102.55.139",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Allworx FTP server ready\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "1a765482a2a4d5179e76ddedae9c07c0faff91abadaeb96e89a93a8d7032dabd"
+            },
+            "timestamp": "2026-06-30T09:44:21+01:00"
+        }
+    }
+}

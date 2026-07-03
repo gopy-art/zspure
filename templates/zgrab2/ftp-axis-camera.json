@@ -1,0 +1,18 @@
+{
+    "ip": "147.91.207.175",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 AXIS 206 Network Camera 4.40 (Jun 20 2006) ready.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "e37abf25169fd032270798541ec83c5db51f2ef3e92dca296b535db10c0df6df"
+            },
+            "timestamp": "2026-06-30T12:44:07+01:00"
+        }
+    }
+}

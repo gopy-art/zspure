@@ -1,0 +1,14 @@
+{
+    "ip": "113.161.101.69",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "port": 21,
+            "result": {
+                "banner": "220 ET0021B7C15CCC Dell B2360dn Laser Printer FTP Server NH.CY.N328 ready.\r\n"
+            },
+            "timestamp": "2026-06-15T15:49:22Z"
+        }
+    }
+}

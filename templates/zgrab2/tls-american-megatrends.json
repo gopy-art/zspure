@@ -1,0 +1,277 @@
+{
+    "ip": "50.117.106.148",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 443,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "zyGtdOWaYRG+HYwCHmW4kcKiERZ6u4xeB54J4sioM5w=",
+                        "session_id": "9tmqzEzfk67aah24HqJ6GScA8eFS9s5dOW9m6q99hAM=",
+                        "cipher_suite": {
+                            "hex": "0x1302",
+                            "name": "TLS_AES_256_GCM_SHA384",
+                            "value": 4866
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "key_share": {
+                            "hex": "0x0018",
+                            "name": "secp384r1",
+                            "value": 24
+                        },
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIIEhjCCAz6gAwIBAgIEWt4XHTANBgkqhkiG9w0BAQsFADCBsDELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEFtZXJpY2FuIE1lZ2F0cmVuZHMgSW5jb3Jwb3JhdGVkMRswGQYDVQQLExJTZXJ2aWNlIFByb2Nlc3NvcnMxETAPBgNVBAcTCE5vcmNyb3NzMRAwDgYDVQQIEwdHZW9yZ2lhMRQwEgYDVQQDEwt3d3cuYW1pLmNvbTEeMBwGCSqGSIb3DQEJARYPc3VwcG9ydEBhbWkuY29tMB4XDTE4MDQyMzE3MjU0OVoXDTM3MDYyMjE3MjU0OVowgbAxCzAJBgNVBAYTAlVTMSkwJwYDVQQKEyBBbWVyaWNhbiBNZWdhdHJlbmRzIEluY29ycG9yYXRlZDEbMBkGA1UECxMSU2VydmljZSBQcm9jZXNzb3JzMREwDwYDVQQHEwhOb3Jjcm9zczEQMA4GA1UECBMHR2VvcmdpYTEUMBIGA1UEAxMLd3d3LmFtaS5jb20xHjAcBgkqhkiG9w0BCQEWD3N1cHBvcnRAYW1pLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL9upRq5PFqEgrdRiC1wx5Jb98utfzwS8bpZfLxRsGaMKIWLPpnHN+9piL3vUYpz30mWnuG92S8wUnbJypedP2Ozc6BAxdpF84bJq0Pr+0oQe4Ds1WJLoAQQiiuiZPDQWZdDenXR9qoNKktH/emTccMsJyJrNPFVY0sHAv1yLSC6zwWxYzrwA7nZJ2Idz5BF24fR/SEgy0mvqwUP2C5oBBHMq8dMpEHMHv3SxO45a3cg3XX2tZzFInhz7MQqARSBYSu+42oMUD0l0rCrWUu2iftgPWEJfzDOkGkErVBeSvl13/TRo7eMTZ/dL+xH0ed8/WzciXgqBHZZ926S+aH3QV0CAwEAAaN2MHQwDAYDVR0TAQH/BAIwADATBgNVHSUEDDAKBggrBgEFBQcDATAPBgNVHQ8BAf8EBQMDB6AAMB0GA1UdDgQWBBQDye7H++x0HGJvabCpZW0frfCKMzAfBgNVHSMEGDAWgBT16oSMijHaI5MwnpZ4sYxhqrKUGDANBgkqhkiG9w0BAQsFAAOCATEACQhFompbc8nWq8EbrQNmJ1U+F3UiPI+OgUTTStCgTXuI8Q2R+CSHqVsLbAvwJCjSk7z7o7Mb5vmzIIp8YQ+bwlCt6TmDag4OPQEMlph4yjLx1DZ0nuDosfXWcC2zfRpCAfU9v/uG4TTjfwLASYxvmD8R+w+bmFfoi3qYXaGZmle+Zn0soQesflSoIBPD9bD2aWr7i7q5ovSov3k4C2gJHUz45SGcK/WQrMRgwKrjDxK0m6bLQBr+T1U58UFhw+tI14ofkONH3TLkkxwZYbXHVRVurHqSR6qXU9sFsF5HZFf/wwrGYNkif2ZTC7qxmI1tyeXcg+FS9xIR3XRdear0wvmgqA5y7IHgk8FmOJUIAOpr4paR8ljTNdbIoqubr/fVC7E8VmrAmWhTAyqbtyCybg==",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "1524504349",
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "www.ami.com"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Norcross"
+                                    ],
+                                    "province": [
+                                        "Georgia"
+                                    ],
+                                    "organization": [
+                                        "American Megatrends Incorporated"
+                                    ],
+                                    "organizational_unit": [
+                                        "Service Processors"
+                                    ],
+                                    "email_address": [
+                                        "support@ami.com"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, O=American Megatrends Incorporated, OU=Service Processors, L=Norcross, ST=Georgia, CN=www.ami.com, emailAddress=support@ami.com",
+                                "validity": {
+                                    "start": "2018-04-23T17:25:49Z",
+                                    "end": "2037-06-22T17:25:49Z",
+                                    "length": 604800000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "www.ami.com"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Norcross"
+                                    ],
+                                    "province": [
+                                        "Georgia"
+                                    ],
+                                    "organization": [
+                                        "American Megatrends Incorporated"
+                                    ],
+                                    "organizational_unit": [
+                                        "Service Processors"
+                                    ],
+                                    "email_address": [
+                                        "support@ami.com"
+                                    ]
+                                },
+                                "subject_dn": "C=US, O=American Megatrends Incorporated, OU=Service Processors, L=Norcross, ST=Georgia, CN=www.ami.com, emailAddress=support@ami.com",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "v26lGrk8WoSCt1GILXDHklv3y61/PBLxull8vFGwZowohYs+mcc372mIve9RinPfSZae4b3ZLzBSdsnKl50/Y7NzoEDF2kXzhsmrQ+v7ShB7gOzVYkugBBCKK6Jk8NBZl0N6ddH2qg0qS0f96ZNxwywnIms08VVjSwcC/XItILrPBbFjOvADudknYh3PkEXbh9H9ISDLSa+rBQ/YLmgEEcyrx0ykQcwe/dLE7jlrdyDddfa1nMUieHPsxCoBFIFhK77jagxQPSXSsKtZS7aJ+2A9YQl/MM6QaQStUF5K+XXf9NGjt4xNn90v7EfR53z9bNyJeCoEdln3bpL5ofdBXQ==",
+                                        "length": 2048
+                                    },
+                                    "fingerprint_sha256": "5d2b4dc1f88bc84dee6e6d7c976efe46e115647894d2048eeb26c09eb39083f2"
+                                },
+                                "extensions": {
+                                    "key_usage": {
+                                        "digital_signature": true,
+                                        "key_encipherment": true,
+                                        "value": 5
+                                    },
+                                    "basic_constraints": {
+                                        "is_ca": false
+                                    },
+                                    "authority_key_id": "f5ea848c8a31da2393309e9678b18c61aab29418",
+                                    "subject_key_id": "03c9eec7fbec741c626f69b0a9656d1fadf08a33",
+                                    "extended_key_usage": {
+                                        "server_auth": true
+                                    }
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "value": "CQhFompbc8nWq8EbrQNmJ1U+F3UiPI+OgUTTStCgTXuI8Q2R+CSHqVsLbAvwJCjSk7z7o7Mb5vmzIIp8YQ+bwlCt6TmDag4OPQEMlph4yjLx1DZ0nuDosfXWcC2zfRpCAfU9v/uG4TTjfwLASYxvmD8R+w+bmFfoi3qYXaGZmle+Zn0soQesflSoIBPD9bD2aWr7i7q5ovSov3k4C2gJHUz45SGcK/WQrMRgwKrjDxK0m6bLQBr+T1U58UFhw+tI14ofkONH3TLkkxwZYbXHVRVurHqSR6qXU9sFsF5HZFf/wwrGYNkif2ZTC7qxmI1tyeXcg+FS9xIR3XRdear0wvmgqA5y7IHgk8FmOJUIAOpr4paR8ljTNdbIoqubr/fVC7E8VmrAmWhTAyqbtyCybg==",
+                                    "valid": true,
+                                    "self_signed": false
+                                },
+                                "fingerprint_md5": "0569229d5d9f30eb59a1a5ffd07cde6b",
+                                "fingerprint_sha1": "ef06deb0f9a633ca64352f6582afe9f802f9c45c",
+                                "fingerprint_sha256": "ed4da7c3e9e04349ed376daa817086fa267dc11f75466f9b85006534b292bd18",
+                                "tbs_noct_fingerprint": "6b8e6bf318c0af584dcbd25acf9cb673cca4acfb9ed4ff6f9839bda09f84e8b2",
+                                "spki_subject_fingerprint": "b70d6bde3caf24028b8fe61417e25035291bb6a8b64e409cd500181fb4464689",
+                                "tbs_fingerprint": "6b8e6bf318c0af584dcbd25acf9cb673cca4acfb9ed4ff6f9839bda09f84e8b2",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "www.ami.com"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "chain": [
+                            {
+                                "raw": "MIIEgDCCAzigAwIBAgIBATANBgkqhkiG9w0BAQsFADCBsDELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEFtZXJpY2FuIE1lZ2F0cmVuZHMgSW5jb3Jwb3JhdGVkMRswGQYDVQQLExJTZXJ2aWNlIFByb2Nlc3NvcnMxETAPBgNVBAcTCE5vcmNyb3NzMRAwDgYDVQQIEwdHZW9yZ2lhMRQwEgYDVQQDEwt3d3cuYW1pLmNvbTEeMBwGCSqGSIb3DQEJARYPc3VwcG9ydEBhbWkuY29tMB4XDTE4MDQyMzE3MjUyM1oXDTM3MDYyMjE3MjUyM1owgbAxCzAJBgNVBAYTAlVTMSkwJwYDVQQKEyBBbWVyaWNhbiBNZWdhdHJlbmRzIEluY29ycG9yYXRlZDEbMBkGA1UECxMSU2VydmljZSBQcm9jZXNzb3JzMREwDwYDVQQHEwhOb3Jjcm9zczEQMA4GA1UECBMHR2VvcmdpYTEUMBIGA1UEAxMLd3d3LmFtaS5jb20xHjAcBgkqhkiG9w0BCQEWD3N1cHBvcnRAYW1pLmNvbTCCAVIwDQYJKoZIhvcNAQEBBQADggE/ADCCAToCggExAOCRNUnY7win6Y9dRrksfQVEzx/1UJCTbPfcr5a1KehMBDeTcqFaKuJaxK5r10lafYM5otd6lESAOm2WACj5Ek7nQXckjFmn3WBbt6btsspAWLffVVl7dRUqkUAGwGw8p2R8Dqmza7G1bUqcmV9umLNXdoz+MoOVz55v0XRdnGlRXL6dTFXWDu902E458VbE/MPvAaEuu0Z/au+ma9pYiYmiMivESjooJ/hKA3uM7dEoWZmbC10MoQjo1rP298fjEAnU1hRMChL8TmLFCAyQuF9bNtao/eS273ThGq/1ztNl7s6r9YGMjdQNz+XJeKAEP9w0cNz8lwF2Q8XDmfYK/GWZg4TiloU5em/enbnmppj5eoOdt7W5DXoRJg4G7QW7G+2odyDUQ1gvj9V83vkPGbsCAwEAAaNDMEEwDwYDVR0TAQH/BAUwAwEB/zAPBgNVHQ8BAf8EBQMDBwYAMB0GA1UdDgQWBBT16oSMijHaI5MwnpZ4sYxhqrKUGDANBgkqhkiG9w0BAQsFAAOCATEAlWEruVxO/tHeLNWwa+nyumOu3zEUyi6ptNVUY2ZASO/zq25ZN7OB8In2vyYNDXBV64P0rg5Rmqcg2RPI4cRAY44LdDnbVQesopyWCNY3ZMzcfc+9cLv+8HxQ3Mf2ArCPYkoneaCzU7VqfZaHOZEvIPgTbBtceknFcQTzfyHm3R6TTeCTEwaj34FEzr8l3hvn/db2khDru5dGJ5LUjSf4liFkBSk7JePuTEzYh4ZcXvOhjjxqrCMhI+8QureWK3iqz7FARMjKeCaNpiGPQmE6fvRvDCOPyBO9MoiSRCqBg7u9kHnY5PunMkSrx/ueE3py5NM5amEeFqDJH4+uqj8CTVQQrUjfDVXRfOF0Bt+4clBuNqX+o4IBbsHJp2KRp0XIowXKXYPO2+DVKkVTx134Qw==",
+                                "parsed": {
+                                    "version": 3,
+                                    "serial_number": "1",
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "issuer": {
+                                        "common_name": [
+                                            "www.ami.com"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Norcross"
+                                        ],
+                                        "province": [
+                                            "Georgia"
+                                        ],
+                                        "organization": [
+                                            "American Megatrends Incorporated"
+                                        ],
+                                        "organizational_unit": [
+                                            "Service Processors"
+                                        ],
+                                        "email_address": [
+                                            "support@ami.com"
+                                        ]
+                                    },
+                                    "issuer_dn": "C=US, O=American Megatrends Incorporated, OU=Service Processors, L=Norcross, ST=Georgia, CN=www.ami.com, emailAddress=support@ami.com",
+                                    "validity": {
+                                        "start": "2018-04-23T17:25:23Z",
+                                        "end": "2037-06-22T17:25:23Z",
+                                        "length": 604800000
+                                    },
+                                    "subject": {
+                                        "common_name": [
+                                            "www.ami.com"
+                                        ],
+                                        "country": [
+                                            "US"
+                                        ],
+                                        "locality": [
+                                            "Norcross"
+                                        ],
+                                        "province": [
+                                            "Georgia"
+                                        ],
+                                        "organization": [
+                                            "American Megatrends Incorporated"
+                                        ],
+                                        "organizational_unit": [
+                                            "Service Processors"
+                                        ],
+                                        "email_address": [
+                                            "support@ami.com"
+                                        ]
+                                    },
+                                    "subject_dn": "C=US, O=American Megatrends Incorporated, OU=Service Processors, L=Norcross, ST=Georgia, CN=www.ami.com, emailAddress=support@ami.com",
+                                    "subject_key_info": {
+                                        "key_algorithm": {
+                                            "name": "RSA"
+                                        },
+                                        "rsa_public_key": {
+                                            "exponent": 65537,
+                                            "modulus": "4JE1SdjvCKfpj11GuSx9BUTPH/VQkJNs99yvlrUp6EwEN5NyoVoq4lrErmvXSVp9gzmi13qURIA6bZYAKPkSTudBdySMWafdYFu3pu2yykBYt99VWXt1FSqRQAbAbDynZHwOqbNrsbVtSpyZX26Ys1d2jP4yg5XPnm/RdF2caVFcvp1MVdYO73TYTjnxVsT8w+8BoS67Rn9q76Zr2liJiaIyK8RKOign+EoDe4zt0ShZmZsLXQyhCOjWs/b3x+MQCdTWFEwKEvxOYsUIDJC4X1s21qj95LbvdOEar/XO02Xuzqv1gYyN1A3P5cl4oAQ/3DRw3PyXAXZDxcOZ9gr8ZZmDhOKWhTl6b96dueammPl6g523tbkNehEmDgbtBbsb7ah3INRDWC+P1Xze+Q8Zuw==",
+                                            "length": 2432
+                                        },
+                                        "fingerprint_sha256": "dadf500adb79ca6b807837cc4e6c543f43ff451cd5a7669fbb22557764af114c"
+                                    },
+                                    "extensions": {
+                                        "key_usage": {
+                                            "certificate_sign": true,
+                                            "crl_sign": true,
+                                            "value": 96
+                                        },
+                                        "basic_constraints": {
+                                            "is_ca": true
+                                        },
+                                        "subject_key_id": "f5ea848c8a31da2393309e9678b18c61aab29418"
+                                    },
+                                    "signature": {
+                                        "signature_algorithm": {
+                                            "name": "SHA256-RSA",
+                                            "oid": "1.2.840.113549.1.1.11"
+                                        },
+                                        "value": "lWEruVxO/tHeLNWwa+nyumOu3zEUyi6ptNVUY2ZASO/zq25ZN7OB8In2vyYNDXBV64P0rg5Rmqcg2RPI4cRAY44LdDnbVQesopyWCNY3ZMzcfc+9cLv+8HxQ3Mf2ArCPYkoneaCzU7VqfZaHOZEvIPgTbBtceknFcQTzfyHm3R6TTeCTEwaj34FEzr8l3hvn/db2khDru5dGJ5LUjSf4liFkBSk7JePuTEzYh4ZcXvOhjjxqrCMhI+8QureWK3iqz7FARMjKeCaNpiGPQmE6fvRvDCOPyBO9MoiSRCqBg7u9kHnY5PunMkSrx/ueE3py5NM5amEeFqDJH4+uqj8CTVQQrUjfDVXRfOF0Bt+4clBuNqX+o4IBbsHJp2KRp0XIowXKXYPO2+DVKkVTx134Qw==",
+                                        "valid": true,
+                                        "self_signed": true
+                                    },
+                                    "fingerprint_md5": "2d0228d7b521dfac427ed6f4c6949ebe",
+                                    "fingerprint_sha1": "714aa8473a8b839d85a84e03282f3883d070b3e4",
+                                    "fingerprint_sha256": "07d984ab366498078dd485bc908057af7aeebf7cabe2936f780b5ca40f34d5da",
+                                    "tbs_noct_fingerprint": "1a7d15d89c67af9e4b8e30dc12934513d7e926f86c935ed60c9da83db18cdb47",
+                                    "spki_subject_fingerprint": "c74acf3e4201a303471686a024b362bfa29c1bb2b495a1501276aabb119f7ce8",
+                                    "tbs_fingerprint": "1a7d15d89c67af9e4b8e30dc12934513d7e926f86c935ed60c9da83db18cdb47",
+                                    "validation_level": "unknown",
+                                    "names": [
+                                        "www.ami.com"
+                                    ],
+                                    "redacted": false
+                                }
+                            }
+                        ],
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    }
+                }
+            },
+            "timestamp": "2026-06-21T10:32:03+02:00"
+        }
+    }
+}

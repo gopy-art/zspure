@@ -1,0 +1,19 @@
+{
+    "ip": "118.122.8.224",
+    "port": 688,
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Belkin Network USB Hub Ver (WEAAwOYa) FTP server.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "a11da37eef507e3a74e6fddd66bdd5dce13dad076116e40205c67d4f577754ab"
+            },
+            "timestamp": "2026-06-30T13:09:38+01:00"
+        }
+    }
+}

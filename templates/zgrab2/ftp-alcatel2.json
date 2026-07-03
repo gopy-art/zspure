@@ -1,0 +1,18 @@
+{
+    "ip": "202.123.179.70",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220-TiMOS-C-10.0.R5 cpm/hops ALCATEL SR 7750 Copyright (c) 2000-2012 Alcatel-Lucent.\r\n220-All rights reserved. All use subject to applicable license agreements.\r\n220-Built on Thu Sep 27 20:20:39 PDT 2012 by builder in /rel10.0/b1/R5/panos/main\r\n220-\r\n220 FTP server ready\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "4850cfb1ee9d14799735680f845af3bf2ce8db1906603585d9f718c82d7c47ee"
+            },
+            "timestamp": "2026-06-30T10:01:59+01:00"
+        }
+    }
+}

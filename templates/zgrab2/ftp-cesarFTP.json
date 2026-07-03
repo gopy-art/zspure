@@ -1,0 +1,18 @@
+{
+    "ip": "212.127.88.130",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 CesarFTP 0.99g Server Welcome !\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "1095662b139a26c7f3ea32c34057c97ec221171b0a4163f156d1f45b2b17e1cb"
+            },
+            "timestamp": "2026-06-30T15:19:50+01:00"
+        }
+    }
+}

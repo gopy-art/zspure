@@ -1,0 +1,128 @@
+{
+    "data": {
+        "tls": {
+            "protocol": "tls",
+            "result": {
+                "handshake_log": {
+                    "server_certificates": {
+                        "certificate": {
+                            "parsed": {
+                                "extensions": {},
+                                "fingerprint_md5": "efc239e9f1ce7bc436854c00a1c73b47",
+                                "fingerprint_sha1": "a1f44483338db7a3fa9f262898aba00dbf4ec639",
+                                "fingerprint_sha256": "cb1f967db943b8e7e98708f7fc8fa6e3796938e0cb709eb3585283275661ae1d",
+                                "issuer": {
+                                    "common_name": [
+                                        "localhost"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "organization": [
+                                        "Comtrol HPD"
+                                    ],
+                                    "province": [
+                                        "MN"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=MN, O=Comtrol HPD, CN=localhost",
+                                "redacted": false,
+                                "serial_number": "9920599533497516067",
+                                "signature": {
+                                    "self_signed": true,
+                                    "signature_algorithm": {
+                                        "name": "SHA256-RSA",
+                                        "oid": "1.2.840.113549.1.1.11"
+                                    },
+                                    "valid": true,
+                                    "value": "cF/sd1QGvMY4YRytNWhAj1RYD5i1xxPiJNIrf43qpu9AFhJaqvQN6R90asQ1F4cjc5MVCInSuHh85YobUTQLGa258QR1t76pScqAgr3SJnzMX8ZEBSRiJ8pPuZEkEKbtWGVaIMDfceBtBfwo9l9MeqlErGxuwanqERpOkTRxdt4uPZkdXmpqnZ1DqhjXxa8+c8puWBwP7BiT7q0fIIaOyzkT6FrGL1U59MSVy5rlDcmcwp5Ja28IlyZxSTAOltvGBACO8B7Y1tn/XKPdQ9bmhDgcDD8nQSoE0pyDlwCJ4dVJZgCD73P2pzVP/2zQVYzwU3p43GvL6lBiNhrJJWzH+Q=="
+                                },
+                                "signature_algorithm": {
+                                    "name": "SHA256-RSA",
+                                    "oid": "1.2.840.113549.1.1.11"
+                                },
+                                "spki_subject_fingerprint": "a6462080fcbeed79982d645cbd65de6f1984513fbdb44c968a330781724c35fe",
+                                "subject": {
+                                    "common_name": [
+                                        "localhost"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "organization": [
+                                        "Comtrol HPD"
+                                    ],
+                                    "province": [
+                                        "MN"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=MN, O=Comtrol HPD, CN=localhost",
+                                "subject_key_info": {
+                                    "fingerprint_sha256": "2ea0bdbc96c4dbddd4ec70bd899790529aaab7c86bd050d3ce6fb0fee5f89559",
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "length": 2048,
+                                        "modulus": "soqq5aiTRfdSzoaGqLhNNqUDFyVnhzx4RyHg7H2Vd9joEJWLLzG19mH2C/8wcE4EIxIJeh3ginguZc4PdPGwT1Spo0MlFPbSHp/OFhWCRhvfAgSWTlTuchDJtL0uvlZuFeFXGANcmLNvIX+OQ6tV9zRlcgR6y/FRDtXAOM0wkh/1YjH60nVgWqJNGFkW1Cx6FVbSkPnFci/YbEXjKUpBQRRYMl8/O3aMVZUxEOPIDsXs8nmSZuFL+5cb6/VtHyYbKgD8YZc1bkqxWdkYCPEr59X5Xxlyz3qRalat9dQjgQHGSyjZZwyZlsoQ6SKDVvlnZ3GKQW19UWmJMgV6iJMt5w=="
+                                    }
+                                },
+                                "tbs_fingerprint": "60bfc5939cc244c55cb51404ee2814f1a73c7d0f74e4ebe9bac07d0dcf1134c8",
+                                "tbs_noct_fingerprint": "134c88ac5d6b80b637cc9e5b62e8d2754201faddc7260f9a8077f9abf5ec053b",
+                                "validation_level": "unknown",
+                                "validity": {
+                                    "end": "2038-11-05T04:30:33Z",
+                                    "length": 630720000,
+                                    "start": "2018-11-10T04:30:33Z"
+                                },
+                                "version": 1
+                            }
+                        },
+                        "validation": {
+                            "browser_error": "x509: failed to load system roots and no roots provided",
+                            "browser_trusted": false
+                        }
+                    },
+                    "server_hello": {
+                        "cipher_suite": {
+                            "hex": "0x1303",
+                            "name": "TLS_CHACHA20_POLY1305_SHA256",
+                            "value": 4867
+                        },
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            43,
+                            51
+                        ],
+                        "heartbeat": false,
+                        "key_share": {
+                            "hex": "0x001D",
+                            "name": "x25519",
+                            "value": 29
+                        },
+                        "ocsp_stapling": false,
+                        "random": "vZYndtrc0GlQkGzQznUk2XmQo9h8uWJyTG8WrVhOOZU=",
+                        "secure_renegotiation": false,
+                        "session_id": "1UZiQKbDZqxPE4QKnl9QaPaCT9I+fAu6FtO9ReSqlGg=",
+                        "supported_versions": {
+                            "selected_version": {
+                                "name": "TLSv1.3",
+                                "value": 772
+                            }
+                        },
+                        "ticket": false,
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        }
+                    }
+                }
+            },
+            "status": "success",
+            "timestamp": "2026-06-27T11:54:13+01:00"
+        }
+    },
+    "ip": "69.160.188.54",
+    "port": 4433
+}

@@ -1,0 +1,18 @@
+{
+    "ip": "80.181.222.194",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Willkomen auf Ihrer Dreambox.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "43c52eda446fb14b3e2e06e00feb13a42802863511a23a294a01ad32e70d4b7e"
+            },
+            "timestamp": "2026-06-30T17:00:40+01:00"
+        }
+    }
+}

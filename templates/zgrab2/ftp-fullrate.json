@@ -1,0 +1,18 @@
+{
+    "ip": "94.105.123.119",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Fullrate FTP version 1.0 ready at Tue Apr 25 05:44:17 2023\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "ae2b9f3b1b5bc34d4e27592a2238f8070f7ef54632547658157e20743b4fc72d"
+            },
+            "timestamp": "2026-06-30T19:10:04+01:00"
+        }
+    }
+}

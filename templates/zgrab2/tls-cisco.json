@@ -1,0 +1,153 @@
+{
+    "ip": "71.185.30.200",
+    "data": {
+        "tls": {
+            "status": "success",
+            "protocol": "tls",
+            "port": 8088,
+            "result": {
+                "handshake_log": {
+                    "server_hello": {
+                        "version": {
+                            "name": "TLSv1.2",
+                            "value": 771
+                        },
+                        "random": "nsoJ148NgerpzYMk0u1iiLUXFkU7CUrw+Fe98xaJehU=",
+                        "session_id": "MFLXAezw41u8vVAiFcgFk0XXR2EYFaaG+aVX/1pCPYU=",
+                        "cipher_suite": {
+                            "hex": "0x009C",
+                            "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+                            "value": 156
+                        },
+                        "compression_method": {
+                            "hex": "0x00",
+                            "name": "NULL",
+                            "value": 0
+                        },
+                        "ocsp_stapling": false,
+                        "ticket": false,
+                        "secure_renegotiation": false,
+                        "heartbeat": false,
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ]
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "raw": "MIICvDCCAiWgAwIBAgIJAMVP9WLb1huyMA0GCSqGSIb3DQEBBQUAMHcxHDAaBgNVBAoME0Npc2NvIFN5c3RlbXMsIEluYy4xHTAbBgNVBAsMFENpc2NvIFNtYWxsIEJ1c2luZXNzMRUwEwYDVQQDDAwxOTIuMTY4LjMyLjExITAfBgNVBAUTGFBJRDpDaXNjbyBTTjpETkkyMDE3MjEwNDAeFw0xODA4MjkxMzQyNTRaFw0zODA4MjQxMzQyNTRaMHcxHDAaBgNVBAoME0Npc2NvIFN5c3RlbXMsIEluYy4xHTAbBgNVBAsMFENpc2NvIFNtYWxsIEJ1c2luZXNzMRUwEwYDVQQDDAwxOTIuMTY4LjMyLjExITAfBgNVBAUTGFBJRDpDaXNjbyBTTjpETkkyMDE3MjEwNDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3rOxPKEy/FSLI2s0iF+XEDif4exqAI0omFbsDA9AfXkpKZ/tDjipgDDtrtGn0vfCdkW+nJBuRmvBFPMqidDusOvHZSRxIOMKF28yTzGdufg2hINbykrukxK9gimYvzpR05vywFsZ5ip8S/ZTijn3hKgXZk8dOAkV2+XDxG9nxv8CAwEAAaNQME4wHQYDVR0OBBYEFNj92M2Ph0Eh4JsAngEjFhn1MQkpMB8GA1UdIwQYMBaAFNj92M2Ph0Eh4JsAngEjFhn1MQkpMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAiaqkkhSIh8f31joBA9OGc8vFTJLpK8AI/d3fH+TH5bq7lH/9tw1LHgQ2K/7mxjpHDKvszC7y+f5Z6e9ass8lM1GFuGgCrwXo4TIKD4dKwvj8rjpPDcGeCufpkIRRuQJyh635pyd1oCx5QKfWKxI/6Mwv7kcBPj+PztcYAN97/2U=",
+                            "parsed": {
+                                "version": 3,
+                                "serial_number": "14217852353575787442",
+                                "signature_algorithm": {
+                                    "name": "SHA1-RSA",
+                                    "oid": "1.2.840.113549.1.1.5"
+                                },
+                                "issuer": {
+                                    "common_name": [
+                                        "192.168.32.1"
+                                    ],
+                                    "serial_number": [
+                                        "PID:Cisco SN:DNI20172104"
+                                    ],
+                                    "organization": [
+                                        "Cisco Systems, Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Cisco Small Business"
+                                    ]
+                                },
+                                "issuer_dn": "O=Cisco Systems\\, Inc., OU=Cisco Small Business, CN=192.168.32.1, serialNumber=PID:Cisco SN:DNI20172104",
+                                "validity": {
+                                    "start": "2018-08-29T13:42:54Z",
+                                    "end": "2038-08-24T13:42:54Z",
+                                    "length": 630720000
+                                },
+                                "subject": {
+                                    "common_name": [
+                                        "192.168.32.1"
+                                    ],
+                                    "serial_number": [
+                                        "PID:Cisco SN:DNI20172104"
+                                    ],
+                                    "organization": [
+                                        "Cisco Systems, Inc."
+                                    ],
+                                    "organizational_unit": [
+                                        "Cisco Small Business"
+                                    ]
+                                },
+                                "subject_dn": "O=Cisco Systems\\, Inc., OU=Cisco Small Business, CN=192.168.32.1, serialNumber=PID:Cisco SN:DNI20172104",
+                                "subject_key_info": {
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "modulus": "3rOxPKEy/FSLI2s0iF+XEDif4exqAI0omFbsDA9AfXkpKZ/tDjipgDDtrtGn0vfCdkW+nJBuRmvBFPMqidDusOvHZSRxIOMKF28yTzGdufg2hINbykrukxK9gimYvzpR05vywFsZ5ip8S/ZTijn3hKgXZk8dOAkV2+XDxG9nxv8=",
+                                        "length": 1024
+                                    },
+                                    "fingerprint_sha256": "f0ac7e765aa5a2c674c2dde9d17eb8f924ffb516c0395c2ee7dfb17430271225"
+                                },
+                                "extensions": {
+                                    "basic_constraints": {
+                                        "is_ca": true
+                                    },
+                                    "authority_key_id": "d8fdd8cd8f874121e09b009e01231619f5310929",
+                                    "subject_key_id": "d8fdd8cd8f874121e09b009e01231619f5310929"
+                                },
+                                "signature": {
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "value": "iaqkkhSIh8f31joBA9OGc8vFTJLpK8AI/d3fH+TH5bq7lH/9tw1LHgQ2K/7mxjpHDKvszC7y+f5Z6e9ass8lM1GFuGgCrwXo4TIKD4dKwvj8rjpPDcGeCufpkIRRuQJyh635pyd1oCx5QKfWKxI/6Mwv7kcBPj+PztcYAN97/2U=",
+                                    "valid": true,
+                                    "self_signed": true
+                                },
+                                "fingerprint_md5": "68a4d71af75106162927f197136d8a3e",
+                                "fingerprint_sha1": "1ee53a7125114ee7526b33860d271f35ed21fb8e",
+                                "fingerprint_sha256": "18468bb465cb61f3f6e670a9d22e6532bb1156264d48a764bb75fdf2a2617756",
+                                "tbs_noct_fingerprint": "8d5af05c018d12b897a710a76b21b3799103e9484eae3e53f6ccae958db545db",
+                                "spki_subject_fingerprint": "081930ae2927e734915bcdfe595f0e83d8a18d8c4561cab6a6a912bb18c341de",
+                                "tbs_fingerprint": "8d5af05c018d12b897a710a76b21b3799103e9484eae3e53f6ccae958db545db",
+                                "validation_level": "unknown",
+                                "names": [
+                                    "192.168.32.1"
+                                ],
+                                "redacted": false
+                            }
+                        },
+                        "validation": {
+                            "browser_trusted": false,
+                            "browser_error": "x509: certificate is self-signed and not a trusted root"
+                        }
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "length": 128,
+                            "encrypted_pre_master_secret": "p4F0O/IhSDgH+KYuJ50rLIqOIyQIS+Y0evMpgsMWkoB96vojFY+s2+tnE4lOreXCCHfA3dDNRJzT0iXVFQqqewVmS5NTAS8bLNADST8eNB0ywrebNwy9464tHV7oRU4qQFKHhcCzzko/oaJpLYdAYlYRG/nZhJ0rVkrl6PJJj/Q="
+                        }
+                    },
+                    "client_finished": {
+                        "verify_data": "BpKC5h1Hkma/3usO"
+                    },
+                    "server_finished": {
+                        "verify_data": "AV74oQwuL3y0MwKY"
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "value": "AlPiKCtVTLjwe1v61NffoxGKwcV00pthe/K7ps9iaFLyLyNGsoSTm1YrEUpTuk74",
+                            "length": 48
+                        },
+                        "pre_master_secret": {
+                            "value": "AwOJ8pKhmeygTA8rLmysCJW+PNCzRSNAV3Ic7eTziETGdc+WXsIKlldccrR0gOI5",
+                            "length": 48
+                        }
+                    }
+                }
+            },
+            "timestamp": "2026-06-21T11:07:04+02:00"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "ip": "162.191.227.171",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220  ADH FTP SERVER READY TYPE HELP FOR HELP \r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "e92b5cb1ecb767b6dff3343576b9bd7c67831215121d92f7d920043ca2f2cf29"
+            },
+            "timestamp": "2026-06-30T17:27:05+01:00"
+        }
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "data": {
+        "tls": {
+            "protocol": "tls",
+            "result": {
+                "handshake_log": {
+                    "client_finished": {
+                        "verify_data": "yqkUahmeH2b+ejgu"
+                    },
+                    "client_key_exchange": {
+                        "rsa_params": {
+                            "encrypted_pre_master_secret": "SQKh97aw1QsR2cRTCW8K8shgu3tVR8ozzdthiiNZ6Nm5WYRFG13rPGXx+GqnK46/KE0tFa6dKNLAraM5pBiEtXWO9rU02h8YfwPK7WMQMAFPjEPK4Ie7+WPI2gJGfjwSG1zXr+vMoYwjSqI9r+aPktNsb4Z+kYKy2p03GmZfBfZFqkcO1qnLVciP/yVm+CyH85h458YJ7k5uwFY/6Y4HC8o4pvx4Bi2P1kw8LQ2hhLL5FP/DSCL2EI0kKr6IOKkphsuyAHvY4ZbQ+lUcHsRVp1fWrxercRof7N/YXx8YwJg9RFoaBUQHuVdB84USO31mmfpdqlkxwFY8/usqTd34jA==",
+                            "length": 256
+                        }
+                    },
+                    "key_material": {
+                        "master_secret": {
+                            "length": 48,
+                            "value": "ZhWlT0SEYpVIhHeogv7nyfw8NUCxlQ787AfQvuoQ+bUipqbEzRlQ5TSvZj8wGm6t"
+                        },
+                        "pre_master_secret": {
+                            "length": 48,
+                            "value": "AwOvtBWk4mhbC6QiO0L/1a8rIYrU4Rzwy2HZKe2nJlLUE1BhVFYWx6fjv1qYyG2i"
+                        }
+                    },
+                    "server_certificates": {
+                        "certificate": {
+                            "parsed": {
+                                "extensions": {},
+                                "fingerprint_md5": "a7a2dddf7b640403075cb22838382e97",
+                                "fingerprint_sha1": "34180db635db0d151300b52be40974622a9b4172",
+                                "fingerprint_sha256": "7cdd212cca7b7a1a9f48914c2007d3955c67acbc247845e8785246da81c1a61c",
+                                "issuer": {
+                                    "common_name": [
+                                        "210.11.133.23",
+                                        "OEM-5EVAP15NUU0"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Southboro"
+                                    ],
+                                    "organization": [
+                                        "EMC"
+                                    ],
+                                    "organizational_unit": [
+                                        "CLARiiON"
+                                    ],
+                                    "province": [
+                                        "MA"
+                                    ]
+                                },
+                                "issuer_dn": "C=US, ST=MA, L=Southboro, O=EMC, OU=CLARiiON, CN=210.11.133.23, CN=OEM-5EVAP15NUU0",
+                                "redacted": false,
+                                "serial_number": "0",
+                                "signature": {
+                                    "self_signed": true,
+                                    "signature_algorithm": {
+                                        "name": "SHA1-RSA",
+                                        "oid": "1.2.840.113549.1.1.5"
+                                    },
+                                    "valid": true,
+                                    "value": "NW0OQ2kJ+kRF+ox8cjanjZetQ2u1wadvydpQ0V4WmVVvBQyidtKgLdYZstQl91Ke3XJStPZAxdUnAM3Rr5tQdMKIj0MbKK40Q9IoH1n0lYzDrhYK5tjWLck0EXSj6XS3/bjMDlM0VroSEOWmkXeKF7wFkkt0zyEBY2OdC940gduWraaHcXnOHV35V1cNLg42ug06uNPvG63m9VNnDITlYOsFUMZtPOBGBABgr99TKlv405Sei3YJhRyE8Khy36oHS7YOzqLZgdiJNc3dA+w2jo3tpl3un40wmdTR65TNMAiiza/Na8p9aAhFdiVUhZ7+eXx1QTPm7ii+OVB/huzM8g=="
+                                },
+                                "signature_algorithm": {
+                                    "name": "SHA1-RSA",
+                                    "oid": "1.2.840.113549.1.1.5"
+                                },
+                                "spki_subject_fingerprint": "0ba539669c30a9d9a89b0d5526c54225cbf0241aa5258d1d1e8bcff17dee8d07",
+                                "subject": {
+                                    "common_name": [
+                                        "210.11.133.23",
+                                        "OEM-5EVAP15NUU0"
+                                    ],
+                                    "country": [
+                                        "US"
+                                    ],
+                                    "locality": [
+                                        "Southboro"
+                                    ],
+                                    "organization": [
+                                        "EMC"
+                                    ],
+                                    "organizational_unit": [
+                                        "CLARiiON"
+                                    ],
+                                    "province": [
+                                        "MA"
+                                    ]
+                                },
+                                "subject_dn": "C=US, ST=MA, L=Southboro, O=EMC, OU=CLARiiON, CN=210.11.133.23, CN=OEM-5EVAP15NUU0",
+                                "subject_key_info": {
+                                    "fingerprint_sha256": "0768f4ea659172694ef6fe8b9434de1d07c7e6247e89b006f00544ec09d719ee",
+                                    "key_algorithm": {
+                                        "name": "RSA"
+                                    },
+                                    "rsa_public_key": {
+                                        "exponent": 65537,
+                                        "length": 2048,
+                                        "modulus": "9CxoFqvwWk4uOazZNsmZuClur20sPx6DDb7fc21AdWKAqMh45c/CUbGKwbAE0kEldb2tBhhA9t8XvcbT7s2gfbnKVQXOxH/07x4tcTu7Ra2vi3B6rxefdo8yV1NMnkc1hh06I2SbAZx/hzu5CeqEm5pVAp9UeVL7VPFlYYRfrWha/5/kOMPcwR7irFbzwbXHRV+7ZjFuQoWfI9/e+kqWN0egURBK9eTcANvujELyzMv2PIQImy/LuYXMEfRiCX9l/wPpmgKJ7dlDnAi2iqzhBur2uvqywy0VRkiWKfSwKN1o8084CuGctv7SgbSWssrQikuLjrh7a9qCxYdr3Eayyw=="
+                                    }
+                                },
+                                "tbs_fingerprint": "62a5d1817874086552b6252a3fcd3b3c7381e5d680d39852268adb226989e44d",
+                                "tbs_noct_fingerprint": "b03710f16392afe84dbe9d738a01dbfb32bf11046397167b804f7a81127000c5",
+                                "validation_level": "unknown",
+                                "validity": {
+                                    "end": "2027-11-20T22:57:29Z",
+                                    "length": 504921600,
+                                    "start": "2011-11-20T22:57:29Z"
+                                },
+                                "version": 1
+                            }
+                        },
+                        "validation": {
+                            "browser_error": "x509: failed to load system roots and no roots provided",
+                            "browser_trusted": false
+                        }
+                    },
+                    "server_finished": {
+                        "verify_data": "aq7VR5LUxrlEAiMi"
+                    },
+                    "server_hello": {
+                        "cipher_suite": {
+                            "hex": "0x002F",
+                            "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+                            "value": 47
+                        },
+                        "extended_master_secret": false,
+                        "extension_identifiers": [
+                            65281
+                        ],
+                        "heartbeat": false,
+                        "ocsp_stapling": false,
+                        "random": "aj/hLyItkEXaJXYTqh28c6/IfRPWZBOZaGF0f5Sm2RY=",
+                        "secure_renegotiation": false,
+                        "session_id": "foLEXlwlxeM7y0vKyEPTdxMjXWzu8nfBEx/616mIHIw=",
+                        "ticket": false,
+                        "version": {
+                            "name": "TLSv1.0",
+                            "value": 769
+                        }
+                    }
+                }
+            },
+            "status": "success",
+            "timestamp": "2026-06-27T15:12:07+01:00"
+        }
+    },
+    "ip": "210.11.133.23",
+    "port": 443
+}

@@ -1,0 +1,1 @@
+{"ip":"196.188.40.57","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 Ftp firmware update utility\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"cfd8f09afe004b650a15f0093dc1e2540854c579e66adbf391f46de571b4cbfb"},"timestamp":"2026-07-01T08:50:42+02:00"}}}

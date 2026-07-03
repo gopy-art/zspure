@@ -1,0 +1,18 @@
+{
+    "ip": "77.76.128.254",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220-Cerberus FTP Server Personal Edition\r\n220-UNREGISTERED\r\n220-Welcome to Cerberus FTP Server\r\n220 Created by Grant Averett\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "6cdab2ff26420330b69a21f5d03485c0f6803fd48f07260cdceca29c47aff146"
+            },
+            "timestamp": "2026-06-30T14:17:14+01:00"
+        }
+    }
+}

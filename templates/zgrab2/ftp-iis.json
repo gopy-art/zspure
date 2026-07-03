@@ -1,0 +1,1 @@
+{"ip":"82.200.194.134","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 Microsoft FTP Service\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"1330121f692d2b691ce187db6f11751c54549a97efc4a317e1ab240e6229a97d"},"timestamp":"2026-07-01T09:22:46+02:00"}}}
