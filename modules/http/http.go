@@ -2,14 +2,30 @@ package http
 
 import (
 	acealarmmanager "zspure/modules/http/ACE_Alarm_Manager"
+	agranatemweb "zspure/modules/http/Agranat_Emweb"
+	allegro "zspure/modules/http/Allegro"
 	apacheserver "zspure/modules/http/Apache_Server"
+	apc "zspure/modules/http/Apc"
 	atera "zspure/modules/http/Atera"
+	avtech "zspure/modules/http/Avtech"
+	axis "zspure/modules/http/Axis"
+	bbnetworkcamera "zspure/modules/http/Bb_Network_Camera"
+	bigip "zspure/modules/http/Bigip"
+	boa "zspure/modules/http/Boa"
+	bomgar "zspure/modules/http/Bomgar"
+	brother "zspure/modules/http/Brother"
 	modultrovis "zspure/modules/http/CPU_Modul_TROVIS"
+	canon "zspure/modules/http/Canon"
+	cherokee "zspure/modules/http/Cherokee"
 	ciscowlc "zspure/modules/http/CiscoWLC"
 	ciscoasa "zspure/modules/http/Cisco_ASA"
 	ciscowap121 "zspure/modules/http/Cisco_WAP121"
+	ciscoios "zspure/modules/http/Cisco_ios"
+	computec "zspure/modules/http/Computec"
 	dlink "zspure/modules/http/D_Link"
 	dahua "zspure/modules/http/Dahua"
+	// dell "zspure/modules/http/Dell"
+	digione "zspure/modules/http/Digi_One"
 	dixellgadir "zspure/modules/http/Dixell_Gadir"
 	eltex "zspure/modules/http/Eltex"
 	exporter "zspure/modules/http/Exporter"
@@ -73,6 +89,23 @@ import (
 
 func NewHTTP() []model.ModuleMethods {
 	return []model.ModuleMethods{
+		&agranatemweb.AgranatEmweb{},
+		&apc.Apc{},
+		&allegro.Allegro{},
+		&avtech.Avtech{},
+		&axis.Axis{},
+		&bigip.Bigip{},
+		&bbnetworkcamera.BbNetworkCamera{},
+		&boa.Boa{},
+		&bomgar.Bomgar{},
+		&brother.Brother{},
+		&canon.Canon{},
+		&cherokee.Cherokee{},
+		&computec.Computec{},
+		// &dell.Dell{},
+		&digione.DigiOne{},
+		&ciscoios.CiscoIos{},
+		&netgear.WebSmartSwitch{},
 		&Mikrotik.Mikrotik{},
 		&pfsense.Pfsense{},
 		&ciscowap121.CiscoWAP121{},
