@@ -1,0 +1,57 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 81,
+            "result": {
+                "response": {
+                    "status_line": "401 Unauthorized",
+                    "status_code": 401,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "server": [
+                            "Nginx"
+                        ],
+                        "www_authenticate": [
+                            "Basic realm=\"Digi One SP\""
+                        ]
+                    },
+                    "body": "\u003cHTML\u003e\u003c!-- **** NOTE **** --\u003e\n\u003c!-- This HTML file was generated from an XML file by the same name and transformed --\u003e\n\u003c!-- with the msgboxtransform.xsl stylesheet. Please do not modify this file directly. Instead --\u003e\n\u003c!-- modify the original XML and/or XSL files. --\u003e\n\u003cHEAD\u003e\n\u003cMETA http-equiv=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\"\u003e\n\u003cMETA HTTP-EQUIV=\"pragma\" CONTENT=\"no-cache\"\u003e\n\u003cMETA HTTP-EQUIV=\"cache-control\" CONTENT=\"no-cache\"\u003e\n\u003cMETA HTTP-EQUIV=\"expires\" CONTENT=\"0\"\u003e\n\u003cTITLE\u003e\nDigi One SP\u0026nbsp;Configuration and Management\n\u003c/TITLE\u003e\n\u003cLINK href=\"/stylesheet.css\" rel=\"stylesheet\"\u003e\n\u003c/HEAD\u003e\n\u003cBODY onload=\"\" onunload=\"\"\u003e\n\u003cTABLE WIDTH=\"100%\" BORDER=\"0\" CELLPADDING=\"2\" CELLSPACING=\"2\"\u003e\u003cTR\u003e\n\u003cTD class=\"headertop\" WIDTH=\"200\" HEIGHT=\"100\" ALIGN=middle\u003e\n\u003ca target=\"_blank\" href=\"http://www.digi.com/\"\u003e\n\u003cIMG BORDER=\"0\" WIDTH=\"75\" HEIGHT=\"68\" src=\"/img/logo.gif\"\u003e\n\u003c/A\u003e\u003c/TD\u003e\n\n\u003cTD class=\"headertop\" ALIGN=left VALIGN=middle\u003e\nDigi One SP\u0026nbsp;Configuration and Management\n\u003cBR\u003e\u003cHR\u003e\n\u003c/TD\u003e\n\u003c/TR\u003e\n\u003c/TABLE\u003e\n\u003cTABLE WIDTH=\"100%\" BORDER=\"0\" CELLPADDING=\"2\" CELLSPACING=\"2\"\u003e\u003cTR\u003e\u003cTD VALIGN=middle ALIGN=center\u003e\u003cTABLE borderColorDark=\"darkblue\" borderColorLight=\"darkblue\" BORDER=\"1\" CELLPADDING=\"4\" CELLSPACING=\"0\"\u003e\n\u003cTR\u003e\u003cTD class=\"contentheader\" nowrap\u003e\nServer Error - Restricted Page\n\u003c/TD\u003e\n\u003c/TR\u003e\n\u003cTR\u003e\u003cTD WIDTH=\"100%\" VALIGN=top\u003e\u003cTABLE WIDTH=\"100%\" BORDER=\"0\" CELLPADDING=\"4\" CELLSPACING=\"0\"\u003e\u003cTR\u003e\u003cTD\u003e\u003c!-- **************** Start page specific content... **************** --\u003e\n\u003cTABLE class=\"textmain\" CELLSPACING=\"0\" CELLPADDING=\"2\" BORDER=\"0\"\u003e\n\u003cTR\u003e\n\u003cTD ALIGN=left\u003e\nAn error occurred while trying to access the\u0026nbsp;\nDigi One SP.\n\u003cBR/\u003e\n\u003cBR/\u003e\nThe following reasons may help to resolve this problem:\u003cBR/\u003e\n\u003cBR/\u003e\n\u003cLI\u003e\nThe specified username or password is incorrect. Please check the username and password and \u003cA HREF=\"/index.htm\"\u003etry again\u003c/A\u003e.\n\u003cBR/\u003e\u003cBR/\u003e\n\u003c/LI\u003e\n\u003cLI\u003e\nThe specified web page is restricted for the logged in user. Please check the access of\nthe web page and \u003cA HREF=\"/index.htm\"\u003etry again\u003c/A\u003e\u0026nbsp;or logout and \u003cA HREF=\"/index.htm\"\u003elog back in\u003c/A\u003e\u0026nbsp;as a different user.\n\u003cBR/\u003e\u003cBR/\u003e\n\u003c/LI\u003e\n\u003cLI\u003e\nThe device is in an unknown state. Please manually reboot the device and then\n\u003cA HREF=\"/index.htm\"\u003elog back in\u003c/A\u003e\u0026nbsp;to try again. If the problem continues to persist, please contact tech support for more information.\n\u003c/LI\u003e\n\u003c/TD\u003e\n\u003c/TR\u003e\n\u003c/TABLE\u003e\n\u003c!-- **************** ...End page specific content **************** --\u003e\n\u003c/TD\u003e\n\u003c/TR\u003e\n\u003c/TABLE\u003e\n\u003c/TD\u003e\n\u003c/TR\u003e\n\u003c/TABLE\u003e\n\u003c/TD\u003e\n\u003c/TR\u003e\n\u003c/TABLE\u003e\n\u003cTABLE CELLSPACING=\"0\" CELLPADDING=\"0\" BORDER=\"0\" WIDTH=\"100%\"\u003e\u003cTR\u003e\u003cTD class=\"copyright\" WIDTH=\"100%\" ALIGN=center\u003e\n\u003cBR\u003e\u003cBR\u003eCopyright \u0026#169; 1996-2009 Digi International Inc. All rights reserved.\u003cBR\u003e\u003c/TD\u003e\n\u003c/TR\u003e\n\u003c/TABLE\u003e\n\n\u003c/BODY\u003e\n\u003c/HTML\u003e\n",
+                    "body_sha256": "1f4ae141fdf9cdd70b21131cef1ed08994303a6e3682e89df93ba24ce10a84ae",
+                    "content_length": -1,
+                    "transfer_encoding": [
+                        "chunked"
+                    ],
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:81",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:81"
+                    }
+                }
+            },
+            "timestamp": "2026-07-03T15:03:08Z"
+        }
+    }
+}

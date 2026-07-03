@@ -1,11 +1,11 @@
 {
-    "ip": "107.214.108.193",
+    "ip": "127.0.0.1",
     "data": {
         "ftp": {
             "status": "success",
             "protocol": "ftp",
             "result": {
-                "banner": "220 bftpd 4.4 at 107.214.108.193 ready.\r\n",
+                "banner": "220 bftpd 4.4 at 127.0.0.1 ready.\r\n",
                 "auth_tls": "",
                 "auth_ssl": "",
                 "implicit_tls": false,

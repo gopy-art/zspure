@@ -1,1 +1,18 @@
-{"ip":"184.169.51.109","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 Network-Camera FTP server (GNU inetutils 1.4.2) ready.\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"143acc9933cc39e624716718953489c75fa53529388d9e976dac1dba63f35e28"},"timestamp":"2026-07-01T07:59:01+02:00"}}}
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 Network-Camera FTP server (GNU inetutils 1.4.2) ready.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "143acc9933cc39e624716718953489c75fa53529388d9e976dac1dba63f35e28"
+            },
+            "timestamp": "2026-07-01T07:59:01+02:00"
+        }
+    }
+}

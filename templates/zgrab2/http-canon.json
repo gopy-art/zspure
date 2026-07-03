@@ -1,0 +1,54 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 631,
+            "result": {
+                "response": {
+                    "status_line": "404 Not Found",
+                    "status_code": 404,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_length": [
+                            "0"
+                        ],
+                        "content_type": [
+                            "application/ipp"
+                        ],
+                        "date": [
+                            "Fri, 03 Jul 2026 00:53:52 GMT"
+                        ],
+                        "server": [
+                            "CANON HTTP Server"
+                        ]
+                    },
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:631",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:631"
+                    }
+                }
+            },
+            "timestamp": "2026-07-03T13:19:25Z"
+        }
+    }
+}

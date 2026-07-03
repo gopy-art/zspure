@@ -1,1 +1,18 @@
-{"ip":"211.116.122.16","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 FTP Version 1.23 on EPS2-100\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"3701c0ef526e7938b72db2cfc9f0c0f1d5279c566c497c5b60765a2d2ba42525"},"timestamp":"2026-07-01T10:32:10+02:00"}}}
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 FTP Version 1.23 on EPS2-100\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "3701c0ef526e7938b72db2cfc9f0c0f1d5279c566c497c5b60765a2d2ba42525"
+            },
+            "timestamp": "2026-07-01T10:32:10+02:00"
+        }
+    }
+}

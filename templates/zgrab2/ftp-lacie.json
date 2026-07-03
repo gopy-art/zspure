@@ -1,1 +1,18 @@
-{"ip":"51.186.106.222","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220 LaCie-CloudBox FTP Server [192.168.0.54]\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"496dc25291983bddd103d3cdee0fa7e01bfa78207f82de2044c3f0c9db6d8134"},"timestamp":"2026-07-01T12:34:42+02:00"}}}
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220 LaCie-CloudBox FTP Server [192.168.0.54]\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "496dc25291983bddd103d3cdee0fa7e01bfa78207f82de2044c3f0c9db6d8134"
+            },
+            "timestamp": "2026-07-01T12:34:42+02:00"
+        }
+    }
+}

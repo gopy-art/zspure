@@ -1,0 +1,66 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 15672,
+            "result": {
+                "response": {
+                    "status_line": "302 Redirect",
+                    "status_code": 302,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "cache_control": [
+                            "no-cache"
+                        ],
+                        "content_length": [
+                            "0"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Fri, 03 Jul 2026 13:00:39 GMT"
+                        ],
+                        "last_modified": [
+                            "Tue, 08 May 2018 12:35:11 GMT"
+                        ],
+                        "location": [
+                            "/index.asp"
+                        ],
+                        "pragma": [
+                            "no-cache"
+                        ],
+                        "server": [
+                            "Boa/0.94.13"
+                        ]
+                    },
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:15672",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:15672"
+                    }
+                }
+            },
+            "timestamp": "2026-07-03T13:00:40Z"
+        }
+    }
+}

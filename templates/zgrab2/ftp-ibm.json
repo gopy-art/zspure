@@ -1,1 +1,18 @@
-{"ip":"206.41.250.98","data":{"ftp":{"status":"success","protocol":"ftp","result":{"banner":"220-QTCP at AS400.XYZ.COM.\r\n220 Connection will close if idle more than 5 minutes.\r\n","auth_tls":"","auth_ssl":"","implicit_tls":false,"tls":null,"sha256sum":"368244d073819b98f37ad0c93c526a4e7532fab576f86c3754937e9d62ebe8a1"},"timestamp":"2026-07-01T09:09:20+02:00"}}}
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "ftp": {
+            "status": "success",
+            "protocol": "ftp",
+            "result": {
+                "banner": "220-QTCP at AS400.XYZ.COM.\r\n220 Connection will close if idle more than 5 minutes.\r\n",
+                "auth_tls": "",
+                "auth_ssl": "",
+                "implicit_tls": false,
+                "tls": null,
+                "sha256sum": "368244d073819b98f37ad0c93c526a4e7532fab576f86c3754937e9d62ebe8a1"
+            },
+            "timestamp": "2026-07-01T09:09:20+02:00"
+        }
+    }
+}

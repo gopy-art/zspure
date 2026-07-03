@@ -1,0 +1,60 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 5667,
+            "result": {
+                "response": {
+                    "status_line": "200 OK",
+                    "status_code": 200,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_length": [
+                            "2328"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Fri, 03 Jul 2026 14:00:54 GMT"
+                        ],
+                        "last_modified": [
+                            "Mon, 22 Mar 2021 12:45:05 GMT"
+                        ],
+                        "server": [
+                            "cisco-IOS"
+                        ]
+                    },
+                    "body": "hi",
+                    "body_sha256": "fbe1d4af67d0f5dddcd23877c8f22b7ed14ae9bb730031e61bc09e12d2de28b7",
+                    "content_length": 2328,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:5667",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:5667"
+                    }
+                }
+            },
+            "timestamp": "2026-07-03T14:00:54Z"
+        }
+    }
+}

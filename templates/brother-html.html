@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript" src="/common/js/ews.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/ews.css" />
+    <script type="text/javascript" src="../common/js/cookie.js"></script>
+    <script type="text/javascript" src="../common/js/language.js"></script>
+    <script type="text/javascript" src="../common/js/lcddisplay.js"></script>
+    <title>Brother DCP-B7535DW series</title>
+</head>
+
+<body>
+    <div id="baseFrame">
+        <div id="frameContainer">
+            <div id="headerFrameContainerLeft">
+                <div id="headerFrameContainerRight">
+                    <div id="headerFrameInner">
+                        <div id="headerFrame">
+                            <div id="modelName">
+                                <h1>DCP-B7535DW series</h1>
+                                <div class="SetBox" id="SetBoxAuthRight">
+                                    <div id="SetBoxAuthLeft">
+                                        <form method="post" action="/general/status.html">
+                                            <div><input type="hidden" id="CSRFToken" name="CSRFToken"
+                                                    value="UKVi6Fc8vuwF/2A34DB/hQhx8Qk6myWnAA==" />Login<input
+                                                    type="password" id="LogBox" name="B8d5" /><input type="hidden"
+                                                    name="loginurl" value="/general/status.html" /><input id="login"
+                                                    type="submit" value="&nbsp;" /></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="corporateLogo"><img src="/common/images/logo.gif" alt="Brother" /></div>
+                        </div>
+                        <div id="solutions">
+                            <div><span><a
+                                        href="http://solutions.brother.com/cgi-bin/solutions.cgi?MDL=m00081&amp;LNG=pt-br&amp;SRC=DEVICE">Brother<br />Solutions&#32;Center</a></span>
+                            </div>
+                        </div>
+                        <div id="tabMenu">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li class="selected">
+                                            <p>General</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mainFrameContainer">
+                <div id="mainFrameTopLeft">
+                    <div id="mainFrameTopRight">
+                        <div id="mainFrameTopInner">
+                            <div id="subTabMenu">
+                                <div><span><a href="#topBack">Bottom<img src="/common/images/ic_bottom.gif"
+                                                alt="Bottom" /></a></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mainFrameInner">
+                    <div id="subMenu">
+                        <div class="selected">
+                            <div class="top">
+                                <div class="bottom"><a href="/general/status.html">Status</a></div>
+                            </div>
+                        </div>
+                        <div><a href="/general/reflesh.html" class="subPage">Auto&#32;Refresh&#32;Interval</a></div>
+                        <div><a href="/general/information.html?kind=item">Maintenance&#32;Information</a></div>
+                        <div><a href="/general/lists.html">Lists/Reports</a></div>
+                        <div><a href="/general/find.html">Find&#32;Device</a></div>
+                        <div><a href="/general/contact.html">Contact&#32;&amp;&#32;Location</a></div>
+                        <div><a href="/general/sleep.html">Sleep&#32;Time</a></div>
+                        <div><a href="/general/powerdown.html">Auto&#32;Power&#32;Off</a></div>
+                        <div><a href="/general/panel.html">Panel</a></div>
+                    </div>
+                    <div id="rightFrameContainer">
+                        <div id="rightFrame">
+                            <div id="mainContent">
+                                <div id="pageTitle">
+                                    <h2>Status</h2>
+                                </div>
+                                <div id="pageContents">
+                                    <form method="post" action="/general/status.html">
+                                        <div><input type="hidden" id="pageid" name="pageid" value="1" /></div>
+                                        <div class="CSRFToken"><input type="hidden" id="CSRFToken1" name="CSRFToken"
+                                                value="RRIwUP9y0tFnG8LlOocIiZtLFbc6nSWnAA==" /></div>
+                                        <div class="contentsGroup">
+                                            <dl class="items">
+                                                <dt>Device&#32;Status</dt>
+                                                <dd>
+                                                    <div id="moni_data"><span class="moni moniOk">Em espera</span></div>
+                                                </dd>
+                                                <dt class="subhead"><span>Automatic&#32;Refresh</span></dt>
+                                                <dd>
+                                                    <div><label class="radioSimple"><input type="radio" name="Refresh"
+                                                                value="0" onclick="refreshLCD(0);" checked="checked" />
+                                                            Off</label><label class="radioSimple"><input type="radio"
+                                                                name="Refresh" value="1" onclick="refreshLCD(60000);" />
+                                                            On</label></div>
+                                                </dd>
+                                                <dt>Toner&#32;Level</dt>
+                                                <dd>
+                                                    <div id="ink_level">
+                                                        <table id="inkLevelMono" summary="ink level">
+                                                            <tr>
+                                                                <th></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><img src="../common/images/black.gif" alt="Black"
+                                                                        class="tonerremain" height="56" /></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>BK</th>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="contentsGroup">
+                                            <dl class="items">
+                                                <dt>Web&#32;Language</dt>
+                                                <dd><select id="Language" name="Language"
+                                                        onchange="changeLanguage('Language', 'WebLang');">
+                                                        <option value="0" selected="selected">Auto</option>
+                                                        <option value="2">English</option>
+                                                        <option value="3">French</option>
+                                                        <option value="4">German</option>
+                                                        <option value="5">Dutch</option>
+                                                        <option value="6">Spanish</option>
+                                                        <option value="7">Italian</option>
+                                                        <option value="10">Russian</option>
+                                                    </select></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="contentsGroup">
+                                            <dl class="items">
+                                                <dt>Device&#32;Location</dt>
+                                                <dd>
+                                                    <ul class="itemList">
+                                                        <li class="contact">Contact<span class="spacer">:</span></li>
+                                                        <li class="location">Location<span class="spacer">:</span></li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        <!--
+                        judge_refresh(60000);
+                        //-->
+                    </script>
+                    <script type="text/javascript"><!-
+SetMinHeight();
+// --></script>
+                </div>
+                <div id="mainFrameBottomLeft">
+                    <div id="mainFrameBottomRight">
+                        <div id="mainFrameBottomInner"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footerFrameContainer">
+                <div id="copyright">Copyright(C) 2000-2017 Brother Industries, Ltd. All Rights Reserved.</div>
+                <div id="topBack"><a href="#">Top<img src="/common/images/ic_pt.gif" alt="Top" /></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
