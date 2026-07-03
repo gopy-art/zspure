@@ -1,6 +1,37 @@
 package ftp
 
 import (
+	alcatel "zspure/modules/ftp/Alcatel"
+	allworx "zspure/modules/ftp/Allworx"
+	apc "zspure/modules/ftp/Apc"
+	asus "zspure/modules/ftp/Asus"
+	axis "zspure/modules/ftp/Axis"
+	belkin "zspure/modules/ftp/Belkin"
+	bftpd "zspure/modules/ftp/Bftpd"
+	bulletProof "zspure/modules/ftp/BulletProof"
+	cerberus "zspure/modules/ftp/Cerberus"
+	cesarFTP "zspure/modules/ftp/CesarFTP"
+	dell "zspure/modules/ftp/Dell"
+	dlink "zspure/modules/ftp/Dlink"
+	drayTek "zspure/modules/ftp/DrayTek"
+	dreambox "zspure/modules/ftp/Dreambox"
+	ecosense "zspure/modules/ftp/Ecosense"
+	fritzBox "zspure/modules/ftp/FRITZBox"
+	filezilla "zspure/modules/ftp/Filezilla"
+	fullrate "zspure/modules/ftp/Fullrate"
+	gene6Ftpd "zspure/modules/ftp/Gene6Ftpd"
+	genericCamera "zspure/modules/ftp/GenericCamera"
+	genericDsl "zspure/modules/ftp/GenericDsl"
+	genericUpdate "zspure/modules/ftp/GenericUpdate"
+	hp "zspure/modules/ftp/Hp"
+	ibm "zspure/modules/ftp/Ibm"
+	iis "zspure/modules/ftp/Iis"
+	ipTime "zspure/modules/ftp/IpTime"
+	kebi "zspure/modules/ftp/Kebi"
+	konicaMinolta "zspure/modules/ftp/KonicaMinolta"
+	lacie "zspure/modules/ftp/Lacie"
+	lantronix "zspure/modules/ftp/Lantronix"
+	leightronix "zspure/modules/ftp/Leightronix"
 	lexmark "zspure/modules/ftp/Lexmark"
 	linksys "zspure/modules/ftp/Linksys"
 	lutron "zspure/modules/ftp/Lutron"
@@ -66,6 +97,37 @@ var commands map[string]string = map[string]string{
 
 func NewFTP() []model.ModuleMethods {
 	return []model.ModuleMethods{
+		&alcatel.Alcatel{},
+		&allworx.Allworx{},
+		&apc.Apc{},
+		&asus.Asus{},
+		&axis.Axis{},
+		&belkin.Belkin{},
+		&bftpd.Bftpd{},
+		&bulletProof.BulletProof{},
+		&cerberus.Cerberus{},
+		&cesarFTP.CesarFTP{},
+		&dell.Dell{},
+		&dlink.Dlink{},
+		&drayTek.DrayTek{},
+		&dreambox.Dreambox{},
+		&ecosense.Ecosense{},
+		&filezilla.Filezilla{},
+		&fritzBox.FRITZBox{},
+		&fullrate.Fullrate{},
+		&gene6Ftpd.Gene6Ftpd{},
+		&genericCamera.GenericCamera{},
+		&genericDsl.GenericDsl{},
+		&genericUpdate.GenericUpdate{},
+		&hp.Hp{},
+		&ibm.Ibm{},
+		&iis.Iis{},
+		&ipTime.IpTime{},
+		&kebi.Kebi{},
+		&lacie.Lacie{},
+		&lantronix.Lantronix{},
+		&leightronix.Leightronix{},
+		&konicaMinolta.KonicaMinolta{},
 		&lexmark.Lexmark{},
 		&linksys.Linksys{},
 		&lutron.Lutron{},
