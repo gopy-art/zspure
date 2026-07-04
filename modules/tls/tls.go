@@ -4,16 +4,25 @@ import (
 	"zspure/modules/model"
 	ami "zspure/modules/tls/AMI"
 	alcatel "zspure/modules/tls/Alcatel"
+	americanmegatrends "zspure/modules/tls/American_Megatrends"
+	appleserver "zspure/modules/tls/Apple_Server"
 	aruba "zspure/modules/tls/Aruba"
 	asusdevices "zspure/modules/tls/AsusDevices"
 	asusrouter "zspure/modules/tls/AsusRouter"
 	asusserver "zspure/modules/tls/AsusServer"
 	cambiumnetworks "zspure/modules/tls/CambiumNetworks"
 	checkpoint "zspure/modules/tls/CheckPoint"
+	cisco "zspure/modules/tls/Cisco"
+	ciscoios "zspure/modules/tls/Cisco_IOS"
+	comtrol "zspure/modules/tls/Comtrol"
 	cyberoam "zspure/modules/tls/Cyberoam"
 	dlink "zspure/modules/tls/DLink"
+	dell "zspure/modules/tls/Dell"
+	dellcmc "zspure/modules/tls/Dell_CMC"
+	dellidrac "zspure/modules/tls/Dell_Idrac"
 	deosag "zspure/modules/tls/DeosAg"
 	draytek "zspure/modules/tls/DrayTek"
+	emcclariion "zspure/modules/tls/EMC_CLARiiON"
 	endresshauser "zspure/modules/tls/EndressHauser"
 	firepower "zspure/modules/tls/FirePower"
 	fortinet "zspure/modules/tls/Fortinet"
@@ -74,12 +83,23 @@ import (
 	xerox "zspure/modules/tls/Xerox"
 	zte "zspure/modules/tls/ZTE"
 	zyxel "zspure/modules/tls/ZyXEL"
+	bigip "zspure/modules/tls/bigip"
 	ixsystems "zspure/modules/tls/iXsystems"
 	"zspure/modules/tls/pfsense"
 )
 
 func NewTLS() []model.ModuleMethods {
 	return []model.ModuleMethods{
+		&bigip.Bigip{},
+		&dellidrac.DellIdrac{},
+		&dellcmc.DellCMC{},
+		&dell.Dell{},
+		&cisco.Cisco{},
+		&ciscoios.CiscoIos{},
+		&appleserver.AppleServer{},
+		&americanmegatrends.AmericanMegatrends{},
+		&comtrol.Comtrol{},
+		&emcclariion.EmcClariion{},
 		&fortinet.Fortinet{},
 		&opnsense.OPNsense{},
 		&pfsense.Pfsense{},
