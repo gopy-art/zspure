@@ -3,7 +3,7 @@
 <img src="./zspure.png">
 </div>
 
-**zspure** is a tool for gathering information from the devices or services on the internet. It supports +250 devices/services fingerprints and +15 protocols to get banner.
+**zspure** is a tool for gathering information from the devices or services on the internet. It supports +280 devices/services fingerprints and +15 protocols to get banner.
 
 # How to run
 For install and run this tool you have to follow this structure :
@@ -111,6 +111,22 @@ Example :
 | 71 | Industrial | Scannex |
 | 72 | Printer | Xerox |
 | 73 | Firewall | Xunbo Peplink NG VPN |
+| 74 | Controller | Agranat Emweb |
+| 75 | Electrical | Apc |
+| 76 | Controller | Allegro |
+| 77 | Monitoring | Avtech Room Alert |
+| 78 | Camera | Axis Camera |
+| 79 | Camera | Bigip |
+| 80 | Camera | BB Network Camera |
+| 81 | Camera | Boa |
+| 82 | Controller | Bomgar |
+| 83 | Printer | Brother |
+| 84 | Printer | Canon |
+| 85 | Service | Cherokee |
+| 86 | Industrial | Computec PLC |
+| 87 | Industrial | DigiOne |
+| 88 | Router | Cisco IOS |
+| 89 | Switch | NETGEAR Web Smart Switch |
 
 **TLS** :
 | No | Category | Device/Service Name |
@@ -189,6 +205,16 @@ Example :
 | 72 | Printer | Xerox |
 | 73 | Firewall | Hirschmann Eagle |
 | 74 | Firewall | m0n0wall FreeBSD |
+| 75 | Camera | BigIp |
+| 76 | Controller | Dell Idrac |
+| 77 | Server | Dell CMC |
+| 78 | Printer | Dell |
+| 79 | Router | Cisco |
+| 80 | Server | Cisco IOS |
+| 81 | Server | Apple Server |
+| 82 | Service | American Megatrends |
+| 83 | Industrial | Comtrol |
+| 84 | Network Storage | EMC CLARiiON |
 
 **MODBUS** : 
 | No | Category | Device/Service Name |
@@ -249,6 +275,37 @@ Example :
 | 41 | Router | SpeedPort |
 | 42 | Network Storage | Synology |
 | 43 | Service | Telindus |
+| 44 | Router | Alcatel |
+| 45 | Router | Allworx |
+| 46 | Electrical | Apc |
+| 47 | Router | Asus |
+| 48 | Camera | Axis |
+| 49 | Network Device | Belkin |
+| 50 | Service | Bftpd |
+| 51 | Service | BulletProof |
+| 52 | Service | Cerberus |
+| 53 | Service | CesarFTP |
+| 54 | Printer | Dell |
+| 55 | Camera | D-link |
+| 56 | Camera | DrayTek |
+| 57 | Network Device | Dreambox |
+| 58 | Camera | Ecosense |
+| 59 | Service | Filezilla |
+| 60 | Router | FRITZBox |
+| 61 | Router | Fullrate |
+| 62 | Service | Gene6Ftpd |
+| 63 | Camera | Generic Camera |
+| 64 | Router | GenericDsl |
+| 65 | Service | GenericUpdate |
+| 66 | Printer | Hp |
+| 67 | Electrical | Ibm |
+| 68 | Service | Iis |
+| 69 | Network Storage | IpTime |
+| 70 | Service | Kebi |
+| 71 | Network Storage | Lacie |
+| 72 | Industrial | Lantronix |
+| 73 | Server | Leightronix |
+| 74 | Printer | KonicaMinolta |
 
 **MSSQL**
 | No | Category | Device/Service Name |
@@ -294,6 +351,26 @@ Example :
 | No | Category | Device/Service Name |
 |----|----------|---------------------|
 | 1 | Database | Redis DB |
+
+**UPNP**
+| No | Category | Device/Service Name |
+|----|----------|---------------------|
+| 1 | Service | Upnp Devices |
+
+**IMAP**
+| No | Category | Device/Service Name |
+|----|----------|---------------------|
+| 1 | Service | Imap Devices |
+
+**POP3**
+| No | Category | Device/Service Name |
+|----|----------|---------------------|
+| 1 | Service | POP3 Devices |
+
+**SMTP**
+| No | Category | Device/Service Name |
+|----|----------|---------------------|
+| 1 | Service | Smtp Devices |
 
 # CONFIG SAMPLE
 When using `elastic` command you need a config file, here is the format of config file : 
