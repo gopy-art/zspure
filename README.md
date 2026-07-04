@@ -229,6 +229,12 @@ Example :
 | 8 | Industrial | SE-Electronic Power Controller |
 | 9 | Industrial | Siemens |
 | 10 | Industrial | Telemecanique |
+| 11 | Industrial | Abb PLC |
+| 12 | Industrial | Actl PLC |
+| 13 | Industrial | Avatech Mei |
+| 14 | Industrial | Computec PLC |
+| 15 | Industrial | Crouzet PLC |
+| 16 | Industrial | Flexim PLC |
 
 **FTP** :
 | No | Category | Device/Service Name | 

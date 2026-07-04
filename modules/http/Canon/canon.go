@@ -44,7 +44,7 @@ func (c *Canon) Filters(banner map[string]interface{}) bool {
 			return true
 		}
 	}
-	if val, ok := banner["response"].(map[string]interface{})["bodey"].(string); ok {
+	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
 		if strings.Contains(val, "0<!DOCTYPE html>") &&
 			strings.Contains(val, "<p hidden>") {
 			return false
