@@ -1,6 +1,12 @@
 package modbus
 
 import (
+	abb "zspure/modules/modbus/Abb"
+	actl "zspure/modules/modbus/Actl"
+	avatechmei "zspure/modules/modbus/Avatech_Mei"
+	computec "zspure/modules/modbus/Computec"
+	crouzet "zspure/modules/modbus/Crouzet"
+	flexim "zspure/modules/modbus/Flexim"
 	kontakttechnik "zspure/modules/modbus/Kontakttechnik"
 	label "zspure/modules/modbus/LAB-EL"
 	lantronix "zspure/modules/modbus/Lantronix"
@@ -16,6 +22,12 @@ import (
 
 func NewMODBUS() []model.ModuleMethods {
 	return []model.ModuleMethods{
+		&abb.Abb{},
+		&actl.Actl{},
+		&avatechmei.AvatechMei{},
+		&computec.Computec{},
+		&crouzet.Crouzet{},
+		&flexim.Flexim{},
 		&kontakttechnik.WAGOKontakttechnikGmbH{},
 		&label.Lab_EL{},
 		&lantronix.Lantronix{},
