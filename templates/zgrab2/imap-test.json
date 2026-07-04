@@ -1,0 +1,18 @@
+{
+    "ip": "127.0.0.1",
+    "port": 143,
+    "data": {
+        "imap": {
+            "status": "success",
+            "protocol": "imap",
+            "result": {
+                "banner": "* OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE STARTTLS AUTH=PLAIN] Dovecot ready.\r\n",
+                "starttls": "",
+                "close": "",
+                "tls": null,
+                "sha256sum": "6280577a94c7a24b8bc286199c71d7a3f89758a4902714474886a7b59acfbbb0"
+            },
+            "timestamp": "2026-06-27T08:41:24+01:00"
+        }
+    }
+}

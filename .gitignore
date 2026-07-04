@@ -10,3 +10,5 @@ TODO*
 !modbus-*.json
 !tls-*.json
 !ssh-*.json
+!pop3-*.json
+!imap-*.json

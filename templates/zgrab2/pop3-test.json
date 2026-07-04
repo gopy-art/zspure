@@ -1,0 +1,20 @@
+{
+    "ip": "127.0.0.1",
+    "port": 110,
+    "data": {
+        "pop3": {
+            "status": "success",
+            "protocol": "pop3",
+            "result": {
+                "banner": "+OK Welcome to MailEnable POP3 Server\r\n",
+                "noop": "",
+                "help": "",
+                "starttls": "",
+                "quit": "",
+                "tls": null,
+                "sha256sum": "d85a58dd0d480653485144eb1de895d161f09c54bb13bcf0bd16254b23487e00"
+            },
+            "timestamp": "2026-06-27T09:11:05+01:00"
+        }
+    }
+}
