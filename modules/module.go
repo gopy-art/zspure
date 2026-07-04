@@ -17,6 +17,10 @@ import (
 	"zspure/modules/redis"
 	"zspure/modules/ssh"
 	"zspure/modules/tls"
+	"zspure/modules/imap"
+	"zspure/modules/pop3"
+	"zspure/modules/smtp"
+	"zspure/modules/upnp"
 )
 
 var (
@@ -32,6 +36,10 @@ var (
 		"tls",
 		"modbus",
 		"ftp",
+		"upnp",
+		"imap",
+		"pop3",
+		"smtp",
 	}
 )
 
@@ -59,6 +67,14 @@ func NewModule(protocol string) ([]model.ModuleMethods, error) {
 		return tls.NewTLS(), nil
 	case "ftp":
 		return ftp.NewFTP(), nil
+	case "upnp":
+		return upnp.NewUpnp(), nil
+	case "imap":
+		return imap.NewImap(), nil
+	case "pop3":
+		return pop3.NewPop3(), nil
+	case "smtp":
+		return smtp.NewSmtp(), nil
 	default:
 		return nil, fmt.Errorf("protocol not supported")
 	}
