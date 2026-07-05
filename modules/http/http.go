@@ -25,6 +25,7 @@ import (
 	computec "zspure/modules/http/Computec"
 	dlink "zspure/modules/http/D_Link"
 	dahua "zspure/modules/http/Dahua"
+	h3c "zspure/modules/http/H3C"
 	mercury "zspure/modules/http/Mercury"
 	netcore "zspure/modules/http/Netcore"
 
@@ -186,6 +187,7 @@ func NewHTTP() []model.ModuleMethods {
 		&alcatel.AlcatelTR069{},
 		&netcore.NetCore{},
 		&mercury.Mercury{},
+		&h3c.H3C{},
 	}
 }
 
