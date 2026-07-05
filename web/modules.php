@@ -9,12 +9,18 @@ if ($q == '')
 function getUniqueModules(array $devices, string $key)
 {
     $modules = [];
+    $seen = [];
     foreach ($devices as $device) {
         if (isset($device['data']['category']) && $device['data']['category'] == $key) {
-            $modules[] = $device['data'];
+            $data = $device['data'];
+            $hash = serialize($data);
+            if (!in_array($hash, $seen)) {
+                $seen[] = $hash;
+                $modules[] = $data;
+            }
         }
     }
-    return array_values(array_unique($modules));
+    return $modules;
 }
 
 $Modules = getUniqueModules($DEVICES, $q);
@@ -41,9 +47,9 @@ $Modules = getUniqueModules($DEVICES, $q);
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php foreach ($Modules as $key => $value) : ?>
                 <div class="col mb-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <?php if ($value["image"] != ""): ?>
-                            <img src="<?php echo "/modules".$value["image"]; ?>" class="card-img-top" alt="...">
+                            <img src="<?php echo "/modules".$value["image"]; ?>" class="card-img-top p-4" alt="...">
                         <?php endif ?>
                         <div class="card-body">
                             <h5 class="card-title fw-semibold"><?php echo $value["name"]; ?></h5>
