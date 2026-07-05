@@ -117,6 +117,7 @@ Then will detect the response of HTTP/HTTPS services to see which device or serv
 
 	pattern.PersistentFlags().StringVar(&config.URL, "url", "", "set the URL of the panel for detecting.")
 	pattern.PersistentFlags().BoolVar(&config.FIND_CVE, "cve", false, "enable this flag to get CVE for the specific device and version")
+	pattern.PersistentFlags().IntVarP(&config.TIMEOUT, "timeout", "t", 3, "set the timeout for connection. (seconds)")
 
 	customHelpTemplate := `{{.Long}}
 
