@@ -1,4 +1,4 @@
-package netcore
+package mercury
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ import (
 	"zspure/utils"
 )
 
-type NetCore struct {
+type Mercury struct {
 	Category    string                `json:"dvs_category"`
 	DeviceName  string                `json:"device_name"`
 	Version     string                `json:"version"`
@@ -24,28 +24,30 @@ type NetCore struct {
 
 var modelType string
 
-func (n *NetCore) SetCategory(category ...string) {
-	n.Category = model.Category.Router()
+func (m *Mercury) SetCategory(category ...string) {
+	m.Category = model.Category.Router()
 }
 
-func (n *NetCore) SetDeviceName(device ...string) {
-	n.DeviceName = "Netcore"
+func (m *Mercury) SetDeviceName(device ...string) {
+	m.DeviceName = "Mercury"
 }
 
-func (n *NetCore) Patterns() []map[string]interface{} {
+func (m *Mercury) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{
-		{"result.response.headers.www_authenticate": "TR069 client CLI Server"},
+		{"result.response.headers.www_authenticate": "MERCURY Wireless N Router"},
 	}
 }
 
-func (n *NetCore) Filters(banner map[string]interface{}) bool {
+func (m *Mercury) Filters(banner map[string]interface{}) bool {
 	if banner["response"] == nil {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{}); ok && len(val) > 0 {
-		if strings.Contains(strings.ToLower(fmt.Sprintf("%v", val)), "basic realm=\"netcore") {
+		if strings.Contains(strings.ToLower(fmt.Sprintf("%v", val)), "basic realm=\"mercury wireless n router") {
 			if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
 				if body == "" {
+					return true
+				} else if !strings.Contains(body, "<html>") && !strings.Contains(body, "</html>") {
 					return true
 				} else {
 					return (len(body) < 100)
@@ -58,13 +60,13 @@ func (n *NetCore) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (n *NetCore) DeviceScan(banner map[string]interface{}) bool {
-	n.ExtraInfo.NewExtraInfo()
+func (m *Mercury) DeviceScan(banner map[string]interface{}) bool {
+	m.ExtraInfo.NewExtraInfo()
 	if val, ok := banner["response"].(map[string]interface{})["headers"]; ok {
-		re := regexp.MustCompile(`NETCORE\s+([A-Za-z0-9]+)`)
+		re := regexp.MustCompile(`MERCURY Wireless N Router\s+([A-Za-z0-9]+)`)
 		matches := re.FindStringSubmatch(fmt.Sprintf("%v", val))
 		if len(matches) > 1 {
-			n.ExtraInfo.SetExtraInfo("product", matches[1])
+			m.ExtraInfo.SetExtraInfo("product", matches[1])
 			modelType = matches[1]
 			return true
 		}
@@ -72,13 +74,13 @@ func (n *NetCore) DeviceScan(banner map[string]interface{}) bool {
 	return false
 }
 
-func (n *NetCore) CveScan(els *handler.Elastic) {
+func (m *Mercury) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": n.DeviceName + " " + modelType,
+			"cve.descriptions.value": m.DeviceName + " " + modelType,
 		}))
 		if len(result) == 0 {
 			return
@@ -91,7 +93,7 @@ func (n *NetCore) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), n.DeviceName+"%20"+modelType)
+		url := fmt.Sprintf(model.CVE.MainResource(), m.DeviceName+"%20"+modelType)
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -106,31 +108,31 @@ func (n *NetCore) CveScan(els *handler.Elastic) {
 	}
 
 	for _, vl := range CVE {
-		n.CveList = append(n.CveList, vl.CVEID)
+		m.CveList = append(m.CveList, vl.CVEID)
 		totalScore += vl.BaseScore
 	}
 
-	n.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
-	if n.CveScore > 7 {
-		n.Sensibility = "HIGH"
-	} else if n.CveScore >= 4 && n.CveScore <= 7 {
-		n.Sensibility = "MEDIUM"
-	} else if n.CveScore < 4 {
-		n.Sensibility = "LOW"
+	m.CveScore, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", totalScore/float64(len(CVE))), 64)
+	if m.CveScore > 7 {
+		m.Sensibility = "HIGH"
+	} else if m.CveScore >= 4 && m.CveScore <= 7 {
+		m.Sensibility = "MEDIUM"
+	} else if m.CveScore < 4 {
+		m.Sensibility = "LOW"
 	}
-	n.CveList = utils.RemoveDuplicates(n.CveList)
+	m.CveList = utils.RemoveDuplicates(m.CveList)
 }
 
-func (n *NetCore) PrintInfo() string { return model.Category.Router() + " | Netcore" }
+func (m *Mercury) PrintInfo() string { return model.Category.Router() + " | Mercury" }
 
-func (n *NetCore) Result() model.ModuleStructure {
+func (m *Mercury) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         n.Category,
-		DeviceName:       n.DeviceName,
-		Version:          n.Version,
-		CveList:          n.CveList,
-		Sensibility:      n.Sensibility,
-		CveScore:         n.CveScore,
-		ExtraInformation: n.ExtraInfo,
+		Category:         m.Category,
+		DeviceName:       m.DeviceName,
+		Version:          m.Version,
+		CveList:          m.CveList,
+		Sensibility:      m.Sensibility,
+		CveScore:         m.CveScore,
+		ExtraInformation: m.ExtraInfo,
 	}
 }
