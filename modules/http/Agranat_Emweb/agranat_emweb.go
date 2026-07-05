@@ -44,6 +44,8 @@ func (a *AgranatEmweb) Filters(banner map[string]interface{}) bool {
 			if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
 				if body == "" {
 					return true
+				} else if !strings.Contains(body, "<html>") && !strings.Contains(body, "</html>") {
+					return true
 				} else {
 					return (len(body) < 100)
 				}
