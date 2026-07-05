@@ -40,8 +40,16 @@ func (c *CiscoIos) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{})["server"].([]any); ok {
-		if strings.Contains(strings.ToLower(val[0].(string)), "cisco-ios") {
-			return true
+		if str, ok := val[0].(string); ok && strings.Contains(strings.ToLower(str), "cisco-ios") {
+			if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
+				if body == "" {
+					return true
+				} else {
+					return (len(body) < 100)
+				}
+			} else {
+				return true
+			}
 		}
 	}
 	return false

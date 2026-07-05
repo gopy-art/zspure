@@ -55,13 +55,13 @@ func (a *Axis) DeviceScan(banner map[string]interface{}) bool {
 				cameraProductRe := regexp.MustCompile(`(?i)^220 AXIS (.+ Camera) \d+\.\d+`)
 				matches := cameraProductRe.FindStringSubmatch(bannerStr)
 				if len(matches) > 1 {
-					a.ExtraInformation.SetExtraInfo("camera_product", matches[1])
+					a.ExtraInformation.SetExtraInfo("product", matches[1])
 				}
 			} else if strings.Contains(bannerStr, "Video Encoder") {
 				encodeProductRe := regexp.MustCompile(`(?i)^220 AXIS (.+ Encoder(?: Blade)?) \d+`)
 				matches := encodeProductRe.FindStringSubmatch(bannerStr)
 				if len(matches) > 1 {
-					a.ExtraInformation.SetExtraInfo("encoder_product", matches[1])
+					a.ExtraInformation.SetExtraInfo("product", matches[1])
 				}
 			}
 			versionRe := regexp.MustCompile(`(?i)(?:Camera|Encoder Blade|Encoder) (\d+(?:\.\d+)*) \(`)

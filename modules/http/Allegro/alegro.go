@@ -40,9 +40,17 @@ func (a *Allegro) Filters(banner map[string]interface{}) bool {
 	if banner["response"] == nil {
 		return false
 	}
-	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{})["server"].([]any); ok {
-		if strings.Contains(strings.ToLower(val[0].(string)), "allegro") {
-			return true
+	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{})["server"].([]any); ok && len(val) > 0 {
+		if str, ok := val[0].(string); ok && strings.Contains(strings.ToLower(str), "allegro") {
+			if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
+				if body == "" {
+					return true
+				} else {
+					return (len(body) < 100)
+				}
+			} else {
+				return true
+			}
 		}
 	}
 	return false

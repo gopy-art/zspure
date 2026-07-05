@@ -3,6 +3,7 @@ package http
 import (
 	acealarmmanager "zspure/modules/http/ACE_Alarm_Manager"
 	agranatemweb "zspure/modules/http/Agranat_Emweb"
+	alcatel "zspure/modules/http/Alcatel"
 	allegro "zspure/modules/http/Allegro"
 	apacheserver "zspure/modules/http/Apache_Server"
 	apc "zspure/modules/http/Apc"
@@ -24,6 +25,7 @@ import (
 	computec "zspure/modules/http/Computec"
 	dlink "zspure/modules/http/D_Link"
 	dahua "zspure/modules/http/Dahua"
+
 	// dell "zspure/modules/http/Dell"
 	digione "zspure/modules/http/Digi_One"
 	dixellgadir "zspure/modules/http/Dixell_Gadir"
@@ -179,6 +181,7 @@ func NewHTTP() []model.ModuleMethods {
 		&ipbuffer.IPBufferWebServer{},
 		&xerox.Xerox{},
 		&xunbo.XunboPepLink{},
+		&alcatel.AlcatelTR069{},
 	}
 }
 

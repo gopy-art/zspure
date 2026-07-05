@@ -1,0 +1,54 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 8888,
+            "result": {
+                "response": {
+                    "status_line": "401 Unauthorized",
+                    "status_code": 401,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "content_length": [
+                            "1452"
+                        ],
+                        "content_type": [
+                            "text/html;charset=gb2312"
+                        ],
+                        "www_authenticate": [
+                            "Basic realm=\"MERCURY Wireless N Router MW155R\""
+                        ]
+                    },
+                    "body": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFsLy9FTiIgDQogICJodHRwOi8vd3d3LnczLm9yZy9UUi9odG1sNC9sb29zZS5kdGQiPg0KPGh0bWw+PGhlYWQ+DQo8dGl0bGU+55m75b2V5aSx6LSlPC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PUdCMjMxMiI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KYm9keSxwe2ZvbnQtZmFtaWx5OkFyaWFsLCLpu5HkvZMiO2ZvbnQtc2l6ZToxNHB4O2xpbmUtaGVpZ2h0OjE4MCUlO3RleHQtYWxpZ246bGVmdDt9DQpoMXt0ZXh0LWFsaWduOmxlZnQ7Zm9udC1mYW1pbHk6Ium7keS9kyI7Zm9udC1zaXplOjMwcHg7bGluZS1oZWlnaHQ6bm9ybWFsO2NvbG9yOiMwMDY4QjF9DQojZXJyb3Jib2R5e3dpZHRoOjYyMHB4O2Rpc3BsYXk6YmxvY2s7cGFkZGluZy10b3A6NWVtfQ0KPC9zdHlsZT4NCjwvaGVhZD48Ym9keT4NCjxkaXYgYWxpZ249ImNlbnRlciI+DQo8ZGl2IGlkPSJlcnJvcmJvZHkiPg0KPGgxPueUqOaIt+WQjeaIluWvhueggeacieivr++8jOivt+aMieS7peS4i+aPkOekuuaTjeS9nDwvaDE+DQo8YnI+DQo8cD4NCjxiPjxmb250IHNpemU9IjQiPuaCqOaYr+WQpumUgeWumuS6humUruebmOeahOWkp+WGmeWKn+iDve+8nzwvZm9udD48L2I+DQo8YnI+DQo8Zm9udCBjb2xvcj0iIzczNzM3MyI+55So5oi35ZCN5ZKM5a+G56CB5Yy65YiG5aSn5bCP5YaZ77yM6K+35qOA5p+l5oKo6ZSu55uY5LiK55qEIkNhcHMgTG9jayLmiJYiQSLnga/mmK/lkKbkuq7nnYDjgILlpoLmnpzmmK/vvIzor7flhYjmjInkuIDkuIsiQ2FwcyBMb2NrIumUru+8jOeEtuWQjiA8YSBocmVmPSIiIG9uY2xpY2s9ImRvY3VtZW50LmxvY2F0aW9uLnJlbG9hZCgpIj7liLfmlrA8L2E+IOmhtemdoumHjeaWsOi+k+WFpeOAgjwvZm9udD48L3A+DQo8cD48Yj48Zm9udCBzaXplPSI0Ij7mgqjmmK/lkKblv5jorrDkuobnlKjmiLflkI3miJblr4bnoIHvvJ88L2ZvbnQ+PC9iPjxicj4NCjxmb250IGNvbG9yPSIjNzM3MzczIj7lpoLmnpzmgqjlv5jorrDkuobnmbvlvZXnmoTnlKjmiLflkI3miJblr4bnoIHvvIzlj6/ku6XlsIbkuqflk4HmgaLlpI3liLDlh7rljoLorr7nva7vvIzlubbkvb/nlKjpu5jorqTnlKjmiLflkI08Yj48Zm9udCBjb2xvcj0iIzMzMzMzMyI+YWRtaW48L2ZvbnQ+PC9iPuWSjOm7mOiupOWvhueggTxiPjxmb250IGNvbG9yPSIjMzMzMzMzIj5hZG1pbjwvZm9udD48L2I+55m75b2V44CCPGJyPg0K5o+Q56S677ya5Lqn5ZOB5oGi5aSN5Ye65Y6C6K6+572u5ZCO77yM5oKo5LmL5YmN5a+55Lqn5ZOB5omA5L2c55qE5ZCE6aG56K6+572u5bCG5Lya6KKr5Ye65Y6C6K6+572u5Luj5pu/44CCPC9mb250PjwvcD4NCjxwPjxiPjxmb250IHNpemU9IjQiPuaBouWkjeWHuuWOguiuvue9rueahOaWueazle+8",
+                    "body_sha256": "18c522ef6eaf5590cd7553001433e16a2c6a238f75fef7245fcec89610791484",
+                    "content_length": 1452,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:8888",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:8888"
+                    }
+                }
+            },
+            "timestamp": "2026-07-05T07:45:06Z"
+        }
+    }
+}

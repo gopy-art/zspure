@@ -1,7 +1,8 @@
-package agranatemweb
+package alcatel
 
 import (
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 	"zspure/config"
@@ -11,7 +12,7 @@ import (
 	"zspure/utils"
 )
 
-type AgranatEmweb struct {
+type AlcatelTR069 struct {
 	Category    string                `json:"dvs_category"`
 	DeviceName  string                `json:"device_name"`
 	Version     string                `json:"version"`
@@ -21,26 +22,26 @@ type AgranatEmweb struct {
 	ExtraInfo   model.ModuleExtraInfo `json:"dvs_extra"`
 }
 
-func (a *AgranatEmweb) SetCategory(category ...string) {
-	a.Category = model.Category.Controller()
+func (a *AlcatelTR069) SetCategory(category ...string) {
+	a.Category = model.Category.Router()
 }
 
-func (a *AgranatEmweb) SetDeviceName(device ...string) {
-	a.DeviceName = "Emweb"
+func (a *AlcatelTR069) SetDeviceName(device ...string) {
+	a.DeviceName = "Alcatel"
 }
 
-func (a *AgranatEmweb) Patterns() []map[string]interface{} {
+func (a *AlcatelTR069) Patterns() []map[string]interface{} {
 	return []map[string]interface{}{
-		{"result.response.headers.server": "Agranat-EmWeb"},
+		{"result.response.headers.server": "TR069 client CLI Server"},
 	}
 }
 
-func (a *AgranatEmweb) Filters(banner map[string]interface{}) bool {
+func (a *AlcatelTR069) Filters(banner map[string]interface{}) bool {
 	if banner["response"] == nil {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{})["server"].([]any); ok && len(val) > 0 {
-		if str, ok := val[0].(string); ok && strings.Contains(strings.ToLower(str), "agranat-emweb") {
+		if str, ok := val[0].(string); ok && strings.Contains(strings.ToLower(str), "tr069 client cli server") {
 			if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
 				if body == "" {
 					return true
@@ -55,19 +56,27 @@ func (a *AgranatEmweb) Filters(banner map[string]interface{}) bool {
 	return false
 }
 
-func (a *AgranatEmweb) DeviceScan(banner map[string]interface{}) bool {
+func (a *AlcatelTR069) DeviceScan(banner map[string]interface{}) bool {
 	a.ExtraInfo.NewExtraInfo()
-	a.ExtraInfo.SetExtraInfo("product", "EmWeb")
+	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{})["server"].([]any); ok {
+		re := regexp.MustCompile(`(TR069 client CLI Server)`)
+		matches := re.FindStringSubmatch(val[0].(string))
+		if len(matches) > 1 {
+			a.ExtraInfo.SetExtraInfo("product", "TR069")
+			return true
+		}
+	}
+
 	return false
 }
 
-func (a *AgranatEmweb) CveScan(els *handler.Elastic) {
+func (a *AlcatelTR069) CveScan(els *handler.Elastic) {
 	var CVE []model.CVEStructure = make([]model.CVEStructure, 0)
 	var totalScore float64 = 0
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": "agranat-emweb",
+			"cve.descriptions.value": a.DeviceName + " TR069",
 		}))
 		if len(result) == 0 {
 			return
@@ -80,7 +89,7 @@ func (a *AgranatEmweb) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), "agranat-emweb")
+		url := fmt.Sprintf(model.CVE.MainResource(), a.DeviceName+"%20"+"TR069")
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			cmd.ErrorLogger.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -110,9 +119,9 @@ func (a *AgranatEmweb) CveScan(els *handler.Elastic) {
 	a.CveList = utils.RemoveDuplicates(a.CveList)
 }
 
-func (a *AgranatEmweb) PrintInfo() string { return model.Category.Controller() + " | Agranat Emweb" }
+func (a *AlcatelTR069) PrintInfo() string { return model.Category.Router() + " | Alcatel" }
 
-func (a *AgranatEmweb) Result() model.ModuleStructure {
+func (a *AlcatelTR069) Result() model.ModuleStructure {
 	return model.ModuleStructure{
 		Category:         a.Category,
 		DeviceName:       a.DeviceName,

@@ -1,0 +1,52 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 28080,
+            "result": {
+                "response": {
+                    "status_line": "401 ",
+                    "status_code": 401,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "date": [
+                            "Sat, 21 Dec 1996 12:00:00 GMT"
+                        ],
+                        "server": [
+                            "HTTP Software 1.1"
+                        ],
+                        "www_authenticate": [
+                            "Basic realm=\"NETCORE NR238\""
+                        ]
+                    },
+                    "content_length": -1,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:28080",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:28080"
+                    }
+                }
+            },
+            "timestamp": "2026-07-05T07:46:16Z"
+        }
+    }
+}

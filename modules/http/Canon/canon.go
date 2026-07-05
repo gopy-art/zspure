@@ -40,8 +40,14 @@ func (c *Canon) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["headers"].(map[string]interface{})["server"].([]any); ok {
-		if strings.Contains(strings.ToLower(val[0].(string)), "canon http server") {
-			return true
+		if str, ok := val[0].(string); ok && strings.Contains(strings.ToLower(str), "canon http server") {
+			if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
+				if body == "" {
+					return true
+				}
+			} else {
+				return true
+			}
 		}
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {

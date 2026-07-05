@@ -1,0 +1,63 @@
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "http": {
+            "status": "success",
+            "protocol": "http",
+            "port": 8002,
+            "result": {
+                "response": {
+                    "status_line": "401 δ\ufffd\ufffdȨ\ufffd\ufffd",
+                    "status_code": 401,
+                    "protocol": "HTTP/1.1",
+                    "protocol_major": 1,
+                    "protocol_minor": 1,
+                    "headers": {
+                        "cache_control": [
+                            "no-cache"
+                        ],
+                        "content_type": [
+                            "text/html"
+                        ],
+                        "date": [
+                            "Sun Jul  5 19:51:44 2026"
+                        ],
+                        "pragma": [
+                            "no-cache"
+                        ],
+                        "server": [
+                            "H3C-Miniware-Webs"
+                        ],
+                        "www_authenticate": [
+                            "Basic realm=\"H3C ER5200\""
+                        ]
+                    },
+                    "body": "PGh0bWw+PGhlYWQ+PHRpdGxlPs7EtbW07c7zOiDOtMrayKi1xDwvdGl0bGU+PC9oZWFkPg0KCQk8Ym9keT48aDI+t8POyrTtzvM6IM60ytrIqLXEPC9oMj4NCgkJytTNvLfDzsrSs8PmIDxiPi88L2I+PGJyPjxwPrfDzsrQ6NKq08O7p8P7PC9wPjwvYm9keT48L2h0bWw+DQoNCg==",
+                    "body_sha256": "a3ff9361fbdc6cc26eb7cc46105f8de330e9b947498553fa3a12f9f3fd743fd4",
+                    "content_length": -1,
+                    "request": {
+                        "url": {
+                            "scheme": "http",
+                            "host": "127.0.0.1:8002",
+                            "path": "/"
+                        },
+                        "method": "GET",
+                        "protocol": "HTTP/1.1",
+                        "protocol_major": 1,
+                        "protocol_minor": 1,
+                        "headers": {
+                            "accept": [
+                                "*/*"
+                            ],
+                            "user_agent": [
+                                "Mozilla/5.0 zgrab/0.x"
+                            ]
+                        },
+                        "host": "127.0.0.1:8002"
+                    }
+                }
+            },
+            "timestamp": "2026-07-05T11:51:45Z"
+        }
+    }
+}
