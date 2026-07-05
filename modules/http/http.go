@@ -25,6 +25,7 @@ import (
 	computec "zspure/modules/http/Computec"
 	dlink "zspure/modules/http/D_Link"
 	dahua "zspure/modules/http/Dahua"
+	netcore "zspure/modules/http/Netcore"
 
 	// dell "zspure/modules/http/Dell"
 	digione "zspure/modules/http/Digi_One"
@@ -182,6 +183,7 @@ func NewHTTP() []model.ModuleMethods {
 		&xerox.Xerox{},
 		&xunbo.XunboPepLink{},
 		&alcatel.AlcatelTR069{},
+		&netcore.NetCore{},
 	}
 }
 
