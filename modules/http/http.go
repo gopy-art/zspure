@@ -188,6 +188,7 @@ func NewHTTP() []model.ModuleMethods {
 		&netcore.NetCore{},
 		&mercury.Mercury{},
 		&h3c.H3C{},
+		&fortinet.FortiSwitch{},
 	}
 }
 
