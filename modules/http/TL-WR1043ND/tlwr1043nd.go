@@ -40,12 +40,10 @@ func (t *TPLinkTLWR1043ND) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"]; ok {
-		if strings.Contains(val.(string), "0<!DOCTYPE html>") &&
-			strings.Contains(val.(string), "<p hidden>") {
-			return false
-		}
-		if strings.Contains(val.(string), "<title>TL-WR1043ND</title>") || 
-			strings.Contains(val.(string), "<TITLE>TL-WR1043ND</TITLE>") {
+		if (strings.Contains(val.(string), "<title>TL-WR1043ND</title>") || 
+			strings.Contains(val.(string), "<TITLE>TL-WR1043ND</TITLE>")) &&
+			!strings.Contains(val.(string), "0<!DOCTYPE html>") &&
+			!strings.Contains(val.(string), "<p hidden>")  {
 			return true
 		}
 	}

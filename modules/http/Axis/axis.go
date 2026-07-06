@@ -42,13 +42,10 @@ func (a *Axis) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "0<!DOCTYPE html>") &&
-			strings.Contains(val, "<p hidden>") {
-			return false
-		}
-	}
-	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "AXIS") && strings.Contains(val, "Network Camera") {
+		if (strings.Contains(val, "AXIS") && 
+			strings.Contains(val, "Network Camera")) &&
+			!strings.Contains(val, "0<!DOCTYPE html>") &&
+			!strings.Contains(val, "<p hidden>") {
 			return true
 		}
 	}

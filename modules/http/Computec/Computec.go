@@ -40,11 +40,10 @@ func (c *Computec) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "0<!DOCTYPE html>") &&
-			strings.Contains(val, "<p hidden>") {
-			return false
-		}
-		if strings.Contains(val, "Computec Oy") && strings.Contains(val, "Brother Industries, Ltd. All Rights Reserved") {
+		if (strings.Contains(val, "Computec Oy") && 
+			strings.Contains(val, "Brother Industries, Ltd. All Rights Reserved")) &&
+			!strings.Contains(val, "0<!DOCTYPE html>") &&
+			!strings.Contains(val, "<p hidden>") {
 			return true
 		}
 	}

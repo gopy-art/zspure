@@ -41,11 +41,10 @@ func (a *Avtech) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "0<!DOCTYPE html>") &&
-			strings.Contains(val, "<p hidden>") {
-			return false
-		}
-		if strings.Contains(val, "<title>AVTECH Software, Inc") && strings.Contains(val, "Room Alert") {
+		if (strings.Contains(val, "<title>AVTECH Software, Inc") &&
+			strings.Contains(val, "Room Alert")) &&
+			!strings.Contains(val, "0<!DOCTYPE html>") &&
+			!strings.Contains(val, "<p hidden>") {
 			return true
 		}
 	}

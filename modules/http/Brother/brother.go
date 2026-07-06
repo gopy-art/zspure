@@ -43,16 +43,10 @@ func (b *Brother) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "0<!DOCTYPE html>") &&
-			strings.Contains(val, "<p hidden>") {
-			return false
-		}
-		if strings.Contains(val, "Brother") && strings.Contains(val, "Brother Industries") {
-			return true
-		}
-	}
-	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "<title>Brother") {
+		if (strings.Contains(val, "<title>Brother") &&
+			strings.Contains(val, "Brother Industries")) &&
+			!strings.Contains(val, "0<!DOCTYPE html>") &&
+			!strings.Contains(val, "<p hidden>") {
 			return true
 		}
 	}

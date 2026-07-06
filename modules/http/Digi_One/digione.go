@@ -40,11 +40,9 @@ func (d *DigiOne) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "0<!DOCTYPE html>") &&
-			strings.Contains(val, "<p hidden>") {
-			return false
-		}
-		if strings.Contains(val, "Digi One SP&nbsp;Configuration and Management") {
+		if strings.Contains(val, "Digi One SP&nbsp;Configuration and Management") &&
+			!strings.Contains(val, "0<!DOCTYPE html>") &&
+			!strings.Contains(val, "<p hidden>") {
 			return true
 		}
 	}

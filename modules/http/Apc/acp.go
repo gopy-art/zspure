@@ -40,11 +40,10 @@ func (a *Apc) Filters(banner map[string]interface{}) bool {
 		return false
 	}
 	if val, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
-		if strings.Contains(val, "0<!DOCTYPE html>") &&
-			strings.Contains(val, "<p hidden>") {
-			return false
-		}
-		if strings.Contains(val, "APC Management Web Server") || strings.Contains(val, "<title>APC | Application Error</title>") {
+		if (strings.Contains(val, "APC Management Web Server") ||
+			strings.Contains(val, "<title>APC | Application Error</title>")) &&
+			!strings.Contains(val, "0<!DOCTYPE html>") &&
+			!strings.Contains(val, "<p hidden>") {
 			return true
 		}
 	}
