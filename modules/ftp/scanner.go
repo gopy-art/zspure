@@ -16,7 +16,6 @@ type FtpScanning struct {
 	Port   int       `json:"port,omitempty"`
 	Status string    `json:"status,omitempty"`
 	Banner ftpBanner `json:"banner,omitempty"`
-	Sha256 string    `json:"sha_256,omitempty"`
 
 	Description     string `json:"description,omitempty"`
 	DetectionPacket []byte `json:"detection_packet,omitempty"`
