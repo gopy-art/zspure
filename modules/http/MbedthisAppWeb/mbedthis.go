@@ -42,7 +42,17 @@ func (lm *MbedThisAppWeb) Filters(banner map[string]interface{}) bool {
 	if val, ok := banner["response"].(map[string]interface{})["headers"]; ok {
 		if server, sok := val.(map[string]interface{})["server"].([]any); sok {
 			if convert, cok := server[0].(string); cok && strings.Contains(convert, "Mbedthis-Appweb") {
-				return true
+				if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
+					if body == "" {
+						return true
+					} else if !strings.Contains(body, "<html") && !strings.Contains(body, "</html>") {
+						return true
+					} else {
+						return (len(body) < 100)
+					}
+				} else {
+					return true
+				}
 			}
 		}
 	}

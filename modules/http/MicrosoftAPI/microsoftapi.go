@@ -42,7 +42,17 @@ func (lm *MicrosoftHttpApi) Filters(banner map[string]interface{}) bool {
 	if val, ok := banner["response"].(map[string]interface{})["headers"]; ok {
 		if server, sok := val.(map[string]interface{})["server"].([]any); sok {
 			if convert, cok := server[0].(string); cok && strings.Contains(strings.ToLower(convert), "microsoft-httpapi") {
-				return true
+				if body, ok := banner["response"].(map[string]interface{})["body"].(string); ok {
+					if body == "" {
+						return true
+					} else if !strings.Contains(body, "<html") && !strings.Contains(body, "</html>") {
+						return true
+					} else {
+						return (len(body) < 100)
+					}
+				} else {
+					return true
+				}
 			}
 		}
 	}
@@ -111,7 +121,9 @@ func (m *MicrosoftHttpApi) CveScan(els *handler.Elastic) {
 	m.CveList = utils.RemoveDuplicates(m.CveList)
 }
 
-func (m *MicrosoftHttpApi) PrintInfo() string { return model.Category.WebServer() + " | Microsoft HTTP API" }
+func (m *MicrosoftHttpApi) PrintInfo() string {
+	return model.Category.WebServer() + " | Microsoft HTTP API"
+}
 
 func (m *MicrosoftHttpApi) Result() model.ModuleStructure {
 	return model.ModuleStructure{
