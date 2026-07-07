@@ -16,6 +16,7 @@ import (
 	seelectronic "zspure/modules/modbus/SEElectronic"
 	schniderelectric "zspure/modules/modbus/Schnider_Electric"
 	siemens "zspure/modules/modbus/Siemens"
+	solar "zspure/modules/modbus/Solar"
 	telemecanique "zspure/modules/modbus/Telemecanique"
 	"zspure/modules/model"
 )
@@ -37,6 +38,7 @@ func NewMODBUS() []model.ModuleMethods {
 		&schniderelectric.SchniderElectric{},
 		&seelectronic.SeElectronic{},
 		&siemens.Siemens{},
+		&solar.Solar{},
 		&telemecanique.Telemecanique{},
 	}
 }
