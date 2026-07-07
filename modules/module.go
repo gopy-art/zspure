@@ -104,6 +104,14 @@ func NewScanner(protocol string) (model.Scan, error) {
 		return tls.NewTLSScanner(), nil
 	case "ftp":
 		return ftp.NewFTPScanner(), nil
+	case "upnp":
+		return upnp.NewUPNPScanner(), nil
+	case "imap":
+		return imap.NewImapScanner(), nil
+	case "pop3":
+		return pop3.NewPOP3Scanner(), nil
+	case "smtp":
+		return smtp.NewSMTPScanner(), nil
 	default:
 		return nil, fmt.Errorf("protocol not supported")
 	}

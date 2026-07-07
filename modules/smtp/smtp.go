@@ -10,3 +10,7 @@ func NewSmtp() []model.ModuleMethods {
 		&devices.SmtpDevices{},
 	}
 }
+
+func NewSMTPScanner() *SmtpScanning {
+	return new(SmtpScanning)
+}

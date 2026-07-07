@@ -10,3 +10,7 @@ func NewUpnp() []model.ModuleMethods {
 		&devices.UpnpDevices{},
 	}
 }
+
+func NewUPNPScanner() *UpnpScanning {
+	return new(UpnpScanning)
+}

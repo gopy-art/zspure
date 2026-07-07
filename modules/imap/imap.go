@@ -10,3 +10,7 @@ func NewImap() []model.ModuleMethods {
 		&devices.ImapDevices{},
 	}
 }
+
+func NewImapScanner() *ImapScanning {
+	return new(ImapScanning)
+}

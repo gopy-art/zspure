@@ -10,3 +10,7 @@ func NewPop3() []model.ModuleMethods {
 		&devices.Pop3Devices{},
 	}
 }
+
+func NewPOP3Scanner() *Pop3Scanning {
+	return new(Pop3Scanning)
+}
