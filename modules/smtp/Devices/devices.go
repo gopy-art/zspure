@@ -2,6 +2,7 @@ package devices
 
 import (
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 	"zspure/config"
@@ -65,6 +66,11 @@ func (s *SmtpDevices) DeviceScan(banner map[string]interface{}) bool {
 		if strings.Contains(bannerStr, "Exim") {
 			s.ExtraInfo.SetExtraInfo("product", "Exim")
 			modelType = "Exim"
+			re := regexp.MustCompile(`Exim\s+([\d.]+)`)
+			matches := re.FindStringSubmatch(bannerStr)
+			if len(matches) > 1 {
+				s.ExtraInfo.SetExtraInfo("product_version", matches[1])
+			}
 			return true
 		}
 		if strings.Contains(bannerStr, "gsmtp") {
