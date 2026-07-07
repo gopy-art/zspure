@@ -88,14 +88,14 @@ func (s *ScanLogic) targetProducer() error {
 
 func (s *ScanLogic) targetHandler() {
 	defer s.wg.Done()
-	for target := range s.ChannelIP {
-		conn, err := s.open(target.Targets, target.Port)
-		if err != nil {
-			cmd.InfoLogger.Printf("%v\n", err)
-			continue
-		}
-
+	for target := range s.ChannelIP {		
 		for _, pl := range modules.ModuleList {
+			conn, err := s.open(target.Targets, target.Port)
+			if err != nil {
+				cmd.InfoLogger.Printf("%v\n", err)
+				break
+			}
+
 			protocol, err := modules.NewScanner(pl)
 			if err != nil {
 				continue
@@ -116,8 +116,8 @@ func (s *ScanLogic) targetHandler() {
 			}
 
 			s.targetFingerprints(protocol)
+			conn.Close()
 		}
-		conn.Close()
 	}
 }
 
