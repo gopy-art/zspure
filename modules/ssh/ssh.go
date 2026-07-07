@@ -5,6 +5,7 @@ import (
 	cisco "zspure/modules/ssh/Cisco"
 	dopra "zspure/modules/ssh/Dopra"
 	dropbear "zspure/modules/ssh/Dropbear"
+	flowssh "zspure/modules/ssh/FlowSsh"
 	huawei "zspure/modules/ssh/Huawei"
 	lancom "zspure/modules/ssh/Lancom"
 	modsftp "zspure/modules/ssh/Mod_sftp"
@@ -21,6 +22,7 @@ func NewSSH() []model.ModuleMethods {
 		&cisco.Cisco{},
 		&dopra.Dopra{},
 		&dropbear.Dropbear{},
+		&flowssh.FlowSSH{},
 		&huawei.Huawei{},
 		&lancom.Lancom{},
 		&modsftp.Modsftp{},
