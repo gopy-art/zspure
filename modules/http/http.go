@@ -26,6 +26,7 @@ import (
 	dlink "zspure/modules/http/D_Link"
 	dahua "zspure/modules/http/Dahua"
 	h3c "zspure/modules/http/H3C"
+	honeypot "zspure/modules/http/Honeypot"
 	mercury "zspure/modules/http/Mercury"
 	netcore "zspure/modules/http/Netcore"
 
@@ -94,6 +95,7 @@ import (
 
 func NewHTTP() []model.ModuleMethods {
 	return []model.ModuleMethods{
+		&honeypot.Honeypot{},
 		&agranatemweb.AgranatEmweb{},
 		&apc.Apc{},
 		&allegro.Allegro{},
