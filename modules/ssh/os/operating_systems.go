@@ -22,6 +22,7 @@ var os []OperatingSystems = []OperatingSystems{
 	Bitvise{},
 	Windows{},
 	Centos{},
+	Debian{},
 }
 
 type Ubuntu struct{}
@@ -31,6 +32,7 @@ type Raspbian struct{}
 type Bitvise struct{}
 type Windows struct{}
 type Centos struct{}
+type Debian struct{}
 
 func (Ubuntu) DetectOperating(banner string) (ok bool, result OperatingSystemData) {
 	if strings.Contains(strings.ToLower(banner), "ubuntu") {
@@ -118,6 +120,19 @@ func (Centos) DetectOperating(banner string) (ok bool, result OperatingSystemDat
 			result.Version = matches[1]
 		}
 		result.Name = "CentOS"
+		return true, result
+	}
+	return false, result
+}
+
+func (Debian) DetectOperating(banner string) (ok bool, result OperatingSystemData) {
+	if strings.Contains(strings.ToLower(banner), "debian") {
+		re := regexp.MustCompile(`Debian-([\d+]+(?:deb[\du]+)?)`)
+		matches := re.FindStringSubmatch(banner)
+		if len(matches) > 1 {
+			result.Version = matches[1]
+		}
+		result.Name = "Debian"
 		return true, result
 	}
 	return false, result
