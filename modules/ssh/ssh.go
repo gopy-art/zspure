@@ -1,6 +1,7 @@
 package ssh
 
 import (
+	"strings"
 	"zspure/modules/model"
 	cisco "zspure/modules/ssh/Cisco"
 	dopra "zspure/modules/ssh/Dopra"
@@ -35,4 +36,10 @@ func NewSSH() []model.ModuleMethods {
 
 func NewSSHScanner() *SSHScanning {
 	return new(SSHScanning)
+}
+
+func isSSHBanner(banner string) bool {
+    banner = strings.TrimSpace(banner)
+    return strings.HasPrefix(banner, "SSH-") ||
+           strings.Contains(banner, "SSH-")
 }
