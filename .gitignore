@@ -4,6 +4,11 @@ TODO*
 *.json
 *.png
 *.jpg
+*.jpeg
+!info-*.json
+!info-*.png
+!info-*.jpg
+!info-*.jpeg
 !zspure.png
 !http-*.json
 !ftp-*.json
@@ -12,3 +17,4 @@ TODO*
 !ssh-*.json
 !pop3-*.json
 !imap-*.json
+!fox-*.json

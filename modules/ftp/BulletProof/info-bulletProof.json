@@ -1,0 +1,7 @@
+{
+    "name" : "BulletProof",
+    "description": " BulletProof is a powerful Windows SFTP Server supports SFTP (FTP over SSH), FTPS (FTP over TLS/SSL), and classic FTP. Total control over connected users. ",
+    "protocol" : "ftp",
+    "category": "Service",
+    "image": ""
+}

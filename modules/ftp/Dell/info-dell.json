@@ -1,0 +1,7 @@
+{
+    "name" : "Dell",
+    "description": " The Dell Color Laser 3110cn is a mid-range, networked color laser printer designed primarily for departmental workgroups and small-to-medium offices. Originally released as a robust office workhorse, it is known for its fast monochrome printing and high monthly duty cycle. ",
+    "protocol" : "ftp",
+    "category": "Printer",
+    "image": "/ftp/Dell/Dell 3110cn.png"
+}

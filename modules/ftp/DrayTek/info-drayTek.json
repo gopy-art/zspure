@@ -1,0 +1,7 @@
+{
+    "name" : "DrayTek",
+    "description": " DrayTek Corporation is a network equipment manufacturer of customer-premises equipment including firewalls, VPN devices, routers, managed switches and wireless LAN devices. ",
+    "protocol" : "ftp",
+    "category": "Router",
+    "image": "/ftp/DrayTek/drayTek.png"
+}

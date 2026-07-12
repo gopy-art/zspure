@@ -1,0 +1,7 @@
+{
+    "name" : "Axis",
+    "description": " Axis Network Cameras: bullet, dome, PTZ, panoramic, and thermal models. From robust outdoor cameras to discreet products for sensitive environments, we offer all. Axis Edge Vault. ",
+    "protocol" : "ftp",
+    "category": "Camera",
+    "image": "/ftp/Axis/Axis.png"
+}

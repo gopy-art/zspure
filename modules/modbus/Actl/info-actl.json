@@ -1,0 +1,7 @@
+{
+    "name" : "ACTL",
+    "description": "",
+    "protocol" : "modbus",
+    "category": "Industrial",
+    "image": ""
+}

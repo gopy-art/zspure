@@ -1,0 +1,7 @@
+{
+    "name" : "Fox",
+    "description":"Niagara Fox is a protocol used natively within the Niagara Framework. It handles real-time communication between Niagara stations (JACE controllers, Supervisors), system engineering software (Niagara Workbench), and secure Niagara Cloud Suite services.Because Fox is a proprietary application-level protocol, it does not act as a field device protocol (like BACnet or Modbus); rather, it operates strictly at the automation and management tier. " ,
+    "protocol" : "fox",
+    "category": "controllers",
+    "image": ""
+}

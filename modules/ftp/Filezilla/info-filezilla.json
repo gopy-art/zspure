@@ -1,0 +1,7 @@
+{
+    "name" : "Filezilla",
+    "description": " FileZilla is a cross-platform FTP, SFTP, and FTPS client with a vast list of features, which supports Windows, Mac OS X, Linux, and more. ",
+    "protocol" : "ftp",
+    "category": "Service",
+    "image": "/ftp/Filezilla/filezilla.jpeg"
+}

@@ -1,0 +1,7 @@
+{
+    "name" : "Belkin",
+    "description": " The Belkin Network USB Hub, is an innovative sharing tool which gives you access to your USB devices remotely. You can access up to 16 connections. ",
+    "protocol" : "ftp",
+    "category": "Network",
+    "image": "/ftp/Belkin/belkin.png"
+}

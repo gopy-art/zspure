@@ -1,0 +1,7 @@
+{
+    "name" : "Lantronix",
+    "description": " Provides Edge AI and Industrial IoT solutions. It offers intelligent computing, secure connectivity, and remote management for critical applications in smart cities, enterprise IT, and unmanned systems. ",
+    "protocol" : "ftp",
+    "category": "Industrial",
+    "image": "/ftp/Lantronix/lantronix.jpeg"
+}

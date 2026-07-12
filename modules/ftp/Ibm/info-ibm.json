@@ -1,0 +1,7 @@
+{
+    "name" : "Ibm",
+    "description": " The IBM i-series (originally AS/400, later eServer iSeries, System i, and now fully integrated as IBM i running on IBM Power Systems) is a family of mid-range business computers known for its extreme reliability, security, and integrated database system. ",
+    "protocol" : "ftp",
+    "category": "Electric",
+    "image": "/ftp/Ibm/ibm.png"
+}

@@ -1,0 +1,7 @@
+{
+    "name" : "Crouzet",
+    "description": "The Crouzet XN05 is an Ethernet communication expansion module. It is designed specifically for the Millenium 3 (M3) logic controller series. It functions as a 'sandwich' style expansion block that attaches directly to the controller. ",
+    "protocol" : "modbus",
+    "category": "Industrial",
+    "image": "/modbus/Crouzet/crouzetxn05.jpg"
+}

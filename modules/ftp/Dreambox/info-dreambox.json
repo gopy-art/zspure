@@ -1,0 +1,7 @@
+{
+    "name" : "Dreambox",
+    "description": "Dreambox is a series of Linux-powered DVB satellite, terrestrial and cable digital television receivers (set-top boxes), produced by German multimedia vendor Dream Multimedia. ",
+    "protocol" : "ftp",
+    "category": "Router",
+    "image": "/ftp/Dreambox/Dreambox.png"
+}
