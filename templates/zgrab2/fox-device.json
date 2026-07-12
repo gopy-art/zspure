@@ -1,0 +1,31 @@
+{
+	"data": {
+		"fox": {
+			"status":"success",
+			"protocol":"fox",
+			"result": {
+				"is_fox":true,
+				"version":"Niagara 4",
+				"id":0,"hostname":"",
+				"host_address":"",
+				"app_name":"",
+				"app_version":"",
+				"vm_name":"",
+				"ip":"37.119.67.113",
+				"vm_version":"",
+				"os_name":"",
+				"os_version":"",
+				"station_name":"",
+				"language":"",
+				"time_zone":"",
+				"host_id":"",
+				"vm_uuid":"",
+				"brand_id":"",
+				"sys_info":"",
+				"auth_agent_type":"",
+				"tls":null
+			},
+			"timestamp":"2026-07-12T04:44:37+02:00"
+		}
+	}
+}
