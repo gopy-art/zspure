@@ -1,0 +1,7 @@
+{
+    "name" : "Computec",
+    "description": "The Computec CWS06 (Com Web Station) is a distributed web server and controller by Computec Oy used primarily for building automation and HVAC systems. The main page for accessing the CWS06 is a browser-based user interface where users can adjust building parameters, view heating schedules, monitor energy usage, and check alarms. ",
+    "protocol" : "modbus",
+    "category": "Industrial",
+    "image": ""
+}

@@ -1,0 +1,7 @@
+{
+    "name" : "AvatechMei",
+    "description": "",
+    "protocol" : "modbus",
+    "category": "Industrial",
+    "image": ""
+}

@@ -1,0 +1,7 @@
+{
+    "name" : "CesarFTP",
+    "description": " An easy-to-use and fast to configure FTP server. ",
+    "protocol" : "ftp",
+    "category": "Service",
+    "image": ""
+}

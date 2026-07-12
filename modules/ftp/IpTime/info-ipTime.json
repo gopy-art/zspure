@@ -1,0 +1,7 @@
+{
+    "name": "IpTime",
+    "description": " ipTIME FTP allows you to turn your ipTIME router into a personal cloud or network storage server (often called a 'mini NAS') by plugging an external hard drive or USB flash drive directly into the router's USB port. This feature uses EFM Networks' proprietary ipDISK service. ",
+    "protocol": "ftp",
+    "category": "NetworkStorage",
+    "image": ""
+}

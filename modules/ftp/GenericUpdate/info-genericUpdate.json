@@ -1,0 +1,7 @@
+{
+    "name" : "GenericUpdate",
+    "description": "",
+    "protocol" : "ftp",
+    "category": "Service",
+    "image": ""
+}

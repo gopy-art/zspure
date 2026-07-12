@@ -1,0 +1,7 @@
+{
+    "name" : "GenericCamera",
+    "description": "",
+    "protocol" : "ftp",
+    "category": "Camera",
+    "image": ""
+}
