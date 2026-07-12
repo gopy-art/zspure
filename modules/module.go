@@ -5,21 +5,22 @@ import (
 	"os"
 	"strings"
 	"text/tabwriter"
+	"zspure/modules/fox"
 	"zspure/modules/ftp"
 	"zspure/modules/http"
+	"zspure/modules/imap"
 	"zspure/modules/modbus"
 	"zspure/modules/model"
 	"zspure/modules/mongodb"
 	"zspure/modules/mssql"
 	"zspure/modules/mysql"
 	"zspure/modules/ntp"
+	"zspure/modules/pop3"
 	"zspure/modules/pptp"
 	"zspure/modules/redis"
+	"zspure/modules/smtp"
 	"zspure/modules/ssh"
 	"zspure/modules/tls"
-	"zspure/modules/imap"
-	"zspure/modules/pop3"
-	"zspure/modules/smtp"
 	"zspure/modules/upnp"
 )
 
@@ -40,6 +41,7 @@ var (
 		"imap",
 		"pop3",
 		"smtp",
+		"fox",
 	}
 )
 
@@ -75,6 +77,8 @@ func NewModule(protocol string) ([]model.ModuleMethods, error) {
 		return pop3.NewPop3(), nil
 	case "smtp":
 		return smtp.NewSmtp(), nil
+	case "fox":
+		return fox.NewFox(), nil
 	default:
 		return nil, fmt.Errorf("protocol not supported")
 	}
