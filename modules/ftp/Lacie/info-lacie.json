@@ -2,6 +2,6 @@
     "name" : "Lacie",
     "description": " LaCie Network Attached Storage (NAS) devices are legacy, multi-user storage solutions primarily used for file sharing, media streaming, and data backups across local networks. ",
     "protocol" : "ftp",
-    "category": "NetworkStorage",
-    "image": "/ftp/Lacie/lacie.jpg"
+    "category": "network storage",
+    "image": "/ftp/Lacie/info-lacie.jpg"
 }

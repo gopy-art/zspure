@@ -2,6 +2,6 @@
     "name" : "GenericCamera",
     "description": "",
     "protocol" : "ftp",
-    "category": "Camera",
+    "category": "camera",
     "image": ""
 }

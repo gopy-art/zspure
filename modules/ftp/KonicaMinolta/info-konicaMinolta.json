@@ -2,6 +2,6 @@
     "name" : "KonicaMinolta",
     "description": " Konica Minolta, Inc. is a Japanese multinational technology company headquartered in Marunouchi, Chiyoda, Tokyo, with offices in 45 countries worldwide. ",
     "protocol" : "ftp",
-    "category": "Printer",
-    "image": "/ftp/KonicaMinolta/konicaminolta.jpg"
+    "category": "printer",
+    "image": "/ftp/KonicaMinolta/info-konicaminolta.jpg"
 }

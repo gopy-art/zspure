@@ -2,6 +2,6 @@
     "name" : "Leightronix",
     "description": " LEIGHTRONIX is recognized as a trusted industry leader, providing digital video solutions that include servers, encoders, and decoders. ",
     "protocol" : "ftp",
-    "category": "Server",
-    "image": "/ftp/Leightronix/leightronix.png"
+    "category": "server",
+    "image": "/ftp/Leightronix/info-leightronix.png"
 }

@@ -2,6 +2,6 @@
     "name" : "Cerberus",
     "description": " Cerberus FTP Server is a Windows-based FTP server with support for encrypted FTP sessions via FTPS and SFTP as well as web client support via HTTP and HTTPS. ",
     "protocol" : "ftp",
-    "category": "Service",
+    "category": "service",
     "image": ""
 }

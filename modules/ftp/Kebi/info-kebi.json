@@ -2,6 +2,6 @@
     "name": "Kebi",
     "description": " If you are referring to the popular FTPD homebrew application for the Nintendo Switch or 3DS, it is a simple FTP server that allows you to wirelessly transfer files to and from your console's SD card. ",
     "protocol": "ftp",
-    "category": "Service",
+    "category": "service",
     "image": ""
 }

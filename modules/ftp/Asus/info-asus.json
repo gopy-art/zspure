@@ -2,6 +2,6 @@
     "name" : "Asus",
     "description": " ASUS has a range of wireless routers suitable for every purpose. Whether it's for your home, for business trips, or for any other need or environment. ",
     "protocol" : "ftp",
-    "category": "Router",
+    "category": "router",
     "image": ""
 }

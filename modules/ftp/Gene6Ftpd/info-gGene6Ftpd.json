@@ -2,6 +2,6 @@
     "name" : "Gene6Ftpd",
     "description": " Gene6 FTP Server is an FTP server program that enables easy transfers to and from user PC and FTP servers (up the web). ",
     "protocol" : "ftp",
-    "category": "Service",
+    "category": "service",
     "image": ""
 }

@@ -2,6 +2,6 @@
     "name" : "Iis",
     "description": " IIS stands for Internet Information Services, a flexible, secure, and manageable web server created by Microsoft. It runs exclusively on Windows operating systems and is primarily used to host web applications, media streaming, and static or dynamic. ",
     "protocol" : "ftp",
-    "category": "Service",
+    "category": "service",
     "image": ""
 }

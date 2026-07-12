@@ -2,6 +2,6 @@
     "name" : "Flexim",
     "description": "Flexim, the leader in non-intrusive clamp-on ultrasonic flow measurement for liquids and gases. measure virtually anything that flows. ",
     "protocol" : "modbus",
-    "category": "Industrial",
-    "image": "/modbus/Flexim/flexim.jpeg"
+    "category": "industrial",
+    "image": "/modbus/Flexim/info-flexim.jpeg"
 }

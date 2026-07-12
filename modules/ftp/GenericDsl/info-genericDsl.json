@@ -2,6 +2,6 @@
     "name" : "GenericDsl",
     "description": "",
     "protocol" : "ftp",
-    "category": "Router",
+    "category": "router",
     "image": ""
 }

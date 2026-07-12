@@ -2,6 +2,6 @@
     "name" : "Bftpd",
     "description": " bftpd is an FTP server for Linux, BSD/OS, FreeBSD, Solaris, DG-UX and Tru64. (I don't know if it runs on other systems. ",
     "protocol" : "ftp",
-    "category": "Service",
+    "category": "service",
     "image": ""
 }

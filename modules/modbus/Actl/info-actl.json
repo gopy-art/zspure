@@ -2,6 +2,6 @@
     "name" : "ACTL",
     "description": "",
     "protocol" : "modbus",
-    "category": "Industrial",
+    "category": "industrial",
     "image": ""
 }

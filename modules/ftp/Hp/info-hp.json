@@ -2,6 +2,6 @@
     "name" : "Hp",
     "description": " HP printers combine printing, scanning, copying, and faxing in one unit with pigment-based ink that resists water and fading on. ",
     "protocol" : "ftp",
-    "category": "Printer",
-    "image": "/ftp/Hp/hp.jpeg"
+    "category": "printer",
+    "image": "/ftp/Hp/info-hp.jpeg"
 }

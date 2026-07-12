@@ -1,0 +1,7 @@
+{
+    "name" : "Brother Printer",
+    "description": "Offering fast printing, scanning, copying and faxing, Brother colour inkjet all-in-ones are packed with loads of features including flexible wireless connectivity that will keep your home or home office running smoothly.",
+    "protocol" : "http",
+    "category": "printer",
+    "image": "/http/Brother/info-Brother_MFC_8950DW.jpg"
+}

@@ -1,0 +1,7 @@
+{
+    "name" : "Canon Printer",
+    "description": "An all-in-one inkjet printer with PrecisionCore technology for exceptional prints and easy wireless setup. A compact wireless laser printer ideal for black-and-white printing in home or small office settings. A compact wireless laser printer ideal for black-and-white printing in home or small office settings.",
+    "protocol" : "http",
+    "category": "printer",
+    "image": "/http/Dell/info-Dell-3110cn.png"
+}

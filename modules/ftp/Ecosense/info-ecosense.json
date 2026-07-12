@@ -2,6 +2,6 @@
     "name" : "Ecosense",
     "description": " The EcoSense from Dedicated Micros provides low cost multi channel recording with simultaneous playback and viewing; ideal for the cost conscious user who needs. ",
     "protocol" : "ftp",
-    "category": "Camera",
+    "category": "camera",
     "image": ""
 }

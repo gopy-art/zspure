@@ -2,6 +2,6 @@
     "name" : "Dlink",
     "description": " D-Link is one of the well known IP camera manufacturer and they recently released a new lineup of cloud wireless IP camera with cloud recording feature. The cloud recording allows the recorded footage to be stored in the cloud in D-Link’s server and it comes with various advantages such as timeline view and secure storage. D-Link also promises that their mydlink app will be user-friendly. Let’s take a look on their latest lineup of D-Link cloud camera. ",
     "protocol" : "ftp",
-    "category": "Camera",
-    "image": "/ftp/Dlink/dlink_dcs.png"
+    "category": "camera",
+    "image": "/ftp/Dlink/info-dlink_dcs.png"
 }
