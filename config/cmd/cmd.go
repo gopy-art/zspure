@@ -9,6 +9,7 @@ import (
 
 func SetupFlags() {
 	config.Root.PersistentFlags().StringVar(&config.CONFIG_PATH, "config", "", "set the config file path.")
+	config.Root.PersistentFlags().StringVar(&config.OUTPUT_STORAGE, "output-storage", "", "set the storage you want to put the output in that. (For Example: redis, rabbit)")
 	config.Root.PersistentFlags().BoolVar(&config.JSON_OUTPUT, "json", false, "enable this when you want the output as JSON format.")
 	config.Root.Flags().BoolVarP(&config.Vtoggle, "version", "v", false, "zspure version")
 
