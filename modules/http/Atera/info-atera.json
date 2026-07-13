@@ -1,0 +1,7 @@
+{
+    "name" : "Atera",
+    "description": " Atera networks do not feature a built-in firewall, but Atera requires specific external firewall configurations to manage devices over the cloud. Atera is a cloud-based Remote Monitoring and Management (RMM) platform, meaning it relies on a local software agent to communicate securely with its cloud servers. ",
+    "protocol" : "http",
+    "category": "Firewall",
+    "image": "/http/Atera/info-atera.png"
+}

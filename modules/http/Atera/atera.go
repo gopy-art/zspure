@@ -22,7 +22,7 @@ type AteraNetwork struct {
 }
 
 func (a *AteraNetwork) SetCategory(category ...string) {
-	a.Category = model.Category.Gateway()
+	a.Category = model.Category.Firewall()
 }
 
 func (a *AteraNetwork) SetDeviceName(device ...string) {
@@ -115,7 +115,7 @@ func (a *AteraNetwork) CveScan(els *handler.Elastic) {
 }
 
 func (a *AteraNetwork) PrintInfo() string {
-	return model.Category.Gateway() + " | Atera Security Network"
+	return model.Category.Firewall() + " | Atera Security Network"
 }
 
 func (a *AteraNetwork) Result() model.ModuleStructure {

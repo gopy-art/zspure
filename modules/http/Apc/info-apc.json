@@ -1,0 +1,7 @@
+{
+    "name" : "Apc",
+    "description": " APC by Schneider Electric (formerly American Power Conversion Corporation) is a manufacturer of uninterruptible power supplies (UPS), electronics peripherals, and data center products. ",
+    "protocol" : "http",
+    "category": "Electric",
+    "image": "/http/Apc/info-apc.png"
+}

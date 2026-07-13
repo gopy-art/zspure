@@ -1,0 +1,7 @@
+{
+    "name" : "Agranat_emweb",
+    "description": " The EmWeb/Compiler is a tool provided by Agranat Systems that runs on an engineering development work-station under Unix, Windows/NT (x86), and Windows/95. ",
+    "protocol" : "http",
+    "category": "Controller",
+    "image": "/http/Agranat_Emweb/info-agranat_emweb.png"
+}

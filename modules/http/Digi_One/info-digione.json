@@ -1,0 +1,7 @@
+{
+    "name" : "DigiOne",
+    "description": " Digi One IA provides reliable, cost-effective network connectivity for serial devices. This unobtrusive and easy- to-use serial server delivers serial-to-Ethernet connectivity to Programmable Logic Controllers (PLCs), Remote Terminal Units (RTUs), bar-code readers and other industrial devices. ",
+    "protocol" : "http",
+    "category": "Industrial",
+    "image": ""
+}
