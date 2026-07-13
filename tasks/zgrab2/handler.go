@@ -1,14 +1,12 @@
 package zgrab2
 
 import (
-	"encoding/json"
-	"fmt"
 	"slices"
 	"sync"
 	"zspure/config"
-	"zspure/config/cmd"
 	"zspure/modules"
 	"zspure/modules/model"
+	"zspure/utils"
 )
 
 func ParseZgrabInput(content []byte) (*ZgrabModel, error) {
@@ -39,15 +37,7 @@ func DetectZgrabResult(data zgrabDataModel) error {
 							device.CveScan(nil)
 						}
 
-						if config.JSON_OUTPUT {
-							if buf, err := json.Marshal(device.Result()); err != nil {
-								cmd.ErrorLogger.Printf("error in marshal the result, error = %v\n", err)
-							} else {
-								fmt.Printf("%s\n", buf)
-							}
-						} else {
-							fmt.Printf("Detected Device = %v | Category = %v | Version = %v\n", device.Result().DeviceName, device.Result().Category, device.Result().Version)
-						}
+						utils.NormalizeOutput(device.Result())
 					}
 				})
 			}

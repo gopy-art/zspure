@@ -1,14 +1,12 @@
 package tasks
 
 import (
-	"encoding/json"
-	"fmt"
 	"slices"
 	"sync"
 	"zspure/config"
-	"zspure/config/cmd"
 	"zspure/modules"
 	"zspure/modules/model"
+	"zspure/utils"
 )
 
 func DetectDeviceBaseFile(content string) error {
@@ -41,15 +39,7 @@ func DetectDeviceBaseFile(content string) error {
 							method.CveScan(nil)
 						}
 
-						if config.JSON_OUTPUT {
-							if buf, err := json.Marshal(method.Result()); err != nil {
-								cmd.ErrorLogger.Printf("error in marshal the result, error = %v\n", err)
-							} else {
-								fmt.Printf("%s\n", buf)
-							}
-						} else {
-							fmt.Printf("Detected Device = %v | Category = %v | Version = %v\n", method.Result().DeviceName, method.Result().Category, method.Result().Version)
-						}
+						utils.NormalizeOutput(method.Result())
 					}
 				})
 			}
@@ -98,15 +88,7 @@ func DetectDeviceBaseURL(content string, headers map[string]interface{}) error {
 							method.CveScan(nil)
 						}
 
-						if config.JSON_OUTPUT {
-							if buf, err := json.Marshal(method.Result()); err != nil {
-								cmd.ErrorLogger.Printf("error in marshal the result, error = %v\n", err)
-							} else {
-								fmt.Printf("%s\n", buf)
-							}
-						} else {
-							fmt.Printf("Detected Device = %v | Category = %v | Version = %v\n", method.Result().DeviceName, method.Result().Category, method.Result().Version)
-						}
+						utils.NormalizeOutput(method.Result())
 					}
 				})
 			}
