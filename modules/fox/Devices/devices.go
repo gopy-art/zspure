@@ -2,6 +2,7 @@ package devices
 
 import (
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 	"zspure/config"
@@ -12,22 +13,20 @@ import (
 )
 
 type FoxDevices struct {
-	Category    string                `json:"dvs_category"`
-	DeviceName  string                `json:"device_name"`
-	Version     string                `json:"version"`
-	CveList     []string              `json:"cves"`
-	Sensibility string                `json:"base_severity"`
-	CveScore    float64               `json:"cve_score"`
+	Category    string   `json:"dvs_category"`
+	DeviceName  string   `json:"device_name"`
+	Version     string   `json:"version"`
+	CveList     []string `json:"cves"`
+	Sensibility string   `json:"base_severity"`
+	CveScore    float64  `json:"cve_score"`
 }
-
-var modelType string
 
 func (f *FoxDevices) SetCategory(category ...string) {
 	f.Category = model.Category.Controller()
 }
 
 func (f *FoxDevices) SetDeviceName(device ...string) {
-	f.DeviceName = "fox"
+	f.DeviceName = "Fox Niagara"
 }
 
 func (f *FoxDevices) Patterns() []map[string]interface{} {
@@ -38,7 +37,7 @@ func (f *FoxDevices) Filters(banner map[string]interface{}) bool {
 	if banner["is_fox"] == nil || banner["version"] == nil {
 		return false
 	}
-	if val, ok := banner["is_fox"].(bool); ok  && val{
+	if val, ok := banner["is_fox"].(bool); ok && val {
 		if val2, ok := banner["version"]; ok {
 			versionStr := fmt.Sprintf("%v", val2)
 			if strings.Contains(versionStr, "Niagara") {
@@ -50,6 +49,14 @@ func (f *FoxDevices) Filters(banner map[string]interface{}) bool {
 }
 
 func (f *FoxDevices) DeviceScan(banner map[string]interface{}) bool {
+	if val, ok := banner["version"].(string); ok {
+		re := regexp.MustCompile(`Niagara\s+([\d.]+)`)
+		matches := re.FindStringSubmatch(val)
+		if len(matches) > 1 {
+			f.Version = matches[1]
+			return true
+		}
+	}
 	return false
 }
 
@@ -59,7 +66,7 @@ func (f *FoxDevices) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": modelType,
+			"cve.descriptions.value": f.DeviceName+" "+f.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -72,7 +79,7 @@ func (f *FoxDevices) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), modelType)
+		url := fmt.Sprintf(model.CVE.MainResource(), strings.ToLower(strings.ReplaceAll(fmt.Sprintf("%v %v", f.DeviceName, f.Version), " ", "%20")))
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			fmt.Println("[CVE] error in gather the CVE for this device. (Server error)")
@@ -102,15 +109,15 @@ func (f *FoxDevices) CveScan(els *handler.Elastic) {
 	f.CveList = utils.RemoveDuplicates(f.CveList)
 }
 
-func (f *FoxDevices) PrintInfo() string { return model.Category.Controller() + " | Fox Devices" }
+func (f *FoxDevices) PrintInfo() string { return model.Category.Controller() + " | Fox Niagara" }
 
 func (f *FoxDevices) Result() model.ModuleStructure {
 	return model.ModuleStructure{
-		Category:         f.Category,
-		DeviceName:       f.DeviceName,
-		Version:          f.Version,
-		CveList:          f.CveList,
-		Sensibility:      f.Sensibility,
-		CveScore:         f.CveScore,
+		Category:    f.Category,
+		DeviceName:  f.DeviceName,
+		Version:     f.Version,
+		CveList:     f.CveList,
+		Sensibility: f.Sensibility,
+		CveScore:    f.CveScore,
 	}
 }

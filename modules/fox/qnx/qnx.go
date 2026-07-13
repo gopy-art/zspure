@@ -54,7 +54,7 @@ func (f *FoxQnx) SetCategory(category ...string) {
 }
 
 func (f *FoxQnx) SetDeviceName(device ...string) {
-	f.DeviceName = "fox"
+	f.DeviceName = "Fox Devices"
 }
 
 func (f *FoxQnx) Patterns() []map[string]interface{} {
@@ -86,7 +86,7 @@ func (f *FoxQnx) DeviceScan(banner map[string]interface{}) bool {
 
 	}
 	if val, ok := banner["version"].(string); ok && val != "" {
-		f.ExtraInfo.SetExtraInfo("version", val)
+		f.Version = val
 	}
 	if val, ok := banner["vm_name"].(string); ok && val != "" {
 		f.ExtraInfo.SetExtraInfo("vm_name", val)
@@ -103,7 +103,6 @@ func (f *FoxQnx) DeviceScan(banner map[string]interface{}) bool {
 	if val, ok := banner["brand_id"].(string); ok && val != "" {
 		if v, ok := vendors[strings.ToLower(val)]; ok {
 			f.ExtraInfo.SetExtraInfo("manufacturer", v[0])
-			// f.ExtraInfo.SetExtraInfo("device_type", v[1])
 			modelType = v[1]
 		}
 	}
@@ -123,7 +122,7 @@ func (f *FoxQnx) CveScan(els *handler.Elastic) {
 
 	if config.LOGIC == "execute" {
 		result := utils.RemoveDuplicatesFromMap(els.GatherAllDataInMap(els.CveIndex, "and", map[string]interface{}{
-			"cve.descriptions.value": modelType,
+			"cve.descriptions.value": modelType+ " " + f.Version,
 		}))
 		if len(result) == 0 {
 			return
@@ -136,7 +135,7 @@ func (f *FoxQnx) CveScan(els *handler.Elastic) {
 			CVE = append(CVE, cveMod)
 		}
 	} else if config.FIND_CVE {
-		url := fmt.Sprintf(model.CVE.MainResource(), modelType)
+		url := fmt.Sprintf(model.CVE.MainResource(), modelType+"%20"+f.Version)
 		recieve, err := utils.GatherCVEOnline(url)
 		if err != nil {
 			fmt.Println("[CVE] error in gather the CVE for this device. (Server error)")

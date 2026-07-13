@@ -1,1 +1,32 @@
-{"ip":"127.0.0.1","data":{"fox":{"status":"success","protocol":"fox","result":{"is_fox":true,"version":"1.0.1","id":3374,"hostname":"supervisore1.aquapetra.com","host_address":"10.156.0.200","app_name":"Station","app_version":"3.8.213.2","vm_name":"Java HotSpot(TM) Client VM","vm_version":"1.5.0_81-b06","os_name":"QNX","os_version":"6.4.1","station_name":"AquapetraSup","language":"en","time_zone":"Europe/Berlin","host_id":"Qnx-NPM6-0000-153C-6F19","vm_uuid":"11f0e94f-1a61-7976-0000-000000008038","brand_id":"CentraLine","sys_info":"bog 61[\u003cbog version=\"1.0\"\u003e","auth_agent_type":"fox","tls":null},"timestamp":"2026-07-12T05:43:53+02:00"}}}
+{
+    "ip": "127.0.0.1",
+    "data": {
+        "fox": {
+            "status": "success",
+            "protocol": "fox",
+            "result": {
+                "is_fox": true,
+                "version": "1.0.1",
+                "id": 3374,
+                "hostname": "supervisore1.aquapetra.com",
+                "host_address": "10.156.0.200",
+                "app_name": "Station",
+                "app_version": "3.8.213.2",
+                "vm_name": "Java HotSpot(TM) Client VM",
+                "vm_version": "1.5.0_81-b06",
+                "os_name": "QNX",
+                "os_version": "6.4.1",
+                "station_name": "AquapetraSup",
+                "language": "en",
+                "time_zone": "Europe/Berlin",
+                "host_id": "Qnx-NPM6-0000-153C-6F19",
+                "vm_uuid": "11f0e94f-1a61-7976-0000-000000008038",
+                "brand_id": "CentraLine",
+                "sys_info": "bog 61[\u003cbog version=\"1.0\"\u003e",
+                "auth_agent_type": "fox",
+                "tls": null
+            },
+            "timestamp": "2026-07-12T05:43:53+02:00"
+        }
+    }
+}
