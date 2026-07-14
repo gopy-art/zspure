@@ -1,0 +1,7 @@
+{
+    "name" : "Bigip",
+    "description": " Big IP cameras typically refer to enterprise-grade, heavy-duty PTZ (Pan-Tilt-Zoom) and wide-area surveillance cameras, or refer broadly to large-scale, enterprise CCTV infrastructures. Top global manufacturers dominating this space include Hikvision (e.g., their DeepinView and Panoramic series), Axis Communications, and Dahua. For consumer and small-business setups, brands like Reolink, TP-Link (VIGI), and Amcrest offer large, high-resolution models. ",
+    "protocol" : "http",
+    "category": "Camera",
+    "image": "/http/Bigip/info-bigip.png"
+}

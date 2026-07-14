@@ -1,0 +1,7 @@
+{
+    "name" : "Bogar",
+    "description": " Bomgar is now known as BeyondTrust Remote Support. It is an enterprise-grade, secure software tool that allows IT and helpdesk teams to remotely view screens, control devices, and troubleshoot systems (Windows, Mac, Linux, iOS, and Android) without requiring a VPN. ",
+    "protocol" : "http",
+    "category": "Controller",
+    "image": "/http/Boa/info-axis.png"
+}

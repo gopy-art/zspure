@@ -1,0 +1,7 @@
+{
+    "name" : "Avtech",
+    "description": " Monitor temperature, humidity, power and flood in real-time. Prevent outages, protect what matters, and keep your people, property, and productivity safe. ",
+    "protocol" : "http",
+    "category": "Monitoring",
+    "image": "/http/Avtech/info-avtech.png"
+}

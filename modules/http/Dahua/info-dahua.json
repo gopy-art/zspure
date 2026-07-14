@@ -1,0 +1,7 @@
+{
+    "name" : "Dahua",
+    "description": "Dahua is a global leader in video surveillance and AIoT solutions, offering a wide range of devices—from entry-level Wi-Fi models to 4K PTZ cameras. In the Moscow region, popular Dahua IP and HDCVI cameras are readily available for both home security and enterprise perimeter protection.",
+    "protocol" : "http",
+    "category": "Camera",
+    "image": "/http/Dahua/info-dahua.png"
+}
