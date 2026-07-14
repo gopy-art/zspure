@@ -3,5 +3,5 @@
     "description": " The FRITZ!Box makes optimal use of your DSL connections. It takes advantage of maximum speed to send data to your home network and back to the internet. ",
     "protocol" : "ftp",
     "category": "router",
-    "image": "/ftp/FritzBox/info-fritzBox.jpeg"
+    "image": "/ftp/FritzBox/info-fritzBox.png"
 }

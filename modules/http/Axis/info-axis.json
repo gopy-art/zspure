@@ -2,6 +2,6 @@
     "name" : "Axis",
     "description": " you'll find an Axis network camera to suit your needs. From robust outdoor cameras to discreet products for sensitive environments. ",
     "protocol" : "http",
-    "category": "Camera",
+    "category": "camera",
     "image": "/http/Axis/info-axis.png"
 }

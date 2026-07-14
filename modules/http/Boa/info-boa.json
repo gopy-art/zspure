@@ -2,6 +2,6 @@
     "name" : "Boa",
     "description": " BOA is a camera with optical inspection tools for controlling quality and increasing productivity. It comprises all the elements of an industrial machine. ",
     "protocol" : "http",
-    "category": "Camera",
+    "category": "camera",
     "image": ""
 }
