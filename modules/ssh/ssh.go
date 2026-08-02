@@ -12,6 +12,7 @@ import (
 	modsftp "zspure/modules/ssh/Mod_sftp"
 	mpssh "zspure/modules/ssh/MpSSH"
 	openssh "zspure/modules/ssh/OpenSSH"
+	paramiko "zspure/modules/ssh/Paramiko"
 	romsshell "zspure/modules/ssh/RomSShell"
 	rosssh "zspure/modules/ssh/Rosssh"
 	zyxel "zspure/modules/ssh/Zyxel"
@@ -31,6 +32,7 @@ func NewSSH() []model.ModuleMethods {
 		&romsshell.RomSShell{},
 		&rosssh.ROSSSH{},
 		&zyxel.Zyxel{},
+		&paramiko.Paramiko{},
 	}
 }
 
