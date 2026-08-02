@@ -9,6 +9,7 @@ import (
 	flowssh "zspure/modules/ssh/FlowSsh"
 	huawei "zspure/modules/ssh/Huawei"
 	lancom "zspure/modules/ssh/Lancom"
+	libssh "zspure/modules/ssh/Libssh"
 	modsftp "zspure/modules/ssh/Mod_sftp"
 	mpssh "zspure/modules/ssh/MpSSH"
 	openssh "zspure/modules/ssh/OpenSSH"
@@ -33,6 +34,7 @@ func NewSSH() []model.ModuleMethods {
 		&rosssh.ROSSSH{},
 		&zyxel.Zyxel{},
 		&paramiko.Paramiko{},
+		&libssh.LibSSH{},
 	}
 }
 

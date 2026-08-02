@@ -1,0 +1,133 @@
+{
+    "ip": "208.74.29.224",
+    "data": {
+        "ssh": {
+            "status": "success",
+            "protocol": "ssh",
+            "port": 22,
+            "result": {
+                "server_id": {
+                    "raw": "SSH-2.0-libssh2_1.2.7",
+                    "version": "2.0",
+                    "software": "libssh2_1.2.7"
+                },
+                "server_key_exchange": {
+                    "cookie": "PhqNoNuFEFNnxr99QBwOdQ==",
+                    "kex_algorithms": [
+                        "diffie-hellman-group14-sha1",
+                        "diffie-hellman-group1-sha1"
+                    ],
+                    "host_key_algorithms": [
+                        "ssh-rsa"
+                    ],
+                    "client_to_server_ciphers": [
+                        "aes128-ctr",
+                        "aes192-ctr",
+                        "aes256-ctr",
+                        "aes256-cbc",
+                        "rijndael-cbc@lysator.liu.se",
+                        "aes192-cbc",
+                        "aes128-cbc",
+                        "blowfish-cbc",
+                        "arcfour128",
+                        "arcfour",
+                        "cast128-cbc",
+                        "3des-cbc"
+                    ],
+                    "server_to_client_ciphers": [
+                        "aes128-ctr",
+                        "aes192-ctr",
+                        "aes256-ctr",
+                        "aes256-cbc",
+                        "rijndael-cbc@lysator.liu.se",
+                        "aes192-cbc",
+                        "aes128-cbc",
+                        "blowfish-cbc",
+                        "arcfour128",
+                        "arcfour",
+                        "cast128-cbc",
+                        "3des-cbc"
+                    ],
+                    "client_to_server_macs": [
+                        "hmac-sha2-256",
+                        "hmac-sha2-512",
+                        "hmac-sha1",
+                        "hmac-sha1-96",
+                        "hmac-md5",
+                        "hmac-md5-96",
+                        "hmac-ripemd160",
+                        "hmac-ripemd160@openssh.com"
+                    ],
+                    "server_to_client_macs": [
+                        "hmac-sha2-256",
+                        "hmac-sha2-512",
+                        "hmac-sha1",
+                        "hmac-sha1-96",
+                        "hmac-md5",
+                        "hmac-md5-96",
+                        "hmac-ripemd160",
+                        "hmac-ripemd160@openssh.com"
+                    ],
+                    "client_to_server_compression": [
+                        "none"
+                    ],
+                    "server_to_client_compression": [
+                        "none"
+                    ],
+                    "first_kex_follows": false,
+                    "reserved": 0,
+                    "serverHaSSH": "eb86e682d6c918843a423ea290b7b863"
+                },
+                "algorithm_selection": {
+                    "dh_kex_algorithm": "diffie-hellman-group1-sha1",
+                    "host_key_algorithm": "ssh-rsa",
+                    "client_to_server_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha2-256",
+                        "compression": "none"
+                    },
+                    "server_to_client_alg_group": {
+                        "cipher": "aes128-ctr",
+                        "mac": "hmac-sha2-256",
+                        "compression": "none"
+                    }
+                },
+                "key_exchange": {
+                    "dh_params": {
+                        "prime": {
+                            "value": "///////////JD9qiIWjCNMTGYouA3BzRKQJOCIpnzHQCC76mOxObIlFKCHmONATd75UZs806QxswKwpt8l8UN0/hNW1tUcJF5IW1dmJefsb0TELppjftawv/XLb0Brft7jhr+1qJn6WunyQRfEsf5kkoZlHs5lOB//////////8=",
+                            "length": 1024
+                        },
+                        "generator": {
+                            "value": "Ag==",
+                            "length": 8
+                        },
+                        "server_public": {
+                            "value": "TvuRrAr4Gu1yR9RPiysGp8oDJ6Hs+Cmv7ZFrv7dnYgqwtfEKBQVnkjqlzTNuumauz/9GgUq8+U4tN+jhbQECVpYhzO8u7jqT4jzTMVOutabWhKm0HZe/4hdo1tzLkaoRvqcwR2AFqrrSNYbZ7Sw5eHtquU8dCaquP+yNU+2BnB0=",
+                            "length": 1024
+                        }
+                    },
+                    "server_signature": {
+                        "parsed": {
+                            "algorithm": "ssh-rsa",
+                            "value": "iDW/bLopxg/di5oRmTEoTYDRsqxBDrFaBvlqUfBwpt/2s0tmhidzbNEcYHOKzhp0vyR5eU5JaGTnnv2cgwGpXIM1AYfxAaxO6shHJ+w5OIOMrpZSFebAub7kShQysl6sVlrlQsBbmmyiVofEc1hnMH+PSwsCDqIPMnxWPTMxNufveGwTAYdKfkB1hi+dpWY4T/RxojH/cBug6GrHdA1fPrzIy3snvKNY5nCo5Cp2LuYkIlyrZ1DvKhxrSVIyba9k5l4jCL93eKMNKYMe5dSzmYn8d9YKfZmHIDhp8ar81nxgXnmtuC7B37Qq3Ai6IGvkZVz/PavaG95dKtuhmD8X1g=="
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAEAiDW/bLopxg/di5oRmTEoTYDRsqxBDrFaBvlqUfBwpt/2s0tmhidzbNEcYHOKzhp0vyR5eU5JaGTnnv2cgwGpXIM1AYfxAaxO6shHJ+w5OIOMrpZSFebAub7kShQysl6sVlrlQsBbmmyiVofEc1hnMH+PSwsCDqIPMnxWPTMxNufveGwTAYdKfkB1hi+dpWY4T/RxojH/cBug6GrHdA1fPrzIy3snvKNY5nCo5Cp2LuYkIlyrZ1DvKhxrSVIyba9k5l4jCL93eKMNKYMe5dSzmYn8d9YKfZmHIDhp8ar81nxgXnmtuC7B37Qq3Ai6IGvkZVz/PavaG95dKtuhmD8X1g==",
+                        "h": "64J84eGW1uKKT9/eB/1h4THFAus="
+                    },
+                    "server_host_key": {
+                        "rsa_public_key": {
+                            "exponent": 37,
+                            "modulus": "qGD8WiCZcxy/Bz73oIcB9cVxvS6bnO0C78Dgw/f2J0vpEZoDUpxi7jVPIVN1L45CmOfD0pJrOxuZYmedZTJBcuq59ySYkPy4BMF9G9hshMPPOWOTc72mHZ1BdkYxK934kjJ3D+r+aPRargKwvNxBngG6QDPRTN/ClbSC+CCN1q33dMA7Nw7yMB6RVO1lJMM3uYGSx0muSO40nlJIqLcM8Z+rJpNbv7gOpd02XLk4c8PwE75BjWQrlG/OHSrtecB105o7w9G8muF5KBTWlP4k/ZodB4AkRpqwAs77oooDfDapMCGGUm0CuqRQX/s7Xe3D9ByNu89BWt/VFnFYmY+mpQ==",
+                            "length": 2048
+                        },
+                        "raw": "AAAAB3NzaC1yc2EAAAABJQAAAQEAqGD8WiCZcxy/Bz73oIcB9cVxvS6bnO0C78Dgw/f2J0vpEZoDUpxi7jVPIVN1L45CmOfD0pJrOxuZYmedZTJBcuq59ySYkPy4BMF9G9hshMPPOWOTc72mHZ1BdkYxK934kjJ3D+r+aPRargKwvNxBngG6QDPRTN/ClbSC+CCN1q33dMA7Nw7yMB6RVO1lJMM3uYGSx0muSO40nlJIqLcM8Z+rJpNbv7gOpd02XLk4c8PwE75BjWQrlG/OHSrtecB105o7w9G8muF5KBTWlP4k/ZodB4AkRpqwAs77oooDfDapMCGGUm0CuqRQX/s7Xe3D9ByNu89BWt/VFnFYmY+mpQ==",
+                        "algorithm": "ssh-rsa",
+                        "fingerprint_sha256": "8673f43a3bc43c394728a1cc3a430c0331da200fb85ba03a1715c4b9e067ae7c"
+                    }
+                }
+            },
+            "timestamp": "2026-08-02T10:44:38Z"
+        }
+    }
+}
